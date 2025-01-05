@@ -1,10 +1,24 @@
-function App() {
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import HomePage from './pages/home/HomePage';
+import NotFound from './pages/notFound/NotFound';
+
+const App = () => {
+  return (
+    <BrowserRouter>
+      <InnerApp />
+    </BrowserRouter>
+  );
+};
+
+const InnerApp = () => {
   return (
     <>
-      <h1>React 18 Alpha</h1>
-      <p>Check the console for logs.</p>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     </>
   );
-}
+};
 
 export default App;
