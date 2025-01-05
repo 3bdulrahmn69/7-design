@@ -9,7 +9,7 @@ const HeroSection = () => {
             Welcome to the website
           </h1>
           <p className="text-center">
-            This is a starter template for a Gatsby website
+            This is a starter for a website using React and Tailwind CSS
           </p>
         </div>
       </Container>
