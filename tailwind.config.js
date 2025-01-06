@@ -9,8 +9,8 @@ export default {
       },
       colors: {
         primary: '#FEDA00',
-        primaryDark: '#FABE0B',
-        primaryOrange: '#FEA201',
+        primaryDark: '#F9AF13',
+        primaryOrange: '#FFDA00',
         'dark-gray': '#232323',
         'secondary-text': '#999999',
       },
