@@ -1,16 +1,26 @@
 import { useState } from 'react';
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion'; // Updated import path to 'framer-motion'
 import Button from './Button';
 import Lang from './Lang';
 import Logo from './Logo';
+import ToggleDark from './ToggleDark';
 
 const navItems = [
-  { name: 'About', href: '/about' },
-  { name: 'Blog', href: '/blog' },
-  { name: 'Services', href: '/services' },
-  { name: 'Process', href: '/process' },
-  { name: 'Contact', href: '/contact' },
+  { name: 'Our Projects', href: '#ourProjects' },
+  { name: 'Process', href: '#process' },
+  { name: 'Benefits', href: '#benefits' },
+  { name: 'Services', href: '#services' },
+  { name: 'Pricing', href: '#pricing' },
 ];
+
+const slideVariants = {
+  hidden: { y: '-100%', opacity: 0 },
+  visible: {
+    y: '0%',
+    opacity: 1,
+    transition: { duration: 0.6, ease: 'easeOut' },
+  },
+};
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,18 +41,23 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-8 right-1/2 translate-x-1/2 border-[1px] border-gray-500 rounded-xl py-3 px-6 backdrop-blur w-11/12 xl:w-fit z-50">
+    <motion.header
+      style={{ willChange: 'transform, opacity' }}
+      className="fixed top-8 inset-x-0 mx-auto border-[1px] border-gray-500 rounded-xl py-3 px-6 backdrop-blur w-11/12 xl:w-fit z-50"
+      initial="hidden"
+      animate="visible"
+      variants={slideVariants}
+    >
       <nav className="flex justify-between items-center w-full h-full">
         <ul className="flex justify-between xl:justify-center w-full items-center xl:space-x-6">
           <li>
             <Logo />
           </li>
-          {/* Desktop navigation links */}
           <div className="hidden justify-center items-center xl:flex space-x-6">
             {navItems.map((item) => (
               <li key={item.name}>
                 <a
-                  className="text-white text-sm hover:bg-dark-gray duration-300 py-1 px-3 rounded-lg"
+                  className="text-black dark:text-white text-sm hover:bg-gray-200 dark:hover:bg-dark-gray duration-300 py-1 px-3 rounded-lg"
                   href={item.href}
                 >
                   {item.name}
@@ -55,28 +70,29 @@ const Header = () => {
               </Button>
             </li>
             <li>
+              <ToggleDark />
+            </li>
+            <li>
               <Lang />
             </li>
           </div>
-
-          {/* Hamburger menu button */}
           <button
             onClick={toggleMenu}
-            className="xl:hidden text-white p-2 focus:outline-none"
+            className="xl:hidden p-2 focus:outline-none"
           >
             <span
-              className={`block w-6 h-0.5 bg-white mb-1 transition-transform duration-300 ease-in-out ${
+              className={`block w-6 h-0.5 bg-black dark:bg-white mb-1 transition-transform duration-300 ease-in-out ${
                 isMenuOpen ? 'rotate-45 translate-y-1.5' : 'rotate-0'
               }`}
               style={{ transformOrigin: 'center' }}
             />
             <span
-              className={`block w-6 h-0.5 bg-white mb-1 transition-opacity duration-300 ease-in-out ${
+              className={`block w-6 h-0.5 bg-black dark:bg-white mb-1 transition-opacity duration-300 ease-in-out ${
                 isMenuOpen ? 'opacity-0' : 'opacity-100'
               }`}
             />
             <span
-              className={`block w-6 h-0.5 bg-white transition-transform duration-300 ease-in-out ${
+              className={`block w-6 h-0.5 bg-black dark:bg-white transition-transform duration-300 ease-in-out ${
                 isMenuOpen ? '-rotate-45 -translate-y-1.5' : 'rotate-0'
               }`}
               style={{ transformOrigin: 'center' }}
@@ -85,9 +101,8 @@ const Header = () => {
         </ul>
       </nav>
 
-      {/* Mobile menu with Framer Motion */}
       <motion.div
-        className="xl:hidden absolute inset-x-0 top-full mt-2 py-4 px-6 bg-black text-white shadow-sm shadow-gray-500  rounded-lg origin-top overflow-hidden"
+        className="xl:hidden absolute inset-x-0 top-full mt-2 py-4 px-6 bg-black text-white shadow-sm shadow-gray-500 rounded-lg origin-top"
         initial="closed"
         animate={isMenuOpen ? 'open' : 'closed'}
         variants={menuVariants}
@@ -103,12 +118,17 @@ const Header = () => {
               Book a call
             </Button>
           </li>
-          <li>
-            <Lang />
-          </li>
+          <div className="flex gap-4">
+            <li>
+              <Lang />
+            </li>
+            <li>
+              <ToggleDark />
+            </li>
+          </div>
         </ul>
       </motion.div>
-    </header>
+    </motion.header>
   );
 };
 

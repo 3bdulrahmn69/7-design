@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  darkMode: ['class'],
+  darkMode: ['class'], // Dark mode will be triggered by adding the 'dark' class to the body or root element.
   content: ['./index.html', './src/**/*.{ts,tsx,js,jsx}'],
   theme: {
     extend: {
@@ -12,10 +12,14 @@ export default {
         primaryDark: '#FABE0B',
         primaryOrange: '#FEA201',
         'dark-gray': '#232323',
+        'secondary-text': '#999999',
       },
       fontFamily: {
         Instrument: ['Instrument', 'serif'],
         Satoshi: ['Satoshi', 'sans-serif'],
+      },
+      transitionProperty: {
+        colors: 'background-color, color, border-color',
       },
     },
   },

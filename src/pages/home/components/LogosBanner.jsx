@@ -6,9 +6,9 @@ import { myLogos } from '../../../services/myLogos';
 const LogosBanner = () => {
   return (
     <div className="relative flex items-center justify-center">
-      <div className="bg-black w-full md:h-36 h-24 flex items-center relative overflow-x-hidden">
+      <div className="bg-white dark:bg-black w-full md:h-36 h-24 flex items-center relative overflow-x-hidden">
         {/* Left shadow */}
-        <div className="absolute -left-4 bottom-0 h-full w-12 bg-gradient-to-r from-black to-black blur-[20px] pointer-events-none z-10 opacity-80" />
+        <div className="absolute -left-4 bottom-0 h-full w-12 bg-gradient-to-r from-white to-white dark:from-black dark:to-black blur-[20px] pointer-events-none z-10 opacity-80" />
 
         {/* Logos scrollable container */}
         <motion.div
@@ -33,7 +33,7 @@ const LogosBanner = () => {
         </motion.div>
 
         {/* Right shadow */}
-        <div className="absolute -right-4 top-0 h-full w-12 bg-gradient-to-l from-black to-black blur-[20px] pointer-events-none z-10 opacity-80" />
+        <div className="absolute -right-4 top-0 h-full w-12 bg-gradient-to-l from-white to-white dark:from-black dark:to-black blur-[20px] pointer-events-none z-10 opacity-80" />
       </div>
     </div>
   );
