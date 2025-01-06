@@ -8,6 +8,12 @@
   src: url('/src/assets/fonts/Satoshi/Satoshi-Regular.otf');
 }
 
+@font-face {
+  font-family: 'Satoshi';
+  font-style: medium;
+  src: url('/src/assets/fonts/Satoshi/Satoshi-Medium.otf');
+}
+
 body {
   font-family: 'Satoshi', sans-serif;
   transition: background-color 0.3s ease, color 0.3s ease;
