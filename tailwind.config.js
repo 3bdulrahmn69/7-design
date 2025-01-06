@@ -15,7 +15,7 @@ export default {
         'secondary-text': '#999999',
       },
       fontFamily: {
-        Instrument: ['Instrument', 'serif'],
+        Instrument: ['Instrument Serif', 'serif'],
         Satoshi: ['Satoshi', 'sans-serif'],
       },
       transitionProperty: {
