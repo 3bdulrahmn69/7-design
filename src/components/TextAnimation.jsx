@@ -45,7 +45,7 @@ const TextAnimation = () => {
         )}
       </motion.h1>
       <motion.p
-        className="text-center text-[18.7px] md:text-[20px] py-4 text-secondary-text lg:max-w-2xl px-2 lg:px-0 leading-relaxed"
+        className="text-center text-[17px] md:text-[20px] py-4 text-secondary-text lg:max-w-2xl px-2 lg:px-0 leading-relaxed"
         variants={containerVariants}
         initial="hidden"
         animate="visible"

@@ -6,7 +6,7 @@ import Glow from '../components/Glow';
 
 const HeroSection = () => {
   return (
-    <div className="relative overflow-hidden text-black dark:text-white">
+    <div className="relative overflow-hidden text-black dark:text-white pb-20">
       <Section id={'home'}>
         <Container>
           <div className=" flex flex-col items-center justify-center">
@@ -19,10 +19,10 @@ const HeroSection = () => {
               </div>
               <TextAnimation />
               <div className="flex gap-6 my-2 z-10">
-                <Button className="relative bg-gradient-to-r from-primary via-primaryDark to-primaryOrange hover:from-primaryOrange hover:to-orange-600 hover:brightness-110 hover:shadow-lg hover:shadow-orange-500/40 duration-200 text-white font-semibold rounded-lg px-4 py-2">
+                <Button className="bg-gradient-to-r from-primary to-orange-500 hover:from-yellow-500 hover:to-orange-600 duration-300">
                   Book a call
                 </Button>
-                <Button className="bg-black outline-[1px] outline-white/20 hover:outline-[3px] hover:outline-white/40 outline duration-200">
+                <Button className="bg-black outline-[1px] outline-white/20 hover:outline-[3px] hover:outline-white/40 outline duration-300">
                   Learn more
                 </Button>
               </div>
@@ -32,7 +32,7 @@ const HeroSection = () => {
         </Container>
       </Section>
       <div className="relative -z-0">
-        <div className="absolute top-0 w-full h-[80px] blur-[20px] bg-white  dark:bg-black"></div>
+        <div className="absolute top-0 w-full h-[200px] blur-[20px] bg-white  dark:bg-black"></div>
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[10px] blur-[10px] bg-white dark:bg-black"></div>
       </div>
     </div>
