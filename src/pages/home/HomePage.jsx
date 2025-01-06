@@ -1,10 +1,15 @@
 import Header from '../../components/Header';
-import HeroSection from './components/HeroSection';
+import HeroSection from './sections/HeroSection';
+import LoopSection from './sections/LoopSection';
 
 const HomePage = () => {
   return (
-    <div className="min-h-screen bg-black  text-white relative">
+    <div className="min-h-screen bg-black text-white relative">
+      <Header />
       <HeroSection />
+      <LoopSection />
+      <section className="h-screen"></section>
+      <section className="h-screen"></section>
     </div>
   );
 };
