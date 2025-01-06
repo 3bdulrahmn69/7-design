@@ -11,7 +11,11 @@ const Button = ({ className, children, onClick, variant = 'primary' }) => {
 
   return (
     <button
-      className={cn('px-4 py-2 rounded-lg', variantStyles[variant], className)}
+      className={cn(
+        'px-4 py-2 rounded-lg font-medium',
+        variantStyles[variant],
+        className
+      )}
       onClick={onClick}
     >
       {children}

@@ -2,11 +2,11 @@ import { motion } from 'framer-motion';
 
 const TextAnimation = () => {
   const textVariants = {
-    hidden: { opacity: 0, filter: 'blur(10px)' }, // Initial state: hidden with blur
+    hidden: { opacity: 0, filter: 'blur(10px)' },
     visible: {
       opacity: 1,
-      filter: 'blur(0px)', // Final state: visible with no blur
-      transition: { duration: 1, ease: 'easeOut' }, // Smooth transition
+      filter: 'blur(0px)',
+      transition: { duration: 1, ease: 'easeOut' },
     },
   };
 
@@ -14,7 +14,7 @@ const TextAnimation = () => {
     hidden: {},
     visible: {
       transition: {
-        staggerChildren: 0.1, // Adds a delay between words
+        staggerChildren: 0.1,
       },
     },
   };
@@ -22,7 +22,7 @@ const TextAnimation = () => {
   return (
     <div className="flex flex-col items-center gap-4">
       <motion.h1
-        className="lg:text-7xl text-5xl font-normal text-center font-Satoshi"
+        className="text-5xl lg:text-6xl font-medium text-center font-Satoshi"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
@@ -33,7 +33,9 @@ const TextAnimation = () => {
             <motion.span
               key={index}
               className={
-                index === 2 ? 'font-Instrument font-normal italic' : ''
+                index === 2
+                  ? 'font-Instrument font-normal italic text-[44px] lg:text-[56px]'
+                  : ''
               }
               variants={textVariants}
             >
@@ -43,7 +45,7 @@ const TextAnimation = () => {
         )}
       </motion.h1>
       <motion.p
-        className="text-center lg:text-lg text-sm py-4 text-secondary-text lg:max-w-2xl max-w-xs"
+        className="text-center lg:text-lg text-sm py-4 text-secondary-text lg:max-w-2xl leading-relaxed"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
@@ -69,6 +71,12 @@ const TextAnimation = () => {
           'We',
           'believe',
           'that',
+        ].map((word, index) => (
+          <motion.span key={index} variants={textVariants}>
+            {word}{' '}
+          </motion.span>
+        ))}
+        {[
           '"a',
           'logo',
           'and',
@@ -77,7 +85,7 @@ const TextAnimation = () => {
           'are',
           'not',
           'just',
-          'shapes;',
+          'shapes',
           'they',
           'are',
           'unique',
@@ -89,11 +97,7 @@ const TextAnimation = () => {
           'no',
           'hassle."',
         ].map((word, index) => (
-          <motion.span
-            key={index}
-            variants={textVariants}
-            className={word.includes('"') ? 'italic' : ''}
-          >
+          <motion.span key={index} variants={textVariants} className="italic">
             {word}{' '}
           </motion.span>
         ))}

@@ -65,7 +65,7 @@ const Header = () => {
               </li>
             ))}
             <li>
-              <Button className="bg-primary/90 hover:bg-primary duration-300 text-sm">
+              <Button className="bg-primary hover:bg-primaryDark duration-300 text-sm">
                 Book a call
               </Button>
             </li>
@@ -109,21 +109,24 @@ const Header = () => {
       >
         <ul className="space-y-4">
           {navItems.map((item) => (
-            <li key={item.name} className="text-white py-1 px-3 rounded-lg">
+            <li
+              key={item.name}
+              className="text-white py-1 px-3 rounded-lg font-medium"
+            >
               <a href={item.href}>{item.name}</a>
             </li>
           ))}
           <li>
-            <Button className="bg-primary/90 hover:bg-primary duration-300 w-full">
+            <Button className="bg-primary hover:bg-primaryDark duration-300 w-full text-sm">
               Book a call
             </Button>
           </li>
-          <div className="flex gap-4">
-            <li>
-              <Lang />
-            </li>
+          <div className="flex justify-between items-center w-full">
             <li>
               <ToggleDark />
+            </li>
+            <li>
+              <Lang />
             </li>
           </div>
         </ul>
