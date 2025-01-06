@@ -20,9 +20,9 @@ const TextAnimation = () => {
   };
 
   return (
-    <div className="flex flex-col items-center gap-4">
+    <div className="flex flex-col items-center">
       <motion.h1
-        className="text-[38px] md:text-[60px]  font-medium text-center font-Satoshi"
+        className="text-[38px] md:text-[60px] font-medium text-center font-Satoshi"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
@@ -33,7 +33,7 @@ const TextAnimation = () => {
             <motion.span
               key={index}
               className={
-                index === 2
+                index === 4
                   ? 'font-Instrument font-normal italic text-[36px] md:text-[58px]'
                   : ''
               }
@@ -45,7 +45,7 @@ const TextAnimation = () => {
         )}
       </motion.h1>
       <motion.p
-        className="text-center text-[14px] md:text-[18px] py-4 text-secondary-text lg:max-w-2xl leading-relaxed"
+        className="text-center text-[16px] md:text-[18px] py-4 text-secondary-text lg:max-w-2xl px-2 lg:px-0 leading-relaxed"
         variants={containerVariants}
         initial="hidden"
         animate="visible"

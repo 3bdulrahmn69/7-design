@@ -17,7 +17,7 @@ const Glow = () => {
     <div>
       <div className="overflow-hidden h-36 -z-0">
         {/* Glowing Background */}
-        <div className="absolute -bottom-10 flex items-center justify-center bg-black -z-0">
+        <div className="absolute -bottom-16 flex items-center justify-center bg-black -z-0">
           {/* Outer Glowing Background */}
           <div
             className="absolute w-[600px] h-[300px] blur-[150px] bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 opacity-60 rounded-full"

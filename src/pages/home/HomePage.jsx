@@ -4,7 +4,7 @@ import LoopSection from './sections/LoopSection';
 
 const HomePage = () => {
   return (
-    <div className="min-h-screen bg-white dark:bg-black  text-white relative">
+    <div className="min-h-screen bg-white dark:bg-black text-white relative pt-20 md:pt-36">
       <Header />
       <HeroSection />
       <LoopSection />
