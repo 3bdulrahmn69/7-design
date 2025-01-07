@@ -20,7 +20,7 @@ const TextAnimation = () => {
   };
 
   return (
-    <div className="flex flex-col items-center xl:mt-4">
+    <div className="flex flex-col items-center gap-10 xl:mt-4">
       <motion.h1
         className="text-[34px] md:text-[55px] font-medium text-center font-Satoshi leading-none"
         variants={containerVariants}
@@ -45,7 +45,7 @@ const TextAnimation = () => {
         )}
       </motion.h1>
       <motion.p
-        className="text-center text-[17px] md:text-[20px] py-4 text-secondary-text lg:max-w-2xl px-2 lg:px-0 leading-relaxed"
+        className="text-center text-[17px] md:text-[20px] text-primary-text lg:max-w-2xl px-2 lg:px-0 leading-relaxed"
         variants={containerVariants}
         initial="hidden"
         animate="visible"

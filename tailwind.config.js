@@ -12,7 +12,8 @@ export default {
         primaryDark: '#F9AF13',
         primaryOrange: '#FFDA00',
         'dark-gray': '#232323',
-        'secondary-text': '#999999',
+        'primary-text': '#999999',
+        'secondary-text': '#2A2A2A',
       },
       fontFamily: {
         Instrument: ['Instrument Serif', 'serif'],

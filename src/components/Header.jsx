@@ -4,6 +4,7 @@ import Button from './Button';
 import Lang from './Lang';
 import Logo from './Logo';
 import ToggleDark from './ToggleDark';
+import HumMenu from './HumMenu';
 
 const navItems = [
   { name: 'Our Projects', href: '#ourProjects' },
@@ -43,7 +44,7 @@ const Header = () => {
   return (
     <motion.header
       style={{ willChange: 'transform, opacity' }}
-      className="fixed top-8 inset-x-0 mx-auto border-[1px] border-gray-500 rounded-xl py-3 px-6 backdrop-blur w-11/12 xl:w-fit z-50"
+      className="fixed xl:top-8 top-0 bg-black xl:bg-transparent inset-x-0 mx-auto xl:border-[1px] xl:border-gray-500 rounded-xl py-3 xl:px-6 px-2 xl:backdrop-blur w-11/12 xl:w-fit z-50"
       initial="hidden"
       animate="visible"
       variants={slideVariants}
@@ -76,28 +77,7 @@ const Header = () => {
               <Lang />
             </li>
           </div>
-          <button
-            onClick={toggleMenu}
-            className="xl:hidden p-2 focus:outline-none"
-          >
-            <span
-              className={`block w-6 h-0.5 bg-black dark:bg-white mb-1 transition-transform duration-300 ease-in-out ${
-                isMenuOpen ? 'rotate-45 translate-y-1.5' : 'rotate-0'
-              }`}
-              style={{ transformOrigin: 'center' }}
-            />
-            <span
-              className={`block w-6 h-0.5 bg-black dark:bg-white mb-1 transition-opacity duration-300 ease-in-out ${
-                isMenuOpen ? 'opacity-0' : 'opacity-100'
-              }`}
-            />
-            <span
-              className={`block w-6 h-0.5 bg-black dark:bg-white transition-transform duration-300 ease-in-out ${
-                isMenuOpen ? '-rotate-45 -translate-y-1.5' : 'rotate-0'
-              }`}
-              style={{ transformOrigin: 'center' }}
-            />
-          </button>
+          <HumMenu toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} />
         </ul>
       </nav>
 
