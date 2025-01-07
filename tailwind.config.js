@@ -14,6 +14,8 @@ export default {
         'dark-gray': '#232323',
         'primary-text': '#999999',
         'secondary-text': '#2A2A2A',
+        primaryDarkBlack: '#0a0a0a',
+        primaryLightWhite: '#fcfcfa',
       },
       fontFamily: {
         Instrument: ['Instrument Serif', 'serif'],

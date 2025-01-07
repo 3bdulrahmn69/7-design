@@ -1,7 +1,5 @@
 const BenefitsSection = () => {
-  return (
-    <div>BenefitsSection</div>
-  )
-}
+  return <div>BenefitsSection</div>;
+};
 
-export default BenefitsSection
+export default BenefitsSection;

@@ -9,6 +9,7 @@ import PricingSections from './sections/PricingSections';
 import ProcessSection from './sections/ProcessSection';
 import ProjectsSection from './sections/ProjectsSection';
 import ServicesSection from './sections/ServicesSection';
+import TakeAction from './sections/TakeAction';
 import TestimonialsSection from './sections/TestimonialsSection';
 
 const HomePage = () => {
@@ -25,6 +26,7 @@ const HomePage = () => {
       <ComparisonSection />
       <TestimonialsSection />
       <PricingSections />
+      <TakeAction />
       <Footer />
     </div>
   );

@@ -20,9 +20,9 @@ const TextAnimation = () => {
   };
 
   return (
-    <div className="flex flex-col items-center gap-10 xl:mt-4">
+    <div className="flex flex-col items-center gap-[19.5px] text-gap xl:mt-4">
       <motion.h1
-        className="text-[34px] md:text-[55px] font-medium text-center font-Satoshi leading-none"
+        className="text-[34px] md:text-[55px] font-medium text-center font-Satoshi leading-none letter text-primaryDarkBlack dark:text-primaryLightWhite"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
@@ -45,7 +45,7 @@ const TextAnimation = () => {
         )}
       </motion.h1>
       <motion.p
-        className="text-center text-[17px] md:text-[20px] text-primary-text lg:max-w-2xl px-9 text  md:px-20 lg:px-0 leading-[1.5em] -leading-[0.02em] font-medium"
+        className="text-center text-[17px] md:text-[20px] text-primary-text lg:max-w-2xl px-6 text  md:px-20 lg:px-0 leading-[1.5em] font-medium"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
@@ -71,13 +71,7 @@ const TextAnimation = () => {
           'We',
           'believe',
           'that',
-        ].map((word, index) => (
-          <motion.span key={index} variants={textVariants}>
-            {word}{' '}
-          </motion.span>
-        ))}
-        {[
-          '"a',
+          'a',
           'logo',
           'and',
           'brand',
@@ -95,9 +89,9 @@ const TextAnimation = () => {
           'forever—no',
           'limits,',
           'no',
-          'hassle."',
+          'hassle',
         ].map((word, index) => (
-          <motion.span key={index} variants={textVariants} className="italic">
+          <motion.span key={index} variants={textVariants}>
             {word}{' '}
           </motion.span>
         ))}

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion'; // Updated import path to 'framer-motion'
 import Button from './Button';
-import Lang from './Lang';
+import ToggleLang from './ToggleLang';
 import Logo from './Logo';
 import ToggleDark from './ToggleDark';
 import HumMenu from './HumMenu';
@@ -44,10 +44,11 @@ const Header = () => {
   return (
     <motion.header
       style={{ willChange: 'transform, opacity' }}
-      className="fixed xl:top-8 top-0 dark:bg-black bg-white xl:bg-transparent inset-x-0 mx-auto xl:border-[1px] xl:border-gray-500 rounded-xl py-3 xl:px-6 px-2 xl:backdrop-blur w-11/12 xl:w-fit z-50"
+      className="fixed xl:top-8 top-0 dark:bg-primaryDarkBlack bg-primaryLightWhite xl:bg-transparent inset-x-0 mx-auto xl:border-[1px] xl:border-gray-500 rounded-xl py-3 xl:px-6 px-2 xl:backdrop-blur w-11/12 xl:w-fit z-50"
       initial="hidden"
       animate="visible"
       variants={slideVariants}
+      dir="ltr"
     >
       <nav className="flex justify-between items-center w-full h-full">
         <ul className="flex justify-between xl:justify-center w-full items-center xl:space-x-6">
@@ -58,7 +59,7 @@ const Header = () => {
             {navItems.map((item) => (
               <li key={item.name}>
                 <a
-                  className="text-black dark:text-white text-sm hover:bg-gray-200 dark:hover:bg-dark-gray duration-300 py-1 px-3 rounded-lg"
+                  className="text-primaryDarkBlack dark:text-primaryLightWhite text-sm hover:bg-gray-200 dark:hover:bg-dark-gray duration-300 py-1 px-3 rounded-lg"
                   href={item.href}
                 >
                   {item.name}
@@ -74,7 +75,7 @@ const Header = () => {
               <ToggleDark />
             </li>
             <li>
-              <Lang />
+              <ToggleLang />
             </li>
           </div>
           <HumMenu toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} />
@@ -82,7 +83,7 @@ const Header = () => {
       </nav>
 
       <motion.div
-        className="xl:hidden absolute inset-x-0 top-full mt-2 py-4 px-6 bg-white dark:bg-black text-black dark:text-white shadow-sm shadow-gray-500 rounded-lg origin-top"
+        className="xl:hidden absolute inset-x-0 top-full mt-2 py-4 px-6 bg-primaryLightWhite dark:bg-primaryDarkBlack text-primaryDarkBlack dark:text-primaryLightWhite shadow-sm shadow-gray-500 rounded-lg origin-top"
         initial="closed"
         animate={isMenuOpen ? 'open' : 'closed'}
         variants={menuVariants}
@@ -96,12 +97,12 @@ const Header = () => {
           <li>
             <Button>Book a call</Button>
           </li>
-          <div className="flex justify-between items-center w-full">
+          <div className="flex gap-4 items-center w-full">
             <li>
               <ToggleDark />
             </li>
             <li>
-              <Lang />
+              <ToggleLang />
             </li>
           </div>
         </ul>

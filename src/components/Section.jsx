@@ -5,7 +5,7 @@ export const Title = ({ children, className }) => {
   return (
     <h2
       className={cn(
-        'text-2xl uppercase text-center md:text-3xl font-bold text-gray-100 mb-2',
+        'text-[34px] md:text-[55px] font-medium text-center font-Satoshi leading-none letter text-primaryDarkBlack dark:text-primaryLightWhite',
         className
       )}
     >
@@ -19,11 +19,31 @@ Title.propTypes = {
   className: PropTypes.string,
 };
 
+export const LittleTitle = ({ children, className }) => {
+  return (
+    <div className="flex justify-center items-center">
+      <p
+        className={cn(
+          'bg-primaryLightWhite dark:bg-primaryDarkBlack text-primaryDarkBlack dark:text-primaryLightWhite outline  outline-[1px] outline-gray-400/20 px-4 py-[7px] rounded-[14px] font-medium w-fit text-center',
+          className
+        )}
+      >
+        {children}
+      </p>
+    </div>
+  );
+};
+
+LittleTitle.propTypes = {
+  children: PropTypes.node,
+  className: PropTypes.string,
+};
+
 export const Description = ({ children, className }) => {
   return (
     <p
       className={cn(
-        'text-md md:text-lg text-gray-600 max-w-2xl mx-auto text-center',
+        'text-center text-[17px] md:text-[20px] text-primary-text lg:max-w-2xl px-6 text  md:px-20 lg:px-0 leading-[1.5em] font-medium max-w-2xl mx-auto',
         className
       )}
     >
