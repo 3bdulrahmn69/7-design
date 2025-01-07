@@ -44,7 +44,7 @@ const Header = () => {
   return (
     <motion.header
       style={{ willChange: 'transform, opacity' }}
-      className="fixed xl:top-8 top-0 bg-black xl:bg-transparent inset-x-0 mx-auto xl:border-[1px] xl:border-gray-500 rounded-xl py-3 xl:px-6 px-2 xl:backdrop-blur w-11/12 xl:w-fit z-50"
+      className="fixed xl:top-8 top-0 dark:bg-black bg-white xl:bg-transparent inset-x-0 mx-auto xl:border-[1px] xl:border-gray-500 rounded-xl py-3 xl:px-6 px-2 xl:backdrop-blur w-11/12 xl:w-fit z-50"
       initial="hidden"
       animate="visible"
       variants={slideVariants}
@@ -82,7 +82,7 @@ const Header = () => {
       </nav>
 
       <motion.div
-        className="xl:hidden absolute inset-x-0 top-full mt-2 py-4 px-6 bg-black text-white shadow-sm shadow-gray-500 rounded-lg origin-top"
+        className="xl:hidden absolute inset-x-0 top-full mt-2 py-4 px-6 bg-white dark:bg-black text-black dark:text-white shadow-sm shadow-gray-500 rounded-lg origin-top"
         initial="closed"
         animate={isMenuOpen ? 'open' : 'closed'}
         variants={menuVariants}
@@ -91,7 +91,7 @@ const Header = () => {
           {navItems.map((item) => (
             <li
               key={item.name}
-              className="text-white py-1 px-3 rounded-lg font-medium"
+              className="py-1 px-3 rounded-lg font-medium"
             >
               <a href={item.href}>{item.name}</a>
             </li>

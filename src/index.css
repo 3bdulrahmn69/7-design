@@ -18,4 +18,34 @@
 body {
   font-family: 'Satoshi', sans-serif;
   transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.dark {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.gradientGlow {
+  width: 300px; /* Adjust as needed */
+  height: 100px; /* Half of the width for a half-circle */
+  filter: blur(20px); /* Add a blur effect */
+  background: radial-gradient(
+    circle at bottom,
+    #ffd900f1,
+    #f9af1380,
+    #fed80055
+  );
+  border-radius: 100px 100px 0 0; /* Top half-circle */
+  box-shadow: 0 0 50px 40px #feda0066; /* Glowing effect */
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .gradientGlow {
+    width: 200px;
+    height: 50px;
+  }
 }
