@@ -1,44 +1,44 @@
-import test from '../assets/test.png';
+import project from '../assets/project.avif';
 
-export const myLogos = [
+export const myProjects = [
   {
-    img: test,
+    img: project,
     link: 'https://reactjs.org/',
   },
   {
-    img: test,
+    img: project,
     link: 'https://reactjs.org/',
   },
   {
-    img: test,
+    img: project,
     link: 'https://reactjs.org/',
   },
   {
-    img: test,
+    img: project,
     link: 'https://reactjs.org/',
   },
   {
-    img: test,
+    img: project,
     link: 'https://reactjs.org/',
   },
   {
-    img: test,
+    img: project,
     link: 'https://reactjs.org/',
   },
   {
-    img: test,
+    img: project,
     link: 'https://reactjs.org/',
   },
   {
-    img: test,
+    img: project,
     link: 'https://reactjs.org/',
   },
   {
-    img: test,
+    img: project,
     link: 'https://reactjs.org/',
   },
   {
-    img: test,
+    img: project,
     link: 'https://reactjs.org/',
   },
 ];

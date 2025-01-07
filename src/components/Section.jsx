@@ -5,7 +5,7 @@ export const Title = ({ children, className }) => {
   return (
     <h2
       className={cn(
-        'text-2xl uppercase text-center md:text-3xl font-bold text-gray-800 mb-2',
+        'text-2xl uppercase text-center md:text-3xl font-bold text-gray-100 mb-2',
         className
       )}
     >
@@ -23,7 +23,7 @@ export const Description = ({ children, className }) => {
   return (
     <p
       className={cn(
-        'text-md md:text-lg text-gray-600 max-w-2xl mx-auto',
+        'text-md md:text-lg text-gray-600 max-w-2xl mx-auto text-center',
         className
       )}
     >

@@ -25,7 +25,7 @@ const HeroSection = () => {
                 </Button>
               </div>
             </div>
-            {/* <Glow /> */}
+            <Glow />
           </div>
         </Container>
       </Section>

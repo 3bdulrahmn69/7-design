@@ -89,17 +89,12 @@ const Header = () => {
       >
         <ul className="space-y-4">
           {navItems.map((item) => (
-            <li
-              key={item.name}
-              className="py-1 px-3 rounded-lg font-medium"
-            >
+            <li key={item.name} className="py-1 px-3 rounded-lg font-medium">
               <a href={item.href}>{item.name}</a>
             </li>
           ))}
           <li>
-            <Button className="bg-primary hover:bg-primaryDark duration-300 w-full text-sm">
-              Book a call
-            </Button>
+            <Button>Book a call</Button>
           </li>
           <div className="flex justify-between items-center w-full">
             <li>

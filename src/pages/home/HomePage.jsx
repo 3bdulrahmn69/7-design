@@ -1,15 +1,31 @@
+import Footer from '../../components/Footer';
 import Header from '../../components/Header';
+import BenefitsSection from './sections/BenefitsSection';
+import ComparisonSection from './sections/ComparisonSection';
+import CounterSection from './sections/CounterSection';
 import HeroSection from './sections/HeroSection';
-import LoopSection from './sections/LoopSection';
+import LogosSection from './sections/LogosSection';
+import PricingSections from './sections/PricingSections';
+import ProcessSection from './sections/ProcessSection';
+import ProjectsSection from './sections/ProjectsSection';
+import ServicesSection from './sections/ServicesSection';
+import TestimonialsSection from './sections/TestimonialsSection';
 
 const HomePage = () => {
   return (
-    <div className="min-h-screen bg-white dark:bg-black text-white relative pt-20 md:pt-36">
+    <div className="relative pt-20 md:pt-36">
       <Header />
       <HeroSection />
-      <LoopSection />
-      <section className="h-screen"></section>
-      <section className="h-screen"></section>
+      <LogosSection />
+      <ProjectsSection />
+      <CounterSection />
+      <ProcessSection />
+      <BenefitsSection />
+      <ServicesSection />
+      <ComparisonSection />
+      <TestimonialsSection />
+      <PricingSections />
+      <Footer />
     </div>
   );
 };

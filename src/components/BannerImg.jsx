@@ -9,8 +9,7 @@ function BannerImg({ img, link }) {
       <img
         src={img}
         alt="logo"
-        className="w-full h-full object-contain"
-        loading="lazy"
+
       />
     </a>
   );
