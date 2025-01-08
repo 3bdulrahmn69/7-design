@@ -7,7 +7,7 @@ import ToggleDark from './ToggleDark';
 import HumMenu from './HumMenu';
 
 const navItems = [
-  { name: 'Our Projects', href: '#ourProjects' },
+  { name: 'Our Projects', href: '#our-projects' },
   { name: 'Process', href: '#process' },
   { name: 'Benefits', href: '#benefits' },
   { name: 'Services', href: '#services' },
@@ -44,7 +44,7 @@ const Header = () => {
   return (
     <motion.header
       style={{ willChange: 'transform, opacity' }}
-      className="fixed xl:top-8 top-0 dark:bg-primaryDarkBlack bg-primaryLightWhite xl:bg-transparent inset-x-0 mx-auto xl:border-[1px] xl:border-gray-500 rounded-xl py-3 xl:px-6 px-2 xl:backdrop-blur w-11/12 xl:w-fit z-50"
+      className="fixed xl:top-8 top-0 dark:bg-primaryDarkBlack bg-primaryLightWhite xl:bg-transparent xl:dark:bg-transparent inset-x-0 mx-auto xl:border-[1px] xl:border-gray-500 rounded-xl py-3 xl:px-6 px-2 xl:backdrop-blur w-11/12 xl:w-fit z-50"
       initial="hidden"
       animate="visible"
       variants={slideVariants}
@@ -95,7 +95,7 @@ const Header = () => {
             </li>
           ))}
           <li>
-            <Button>Book a call</Button>
+            <Button className="w-full">Book a call</Button>
           </li>
           <div className="flex gap-4 items-center w-full">
             <li>

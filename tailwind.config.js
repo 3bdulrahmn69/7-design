@@ -24,6 +24,9 @@ export default {
       transitionProperty: {
         colors: 'background-color, color, border-color',
       },
+      borderRadius: {
+        site: '14px',
+      },
     },
   },
   plugins: [],

@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
 import { cn } from '../../../lib/utils';
+import { FaStar } from 'react-icons/fa'; // Import star icon
 
-const TestimonialCard = ({ name, desc, title, className = '' }) => {
+const TestimonialCard = ({ name, desc, title, image, className = '' }) => {
   return (
     <figure
       className={cn(
@@ -11,9 +12,21 @@ const TestimonialCard = ({ name, desc, title, className = '' }) => {
       aria-labelledby={`testimonial-${name}`}
     >
       <header className="flex items-center mb-4">
-        <h2 id={`testimonial-${name}`} className="font-bold">
-          {name}
-        </h2>
+        <img
+          src={image}
+          alt={`${name}'s profile`}
+          className="w-12 h-12 rounded-full mr-4"
+        />
+        <div>
+          <h2 id={`testimonial-${name}`} className="font-bold">
+            {name}
+          </h2>
+          <div className="flex items-center">
+            {[...Array(5)].map((_, index) => (
+              <FaStar key={index} className="text-yellow-500 mr-1" />
+            ))}
+          </div>
+        </div>
       </header>
       <blockquote
         className="leading-relaxed font-normal max-w-xs"
@@ -35,6 +48,7 @@ TestimonialCard.propTypes = {
   name: PropTypes.string.isRequired,
   desc: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
   className: PropTypes.string,
 };
 

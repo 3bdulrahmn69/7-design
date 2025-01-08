@@ -3,6 +3,7 @@ import Header from '../../components/Header';
 import BenefitsSection from './sections/BenefitsSection';
 import ComparisonSection from './sections/ComparisonSection';
 import CounterSection from './sections/CounterSection';
+import FrequentlySection from './sections/FrequentlySection';
 import HeroSection from './sections/HeroSection';
 import LogosSection from './sections/LogosSection';
 import PricingSections from './sections/PricingSections';
@@ -26,6 +27,7 @@ const HomePage = () => {
       <ComparisonSection />
       <TestimonialsSection />
       <PricingSections />
+      <FrequentlySection />
       <TakeAction />
       <Footer />
     </div>

@@ -29,6 +29,7 @@ const TestimonialsSection = () => {
               title={testimonial.title}
               desc={testimonial.description}
               name={testimonial.name}
+              image={testimonial.image}
             />
           ))}
         </MovingSlider>
@@ -39,6 +40,7 @@ const TestimonialsSection = () => {
               title={testimonial.title}
               desc={testimonial.description}
               name={testimonial.name}
+              image={testimonial.image}
             />
           ))}
         </MovingSlider>

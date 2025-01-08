@@ -5,7 +5,7 @@ import { myProjects } from '../../../services/myProjects';
 
 const ProjectsSection = () => {
   return (
-    <Section id={'ourProjects'}>
+    <Section id={'our-projects'}>
       <Title>Recent Projects</Title>
       <Description>Take a look at some of out latest projects.</Description>
       <Container>
