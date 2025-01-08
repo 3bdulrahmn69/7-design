@@ -10,6 +10,7 @@ const PricingCard = ({
   prices,
   currency,
   className,
+  special,
 }) => {
   const price = prices[currency] || prices.ask;
 
@@ -19,7 +20,13 @@ const PricingCard = ({
   return (
     <div className={cn('flex flex-col', className)}>
       {type && <LittleTitle className="text-center mb-4">{type}</LittleTitle>}
-      <div className="border border-secondary-text rounded-site shadow-lg px-4 py-6 max-w-md flex flex-col">
+      <div className="relative border border-secondary-text rounded-site shadow-lg px-4 py-6 max-w-md flex flex-col overflow-hidden">
+        {special && (
+          <>
+            <div className="absolute top-0 right-0 -z-10 h-24 w-24 specialGlow rounded-tr-site blur-[25px] opacity-70"></div>
+            <div className="absolute -top-1/2 -right-1/2 -z-10 h-full w-full specialGlow rounded-full blur-[40px] opacity-20"></div>
+          </>
+        )}
         <div>
           <h5 className="text-base font-bold mb-4">{packageName}</h5>
           <div className="flex flex-col gap-4 justify-between items-center mb-4">
@@ -53,11 +60,12 @@ PricingCard.propTypes = {
     USD: PropTypes.string,
     SAR: PropTypes.string,
     EGP: PropTypes.string,
-    ask: PropTypes.string, // Handle "ask" price
+    ask: PropTypes.string,
   }).isRequired,
   currency: PropTypes.string.isRequired,
   type: PropTypes.string,
   className: PropTypes.string,
+  special: PropTypes.bool,
 };
 
 export default PricingCard;

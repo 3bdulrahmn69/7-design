@@ -94,3 +94,16 @@ body.dark {
   letter-spacing: -0.04em;
   line-height: 1.1em;
 }
+
+.specialGlow {
+  background: conic-gradient(
+    from 0deg at 50% 50%,
+    #FEDA00 0deg,
+    #ff0019 54.89161972682219deg,
+    #FEDA00 106.69924423399361deg,
+    #F9AF13 162deg,
+    #FEDA00 252.00000000000003deg,
+    #FFDA00 306.00000000000006deg,
+    #F9AF13 360deg
+  );
+}

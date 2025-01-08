@@ -173,6 +173,7 @@ const PricingSections = () => {
             prices={pkg.prices}
             currency={currency}
             className={'w-[300px] md:w-[400px]'}
+            special={index === 1}
           />
         ))}
       </Container>
