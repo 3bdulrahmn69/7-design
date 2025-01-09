@@ -30,12 +30,16 @@ body.dark {
 .gradientGlow {
   width: 300px; /* Adjust as needed */
   height: 100px; /* Half of the width for a half-circle */
-  filter: blur(20px); /* Add a blur effect */
-  background: radial-gradient(
-    circle at bottom,
-    #ffd900f1,
-    #f9af1380,
-    #fed80055
+  filter: blur(150px); /* Add a blur effect */
+  background: conic-gradient(
+    from 0deg at 50% 50%,
+    #feda00 0deg,
+    #ff0019 54.89161972682219deg,
+    #feda00 106.69924423399361deg,
+    #f9af13 162deg,
+    #feda00 252.00000000000003deg,
+    #ffda00 306.00000000000006deg,
+    #f9af13 360deg
   );
   border-radius: 100px 100px 0 0; /* Top half-circle */
   box-shadow: 0 0 50px 40px #feda0066; /* Glowing effect */
@@ -106,4 +110,28 @@ body.dark {
 .letter {
   letter-spacing: -0.04em;
   line-height: 1.1em;
+}
+
+.test {
+  background: conic-gradient(
+    from 0deg at 50% 50%,
+    rgb(255, 0, 0) 0deg,
+    rgb(255, 0, 26) 54.8916deg,
+    rgb(0, 166, 255) 106.699deg,
+    rgb(71, 151, 255) 162deg,
+    rgb(0, 68, 255) 252deg,
+    rgb(255, 128, 0) 306deg,
+    rgb(255, 0, 0) 360deg
+  );
+
+  element.style {
+    background: conic-gradient(
+      from 0deg at 50% 50%,
+      rgb(255, 217, 173) 0deg,
+      rgb(19, 156, 229) 180deg,
+      rgb(253, 134, 77) 360deg
+    );
+    border-radius: 50%;
+    opacity: 1;
+  }
 }

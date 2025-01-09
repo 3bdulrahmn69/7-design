@@ -15,7 +15,7 @@ const SmallPricingCard = ({
   return (
     <div
       className={cn(
-        'border border-gray-300 rounded-site shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 mx-2',
+        'border-[1px] border-primary-text rounded-site overflow-hidden mx-2',
         className
       )}
     >
@@ -25,7 +25,7 @@ const SmallPricingCard = ({
       <div className="p-4">
         <ul className="list-disc list-inside space-y-1">
           {features.map((feature, index) => (
-            <li key={index} className="text-sm text-gray-700">
+            <li key={index} className="text-sm text-primary-text px-2">
               {feature}
             </li>
           ))}
