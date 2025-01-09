@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { motion } from 'framer-motion'; // Updated import path to 'framer-motion'
+import { Link as ScrollLink } from 'react-scroll';
+import { motion } from 'motion/react';
 import Button from './Button';
 import ToggleLang from './ToggleLang';
 import Logo from './Logo';
@@ -7,11 +8,11 @@ import ToggleDark from './ToggleDark';
 import HumMenu from './HumMenu';
 
 const navItems = [
-  { name: 'Our Projects', href: '#our-projects' },
-  { name: 'Process', href: '#process' },
-  { name: 'Benefits', href: '#benefits' },
-  { name: 'Services', href: '#services' },
-  { name: 'Pricing', href: '#pricing' },
+  { name: 'Our Projects', href: 'our-projects' },
+  { name: 'Process', href: 'process' },
+  { name: 'Benefits', href: 'benefits' },
+  { name: 'Services', href: 'services' },
+  { name: 'Pricing', href: 'pricing' },
 ];
 
 const slideVariants = {
@@ -58,12 +59,15 @@ const Header = () => {
           <div className="hidden justify-center items-center xl:flex space-x-6">
             {navItems.map((item) => (
               <li key={item.name}>
-                <a
-                  className="text-primaryDarkBlack dark:text-primaryLightWhite text-sm hover:bg-gray-200 dark:hover:bg-dark-gray duration-300 py-1 px-3 rounded-lg"
-                  href={item.href}
+                <ScrollLink
+                  to={item.href}
+                  smooth={true}
+                  duration={500}
+                  offset={-80}
+                  className="text-primaryDarkBlack dark:text-primaryLightWhite text-sm hover:bg-gray-200 dark:hover:bg-dark-gray duration-300 py-1 px-3 rounded-lg cursor-pointer"
                 >
                   {item.name}
-                </a>
+                </ScrollLink>
               </li>
             ))}
             <li>
@@ -91,7 +95,16 @@ const Header = () => {
         <ul className="space-y-4">
           {navItems.map((item) => (
             <li key={item.name} className="py-1 px-3 rounded-lg font-medium">
-              <a href={item.href}>{item.name}</a>
+              <ScrollLink
+                to={item.href}
+                smooth={true}
+                duration={500}
+                offset={-80}
+                className="cursor-pointer"
+                onClick={toggleMenu}
+              >
+                {item.name}
+              </ScrollLink>
             </li>
           ))}
           <li>

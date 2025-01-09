@@ -20,7 +20,7 @@ const ProjectsSection = () => {
             />
           ))}
         </MovingSlider>
-        <MovingSlider speed={10} direction={'right'}>
+        <MovingSlider speed={10} direction={'reverse'}>
           {myProjects.map((project, index) => (
             <img
               key={index}

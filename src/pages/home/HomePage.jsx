@@ -15,7 +15,7 @@ import TestimonialsSection from './sections/TestimonialsSection';
 
 const HomePage = () => {
   return (
-    <div className="relative pt-20 md:pt-36">
+    <div className="relative pt-20 md:pt-36 ">
       <Header />
       <HeroSection />
       <LogosSection />

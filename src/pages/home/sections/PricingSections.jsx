@@ -7,55 +7,60 @@ import {
   Title,
 } from '../../../components/Section';
 import PricingCard from '../components/PricingCard';
+import SmallPricingCard from '../components/SmallPricingCard';
+import MovingSlider from '../../../components/MovingSlider';
 
 const packages = [
   {
     type: 'Basic',
     packageName: 'Logo Design',
-    features: [
-      'Logo design (3 initial concepts).',
-      '2 minor revisions included.',
-      'Logo usage guidelines.',
-    ],
-    prices: {
-      USD: '$ 350',
-      SAR: '1,316 SAR',
-      EGP: '17,762 EGP',
+    features: {
+      'Logo design (3 initial concepts)': true,
+      '2 minor revisions included': true,
+      'Logo usage guidelines': true,
+      'Design of essential marketing materials': false,
+      'Business Cards': false,
+      Letterheads: false,
+      Envelopes: false,
+      'Logo Animation: A short video to bring your logo to life': false,
+      'Social Media Designs (20 designs)': false,
+      'Delivery of all files: Brand identity files, logo animation, and social media designs': false,
     },
+    prices: { USD: '$ 350', SAR: '1,316 SAR', EGP: '17,762 EGP' },
   },
   {
     type: 'Intermediate',
-    packageName: ' Brand Identity Design',
-    features: [
-      'Everything included in the Basic Package (Logo Design).',
-      'Design of essential marketing materials:',
-      'Business Cards.',
-      'Letterheads.',
-      'Envelopes.',
-      '2 minor revisions included.',
-    ],
-    prices: {
-      USD: '$ 700',
-      SAR: '2,632 SAR',
-      EGP: '35,525 EGP',
+    packageName: 'Brand Identity Design',
+    features: {
+      'Logo design (3 initial concepts)': true,
+      '2 minor revisions included': true,
+      'Logo usage guidelines': true,
+      'Design of essential marketing materials': true,
+      'Business Cards': true,
+      Letterheads: true,
+      Envelopes: true,
+      'Logo Animation: A short video to bring your logo to life': false,
+      'Social Media Designs (20 designs)': false,
+      'Delivery of all files: Brand identity files, logo animation, and social media designs': false,
     },
+    prices: { USD: '$ 700', SAR: '2,632 SAR', EGP: '35,525 EGP' },
   },
   {
     type: 'Advanced',
     packageName: 'Comprehensive Brand Identity',
-    features: [
-      'Everything included in the Intermediate Package (Logo Design & Brand Identity).',
-      'Logo Animation: A short video to bring your logo to life.',
-      'Social Media Designs:',
-      '20 designs (posts, stories, banners, etc.).',
-      '3 minor revisions included.',
-      'Delivery of all files: Brand identity files, logo animation, and social media designs.',
-    ],
-    prices: {
-      USD: '$ 1,200',
-      SAR: '4,512 SAR',
-      EGP: '60,900 EGP',
+    features: {
+      'Logo design (3 initial concepts)': true,
+      '2 minor revisions included': true,
+      'Logo usage guidelines': true,
+      'Design of essential marketing materials': true,
+      'Business Cards': true,
+      Letterheads: true,
+      Envelopes: true,
+      'Logo Animation: A short video to bring your logo to life': true,
+      'Social Media Designs (20 designs)': true,
+      'Delivery of all files: Brand identity files, logo animation, and social media designs': true,
     },
+    prices: { USD: '$ 1,200', SAR: '4,512 SAR', EGP: '60,900 EGP' },
   },
 ];
 
@@ -163,7 +168,7 @@ const PricingSections = () => {
           comprehensive design services tailored to help your brand stand out.
         </Description>
       </Container>
-      <Container className="flex flex-col md:flex-row gap-4 justify-center md:items-start items-center">
+      <Container className="flex flex-col md:flex-row gap-4 justify-center md:items-start items-center flex-nowrap md:flex-wrap">
         {packages.map((pkg, index) => (
           <PricingCard
             key={index}
@@ -172,10 +177,24 @@ const PricingSections = () => {
             features={pkg.features}
             prices={pkg.prices}
             currency={currency}
-            className={'w-[300px] md:w-[400px]'}
+            className={'w-[350px]'}
             special={index === 1}
           />
         ))}
+      </Container>
+      <Container className="py-4">
+        <MovingSlider speed={110} direction="normal" arrayNumber={3}>
+          {otherPackages.map((pkg, index) => (
+            <SmallPricingCard
+              key={index}
+              packageName={pkg.packageName}
+              features={pkg.features}
+              prices={pkg.prices}
+              currency={currency}
+              className={'w-[300px] md:w-[400px]'}
+            />
+          ))}
+        </MovingSlider>
       </Container>
     </Section>
   );

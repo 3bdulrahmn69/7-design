@@ -21,7 +21,7 @@ const NotFound = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-black text-white flex items-center justify-center overflow-hidden">
+    <div className="min-h-screen bg-primaryLightWhite text-primaryDarkBlack dark:bg-primaryDarkBlack dark:text-primaryLightWhite flex items-center justify-center overflow-hidden">
       <div className="text-center space-y-10 px-6">
         <div className="relative">
           <h1 className="text-9xl font-extrabold animate-pulse drop-shadow-lg">

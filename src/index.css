@@ -50,6 +50,19 @@ body.dark {
   }
 }
 
+.specialGlow {
+  background: conic-gradient(
+    from 0deg at 50% 50%,
+    #feda00 0deg,
+    #ff0019 54.89161972682219deg,
+    #feda00 106.69924423399361deg,
+    #f9af13 162deg,
+    #feda00 252.00000000000003deg,
+    #ffda00 306.00000000000006deg,
+    #f9af13 360deg
+  );
+}
+
 @media (min-width: 321px) and (max-width: 375px) {
   .text {
     padding: 0 30px 0 30px;
@@ -93,17 +106,4 @@ body.dark {
 .letter {
   letter-spacing: -0.04em;
   line-height: 1.1em;
-}
-
-.specialGlow {
-  background: conic-gradient(
-    from 0deg at 50% 50%,
-    #FEDA00 0deg,
-    #ff0019 54.89161972682219deg,
-    #FEDA00 106.69924423399361deg,
-    #F9AF13 162deg,
-    #FEDA00 252.00000000000003deg,
-    #FFDA00 306.00000000000006deg,
-    #F9AF13 360deg
-  );
 }
