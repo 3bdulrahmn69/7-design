@@ -6,7 +6,7 @@ import Glow from '../components/Glow';
 
 const HeroSection = () => {
   return (
-    <div className="relative overflow-hidden text-black dark:text-white pb-20">
+    <div className="relative pb-20 ">
       <Section id={'home'}>
         <Container>
           <div className="flex flex-col items-center">

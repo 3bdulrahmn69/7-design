@@ -23,7 +23,7 @@ const TestimonialsSection = () => {
           unforgettable brand identities.
         </Description>
       </Container>
-      <Container className="flex flex-col ">
+      <Container className="flex flex-col gap-2 py-4">
         <MovingSlider speed={100}>
           {myTestimonialsOne.map((testimonial, index) => (
             <TestimonialCard

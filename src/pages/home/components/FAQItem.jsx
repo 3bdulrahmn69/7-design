@@ -9,7 +9,7 @@ const FAQItem = ({ question, answer }) => {
   };
 
   return (
-    <div className="border-[1px] border-gray-500/40 rounded-md shadow-sm mb-4 px-4">
+    <div className="border-[1px] border-secondary-text rounded-md shadow-sm mb-4 px-4">
       <button
         onClick={toggleAnswer}
         className="flex justify-between w-full py-4 text-left font-semibold focus:outline-none"
@@ -29,7 +29,7 @@ const FAQItem = ({ question, answer }) => {
         }`}
       >
         <div
-          className={`pb-4 ${
+          className={`pb-4 text-primary-text ${
             isOpen ? 'opacity-100' : 'opacity-0 transition-opacity duration-500'
           }`}
         >

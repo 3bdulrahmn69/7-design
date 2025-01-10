@@ -6,7 +6,7 @@ const TestimonialCard = ({ name, desc, title, image, className }) => {
   return (
     <figure
       className={cn(
-        'bg-primaryLightWhite dark:bg-primaryDarkBlack text-primaryDarkBlack dark:text-primaryLightWhite mx-2 shadow-lg rounded-lg p-6 min-w-fit text-sm',
+        'bg-secondaryLightWhite dark:bg-secondaryDarkBlack mx-2 shadow-lg rounded-site p-6 min-w-fit text-sm',
         className
       )}
       aria-labelledby={`testimonial-${name}`}
@@ -23,7 +23,7 @@ const TestimonialCard = ({ name, desc, title, image, className }) => {
           </h2>
           <div className="flex items-center">
             {[...Array(5)].map((_, index) => (
-              <FaStar key={index} className="text-yellow-500 mr-1" />
+              <FaStar key={index} className="text-primary mr-1" />
             ))}
           </div>
         </div>

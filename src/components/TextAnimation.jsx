@@ -22,7 +22,7 @@ const TextAnimation = () => {
   return (
     <div className="flex flex-col items-center gap-[19.5px] text-gap xl:mt-4">
       <motion.h1
-        className="text-[34px] md:text-[55px] font-medium text-center font-Satoshi leading-none letter text-primaryDarkBlack dark:text-primaryLightWhite"
+        className="text-[34px] md:text-[55px] font-medium text-center tracking-site leading-site text-primaryDarkBlack dark:text-primaryLightWhite"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
