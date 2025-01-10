@@ -35,7 +35,7 @@ const TestimonialsSection = () => {
             />
           ))}
         </MovingSlider>
-        <MovingSlider speed={100} direction={'right'}>
+        <MovingSlider speed={100} direction={'reverse'}>
           {myTestimonialsTwo.map((testimonial, index) => (
             <TestimonialCard
               key={index}

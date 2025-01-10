@@ -8,7 +8,7 @@ import {
 } from '../../../components/Section';
 import PricingCard from '../components/PricingCard';
 import SmallPricingCard from '../components/SmallPricingCard';
-import MovingSlider from '../../../components/MovingSlider';
+import MovingSliderHover from '../../../components/MovingSliderHover';
 
 const packages = [
   {
@@ -183,7 +183,13 @@ const PricingSections = () => {
         ))}
       </Container>
       <Container className="py-4">
-        <MovingSlider speed={110} direction="normal" arrayNumber={3}>
+        <MovingSliderHover
+          speed={50}
+          direction="normal"
+          arrayNumber={3}
+          enableHover
+          hoverSpeed={300}
+        >
           {otherPackages.map((pkg, index) => (
             <SmallPricingCard
               key={index}
@@ -194,7 +200,7 @@ const PricingSections = () => {
               className={'w-[300px] md:w-[400px]'}
             />
           ))}
-        </MovingSlider>
+        </MovingSliderHover>
       </Container>
     </Section>
   );

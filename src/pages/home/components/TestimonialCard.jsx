@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { cn } from '../../../lib/utils';
 import { FaStar } from 'react-icons/fa'; // Import star icon
 
-const TestimonialCard = ({ name, desc, title, image, className = '' }) => {
+const TestimonialCard = ({ name, desc, title, image, className }) => {
   return (
     <figure
       className={cn(
@@ -15,7 +15,7 @@ const TestimonialCard = ({ name, desc, title, image, className = '' }) => {
         <img
           src={image}
           alt={`${name}'s profile`}
-          className="w-12 h-12 rounded-full mr-4"
+          className="w-12 h-12 rounded-full mr-4 select-none"
         />
         <div>
           <h2 id={`testimonial-${name}`} className="font-bold">

@@ -1,19 +1,16 @@
 import PropTypes from 'prop-types';
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'motion/react';
 import { cn } from '../lib/utils';
 
 const MovingSlider = ({
   children,
-  speed,
-  orientation,
-  direction,
-  arrayNumber,
-  enableHover,
+  speed = 50,
+  orientation = 'row',
+  direction = 'normal',
+  arrayNumber = 5,
   className,
 }) => {
-  const [hovered, setHovered] = useState(false);
-
   const scrollDirection = (() => {
     if (orientation === 'row') {
       return direction === 'normal' ? ['-50%', '0%'] : ['0%', '-50%'];
@@ -23,22 +20,9 @@ const MovingSlider = ({
   })();
 
   const isVertical = orientation === 'col';
-  const animationDuration = hovered ? speed * 2 : speed;
-
-  const handleMouseEnter = () => {
-    if (enableHover) setHovered(true);
-  };
-
-  const handleMouseLeave = () => {
-    if (enableHover) setHovered(false);
-  };
 
   return (
-    <div
-      className={cn('relative flex items-center justify-center', className)}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-    >
+    <div className={cn('relative flex items-center justify-center', className)}>
       <div
         className={`w-full flex items-center relative overflow-hidden ${
           isVertical ? 'h-full' : ''
@@ -54,12 +38,11 @@ const MovingSlider = ({
         />
 
         <motion.div
-          key={hovered}
           className="flex items-center"
           style={{ flexDirection: isVertical ? 'column' : 'row' }}
           animate={isVertical ? { y: scrollDirection } : { x: scrollDirection }}
           transition={{
-            duration: animationDuration,
+            duration: speed,
             ease: 'linear',
             repeat: Infinity,
             repeatType: 'loop',
@@ -88,16 +71,7 @@ MovingSlider.propTypes = {
   orientation: PropTypes.oneOf(['row', 'col']),
   direction: PropTypes.oneOf(['normal', 'reverse']),
   arrayNumber: PropTypes.number,
-  enableHover: PropTypes.bool,
   className: PropTypes.string,
-};
-
-MovingSlider.defaultProps = {
-  speed: 50,
-  orientation: 'row',
-  direction: 'normal',
-  arrayNumber: 5,
-  enableHover: false,
 };
 
 export default MovingSlider;
