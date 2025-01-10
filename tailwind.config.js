@@ -15,6 +15,7 @@ export default {
         'primary-text': '#999999',
         'secondary-text': '#2A2A2A',
         primaryDarkBlack: '#0a0a0a',
+        secondaryDarkBlack: '#0C0C0C',
         primaryLightWhite: '#fcfcfa',
       },
       fontFamily: {

@@ -28,8 +28,11 @@ const CounterCard = ({ num, symbol, title, description }) => {
       aria-label={`${title} statistics`}
     >
       <div className="flex items-center">
+        <span className="text-lg md:text-2xl font-semibold">
+          {symbol}
+        </span>
         <motion.span
-          className="text-2xl md:text-4xl font-bold text-primary"
+          className="text-2xl md:text-4xl font-bold text-primary mr-2 ml-1"
           initial={{ count: 0 }}
           animate={controls}
           transition={{ duration: 1.5, ease: 'easeOut' }}
@@ -41,9 +44,6 @@ const CounterCard = ({ num, symbol, title, description }) => {
         >
           {Math.floor(num)}
         </motion.span>
-        <span className="text-lg md:text-2xl font-semibold mr-2 ml-1">
-          {symbol}
-        </span>
         <span className="text-lg md:text-2xl font-semibold 0">{title}</span>
       </div>
       <p className="text-primary-text mt-2">{description}</p>

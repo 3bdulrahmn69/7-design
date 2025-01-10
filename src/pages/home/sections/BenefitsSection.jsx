@@ -53,8 +53,8 @@ const BenefitsSection = () => {
           Support.
         </Description>
       </Container>
-      <Container className="flex flex-col items-center justify-center gap-8 md:gap-16 lg:gap-24 mt-16">
-        <div className="w-full flex justify-around items-center">
+      <Container className="flex flex-col items-center justify-center gap-4 md:gap-12 mt-16">
+        <div className="w-full flex justify-around items-center gap-4 md:gap-0 flex-col md:flex-row">
           {Benefits.slice(0, 3).map((benefit, index) => (
             <BenefitCard
               key={index}
@@ -64,7 +64,7 @@ const BenefitsSection = () => {
             />
           ))}
         </div>
-        <div className="w-full flex justify-around items-center">
+        <div className="w-full flex justify-around items-center gap-4 md:gap-0 flex-col md:flex-row">
           {Benefits.slice(3, 6).map((benefit, index) => (
             <BenefitCard
               key={index}
