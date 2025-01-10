@@ -1,12 +1,13 @@
 import { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
 
-const Glow = () => {
+const Glow = ({ isMoving }) => {
   const [scrollOffset, setScrollOffset] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
       const offset = -window.scrollY;
-      setScrollOffset(Math.min(offset, 400)); // Adjust max scroll offset for effect
+      setScrollOffset(Math.min(offset, 400));
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -14,10 +15,23 @@ const Glow = () => {
   }, []);
 
   return (
-    <div className="z-0 mt-28">
-      <div className="gradientGlow"></div>
+    <div
+      className="relative py-16 w-full blur-[40px]"
+      style={{
+        transform: isMoving
+          ? `translateY(${scrollOffset / 12}px)`
+          : 'translateY(0)',
+        transition: 'transform 0.3s ease-out',
+      }}
+    >
+      <div className="gradientGlowParent"></div>
+      <div className="gradientGlowChild"></div>
     </div>
   );
+};
+
+Glow.propTypes = {
+  isMoving: PropTypes.bool,
 };
 
 export default Glow;

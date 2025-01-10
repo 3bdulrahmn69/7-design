@@ -25,7 +25,8 @@ const HeroSection = () => {
                 </Button>
               </div>
             </div>
-            <Glow />
+            <Glow isMoving={true} />
+            <div className="absolute bottom-0 h-4 w-full bg-primaryDarkBlack blur-[40px]"></div>
           </div>
         </Container>
       </Section>

@@ -16,9 +16,9 @@ const MovingSlider = ({
 
   const scrollDirection = (() => {
     if (orientation === 'row') {
-      return direction === 'normal' ? ['0%', '-50%'] : ['-50%', '0%'];
+      return direction === 'normal' ? ['-50%', '0%'] : ['0%', '-50%'];
     } else {
-      return direction === 'normal' ? ['0%', '-50%'] : ['-50%', '0%'];
+      return direction === 'normal' ? ['-50%', '0%'] : ['0%', '-50%'];
     }
   })();
 
@@ -40,7 +40,7 @@ const MovingSlider = ({
       onMouseLeave={handleMouseLeave}
     >
       <div
-        className={`bg-primaryLightWhite dark:bg-primaryDarkBlack w-full flex items-center relative overflow-hidden ${
+        className={`w-full flex items-center relative overflow-hidden ${
           isVertical ? 'h-full' : ''
         }`}
         dir="ltr"

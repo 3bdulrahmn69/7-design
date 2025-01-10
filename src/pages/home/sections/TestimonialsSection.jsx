@@ -14,11 +14,13 @@ const TestimonialsSection = () => {
   return (
     <Section>
       <Container className="flex flex-col gap-[19.5px] text-gap">
-        <LittleTitle>Testimonials</LittleTitle>
-        <Title>What Our Clients Are Saying</Title>
+        <LittleTitle>Words Of Love</LittleTitle>
+        <Title>Read What Our Clients Say</Title>
         <Description>
-          Discover how our design solutions have transformed businesses and
-          brought visions to life through our clients' experiences.
+          See how our custom designs and fast delivery have helped businesses to
+          stand out and achieve their goals and make a change. Our clients share
+          their success stories and how we’ve turned their ideas into
+          unforgettable brand identities.
         </Description>
       </Container>
       <Container className="flex flex-col ">
