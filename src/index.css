@@ -70,11 +70,13 @@ body.dark {
     width: 200px;
     height: 200px;
     filter: blur(0px);
+    top: 110%;
   }
   .gradientGlowChild {
     width: 150px;
     height: 150px;
     filter: blur(0px);
+    top: 110%;
   }
 }
 
