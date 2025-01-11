@@ -12,9 +12,9 @@ const TakeAction = () => {
           </div>
           <div className="max-w-lg">
             <p className="text-center">
-              If you’re looking for a custom logo and a cohesive brand identity
-              that reflects your vision, you’ve come to the right place. Let’s
-              create a brand that leaves a lasting impression!
+              Looking for a custom logo and brand identity that reflects your
+              vision? You’re in the right place—let’s create a lasting
+              impression!
             </p>
           </div>
           <Button type="link" to="/meeting-booking">

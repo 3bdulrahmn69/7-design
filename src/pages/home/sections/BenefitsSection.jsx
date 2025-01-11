@@ -28,7 +28,7 @@ const Benefits = [
   {
     title: 'Fast Delivery',
     description:
-      'Get your designs quickly and efficiently, ensuring your projects stay on track.',
+      'Get your designs quickly, professionally, and efficiently, ensuring your projects stay on track.',
   },
   {
     title: 'Transparent Pricing',

@@ -17,10 +17,9 @@ const TestimonialsSection = () => {
         <LittleTitle>Words Of Love</LittleTitle>
         <Title>Read What Our Clients Say</Title>
         <Description>
-          See how our custom designs and fast delivery have helped businesses to
-          stand out and achieve their goals and make a change. Our clients share
-          their success stories and how we’ve turned their ideas into
-          unforgettable brand identities.
+          See how our designs and fast delivery helped businesses stand out.
+          Clients share how we turned their ideas into unforgettable brand
+          identities.
         </Description>
       </Container>
       <Container className="flex flex-col gap-2 py-4">

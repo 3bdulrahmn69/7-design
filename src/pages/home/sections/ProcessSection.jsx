@@ -21,7 +21,7 @@ const process = [
   {
     title: 'Receive',
     description:
-      'Your Iconic Brand is Ready! Receive your final designs and enjoy the revisions included in your plan until you’re 100% satisfied.',
+      'Your Iconic Brand is Ready! Receive your final designs with revisions until 100% satisfied.',
   },
 ];
 

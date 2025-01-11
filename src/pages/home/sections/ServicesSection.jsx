@@ -83,11 +83,11 @@ const ServicesSection = () => {
     <Section id={'services'}>
       <Container className="flex flex-col gap-[19.5px] text-gap">
         <LittleTitle>Services</LittleTitle>
-        <Title>How can we help you</Title>
+        <Title>All your design needs.</Title>
         <Description>
-          From logo design to comprehensive brand identity, our expert team
-          crafts unique visual solutions that elevate your business and leave a
-          lasting impression.
+          From logo design to brand identity, our expert team crafts unique
+          visual solutions that elevate your business and leave a lasting
+          impact.
         </Description>
       </Container>
       <Container className="flex gap-6 my-4">

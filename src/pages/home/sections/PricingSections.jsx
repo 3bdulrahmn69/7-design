@@ -24,7 +24,6 @@ const packages = [
       Envelopes: false,
       'Logo Animation: A short video to bring your logo to life': false,
       'Social Media Designs (20 designs)': false,
-      'Delivery of all files: Brand identity files, logo animation, and social media designs': false,
     },
     prices: { USD: '$ 350', SAR: '1,316 SAR', EGP: '17,762 EGP' },
   },
@@ -41,7 +40,6 @@ const packages = [
       Envelopes: true,
       'Logo Animation: A short video to bring your logo to life': false,
       'Social Media Designs (20 designs)': false,
-      'Delivery of all files: Brand identity files, logo animation, and social media designs': false,
     },
     prices: { USD: '$ 700', SAR: '2,632 SAR', EGP: '35,525 EGP' },
   },
@@ -58,7 +56,6 @@ const packages = [
       Envelopes: true,
       'Logo Animation: A short video to bring your logo to life': true,
       'Social Media Designs (20 designs)': true,
-      'Delivery of all files: Brand identity files, logo animation, and social media designs': true,
     },
     prices: { USD: '$ 1,200', SAR: '4,512 SAR', EGP: '60,900 EGP' },
   },
@@ -68,9 +65,7 @@ const otherPackages = [
   {
     packageName: 'Basic Logo Animation',
     features: [
-      'Simple, clean animation to bring your logo to life.',
-      'Basic transitions and effects.',
-      'Delivery in multiple formats (MP4, GIF).',
+      'Simple, professional logo animation with smooth transitions and minimal effects. Delivered in MP4 and GIF formats to suit your needs.',
     ],
     prices: {
       USD: '$ 150',
@@ -81,9 +76,7 @@ const otherPackages = [
   {
     packageName: 'Advanced Logo Animation',
     features: [
-      'Complex, professional animation with advanced effects.',
-      'Custom transitions and dynamic movements tailored to your brand.',
-      'Delivery in multiple formats (MP4, GIF).',
+      'Complex, professional logo animation with dynamic transitions and advanced effects. Delivered in MP4 and GIF formats for versatile presentation.',
     ],
     prices: {
       USD: '$ 300',
@@ -103,22 +96,16 @@ const otherPackages = [
   {
     packageName: 'Graphics Design',
     features: [
-      'Custom graphics design to enhance your brand’s visual communication.',
-      'Marketing materials (Brochures, Flyers).',
-      'Social media designs.',
-      'Any other materials based on your needs.',
+      'Custom graphics to boost your brand’s visual communication effectively. Includes brochures, flyers, social media designs, and tailored materials.',
     ],
     prices: {
       ask: "Let's Talk",
     },
   },
   {
-    packageName: 'Website Design and Development',
+    packageName: 'Website Design',
     features: [
-      'Professional and user-friendly websites that reflect your brand identity.',
-      'UI/UX design.',
-      'Functionality development tailored to your needs.',
-      'User experience optimization for better engagement and conversions.',
+      'Professional, user-friendly websites with modern UI/UX design, tailored functionality, and optimized user experience for better engagement.',
     ],
     prices: {
       ask: "Let's Talk",
@@ -127,10 +114,7 @@ const otherPackages = [
   {
     packageName: 'Social Media Management',
     features: [
-      'Monthly management of your social media platforms (Facebook, Instagram, Twitter, etc.).',
-      'Content creation and scheduling.',
-      'Performance analysis and reporting.',
-      'User experience optimization for better engagement and conversions.',
+      'Monthly management of social platforms with content creation, scheduling, and performance analysis to enhance audience engagement.',
     ],
     prices: {
       USD: '$ 500/month',
@@ -141,10 +125,7 @@ const otherPackages = [
   {
     packageName: 'Managing Ads Campaigns',
     features: [
-      'Monthly management of your advertising campaigns (Facebook Ads, Google Ads, etc.).',
-      'Campaign setup and optimization.',
-      'Budget management.',
-      'Performance tracking and reporting.',
+      'Monthly advertising campaign management, including campaign setup, optimization, budget management, and detailed performance tracking.',
     ],
     prices: {
       USD: '$ 700/month',
@@ -163,9 +144,8 @@ const PricingSections = () => {
         <LittleTitle>Pricing</LittleTitle>
         <Title>Pricing That Fits Your Needs</Title>
         <Description>
-          Explore our flexible pricing options to find the best fit for your
-          business. With transparent pricing and no hidden fees, we offer
-          comprehensive design services tailored to help your brand stand out.
+          Explore our flexible pricing for comprehensive design services that
+          make your brand stand out—transparent, with no hidden fees.
         </Description>
       </Container>
       <Container className="flex flex-col md:flex-row gap-4 justify-center md:items-start items-center flex-nowrap md:flex-wrap">
