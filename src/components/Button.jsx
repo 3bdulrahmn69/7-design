@@ -21,7 +21,7 @@ const Button = ({
       'bg-primaryDarkBlack outline-[1px] outline-gray-500/20 outline hover:outline-[3px] hover:outline-gray-500/40 duration-300 text-primaryLightWhite',
     outline:
       'border border-primary bg-transparent text-primary hover:bg-primary hover:text-white',
-    text: 'text-primary bg-transparent hover:bg-primary hover:text-white duration-300',
+    text: 'text-primary bg-transparent hover:underline duration-300',
     custom: '',
   };
 

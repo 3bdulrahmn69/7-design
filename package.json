@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@wistia/wistia-player-react": "^0.0.83",
     "autoprefixer": "^10.4.20",
     "clsx": "^2.1.1",
     "i18next": "^23.8.2",

@@ -54,7 +54,9 @@ const PricingCard = ({
           ))}
         </ul>
       </div>
-      <Button className="mt-4">Book a call</Button>
+      <Button type="link" to="meeting-booking" className="mt-4">
+        Book a call
+      </Button>
     </div>
   );
 };

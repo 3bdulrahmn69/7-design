@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { cn } from '../../../lib/utils';
+import Button from '../../../components/Button';
 
 const SmallPricingCard = ({
   packageName,
@@ -31,9 +32,15 @@ const SmallPricingCard = ({
           ))}
         </ul>
         <div className="mt-4">
-          <h4 className="font-medium text-lg mb-2 text-secondary">
-            {displayPrice}
-          </h4>
+          {displayPrice === "Let's Talk" ? (
+            <Button type="link" to="/meeting-booking" variant="text">
+              {displayPrice}
+            </Button>
+          ) : (
+            <h4 className="font-medium text-lg mb-2 text-secondary">
+              {displayPrice}
+            </h4>
+          )}
         </div>
       </div>
     </div>
