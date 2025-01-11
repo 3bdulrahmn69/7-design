@@ -6,7 +6,7 @@ const ProcessCard = ({ title, description, className }) => {
   return (
     <div
       className={cn(
-        'w-72 flex flex-col items-center gap-4 bg-secondaryDarkBlack rounded-site border-[1px] border-secondary-text py-2 px-4',
+        'w-72 flex flex-col items-center gap-4 bg-secondaryLightWhite dark:bg-secondaryDarkBlack rounded-site border-[1px] border-secondary-text py-2 px-4',
         className
       )}
     >
@@ -15,7 +15,7 @@ const ProcessCard = ({ title, description, className }) => {
       </figure>
       <div>
         <h4 className="text-center">{title}</h4>
-        <p className="text-center font-medium text-primary-text">
+        <p className="text-center font-medium text-primaryLightWhiteText dark:text-primary-text">
           {description}
         </p>
       </div>

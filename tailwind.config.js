@@ -22,6 +22,7 @@ export default {
         secondaryDarkBlack: '#0D0D0D',
         primaryLightWhite: '#fcfcfa',
         secondaryLightWhite: '#EBEBEB',
+        primaryLightWhiteText: '#0000008f',
       },
       transitionProperty: {
         colors: 'background-color, color, border-color',
