@@ -57,6 +57,21 @@ const Meeting = () => {
           </nav>
         </header>
         <main>
+          <div className="flex justify-center items-center">
+            <div className="flex flex-col gap-4 p-4 justify-center items-center max-w-2xl mx-auto text-center text-lg font-light">
+              <p>
+                We&apos;re currently accepting new clients for our logo design
+                and brand identity services this month!
+              </p>
+              <p>Seats are limited, so act fast!</p>
+              <p>
+                To apply, book a call with our team through this form, and
+                we&apos;ll guide you through our branding solutions and how to
+                get started.
+              </p>
+              <p>Book now and create your iconic brand!</p>
+            </div>
+          </div>
           <div>
             <h1 className="text-center text-6xl font-semibold">
               Hop on a call with us
@@ -83,21 +98,6 @@ const Meeting = () => {
               acceptance. We work exclusively with clients we’re confident can
               achieve outstanding results through our expertise
             </p>
-          </div>
-          <div className="flex justify-center items-center">
-            <div className="flex flex-col gap-4 p-4 justify-center items-center max-w-2xl mx-auto text-center text-lg font-light">
-              <p>
-                We&apos;re currently accepting new clients for our logo design
-                and brand identity services this month!
-              </p>
-              <p>Seats are limited, so act fast!</p>
-              <p>
-                To apply, book a call with our team through this form, and
-                we&apos;ll guide you through our branding solutions and how to
-                get started.
-              </p>
-              <p>Book now and create your iconic brand!</p>
-            </div>
           </div>
         </main>
       </div>
