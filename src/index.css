@@ -45,6 +45,28 @@ body.dark {
   }
 }
 
+@media (max-width: 425px) {
+  body {
+    .grid-bg {
+      background-image: linear-gradient(
+          rgba(231, 233, 231, 0.8) 0.5px,
+          transparent 0.5px
+        ),
+        linear-gradient(to right, rgba(231, 233, 231, 0.8) 1px, #fcfcfa 1px);
+    }
+  }
+
+  body.dark {
+    .grid-bg {
+      background-image: linear-gradient(
+          rgba(42, 42, 42, 1) 0.5px,
+          transparent 0.5px
+        ),
+        linear-gradient(to right, rgba(42, 42, 42, 1) 0.5px, #0a0a0a 1px);
+    }
+  }
+}
+
 .gradientGlowParent {
   background: conic-gradient(
     from 0deg at 50% 50%,
