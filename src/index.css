@@ -28,6 +28,7 @@ body {
       ),
       linear-gradient(to right, rgba(231, 233, 231, 0.6) 1px, #fcfcfa 1px);
     background-size: 68px 68px;
+    background-position: center;
   }
 }
 
@@ -41,7 +42,6 @@ body.dark {
         transparent 0.5px
       ),
       linear-gradient(to right, rgba(42, 42, 42, 0.5) 0.5px, #0a0a0a 1px);
-    background-size: 68px 68px;
   }
 }
 
@@ -59,10 +59,10 @@ body.dark {
   body.dark {
     .grid-bg {
       background-image: linear-gradient(
-          rgba(42, 42, 42, 1) 0.5px,
+          rgba(42, 42, 42, 0.7) 0.5px,
           transparent 0.5px
         ),
-        linear-gradient(to right, rgba(42, 42, 42, 1) 0.5px, #0a0a0a 1px);
+        linear-gradient(to right, rgba(42, 42, 42, 0.7) 0.5px, #0a0a0a 1px);
     }
   }
 }

@@ -86,6 +86,7 @@ const Meeting = () => {
                 playerColor="#feda00"
                 volume={0.5}
                 bigPlayButton={true}
+                roundedPlayer={0}
               />
             </div>
             <div className="w-full md:w-1/3 z-10">
