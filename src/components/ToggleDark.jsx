@@ -3,18 +3,16 @@ import { MdDarkMode, MdLightMode } from 'react-icons/md';
 
 const ToggleDark = () => {
   const [isDarkMode, setIsDarkMode] = useState(() => {
-    // Set default theme to dark mode if no value is found in localStorage
     if (typeof window !== 'undefined') {
-      return localStorage.getItem('theme') === 'light' ? false : true; // Default to dark mode
+      return localStorage.getItem('theme') === 'light' ? false : true;
     }
-    return true; // Default to dark mode if no localStorage value
+    return true;
   });
 
   const toggleTheme = () => {
     setIsDarkMode(!isDarkMode);
   };
 
-  // Apply the theme to the body element and store it in localStorage
   useEffect(() => {
     if (isDarkMode) {
       document.body.classList.add('dark');

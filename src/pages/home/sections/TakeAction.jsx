@@ -17,7 +17,9 @@ const TakeAction = () => {
               create a brand that leaves a lasting impression!
             </p>
           </div>
-          <Button className="w-fit">Book a call</Button>
+          <Button type="link" to="/meeting-booking">
+            Book a call
+          </Button>
         </div>
       </Container>
     </Section>

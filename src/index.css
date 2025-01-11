@@ -3,6 +3,33 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --accent: #64943e;
+  --accent-secondary: #95bf47;
+  --light: #f4f5f4;
+  --dark: #333531;
+  --light-dark: #cccccc;
+  --dark-light: #e7e9e7;
+  --white: #ffffff;
+  --gradient-accent: linear-gradient(
+    130deg,
+    var(--accent) 0%,
+    var(--accent-secondary) 100%
+  );
+  --gradient-accent-vertical: linear-gradient(
+    180deg,
+    var(--accent-secondary) 0%,
+    var(--accent) 50%
+  );
+  --2xl: 2.125rem;
+  --xl: 2rem;
+  --lg: 1.5rem;
+  --md: 1.125rem;
+  --sm: 1rem;
+  --normal: 'Futura';
+  --bold: 'FuturaBold';
+}
+
 @font-face {
   font-family: 'Satoshi';
   font-style: normal;
@@ -25,6 +52,15 @@ body {
 body.dark {
   background-color: #0a0a0a;
   color: #fcfcfa;
+}
+
+.meeting {
+  margin: 0;
+  color: var(--dark);
+  background-color: var(--light);
+  background-image: linear-gradient(var(--dark-light) 1px, transparent 1px),
+    linear-gradient(to right, var(--dark-light) 1px, var(--light) 1px);
+  background-size: 68px 68px;
 }
 
 .gradientGlowParent {
@@ -101,7 +137,6 @@ body.dark {
     gap: 25px;
   }
 }
-
 @media (min-width: 376px) and (max-width: 425px) {
   .text {
     padding: 0 32px 0 32px;

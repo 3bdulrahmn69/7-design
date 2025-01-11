@@ -71,7 +71,7 @@ const Header = () => {
               </li>
             ))}
             <li>
-              <Button className="bg-primary hover:bg-primaryDark duration-300 text-sm">
+              <Button type="link" to="/meeting-booking">
                 Book a call
               </Button>
             </li>
@@ -108,7 +108,9 @@ const Header = () => {
             </li>
           ))}
           <li>
-            <Button className="w-full">Book a call</Button>
+            <Button type="link" className="w-full" to={'/meeting-booking'}>
+              Book a call
+            </Button>
           </li>
           <div className="flex gap-4 items-center w-full">
             <li>

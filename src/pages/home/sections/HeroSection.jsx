@@ -19,8 +19,10 @@ const HeroSection = () => {
               </div>
               <TextAnimation />
               <div className="flex gap-6 z-10">
-                <Button className="">Book a call</Button>
-                <Button variant="secondary" className="">
+                <Button type="link" to="/meeting-booking">
+                  Book a call
+                </Button>
+                <Button type="scroll" variant="secondary" to="logos">
                   Learn more
                 </Button>
               </div>
