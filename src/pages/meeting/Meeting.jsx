@@ -77,7 +77,7 @@ const Meeting = () => {
               Hop on a call with us
             </h1>
           </div>
-          <div className="relative flex flex-col md:flex-row gap-4 items-start justify-center py-8">
+          <div className="relative flex flex-col md:flex-row gap-4 items-center md:items-start justify-center py-8">
             <div className="absolute w-4/6 h-4/6 bg-primary top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 blur-[120px] opacity-30"></div>
             <div className="w-11/12 md:w-1/3 z-10">
               <WistiaPlayer
