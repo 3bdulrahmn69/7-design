@@ -34,11 +34,11 @@ const ComparisonSection = () => {
           >
             Other Agencies
           </h4>
-          <ComparisonCard className="text-primary-text">
+          <ComparisonCard className="text-[rgba(255,255,255,0.56)]">
             <ul className="list-none pl-0 space-y-6" role="list">
               {otherAgencies.map((item, index) => (
                 <li key={`other-${index}`} className="flex items-center gap-2">
-                  <span className="text-gray-400" aria-hidden="true">
+                  <span className="" aria-hidden="true">
                     ✖
                   </span>
                   <span className="text-sm lg:text-base">{item}</span>

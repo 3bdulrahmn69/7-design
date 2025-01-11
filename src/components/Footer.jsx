@@ -6,8 +6,8 @@ const Footer = () => {
   const date = new Date().getFullYear();
 
   return (
-    <footer className="py-8">
-      <Container>
+    <footer>
+      <Container className="bg-primaryLightWhite dark:bg-primaryDarkBlack text-primaryDarkBlack dark:text-primaryLightWhite rounded-t-site p-4">
         <div className="container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 px-4">
           {/* Company Info */}
           <div className="space-y-4">

@@ -19,18 +19,18 @@ const PricingCard = ({
   return (
     <div
       className={cn(
-        'flex flex-col relative border border-secondary-text rounded-site shadow-lg px-4 py-6 max-w-md overflow-hidden',
+        'flex flex-col relative border border-secondary-text rounded-site shadow-lg px-4 py-6 max-w-md overflow-hidden bg-primaryLightWhite dark:bg-primaryDarkBlack',
         className
       )}
     >
       {type && <LittleTitle className="text-center mb-4">{type}</LittleTitle>}
       {special && (
         <>
-          <div className="absolute top-0 right-0 -z-10 h-24 w-24 specialGlow rounded-tr-site blur-[25px] opacity-50"></div>
-          <div className="absolute -top-1/2 -right-1/2 -z-10 h-full w-full specialGlow rounded-full blur-[40px] opacity-20"></div>
+          <div className="absolute top-0 right-0 z-[1] h-24 w-24 specialGlow rounded-tr-site blur-[25px] opacity-50"></div>
+          <div className="absolute -top-1/2 -right-1/2 z-[1] h-full w-full specialGlow rounded-full blur-[40px] opacity-20"></div>
         </>
       )}
-      <div>
+      <div className="z-[2]">
         <h5 className="text-base font-bold mb-4">{packageName}</h5>
         <div className="flex flex-col gap-4 justify-between items-center mb-4">
           <p className="text-2xl font-semibold">{displayPrice}</p>
