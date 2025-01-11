@@ -21,12 +21,12 @@ body {
   background-color: #ffffff;
   color: #000000;
 
-  .meeting {
+  .grid-bg {
     background-image: linear-gradient(
-        rgba(231, 233, 231, 0.4) 0.5px,
+        rgba(231, 233, 231, 0.6) 0.5px,
         transparent 0.5px
       ),
-      linear-gradient(to right, rgba(231, 233, 231, 0.4) 1px, #fcfcfa 0.5px);
+      linear-gradient(to right, rgba(231, 233, 231, 0.6) 1px, #fcfcfa 1px);
     background-size: 68px 68px;
   }
 }
@@ -35,12 +35,12 @@ body.dark {
   background-color: #0a0a0a;
   color: #fcfcfa;
 
-  .meeting {
+  .grid-bg {
     background-image: linear-gradient(
-        rgba(42, 42, 42, 0.3) 0.5px,
+        rgba(42, 42, 42, 0.5) 0.5px,
         transparent 0.5px
       ),
-      linear-gradient(to right, rgba(42, 42, 42, 0.3) 0.5px, #0a0a0a 0.5px);
+      linear-gradient(to right, rgba(42, 42, 42, 0.5) 0.5px, #0a0a0a 1px);
     background-size: 68px 68px;
   }
 }

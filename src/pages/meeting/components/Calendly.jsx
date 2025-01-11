@@ -15,7 +15,7 @@ const Calendly = () => {
           isScriptLoaded.current = true;
           if (window.Calendly && !isWidgetInitialized.current) {
             window.Calendly.initInlineWidget({
-              url: 'https://calendly.com/drmohamed990/15min?hide_gdpr_banner=1',
+              url: 'https://calendly.com/drmohamed990/15min?hide_event_type_details=1&hide_gdpr_banner=1',
               parentElement: document.getElementById('calendly-widget'),
               prefill: {},
               utm: {},
@@ -43,7 +43,7 @@ const Calendly = () => {
   }, []);
 
   return (
-    <div id="calendly-widget" style={{ minWidth: '320px', height: '500px' }} />
+    <div id="calendly-widget" style={{ minWidth: '320px', height: '700px' }} />
   );
 };
 
