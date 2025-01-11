@@ -10,6 +10,7 @@ const MovingSlider = ({
   direction = 'normal',
   arrayNumber = 5,
   className,
+  innerClassName,
 }) => {
   const scrollDirection = (() => {
     if (orientation === 'row') {
@@ -38,7 +39,7 @@ const MovingSlider = ({
         />
 
         <motion.div
-          className="flex items-center"
+          className={cn('flex items-center', innerClassName)}
           style={{ flexDirection: isVertical ? 'column' : 'row' }}
           animate={isVertical ? { y: scrollDirection } : { x: scrollDirection }}
           transition={{
@@ -72,6 +73,7 @@ MovingSlider.propTypes = {
   direction: PropTypes.oneOf(['normal', 'reverse']),
   arrayNumber: PropTypes.number,
   className: PropTypes.string,
+  innerClassName: PropTypes.string,
 };
 
 export default MovingSlider;
