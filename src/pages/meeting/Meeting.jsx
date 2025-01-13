@@ -42,7 +42,7 @@ const Meeting = () => {
         <div className="h-10 w-full bg-primaryLightWhite dark:bg-primaryDarkBlack rounded-t-full"></div>
       </div>
       <div className="grid-bg overflow-hidden">
-        <header className="bg-gradient-to-b from-primaryLightWhite dark:from-primaryDarkBlack to-transparent w-full">
+        <header className="bg-gradient-to-b from-primaryLightWhite dark:from-primaryDarkBlack to-transparent">
           <nav className="flex flex-col items-center justify-center gap-2 pt-4 pb-16">
             <div className="flex items-center gap-2 pb-4">
               <Logo />
@@ -93,7 +93,7 @@ const Meeting = () => {
               <Calendly />
             </div>
           </div>
-          <div className="flex justify-center items-center py-4">
+          <div className="flex justify-center items-center py-4 mb-8">
             <p className="py-4 px-8 text-center font-semibold border-[1px] border-secondary-text rounded-site bg-secondaryLightWhite dark:bg-secondaryDarkBlack text-primary-text max-w-xl">
               We apologize in advance, but booking a meeting doesn’t guarantee
               acceptance. We work exclusively with clients we’re confident can

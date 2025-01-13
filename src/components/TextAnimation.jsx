@@ -22,7 +22,7 @@ const TextAnimation = () => {
   return (
     <div className="flex flex-col items-center gap-[19.5px] text-gap xl:mt-4">
       <motion.h1
-        className="text-[34px] md:text-[55px] font-medium text-center tracking-site leading-site text-primaryDarkBlack dark:text-primaryLightWhite"
+        className="text-site md:text-site-md font-medium text-center tracking-site leading-site text-primaryDarkBlack dark:text-primaryLightWhite"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
@@ -45,7 +45,7 @@ const TextAnimation = () => {
         )}
       </motion.h1>
       <motion.p
-        className="text-center text-[17px] md:text-[20px] text-primary-text lg:max-w-2xl px-6 text  md:px-20 lg:px-0 leading-[1.5em] font-medium"
+        className="text-center text-[17px] md:text-[20px] text-primary-text lg:max-w-2xl px-6 text md:px-20 lg:px-0 leading-[1.5em] font-medium"
         variants={containerVariants}
         initial="hidden"
         animate="visible"

@@ -39,6 +39,13 @@ export default {
       lineHeight: {
         site: '1.1em',
       },
+      fontSize: {
+        site: '2.125rem',
+        'site-md': '3.438rem',
+      },
+      padding: {
+        site: '1.25rem',
+      },
     },
   },
   plugins: [],

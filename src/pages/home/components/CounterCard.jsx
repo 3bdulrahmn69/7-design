@@ -1,9 +1,8 @@
 import PropTypes from 'prop-types';
 import { useEffect, useState, useRef } from 'react';
 import { motion, useAnimation, useInView } from 'motion/react';
-import test from '../../../assets/test.svg';
 
-const CounterCard = ({ num, symbol, title }) => {
+const CounterCard = ({ num, symbol, title, icon }) => {
   const [hasAnimated, setHasAnimated] = useState(false);
   const ref = useRef(null);
   const inView = useInView(ref, { threshold: 0.5 });
@@ -28,9 +27,7 @@ const CounterCard = ({ num, symbol, title }) => {
       className="rounded-site border-[1px] border-secondary-text p-4 flex"
       aria-label={`${title} statistics`}
     >
-      <figure className="w-1/3 flex items-center justify-center">
-        <img src={test} alt={title} className="w-16" />
-      </figure>
+      <div className="w-1/3 flex items-center justify-center text-primary">{icon}</div>
       <div className="flex flex-col items-center justify-center w-2/3">
         <p className="flex items-center gap-1">
           <span className="text-lg md:text-2xl font-semibold">{symbol}</span>
@@ -48,7 +45,9 @@ const CounterCard = ({ num, symbol, title }) => {
             {Math.floor(num)}
           </motion.span>
         </p>
-        <p className="text-lg md:text-2xl font-semibold w-full text-center">{title}</p>
+        <p className="text-lg md:text-2xl font-semibold w-full text-center">
+          {title}
+        </p>
       </div>
     </div>
   );
@@ -58,6 +57,7 @@ CounterCard.propTypes = {
   num: PropTypes.number.isRequired,
   symbol: PropTypes.string,
   title: PropTypes.string.isRequired,
+  icon: PropTypes.node,
 };
 
 export default CounterCard;
