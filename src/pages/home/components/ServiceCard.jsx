@@ -1,31 +1,23 @@
 import PropTypes from 'prop-types';
 import { cn } from '../../../lib/utils';
 
-const ServiceCard = ({ img, title, description, className }) => {
+const ServiceCard = ({ icon, title, className }) => {
   return (
     <div
       className={cn(
-        'flex gap-6 items-center justify-center my-3 rounded-site p-4',
+        'min-w-fit mx-2 flex gap-3 text-3xl items-center justify-center rounded-site p-6 bg-secondaryLightWhite dark:bg-secondaryDarkBlack text-primaryDarkBlack dark:text-primaryLightWhite border-[1px] border-secondary-text',
         className
       )}
     >
-      {img && (
-        <figure>
-          <img src={img} alt={title} />
-        </figure>
-      )}
-      <div className="flex flex-col gap-2">
-        <h3>{title}</h3>
-        <p>{description}</p>
-      </div>
+      <span>{icon}</span>
+      <h3>{title}</h3>
     </div>
   );
 };
 
 ServiceCard.propTypes = {
-  img: PropTypes.string,
+  icon: PropTypes.node,
   title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
   className: PropTypes.string,
 };
 
