@@ -50,7 +50,7 @@ const ComparisonSection = () => {
                   <span className="" aria-hidden="true">
                     <TfiClose size={20} />
                   </span>
-                  <span className="text-sm lg:text-base">{item}</span>
+                  <span className="text-lg">{item}</span>
                 </li>
               ))}
             </ul>
@@ -98,7 +98,7 @@ const ComparisonSection = () => {
                       style={{ fill: 'url(#icon-gradient)' }}
                     />
                   </span>
-                  <span className="text-sm lg:text-base">{item}</span>
+                  <span className="text-lg">{item}</span>
                 </li>
               ))}
             </ul>
