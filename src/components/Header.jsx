@@ -87,7 +87,7 @@ const Header = () => {
       </nav>
 
       <motion.div
-        className="xl:hidden absolute inset-x-0 top-3/4 mt-2 py-4 px-6 backdrop-blur-md bg-primaryDarkBlack/70 rounded-b-site origin-top z-50"
+        className="xl:hidden absolute inset-x-0 top-3/4 mt-2 py-4 px-6 backdrop-blur-md bg-primaryLightWhite/70 dark:bg-primaryDarkBlack/70 rounded-b-site origin-top z-50"
         style={{
           WebkitBackdropFilter: 'blur(8px)',
           backdropFilter: 'blur(8px)',
