@@ -9,7 +9,7 @@ import BenefitCard from '../components/BenefitCard';
 
 /* import the icons */
 import expertDesigners from '../../../assets/icons/expertDesigners.gif';
-import creativeDesigns from '../../../assets/icons/creativeDesigns.gif';
+import uniqueDesigns from '../../../assets/icons/uniqueDesigns.gif';
 import engagingVisuals from '../../../assets/icons/engagingVisuals.gif';
 import fastDelivery from '../../../assets/icons/fastDelivery.gif';
 import transparentPricing from '../../../assets/icons/transparentPricing.gif';
@@ -26,7 +26,7 @@ const Benefits = [
     title: 'Unique Designs',
     description:
       'Stand out with custom, one-of-a-kind designs tailored specifically for your brand.',
-    icon: creativeDesigns,
+    icon: uniqueDesigns,
   },
   {
     title: 'Engaging Visuals',

@@ -5,7 +5,7 @@ import CounterCard from '../components/CounterCard';
 /* Import the icons */
 import years from '../../../assets/icons/years.gif';
 import countries from '../../../assets/icons/countries.gif';
-import uniqueDesigns from '../../../assets/icons/uniqueDesigns.gif';
+import creativeDesigns from '../../../assets/icons/creativeDesigns.gif';
 import completedProjects from '../../../assets/icons/completedProjects.gif';
 import clientSatisfactionRate from '../../../assets/icons/clientSatisfactionRate.gif';
 import happyClients from '../../../assets/icons/happyClients.gif';
@@ -29,10 +29,10 @@ const counterData = [
   {
     num: 1700,
     symbol: '+',
-    title: 'Unique Designs',
+    title: 'Creative Designs',
     description:
       'From logos to packaging, we’ve created 1700+ unique designs that stand out.',
-    icon: uniqueDesigns,
+    icon: creativeDesigns,
   },
   {
     num: 500,
