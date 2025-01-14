@@ -1,13 +1,12 @@
-import { useEffect, useMemo } from 'react';
+import { useEffect } from 'react';
 import { Triangle } from 'react-loader-spinner';
 
 const LoaderFullPage = () => {
-  const isDarkMode = useMemo(() => {
-    if (typeof window !== 'undefined') {
-      return localStorage.getItem('theme') === 'dark';
-    }
-    return true; // Default to dark mode
-  }, []);
+  // Use direct state initialization instead of useMemo
+  const isDarkMode =
+    typeof window !== 'undefined'
+      ? localStorage.getItem('theme') === 'dark'
+      : true;
 
   useEffect(() => {
     document.body.classList.toggle('dark', isDarkMode);
@@ -26,12 +25,11 @@ const LoaderFullPage = () => {
       aria-label="Page is loading, please wait."
     >
       <Triangle
-        visible={true}
+        visible
         height={80}
         width={80}
         color="#FEDA00"
         ariaLabel="Loading spinner in triangle shape"
-        wrapperStyle={{}}
       />
     </div>
   );

@@ -1,6 +1,7 @@
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 import Logo from './Logo';
 import Container from './container';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const date = new Date().getFullYear();
@@ -114,9 +115,9 @@ const Footer = () => {
             . All Rights Reserved.
           </p>
           <div className="flex space-x-4 mt-4 lg:mt-0">
-            <a href="#" className="hover:text-gray-400">
+            <Link to="/terms-conditions" className="hover:text-gray-400">
               Terms & Conditions
-            </a>
+            </Link>
           </div>
         </div>
       </Container>

@@ -17,6 +17,7 @@ const TestimonialCard = ({ name, desc, title, image, className }) => {
             src={image}
             alt={`${name}'s profile`}
             className="w-8 h-8 rounded-full mr-4 select-none"
+            loading="lazy"
           />
           <h2 id={`testimonial-${name}`} className="font-medium text-base">
             {name}
