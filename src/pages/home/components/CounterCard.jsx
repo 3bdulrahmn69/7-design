@@ -27,7 +27,9 @@ const CounterCard = ({ num, symbol, title, icon }) => {
       className="rounded-site border-[1px] border-secondary-text p-4 flex"
       aria-label={`${title} statistics`}
     >
-      <div className="w-1/3 flex items-center justify-center text-primary">{icon}</div>
+      <figure className="w-1/3 flex items-center justify-center">
+        <img src={icon} alt={title} className="no-drag-img" />
+      </figure>
       <div className="flex flex-col items-center justify-center w-2/3">
         <p className="flex items-center gap-1">
           <span className="text-lg md:text-2xl font-semibold">{symbol}</span>

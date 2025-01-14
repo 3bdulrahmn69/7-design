@@ -6,28 +6,30 @@ import {
   LittleTitle,
 } from '../../../components/Section';
 import ProcessCard from '../components/ProcessCard';
-import { CiShare2 } from 'react-icons/ci';
-import { PiHandshakeFill } from 'react-icons/pi';
-import { MdCallReceived } from 'react-icons/md';
+
+/* Import the icons */
+import enroll from '../../../assets/icons/enroll.gif';
+import share from '../../../assets/icons/share.gif';
+import receive from '../../../assets/icons/receive.gif';
 
 const process = [
   {
     title: 'Enroll',
     description:
       'Select the plan that fits your needs and start your journey to an iconic brand.',
-    icon: <PiHandshakeFill size={36} />,
+    icon: enroll,
   },
   {
     title: 'Share',
     description:
       'Share your vision with us, and we’ll bring it to life with stunning designs.',
-    icon: <CiShare2 size={36} />,
+    icon: share,
   },
   {
     title: 'Receive',
     description:
       'Your Iconic Brand is Ready! Receive your final designs with revisions until 100% satisfied.',
-    icon: <MdCallReceived size={36} />,
+    icon: receive,
   },
 ];
 

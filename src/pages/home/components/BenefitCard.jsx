@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { cn } from '../../../lib/utils';
 
-const BenefitCard = ({ title, description, image, className }) => {
+const BenefitCard = ({ title, description, icon, className }) => {
   return (
     <div
       className={cn(
@@ -9,8 +9,8 @@ const BenefitCard = ({ title, description, image, className }) => {
         className
       )}
     >
-      <figure>
-        <img src={image} alt={title} className="w-16" />
+      <figure className="w-1/3">
+        <img src={icon} alt={title} className="no-drag-img" />
       </figure>
       <div>
         <h4 className="text-center">{title}</h4>
@@ -25,7 +25,7 @@ const BenefitCard = ({ title, description, image, className }) => {
 BenefitCard.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
+  icon: PropTypes.string.isRequired,
   className: PropTypes.string,
 };
 

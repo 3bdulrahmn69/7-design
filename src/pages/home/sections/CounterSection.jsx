@@ -1,12 +1,14 @@
 import Container from '../../../components/container';
 import { Section } from '../../../components/Section';
 import CounterCard from '../components/CounterCard';
-import { IoMdHappy } from 'react-icons/io';
-import { IoLogoDesignernews } from 'react-icons/io5';
-import { AiFillLike } from 'react-icons/ai';
-import { BiWorld } from 'react-icons/bi';
-import { FaRegCalendarDays } from 'react-icons/fa6';
-import { MdIncompleteCircle } from 'react-icons/md';
+
+/* Import the icons */
+import years from '../../../assets/icons/years.gif';
+import countries from '../../../assets/icons/countries.gif';
+import uniqueDesigns from '../../../assets/icons/uniqueDesigns.gif';
+import completedProjects from '../../../assets/icons/completedProjects.gif';
+import clientSatisfactionRate from '../../../assets/icons/clientSatisfactionRate.gif';
+import happyClients from '../../../assets/icons/happyClients.gif';
 
 const counterData = [
   {
@@ -15,14 +17,14 @@ const counterData = [
     title: 'Years of Experience',
     description:
       'With over 7 years of experience, we bring creativity and expertise to every project..',
-    icon: <FaRegCalendarDays size={42} />,
+    icon: years,
   },
   {
     num: 10,
     symbol: '+',
     title: 'Countries',
     description: 'Our designs have reached clients in 10+ countries worldwide.',
-    icon: <BiWorld size={42} />,
+    icon: countries,
   },
   {
     num: 1700,
@@ -30,7 +32,7 @@ const counterData = [
     title: 'Unique Designs',
     description:
       'From logos to packaging, we’ve created 1700+ unique designs that stand out.',
-    icon: <IoLogoDesignernews size={42} />,
+    icon: uniqueDesigns,
   },
   {
     num: 500,
@@ -38,7 +40,7 @@ const counterData = [
     title: 'Completed Projects',
     description:
       "We’ve successfully delivered 500+ projects, each tailored to meet our clients' unique needs.",
-    icon: <MdIncompleteCircle size={42} />,
+    icon: completedProjects,
   },
   {
     num: 97,
@@ -46,7 +48,7 @@ const counterData = [
     title: 'Client Satisfaction Rate',
     description:
       'Our 97% client satisfaction rate reflects our commitment to excellence.',
-    icon: <AiFillLike size={42} />,
+    icon: clientSatisfactionRate,
   },
   {
     num: 320,
@@ -54,7 +56,7 @@ const counterData = [
     title: 'Happy Clients',
     description:
       'Join our family of 320+ happy clients who trust us with their brand identity.',
-    icon: <IoMdHappy size={42} />,
+    icon: happyClients,
   },
 ];
 

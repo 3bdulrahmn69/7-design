@@ -9,7 +9,9 @@ const ProcessCard = ({ title, description, icon, className }) => {
         className
       )}
     >
-      <div className="text-primary pt-2">{icon}</div>
+      <figure className="w-1/3 no-drag-img">
+        <img src={icon} alt={title} />
+      </figure>
       <div>
         <h4 className="text-center">{title}</h4>
         <p className="text-center font-medium text-primaryLightWhiteText dark:text-primary-text">
@@ -24,7 +26,7 @@ ProcessCard.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
   className: PropTypes.string,
-  icon: PropTypes.node,
+  icon: PropTypes.string,
 };
 
 export default ProcessCard;

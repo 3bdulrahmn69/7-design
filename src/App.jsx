@@ -6,7 +6,7 @@ import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import HttpApi from 'i18next-http-backend';
 import ScrollToTop from './components/ScrollToTop';
-import SpinnerFullPage from './components/SpinnerFullPage';
+import LoaderFullPage from './components/LoaderFullPage';
 
 const HomePage = lazy(() => import('./pages/home/HomePage'));
 const Meeting = lazy(() => import('./pages/meeting/Meeting'));
@@ -25,7 +25,7 @@ const App = () => {
 
 const InnerApp = () => {
   return (
-    <Suspense fallback={<SpinnerFullPage />}>
+    <Suspense fallback={<LoaderFullPage />}>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/meeting-booking" element={<Meeting />} />
