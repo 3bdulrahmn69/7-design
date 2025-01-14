@@ -44,15 +44,17 @@ const ProcessSection = () => {
         </Title>
         <Description>Iconic Brand in 3- Easy Steps</Description>
       </Container>
-      <Container className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 lg:gap-24 mt-16">
-        {process.map((item, index) => (
-          <SecCard
-            key={index}
-            icon={item.icon}
-            title={item.title}
-            description={item.description}
-          />
-        ))}
+      <Container className="mt-16">
+        <div className="w-full flex justify-around items-center gap-16 flex-col md:flex-row flex-wrap">
+          {process.map((item, index) => (
+            <SecCard
+              key={index}
+              icon={item.icon}
+              title={item.title}
+              description={item.description}
+            />
+          ))}
+        </div>
       </Container>
     </Section>
   );
