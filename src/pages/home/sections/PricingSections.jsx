@@ -157,7 +157,7 @@ const PricingSections = () => {
             features={pkg.features}
             prices={pkg.prices}
             currency={currency}
-            className={'w-[350px]'}
+            className={'w-[310px] sm:w-[350px]'}
             special={index === 1}
           />
         ))}
@@ -168,7 +168,7 @@ const PricingSections = () => {
           direction="normal"
           arrayNumber={3}
           enableHover
-          hoverSpeed={300}
+          hoverSpeed={200}
         >
           {otherPackages.map((pkg, index) => (
             <SmallPricingCard
@@ -177,7 +177,7 @@ const PricingSections = () => {
               features={pkg.features}
               prices={pkg.prices}
               currency={currency}
-              className={'w-[300px] md:w-[400px]'}
+              className={'w-[350px]'}
             />
           ))}
         </MovingSliderHover>

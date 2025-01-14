@@ -1,6 +1,7 @@
 import Container from '../../../components/container';
 import {
   Description,
+  LatinSpan,
   LittleTitle,
   Section,
   Title,
@@ -83,14 +84,16 @@ const ServicesSection = () => {
     <Section id={'services'}>
       <Container className="flex flex-col gap-[19.5px] text-gap">
         <LittleTitle>Services</LittleTitle>
-        <Title>All your design needs.</Title>
+        <Title>
+          All your <LatinSpan>design</LatinSpan> needs.
+        </Title>
         <Description>
           From logo design to brand identity, our expert team crafts unique
           visual solutions that elevate your business and leave a lasting
           impact.
         </Description>
       </Container>
-      <Container className="flex gap-6 my-4">
+      <Container className="flex gap-6 my-4 mt-10">
         {isSmallScreen ? (
           <MovingSlider orientation="col" className="h-[300px]">
             {mergedServices.map((service, index) => (

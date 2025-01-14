@@ -24,17 +24,16 @@ const CounterCard = ({ num, symbol, title, icon }) => {
   return (
     <div
       ref={ref}
-      className="rounded-site border-[1px] border-secondary-text p-4 flex"
+      className="rounded-site border-[1px] border-secondary-text bg-secondaryLightWhite dark:bg-secondaryDarkBlack p-4 flex justify-between"
       aria-label={`${title} statistics`}
     >
-      <figure className="w-1/3 flex items-center justify-center">
+      <figure className="w-[70px] xl:w-[80px] flex items-center justify-center">
         <img src={icon} alt={title} className="no-drag-img" />
       </figure>
       <div className="flex flex-col items-center justify-center w-2/3">
-        <p className="flex items-center gap-1">
-          <span className="text-lg md:text-2xl font-semibold">{symbol}</span>
+        <p className="flex items-center bg-gradient-to-t from-[#FF7B00] via-[#FFDA00] to-[#FFE48B] bg-clip-text text-transparent">
           <motion.span
-            className="text-2xl md:text-4xl font-bold text-primary mr-2 ml-1"
+            className="text-xl md:text-3xl font-bold mr-1"
             initial={{ count: 0 }}
             animate={controls}
             transition={{ duration: 1.5, ease: 'easeOut' }}
@@ -46,8 +45,9 @@ const CounterCard = ({ num, symbol, title, icon }) => {
           >
             {Math.floor(num)}
           </motion.span>
+          <span className="text-lg md:text-xl font-semibold">{symbol}</span>
         </p>
-        <p className="text-lg md:text-2xl font-semibold w-full text-center">
+        <p className="text-lg md:text-xl font-semibold w-full text-center">
           {title}
         </p>
       </div>

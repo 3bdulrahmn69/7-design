@@ -2,6 +2,10 @@ import PropTypes from 'prop-types';
 import { cn } from '../../../lib/utils';
 import Button from '../../../components/Button';
 import { LittleTitle } from '../../../components/Section';
+import {
+  IoIosCheckmarkCircleOutline,
+  IoIosCloseCircleOutline,
+} from 'react-icons/io';
 
 const PricingCard = ({
   packageName,
@@ -31,14 +35,14 @@ const PricingCard = ({
         </>
       )}
       <div className="z-[2]">
-        <h5 className="text-base font-bold mb-4">{packageName}</h5>
+        <h5 className="text-base font-bold mb-4 text-center">{packageName}</h5>
         <div className="flex flex-col gap-4 justify-between items-center mb-4">
           <p className="text-2xl font-semibold">{displayPrice}</p>
           <hr className="w-11/12 border-secondary-text" />
         </div>
         <ul className="py-2">
           {Object.entries(features).map(([feature, isIncluded], index) => (
-            <li key={index} className="flex items-start">
+            <li key={index} className="flex items-start mb-2">
               <span
                 className={`mr-2 ${
                   isIncluded
@@ -47,9 +51,45 @@ const PricingCard = ({
                 }`}
                 role="img"
               >
-                {isIncluded ? '✔' : '✖'}
+                <svg width="0" height="0">
+                  <defs>
+                    <linearGradient
+                      id="icon-gradient"
+                      x1="0%"
+                      y1="0%"
+                      x2="100%"
+                      y2="0%"
+                    >
+                      <stop
+                        offset="0%"
+                        style={{ stopColor: '#FF7B00', stopOpacity: 1 }}
+                      />
+                      <stop
+                        offset="50%"
+                        style={{ stopColor: '#FFDA00', stopOpacity: 1 }}
+                      />
+                      <stop
+                        offset="100%"
+                        style={{ stopColor: '#FFE48B', stopOpacity: 1 }}
+                      />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                {isIncluded ? (
+                  <IoIosCheckmarkCircleOutline
+                    size={20}
+                    style={{ fill: 'url(#icon-gradient)' }}
+                  />
+                ) : (
+                  <IoIosCloseCircleOutline
+                    size={20}
+                    style={{ fill: 'currentColor' }}
+                  />
+                )}
               </span>
-              {feature}
+              <span className={`${isIncluded ? '' : 'text-primary-text/50'}`}>
+                {feature}
+              </span>
             </li>
           ))}
         </ul>

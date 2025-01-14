@@ -10,6 +10,7 @@ import LoaderFullPage from './components/LoaderFullPage';
 
 const HomePage = lazy(() => import('./pages/home/HomePage'));
 const Meeting = lazy(() => import('./pages/meeting/Meeting'));
+const Terms = lazy(() => import('./pages/terms/Terms'));
 const NotFound = lazy(() => import('./pages/notFound/NotFound'));
 
 const App = () => {
@@ -29,6 +30,7 @@ const InnerApp = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/meeting-booking" element={<Meeting />} />
+        <Route path="/terms-conditions" element={<Terms />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Suspense>

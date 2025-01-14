@@ -1,26 +1,28 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const FAQItem = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const { t } = useTranslation();
 
   const toggleAnswer = () => {
     setIsOpen((prev) => !prev);
   };
 
   return (
-    <div className="border-[1px] border-secondary-text rounded-md shadow-sm mb-4 px-4">
+    <div className="border-[1px] bg-secondaryLightWhite dark:bg-secondaryDarkBlack border-secondary-text rounded-md shadow-sm mb-4 px-4">
       <button
         onClick={toggleAnswer}
-        className="flex justify-between w-full py-4 text-left font-semibold focus:outline-none"
+        className="flex justify-between gap-4 w-full py-4 text-lg text-left font-semibold focus:outline-none"
       >
-        <span>{question}</span>
+        <span>{t('faq.q.' + question)}</span>
         <span
           className={`transform transition-transform duration-300 ease-in-out ${
-            isOpen ? 'rotate-45' : 'rotate-0'
+            isOpen ? 'rotate-180' : 'rotate-0'
           }`}
         >
-          +
+          {isOpen ? '-' : '+'}
         </span>
       </button>
       <div
@@ -33,7 +35,7 @@ const FAQItem = ({ question, answer }) => {
             isOpen ? 'opacity-100' : 'opacity-0 transition-opacity duration-500'
           }`}
         >
-          {answer}
+          <span>{t('faq.a.' + answer)}</span>
         </div>
       </div>
     </div>

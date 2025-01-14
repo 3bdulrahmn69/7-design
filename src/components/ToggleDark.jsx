@@ -4,13 +4,18 @@ import { MdDarkMode, MdLightMode } from 'react-icons/md';
 const ToggleDark = () => {
   const [isDarkMode, setIsDarkMode] = useState(() => {
     if (typeof window !== 'undefined') {
-      return localStorage.getItem('theme') === 'light' ? false : true;
+      const storedTheme = localStorage.getItem('theme');
+      if (storedTheme === 'light') {
+        return false;
+      }
+      localStorage.setItem('theme', 'dark');
+      return true;
     }
     return true;
   });
 
   const toggleTheme = () => {
-    setIsDarkMode(!isDarkMode);
+    setIsDarkMode((prevMode) => !prevMode);
   };
 
   useEffect(() => {
@@ -26,7 +31,7 @@ const ToggleDark = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="p-2 bg-gray-200 dark:bg-black text-gray-800 dark:text-white rounded-md shadow-md border border-gray-300 dark:border-gray-800 focus:outline-none"
+      className="h-10 w-10 flex justify-center items-center bg-gray-200 dark:bg-black text-gray-800 dark:text-white rounded-md shadow-md border border-gray-300 dark:border-gray-800 focus:outline-none"
     >
       {isDarkMode ? <MdDarkMode size={24} /> : <MdLightMode size={24} />}
     </button>

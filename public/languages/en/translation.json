@@ -1,0 +1,31 @@
+{
+  "faq Section": "______________ FAQ Section ______________ ",
+  "faq": {
+    "q": {
+      "one": "How does the logo design process work?",
+      "two": "Are the designs 100% original?",
+      "three": "What is your revision policy?",
+      "four": "What is your payment policy?",
+      "five": "What is your delivery policy?",
+      "six": "How will communication work during the project?",
+      "seven": "What is your ownership policy?",
+      "eight": "What is your cancellation and refund policy?",
+      "nine": "Is my data safe with you?",
+      "ten": "How can I file a complaint?",
+      "eleven": "What happens if we can’t reach an agreement?"
+    },
+    "a": {
+      "one": "We start by understanding your vision and brand goals, then present several design concepts. After you choose your preferred concept, we refine it until we achieve the final design.",
+      "two": "Yes, all designs are 100% original and custom-made for your brand. No templates or copies are used.",
+      "three": "Each package includes a specific number of free revisions",
+      "four": "The cost depends on your chosen package. We require a 50% upfront payment to start the project, and the remaining 50% is due upon final delivery. Our pricing is transparent with no hidden fees. You can pay via cash, bank transfer, or electronic payment platforms.",
+      "five": "Delivery time depends on the package you choose, ranging from 5 to 14 business days. If you need faster delivery, we offer an Express package. In case of any delays, we will inform you as soon as possible.",
+      "six": "You can communicate via WhatsApp, email, or phone calls. You will have a dedicated project manager to update you and address your concerns.",
+      "seven": "Once the full payment is made, the design becomes your complete property, and you can use it as you wish. We retain the right to display the design in our portfolio unless you request otherwise.",
+      "eight": "You can cancel the order after work has begun, but a 50% deduction will be applied to cover operational costs. After the final delivery, no refunds can be issued.",
+      "nine": "Absolutely! We are committed to protecting your data and will not share it with any third parties. Your information is used solely to complete the agreed-upon work.",
+      "ten": "You can submit your complaint via email or phone. We respond to all complaints within 48 business hours",
+      "eleven": "We will attempt to resolve the dispute amicably. If no agreement is reached, we will resort to arbitration under the laws of the Arab Republic of Egypt"
+    }
+  }
+}

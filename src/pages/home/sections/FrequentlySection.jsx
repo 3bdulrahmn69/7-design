@@ -10,24 +10,49 @@ import FAQItem from '../components/FAQItem';
 const FrequentlySection = () => {
   const faqs = [
     {
-      question: 'What services do you offer?',
-      answer:
-        'We offer  a range of services including web design, graphic design, and branding. Our team is dedicated to delivering high-quality solutions tailored to your needs.',
+      question: 'one',
+      answer: 'one',
     },
     {
-      question: 'How long does it take to complete a project?',
-      answer:
-        'The timeline for completing a project varies depending on its complexity. We will provide you with an estimated timeline during the initial consultation.',
+      question: 'two',
+      answer: 'two',
     },
     {
-      question: 'Can you work with my existing branding?',
-      answer:
-        'Yes, we can work with your existing branding and help enhance it to align with your vision and goals.',
+      question: 'three',
+      answer: 'three',
     },
     {
-      question: 'Do you offer support after the project is completed?',
-      answer:
-        'Yes, we offer post-project support to ensure that everything runs smoothly and to address any issues that may arise.',
+      question: 'four',
+      answer: 'four',
+    },
+    {
+      question: 'five',
+      answer: 'five',
+    },
+    {
+      question: 'six',
+      answer: 'six',
+    },
+    {
+      question: 'seven',
+      answer: 'seven',
+    },
+    {
+      question: 'eight',
+      answer: 'eight',
+    },
+    {
+      question: 'nine',
+      answer: 'nine',
+    },
+    {
+      question: 'ten',
+      answer: 'ten',
+    },
+
+    {
+      question: 'eleven',
+      answer: 'eleven',
     },
   ];
 

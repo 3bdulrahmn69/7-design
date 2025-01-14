@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { cn } from '../../../lib/utils';
 
-const BenefitCard = ({ title, description, icon, className }) => {
+const SecCard = ({ title, description, icon, className }) => {
   return (
     <div
       className={cn(
@@ -20,11 +20,11 @@ const BenefitCard = ({ title, description, icon, className }) => {
   );
 };
 
-BenefitCard.propTypes = {
+SecCard.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   icon: PropTypes.string.isRequired,
   className: PropTypes.string,
 };
 
-export default BenefitCard;
+export default SecCard;

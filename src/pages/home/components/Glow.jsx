@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
+import { cn } from '../../../lib/utils';
 
-const Glow = ({ isMoving }) => {
+const Glow = ({ isMoving = false, className, shrink = true }) => {
   const [scrollOffset, setScrollOffset] = useState(0);
 
   useEffect(() => {
@@ -16,22 +17,31 @@ const Glow = ({ isMoving }) => {
 
   return (
     <div
-      className="relative py-16 w-full blur-[40px]"
+      className={cn(
+        'relative py-16 w-full blur-[30px] md:blur-[40px] z-0',
+        className
+      )}
       style={{
         transform: isMoving
-          ? `translateY(${scrollOffset / 12}px)`
+          ? `translateY(${scrollOffset / 16}px)`
           : 'translateY(0)',
         transition: 'transform 0.3s ease-out',
       }}
     >
-      <div className="gradientGlowParent"></div>
-      <div className="gradientGlowChild"></div>
+      <div
+        className={`${shrink ? 'gradientGlowParent' : 'gradientGlowParent-no'}`}
+      ></div>
+      <div
+        className={`${shrink ? 'gradientGlowChild' : 'gradientGlowChild-no'}`}
+      ></div>
     </div>
   );
 };
 
 Glow.propTypes = {
   isMoving: PropTypes.bool,
+  className: PropTypes.string,
+  shrink: PropTypes.bool,
 };
 
 export default Glow;

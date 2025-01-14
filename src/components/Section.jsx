@@ -5,7 +5,7 @@ export const Title = ({ children, className }) => {
   return (
     <h2
       className={cn(
-        'text-[34px] md:text-[55px] font-medium text-center font-Satoshi leading-none letter text-primaryDarkBlack dark:text-primaryLightWhite',
+        'text-[34px] md:text-[55px] font-medium text-center font-Satoshi leading-none letter',
         className
       )}
     >
@@ -72,4 +72,15 @@ Section.propTypes = {
   id: PropTypes.string,
   className: PropTypes.string,
   children: PropTypes.node,
+};
+
+export const LatinSpan = ({ children, className }) => {
+  return (
+    <span className={cn('font-Instrument italic', className)}>{children}</span>
+  );
+};
+
+LatinSpan.propTypes = {
+  children: PropTypes.node,
+  className: PropTypes.string,
 };

@@ -8,7 +8,7 @@ const LogosSection = () => {
   return (
     <Section id={'logos'}>
       <Container>
-        <p className="font-Satoshi text-center pt-2 text-primary-text text">
+        <p className="font-Satoshi text-center pt-2 mb-4 text-primary-text text">
           You&apos;re in good hands:
         </p>
         <MovingSlider

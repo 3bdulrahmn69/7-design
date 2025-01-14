@@ -7,17 +7,11 @@ const Footer = () => {
 
   return (
     <footer>
-      <Container className="bg-primaryLightWhite dark:bg-primaryDarkBlack text-primaryDarkBlack dark:text-primaryLightWhite rounded-t-site p-4">
+      <Container className="rounded-t-site p-4 z-30 backdrop-blur">
         <div className="container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 px-4">
           {/* Company Info */}
           <div className="space-y-4">
             <Logo size="footer" />
-            <p className="text-sm leading-relaxed">
-              At Seven Design Studio, we transform simple ideas into exceptional
-              visual identities that elevate your brand. We believe that a logo
-              and brand identity are not just shapes — they are unique imprints
-              that last forever. No limits, no hassle.
-            </p>
           </div>
 
           {/* Features & Links */}
@@ -122,9 +116,6 @@ const Footer = () => {
           <div className="flex space-x-4 mt-4 lg:mt-0">
             <a href="#" className="hover:text-gray-400">
               Terms & Conditions
-            </a>
-            <a href="#" className="hover:text-gray-400">
-              Privacy Policy
             </a>
           </div>
         </div>

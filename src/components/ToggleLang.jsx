@@ -24,7 +24,7 @@ const ToggleLang = () => {
     <div className="relative inline-block">
       <button
         onClick={toggleLanguage}
-        className="p-2 bg-gray-200 dark:bg-black text-gray-800 dark:text-white rounded-md shadow-md border border-gray-300 dark:border-gray-800 focus:outline-none"
+        className="h-10 w-10 bg-gray-200 dark:bg-black text-gray-800 dark:text-white rounded-md shadow-md border border-gray-300 dark:border-gray-800 focus:outline-none"
         aria-label={`Switch to ${lang === 'en' ? 'Arabic' : 'English'}`}
       >
         {lang === 'en' ? 'EN' : 'AR'}

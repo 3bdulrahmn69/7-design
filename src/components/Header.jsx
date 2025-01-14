@@ -87,7 +87,7 @@ const Header = () => {
       </nav>
 
       <motion.div
-        className="xl:hidden absolute inset-x-0 top-full mt-2 py-4 px-6 bg-primaryLightWhite dark:bg-primaryDarkBlack text-primaryDarkBlack dark:text-primaryLightWhite shadow-sm shadow-gray-500 rounded-lg origin-top"
+        className="xl:hidden absolute inset-x-0 top-3/4 mt-2 py-4 px-6 backdrop-blur-md bg-primaryDarkBlack/70 rounded-b-site origin-top z-50"
         initial="closed"
         animate={isMenuOpen ? 'open' : 'closed'}
         variants={menuVariants}

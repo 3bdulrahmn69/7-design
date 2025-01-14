@@ -1,5 +1,6 @@
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
+import Glow from './components/Glow';
 import BenefitsSection from './sections/BenefitsSection';
 import ComparisonSection from './sections/ComparisonSection';
 import CounterSection from './sections/CounterSection';
@@ -15,7 +16,7 @@ import TestimonialsSection from './sections/TestimonialsSection';
 
 const HomePage = () => {
   return (
-    <div className="relative pt-20 md:pt-36 grid-bg">
+    <div className="relative pt-20 md:pt-36 grid-bg overflow-x-hidden">
       <Header />
       <HeroSection />
       <LogosSection />
@@ -29,6 +30,13 @@ const HomePage = () => {
       <PricingSections />
       <FrequentlySection />
       <TakeAction />
+      <div className="h-8 md:h-16 z-0">
+        <Glow
+          className="absolute bottom-[600px] md:bottom-[450px] translate-y-full"
+          isMoving={false}
+          shrink={true}
+        />
+      </div>
       <Footer />
     </div>
   );

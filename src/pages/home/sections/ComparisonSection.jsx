@@ -1,7 +1,14 @@
 import Container from '../../../components/container';
 import Logo from '../../../components/Logo';
-import { Section, Title, LittleTitle } from '../../../components/Section';
+import {
+  Section,
+  Title,
+  LittleTitle,
+  LatinSpan,
+} from '../../../components/Section';
 import ComparisonCard from '../components/ComparisonCard';
+import { FaCheck } from 'react-icons/fa6';
+import { TfiClose } from 'react-icons/tfi';
 
 const ComparisonSection = () => {
   const otherAgencies = [
@@ -24,12 +31,14 @@ const ComparisonSection = () => {
     <Section id="comparison" aria-labelledby="comparison-title">
       <Container className="flex flex-col gap-5 text-gap">
         <LittleTitle id="comparison-title">Comparison</LittleTitle>
-        <Title>Why Choose Seven Design Studio?</Title>
+        <Title>
+          Why <LatinSpan>Choose</LatinSpan> Seven Design Studio?
+        </Title>
       </Container>
-      <Container className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 lg:gap-24 mt-16">
-        <div className="w-full max-w-[450px]">
+      <Container className="flex flex-col md:flex-row items-center justify-center gap-11 md:gap-16 lg:gap-24 mt-16">
+        <div className="w-full md:max-w-[450px]">
           <h4
-            className="text-center text-primary-text text-2xl mb-4"
+            className="text-center text-primary-text text-2xl mb-8"
             aria-label="Other Agencies"
           >
             Other Agencies
@@ -39,7 +48,7 @@ const ComparisonSection = () => {
               {otherAgencies.map((item, index) => (
                 <li key={`other-${index}`} className="flex items-center gap-2">
                   <span className="" aria-hidden="true">
-                    ✖
+                    <TfiClose size={20} />
                   </span>
                   <span className="text-sm lg:text-base">{item}</span>
                 </li>
@@ -47,9 +56,9 @@ const ComparisonSection = () => {
             </ul>
           </ComparisonCard>
         </div>
-        <div className="w-full max-w-[450px]">
+        <div className="w-full md:max-w-[450px]">
           <h4
-            className="flex items-center justify-center gap-4 mb-4"
+            className="flex items-center justify-center gap-4 mb-8"
             aria-label="Seven Design Studio"
           >
             <Logo />
@@ -59,11 +68,35 @@ const ComparisonSection = () => {
             <ul className="list-none pl-0 space-y-6" role="list">
               {sevenDesignStudio.map((item, index) => (
                 <li key={`seven-${index}`} className="flex items-center gap-2">
-                  <span
-                    className="bg-gradient-to-t from-[#FF7B00] via-[#FFDA00] to-[#FFE48B] bg-clip-text text-transparent"
-                    aria-hidden="true"
-                  >
-                    ✔
+                  <span aria-hidden="true">
+                    <svg width="0" height="0">
+                      <defs>
+                        <linearGradient
+                          id="icon-gradient"
+                          x1="0%"
+                          y1="0%"
+                          x2="100%"
+                          y2="0%"
+                        >
+                          <stop
+                            offset="0%"
+                            style={{ stopColor: '#FF7B00', stopOpacity: 1 }}
+                          />
+                          <stop
+                            offset="50%"
+                            style={{ stopColor: '#FFDA00', stopOpacity: 1 }}
+                          />
+                          <stop
+                            offset="100%"
+                            style={{ stopColor: '#FFE48B', stopOpacity: 1 }}
+                          />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                    <FaCheck
+                      size={24}
+                      style={{ fill: 'url(#icon-gradient)' }}
+                    />
                   </span>
                   <span className="text-sm lg:text-base">{item}</span>
                 </li>

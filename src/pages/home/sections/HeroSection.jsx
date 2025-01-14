@@ -13,7 +13,7 @@ const HeroSection = () => {
             <div className="flex flex-col items-center justify-center gap-[41px] text-gap ">
               <div className="w-fit xl:absolute top-0 left-80 flex items-center gap-2 z-10 py-2 px-4 mb-4 rounded-lg border-[1px] border-primaryDark">
                 <div className="w-2 h-2 rounded-full bg-primaryDark animate-ping"></div>
-                <p className=" text-center text-xs font-Satoshi font-semibold">
+                <p className=" text-center text-xs font-semibold">
                   Hurry! Only 3 Spots Left
                 </p>
               </div>
@@ -28,7 +28,8 @@ const HeroSection = () => {
               </div>
             </div>
             <Glow isMoving={true} />
-            <div className="absolute bottom-0 h-4 w-full bg-primaryDarkBlack blur-[40px]"></div>
+            <div className="absolute bottom-0 h-8 w-full bg-primaryLightWhite dark:bg-primaryDarkBlack blur-[10px]"></div>
+            <div className="absolute bottom-0 h-5 w-full bg-primaryLightWhite dark:bg-primaryDarkBlack"></div>
           </div>
         </Container>
       </Section>

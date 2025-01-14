@@ -5,7 +5,7 @@ import {
   Section,
   Title,
 } from '../../../components/Section';
-import BenefitCard from '../components/BenefitCard';
+import SecCard from '../components/SecCard';
 
 /* import the icons */
 import expertDesigners from '../../../assets/icons/expertDesigners.gif';
@@ -65,20 +65,10 @@ const BenefitsSection = () => {
           Support.
         </Description>
       </Container>
-      <Container className="flex flex-col items-center justify-center gap-4 md:gap-12 mt-16">
-        <div className="w-full flex justify-around items-center gap-4 md:gap-0 flex-col md:flex-row">
-          {Benefits.slice(0, 3).map((benefit, index) => (
-            <BenefitCard
-              key={index}
-              title={benefit.title}
-              description={benefit.description}
-              icon={benefit.icon}
-            />
-          ))}
-        </div>
-        <div className="w-full flex justify-around items-center gap-4 md:gap-0 flex-col md:flex-row">
-          {Benefits.slice(3, 6).map((benefit, index) => (
-            <BenefitCard
+      <Container className="mt-16">
+        <div className="w-full flex justify-around items-center gap-16 flex-col md:flex-row flex-wrap">
+          {Benefits.map((benefit, index) => (
+            <SecCard
               key={index}
               title={benefit.title}
               description={benefit.description}

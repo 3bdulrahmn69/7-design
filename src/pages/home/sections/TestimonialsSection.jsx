@@ -13,7 +13,7 @@ import TestimonialCard from '../components/TestimonialCard';
 const TestimonialsSection = () => {
   return (
     <Section>
-      <Container className="flex flex-col gap-[19.5px] text-gap">
+      <Container className="flex flex-col gap-[19.5px] text-gap mb-12">
         <LittleTitle>Words Of Love</LittleTitle>
         <Title>Read What Our Clients Say</Title>
         <Description>
@@ -22,7 +22,7 @@ const TestimonialsSection = () => {
           identities.
         </Description>
       </Container>
-      <Container className="flex flex-col gap-2 py-4">
+      <Container className="flex flex-col gap-4 py-8">
         <MovingSlider speed={100}>
           {myTestimonialsOne.map((testimonial, index) => (
             <TestimonialCard

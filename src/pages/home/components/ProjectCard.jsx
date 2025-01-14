@@ -2,11 +2,11 @@ import PropTypes from 'prop-types';
 
 const ProjectCard = ({ img, title }) => {
   return (
-    <div className="w-96 h-full">
+    <div className="w-64 md:w-96">
       <img
         src={img}
         alt={`${title} project`}
-        className="w-96 h-full object-contain"
+        className="w-64 md:w-96 object-contain"
         loading="lazy"
       />
     </div>
