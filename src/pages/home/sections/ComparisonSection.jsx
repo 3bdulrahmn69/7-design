@@ -62,7 +62,11 @@ const ComparisonSection = () => {
             className="flex items-center justify-center gap-4 mb-8"
             aria-label="Seven Design Studio"
           >
-            <img src={logo} alt="Seven Design Studio" className="w-44" />
+            <img
+              src={logo}
+              alt="Seven Design Studio"
+              className="w-32 md:w-44"
+            />
           </h4>
           <ComparisonCard type="glow">
             <ul className="space-y-6" role="list">

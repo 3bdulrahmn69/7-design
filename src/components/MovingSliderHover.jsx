@@ -86,7 +86,7 @@ const MovingSliderHover = ({
         className="w-full flex items-center relative overflow-hidden scrollbar-hide"
         dir="ltr"
       >
-        <div className="absolute -left-4 bottom-0 h-full w-12 bg-gradient-to-r from-primaryLightWhite to-primaryLightWhite dark:from-primaryDarkBlack dark:to-primaryDarkBlack blur-[20px] pointer-events-none z-10 opacity-80" />
+        <div className="absolute -left-4 bottom-0 h-full w-12 bg-gradient-to-r from-primaryLightWhite to-primaryLightWhite dark:from-primaryDarkBlack dark:to-primaryDarkBlack blur-[20px] pointer-events-none z-10" />
         <motion.div
           className="flex items-center"
           animate={controls}
@@ -97,7 +97,7 @@ const MovingSliderHover = ({
             <React.Fragment key={i}>{children}</React.Fragment>
           ))}
         </motion.div>
-        <div className="absolute -right-4 top-0 h-full w-12 bg-gradient-to-l from-primaryLightWhite to-primaryLightWhite dark:from-primaryDarkBlack dark:to-primaryDarkBlack blur-[20px] pointer-events-none z-10 opacity-80" />
+        <div className="absolute -right-4 top-0 h-full w-12 bg-gradient-to-l from-primaryLightWhite to-primaryLightWhite dark:from-primaryDarkBlack dark:to-primaryDarkBlack blur-[20px] pointer-events-none z-10" />
       </div>
     </div>
   );

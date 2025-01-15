@@ -32,8 +32,9 @@ const CounterCard = ({ num, symbol, title, icon }) => {
       </figure>
       <div className="flex flex-col items-center justify-center w-2/3">
         <p className="flex items-center bg-gradient-to-t from-[#FF7B00] via-[#FFDA00] to-[#FFE48B] bg-clip-text text-transparent">
+          <span className="text-lg md:text-xl font-semibold">{symbol}</span>
           <motion.span
-            className="text-xl md:text-3xl font-bold mr-1"
+            className="text-2xl md:text-3xl font-bold ml-1"
             initial={{ count: 0 }}
             animate={controls}
             transition={{ duration: 1.5, ease: 'easeOut' }}
@@ -45,7 +46,6 @@ const CounterCard = ({ num, symbol, title, icon }) => {
           >
             {Math.floor(num)}
           </motion.span>
-          <span className="text-lg md:text-xl font-semibold">{symbol}</span>
         </p>
         <p className="text-center text-lg font-medium text-primaryLightWhiteText dark:text-primary-text w-full text-primary-text">
           {title}

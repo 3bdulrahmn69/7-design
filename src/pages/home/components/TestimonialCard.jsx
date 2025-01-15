@@ -11,50 +11,52 @@ const TestimonialCard = ({ name, desc, title, image, className }) => {
       )}
       aria-labelledby={`testimonial-${name}`}
     >
-      <header className="flex items-center justify-between mb-4">
+      <header className="flex items-center mb-4">
         <div className="flex items-center">
           <img
             src={image}
             alt={`${name}'s profile`}
-            className="w-8 h-8 rounded-full mr-4 select-none"
+            className="w-9 h-9 rounded-full mr-4 select-none"
             loading="lazy"
           />
+        </div>
+        <div>
           <h2 id={`testimonial-${name}`} className="font-medium text-base">
             {name}
           </h2>
-        </div>
-        <div className="flex items-center text-">
-          <svg width="0" height="0">
-            <defs>
-              <linearGradient
-                id="icon-gradient"
-                x1="0%"
-                y1="0%"
-                x2="100%"
-                y2="0%"
-              >
-                <stop
-                  offset="0%"
-                  style={{ stopColor: '#FF7B00', stopOpacity: 1 }}
-                />
-                <stop
-                  offset="50%"
-                  style={{ stopColor: '#FFDA00', stopOpacity: 1 }}
-                />
-                <stop
-                  offset="100%"
-                  style={{ stopColor: '#FFE48B', stopOpacity: 1 }}
-                />
-              </linearGradient>
-            </defs>
-          </svg>
-          {[...Array(5)].map((_, index) => (
-            <FaStar
-              key={index}
-              className="mr-1"
-              style={{ fill: 'url(#icon-gradient)' }}
-            />
-          ))}
+          <div className="flex items-center text-">
+            <svg width="0" height="0">
+              <defs>
+                <linearGradient
+                  id="icon-gradient"
+                  x1="0%"
+                  y1="0%"
+                  x2="100%"
+                  y2="0%"
+                >
+                  <stop
+                    offset="0%"
+                    style={{ stopColor: '#FF7B00', stopOpacity: 1 }}
+                  />
+                  <stop
+                    offset="50%"
+                    style={{ stopColor: '#FFDA00', stopOpacity: 1 }}
+                  />
+                  <stop
+                    offset="100%"
+                    style={{ stopColor: '#FFE48B', stopOpacity: 1 }}
+                  />
+                </linearGradient>
+              </defs>
+            </svg>
+            {[...Array(5)].map((_, index) => (
+              <FaStar
+                key={index}
+                className="mr-1"
+                style={{ fill: 'url(#icon-gradient)' }}
+              />
+            ))}
+          </div>
         </div>
       </header>
       <blockquote

@@ -20,7 +20,29 @@ const slideVariants = {
   visible: {
     y: '0%',
     opacity: 1,
-    transition: { duration: 0.6, ease: 'easeOut' },
+    transition: { duration: 0.8, ease: 'easeOut' }, // Increased duration for smoother transition
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: -20 },
+  visible: (index) => ({
+    opacity: 1,
+    y: 0,
+    transition: { delay: index * 0.1, duration: 0.6, ease: 'easeOut' }, // Staggered animations for items
+  }),
+};
+
+const menuVariants = {
+  open: {
+    opacity: 1,
+    scaleY: 1,
+    transition: { duration: 0.6, ease: 'easeInOut' }, // Smoother opening animation
+  },
+  closed: {
+    opacity: 0,
+    scaleY: 0,
+    transition: { duration: 0.4, ease: 'easeInOut' }, // Smoother closing animation
   },
 };
 
@@ -28,19 +50,6 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
-
-  const menuVariants = {
-    open: {
-      opacity: 1,
-      scaleY: 1,
-      transition: { duration: 0.4, ease: 'easeInOut' },
-    },
-    closed: {
-      opacity: 0,
-      scaleY: 0,
-      transition: { duration: 0.3, ease: 'easeInOut' },
-    },
-  };
 
   return (
     <motion.header
@@ -57,8 +66,8 @@ const Header = () => {
             <Logo />
           </li>
           <div className="hidden justify-center items-center xl:flex space-x-6">
-            {navItems.map((item) => (
-              <li key={item.name}>
+            {navItems.map((item, index) => (
+              <motion.li key={item.name} variants={itemVariants} custom={index}>
                 <ScrollLink
                   to={item.href}
                   smooth={true}
@@ -68,26 +77,28 @@ const Header = () => {
                 >
                   {item.name}
                 </ScrollLink>
-              </li>
+              </motion.li>
             ))}
-            <li>
+            <motion.li variants={itemVariants} custom={navItems.length}>
               <Button type="link" to="/meeting-booking">
                 Book a call
               </Button>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li variants={itemVariants} custom={navItems.length + 1}>
               <ToggleDark />
-            </li>
-            <li>
+            </motion.li>
+            <motion.li variants={itemVariants} custom={navItems.length + 2}>
               <ToggleLang />
-            </li>
+            </motion.li>
           </div>
           <HumMenu toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} />
         </ul>
       </nav>
 
       <motion.div
-        className="xl:hidden absolute inset-x-0 top-3/4 mt-2 py-4 px-6 backdrop-blur-md bg-primaryLightWhite/70 dark:bg-primaryDarkBlack/70 rounded-b-site origin-top z-50"
+        className={`xl:hidden ${
+          isMenuOpen ? 'static' : 'absolute'
+        } mt-2 py-4 px-6 rounded-b-site origin-top`}
         style={{
           WebkitBackdropFilter: 'blur(8px)',
           backdropFilter: 'blur(8px)',
@@ -97,8 +108,13 @@ const Header = () => {
         variants={menuVariants}
       >
         <ul className="space-y-4">
-          {navItems.map((item) => (
-            <li key={item.name} className="py-1 px-3 rounded-lg font-medium">
+          {navItems.map((item, index) => (
+            <motion.li
+              key={item.name}
+              variants={itemVariants}
+              custom={index}
+              className="py-1 px-3 rounded-lg font-medium"
+            >
               <ScrollLink
                 to={item.href}
                 smooth={true}
@@ -109,20 +125,20 @@ const Header = () => {
               >
                 {item.name}
               </ScrollLink>
-            </li>
+            </motion.li>
           ))}
-          <li>
+          <motion.li variants={itemVariants} custom={navItems.length}>
             <Button type="link" className="w-full" to={'/meeting-booking'}>
               Book a call
             </Button>
-          </li>
+          </motion.li>
           <div className="flex gap-4 items-center w-full">
-            <li>
+            <motion.li variants={itemVariants} custom={navItems.length + 1}>
               <ToggleDark />
-            </li>
-            <li>
+            </motion.li>
+            <motion.li variants={itemVariants} custom={navItems.length + 2}>
               <ToggleLang />
-            </li>
+            </motion.li>
           </div>
         </ul>
       </motion.div>

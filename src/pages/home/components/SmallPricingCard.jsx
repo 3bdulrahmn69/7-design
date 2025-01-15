@@ -16,7 +16,7 @@ const SmallPricingCard = ({
   return (
     <div
       className={cn(
-        'border-[1px] border-secondary-text bg-secondaryLightWhite dark:bg-secondaryDarkBlack pt-2 rounded-site overflow-hidden mx-2 h-[240px]',
+        'border-[1px] border-secondary-text bg-secondaryLightWhite dark:bg-secondaryDarkBlack pt-2 rounded-site overflow-hidden mx-2 h-[270px]',
         className
       )}
     >
@@ -42,16 +42,18 @@ const SmallPricingCard = ({
               Let&apos;s Talk
             </Button>
           ) : (
-            <>
-              <h4 className="font-medium text-lg mb-2 text-secondary">
-                {displayPrice}
-              </h4>
-              <Button type="link" to="/meeting-booking" variant="primary">
-                Book a call
-              </Button>
-            </>
+            <h4 className="font-medium text-lg mb-2 text-secondary">
+              {displayPrice}
+            </h4>
           )}
         </div>
+        {displayPrice != "Let's Talk" && (
+          <div className="flex items-center justify-center">
+            <Button type="link" to="/meeting-booking" variant="primary">
+              Book a call
+            </Button>
+          </div>
+        )}
       </div>
     </div>
   );

@@ -152,24 +152,27 @@ const PricingSections = () => {
         <div className="flex justify-center items-center gap-8 border-[1px] border-secondary-text rounded-site py-4 px-8 w-fit mx-auto">
           <button
             onClick={() => setCurrency('USD')}
-            className={`bg-primaryLightWhite dark:bg-primaryDarkBlack rounded-site border-[1px] border-secondary-text ${
-              currency === 'USD' && 'text-primary'
+            className={` rounded-site border-[1px] border-secondary-text ${
+              currency === 'USD' &&
+              'bg-gradient-to-t from-[#FF7B00] via-[#FFDA00] to-[#FFE48B] bg-clip-text text-transparent'
             } p-2`}
           >
             USD
           </button>
           <button
             onClick={() => setCurrency('SAR')}
-            className={`bg-primaryLightWhite dark:bg-primaryDarkBlack rounded-site border-[1px] border-secondary-text ${
-              currency === 'SAR' && 'text-primary'
+            className={` rounded-site border-[1px] border-secondary-text ${
+              currency === 'SAR' &&
+              'bg-gradient-to-t from-[#FF7B00] via-[#FFDA00] to-[#FFE48B] bg-clip-text text-transparent'
             } p-2`}
           >
             SAR
           </button>
           <button
             onClick={() => setCurrency('EGP')}
-            className={`bg-primaryLightWhite dark:bg-primaryDarkBlack rounded-site border-[1px] border-secondary-text ${
-              currency === 'EGP' && 'text-primary'
+            className={` rounded-site border-[1px] border-secondary-text ${
+              currency === 'EGP' &&
+              'bg-gradient-to-t from-[#FF7B00] via-[#FFDA00] to-[#FFE48B] bg-clip-text text-transparent'
             } p-2`}
           >
             EGP
@@ -192,7 +195,7 @@ const PricingSections = () => {
         ))}
       </Container>
       <Container className="py-4">
-        <MovingSliderHover speed={100} arrayNumber={5} enableHover>
+        <MovingSliderHover speed={100} arrayNumber={6} enableHover>
           {otherPackages.map((pkg, index) => (
             <SmallPricingCard
               key={index}
