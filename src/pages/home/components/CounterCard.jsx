@@ -47,7 +47,7 @@ const CounterCard = ({ num, symbol, title, icon }) => {
           </motion.span>
           <span className="text-lg md:text-xl font-semibold">{symbol}</span>
         </p>
-        <p className="text-lg md:text-xl font-semibold w-full text-center">
+        <p className="text-center text-lg font-medium text-primaryLightWhiteText dark:text-primary-text w-full text-primary-text">
           {title}
         </p>
       </div>

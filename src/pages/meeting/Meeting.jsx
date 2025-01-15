@@ -38,7 +38,7 @@ const Meeting = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://yourdomain.com/meeting" />
       </Helmet>
-      <h1 className="text-secondary-text text-center py-4 bg-gradient-to-t from-[#FF7B00] via-[#FFDA00] to-[#FFE48B]">
+      <h1 className="text-secondary-text font-semibold text-center py-4 bg-gradient-to-t from-[#FF7B00] via-[#FFDA00] to-[#FFE48B]">
         Only 3 Spots Are Available This Month
       </h1>
       <div className="h-10 w-full bg-[#FF7B00]">
@@ -46,8 +46,8 @@ const Meeting = () => {
       </div>
       <div className="grid-bg overflow-hidden">
         <header className="bg-gradient-to-b from-primaryLightWhite dark:from-primaryDarkBlack to-transparent">
-          <nav className="flex flex-col items-center justify-center gap-2 pt-2 pb-16">
-            <div className="flex items-center justify-center w-60">
+          <nav className="flex flex-col items-center justify-center gap-8 pt-2 pb-16">
+            <div className="flex items-center justify-center w-32 xl:w-36">
               <Link to="/">
                 <img src={logo} alt="Seven Design Logo" />
               </Link>
@@ -62,7 +62,7 @@ const Meeting = () => {
           <div className="flex flex-col gap-[19.5px] text-gap">
             <Container className="flex flex-col gap-[19.5px] text-gap">
               <div>
-                <h1 className="text-center text-site md:text-site-md tracking-site leading-site font-semibold">
+                <h1 className="text-center text-site md:text-site-md tracking-site leading-site font-medium">
                   Hop on a <LatinSpan>call</LatinSpan> with us
                 </h1>
               </div>
@@ -91,7 +91,7 @@ const Meeting = () => {
                   playerColor="#feda00"
                   volume={0.5}
                   bigPlayButton={true}
-                  roundedPlayer={0}
+                  roundedPlayer={24}
                 />
               </div>
               <div className="w-full lg:w-1/3 z-10 max-w-xl">

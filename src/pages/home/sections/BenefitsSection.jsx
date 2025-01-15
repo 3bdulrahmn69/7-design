@@ -1,6 +1,7 @@
 import Container from '../../../components/container';
 import {
   Description,
+  LatinSpan,
   LittleTitle,
   Section,
   Title,
@@ -59,7 +60,9 @@ const BenefitsSection = () => {
     <Section id={'benefits'}>
       <Container className="flex flex-col gap-[19.5px] text-gap">
         <LittleTitle>Benefits</LittleTitle>
-        <Title>Why Us</Title>
+        <Title>
+          Why <LatinSpan>Us?</LatinSpan>
+        </Title>
         <Description>
           Our plans come with the promise of limitless Creativity and Dedicated
           Support.

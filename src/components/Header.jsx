@@ -45,7 +45,7 @@ const Header = () => {
   return (
     <motion.header
       style={{ willChange: 'transform, opacity' }}
-      className="fixed xl:top-8 top-0 dark:bg-primaryDarkBlack bg-primaryLightWhite xl:bg-transparent xl:dark:bg-transparent inset-x-0 mx-auto xl:border-[1px] xl:border-gray-500 rounded-xl py-3 xl:px-6 px-2 xl:backdrop-blur w-11/12 xl:w-fit z-50"
+      className="fixed xl:top-8 top-0 bg-transparent inset-x-0 xl:border-[1px] border-b-[1px] border-secondary-text xl:rounded-xl xl:mx-auto py-3 xl:px-6 px-4 backdrop-blur w-full xl:w-fit z-50"
       initial="hidden"
       animate="visible"
       variants={slideVariants}

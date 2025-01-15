@@ -6,7 +6,7 @@ const TestimonialCard = ({ name, desc, title, image, className }) => {
   return (
     <figure
       className={cn(
-        'bg-secondaryLightWhite dark:bg-secondaryDarkBlack mx-2 rounded-site p-6 min-w-fit h-[260px] border-[1px] border-secondary-text',
+        'bg-secondaryLightWhite dark:bg-secondaryDarkBlack mx-2 rounded-site p-6 min-w-fit h-[270px] border-[1px] border-secondary-text',
         className
       )}
       aria-labelledby={`testimonial-${name}`}
@@ -30,7 +30,7 @@ const TestimonialCard = ({ name, desc, title, image, className }) => {
         </div>
       </header>
       <blockquote
-        className="leading-relaxed font-normal text-primary-text max-w-md"
+        className="leading-relaxed font-normal text-primary-text max-w-sm"
         aria-label={`Testimonial description from ${name}`}
       >
         {desc}

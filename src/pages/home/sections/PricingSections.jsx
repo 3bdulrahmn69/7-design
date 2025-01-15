@@ -45,7 +45,7 @@ const packages = [
   },
   {
     type: 'Advanced',
-    packageName: 'Comprehensive Brand Identity',
+    packageName: 'Full Brand Identity',
     features: {
       'Logo design (3 initial concepts)': true,
       '2 minor revisions included': true,
@@ -168,7 +168,7 @@ const PricingSections = () => {
           direction="normal"
           arrayNumber={3}
           enableHover
-          hoverSpeed={200}
+          hoverSpeed={500}
         >
           {otherPackages.map((pkg, index) => (
             <SmallPricingCard

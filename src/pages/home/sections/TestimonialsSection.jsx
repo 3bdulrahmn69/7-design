@@ -2,6 +2,7 @@ import Container from '../../../components/container';
 import MovingSlider from '../../../components/MovingSlider';
 import {
   Description,
+  LatinSpan,
   LittleTitle,
   Section,
   Title,
@@ -15,7 +16,7 @@ const TestimonialsSection = () => {
     <Section>
       <Container className="flex flex-col gap-[19.5px] text-gap mb-12">
         <LittleTitle>Words Of Love</LittleTitle>
-        <Title>Read What Our Clients Say</Title>
+        <Title>Read What <LatinSpan>Our Clients</LatinSpan> Say</Title>
         <Description>
           See how our designs and fast delivery helped businesses stand out.
           Clients share how we turned their ideas into unforgettable brand

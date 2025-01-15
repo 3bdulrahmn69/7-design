@@ -47,9 +47,9 @@ const MovingSlider = ({
           className={cn(
             'absolute z-10 opacity-80 blur-[20px] pointer-events-none',
             isVertical
-              ? 'top-0 left-0 w-full h-12'
-              : '-left-4 bottom-0 h-full w-14',
-            'bg-gradient-to-r from-primaryLightWhite to-primaryLightWhite dark:from-primaryDarkBlack dark:to-primaryDarkBlack'
+              ? 'top-0 -left-1 w-full h-12'
+              : '-left-4 bottom-0 h-full w-20',
+            'bg-gradient-to-r from-primaryLightWhite to-primaryLightWhite dark:from-primaryDarkBlack dark:to-transparent'
           )}
         />
 
@@ -73,7 +73,7 @@ const MovingSlider = ({
             isVertical
               ? 'bottom-0 left-0 w-full h-12'
               : '-right-4 top-0 h-full w-14',
-            'bg-gradient-to-l from-primaryLightWhite to-primaryLightWhite dark:from-primaryDarkBlack dark:to-primaryDarkBlack'
+            'bg-gradient-to-r from-primaryLightWhite to-primaryLightWhite dark:from-transparent dark:to-primaryDarkBlack'
           )}
         />
       </div>

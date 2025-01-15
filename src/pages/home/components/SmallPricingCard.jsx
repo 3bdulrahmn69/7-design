@@ -16,7 +16,7 @@ const SmallPricingCard = ({
   return (
     <div
       className={cn(
-        'border-[1px] border-secondary-text bg-secondaryLightWhite dark:bg-secondaryDarkBlack rounded-site overflow-hidden mx-2 h-[210px]',
+        'border-[1px] border-secondary-text bg-secondaryLightWhite dark:bg-secondaryDarkBlack pt-2 rounded-site overflow-hidden mx-2 h-[210px]',
         className
       )}
     >

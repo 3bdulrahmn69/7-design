@@ -23,7 +23,7 @@ const PricingCard = ({
   return (
     <div
       className={cn(
-        'flex flex-col relative border border-secondary-text rounded-site shadow-lg px-4 py-6 max-w-md overflow-hidden bg-primaryLightWhite dark:bg-primaryDarkBlack',
+        'flex flex-col relative border border-secondary-text rounded-site shadow-lg px-4 py-8 max-w-md overflow-hidden bg-primaryLightWhite dark:bg-primaryDarkBlack',
         className
       )}
     >
@@ -35,7 +35,7 @@ const PricingCard = ({
         </>
       )}
       <div className="z-[2]">
-        <h5 className="text-base font-bold mb-4 text-center">{packageName}</h5>
+        <h5 className="text-2xl font-bold mb-2 text-center">{packageName}</h5>
         <div className="flex flex-col gap-4 justify-between items-center mb-4">
           <p className="text-2xl font-semibold">{displayPrice}</p>
           <hr className="w-11/12 border-secondary-text" />
@@ -95,7 +95,7 @@ const PricingCard = ({
         </ul>
       </div>
       <Button type="link" to="meeting-booking" className="mt-4">
-        Book a call
+        Get Started
       </Button>
     </div>
   );

@@ -78,7 +78,7 @@ const ServicesSection = () => {
       <Container className="flex flex-col gap-[19.5px] text-gap">
         <LittleTitle>Services</LittleTitle>
         <Title>
-          All your <LatinSpan>design</LatinSpan> needs.
+          All your <LatinSpan>design</LatinSpan> needs
         </Title>
         <Description>
           From logo design to brand identity, our expert team crafts unique
