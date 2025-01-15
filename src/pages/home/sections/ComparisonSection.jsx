@@ -1,5 +1,4 @@
 import Container from '../../../components/container';
-import Logo from '../../../components/Logo';
 import {
   Section,
   Title,
@@ -9,6 +8,8 @@ import {
 import ComparisonCard from '../components/ComparisonCard';
 import { FaCheck } from 'react-icons/fa6';
 import { TfiClose } from 'react-icons/tfi';
+
+import logo from '../../../assets/logo-textl.png';
 
 const ComparisonSection = () => {
   const otherAgencies = [
@@ -36,7 +37,7 @@ const ComparisonSection = () => {
         </Title>
       </Container>
       <Container className="flex flex-col md:flex-row items-center justify-center gap-11 md:gap-16 lg:gap-24 mt-16">
-        <div className="w-full md:max-w-[450px]">
+        <div className="w-full flex flex-col items-center justify-center md:max-w-[450px]">
           <h4
             className="text-center text-primary-text text-2xl mb-8"
             aria-label="Other Agencies"
@@ -44,28 +45,27 @@ const ComparisonSection = () => {
             Other Agencies
           </h4>
           <ComparisonCard className="text-[rgba(0,0,0,0.5)] dark:text-[rgba(255,255,255,0.56)]">
-            <ul className="list-none pl-0 space-y-6" role="list">
+            <ul className="space-y-6" role="list">
               {otherAgencies.map((item, index) => (
                 <li key={`other-${index}`} className="flex items-center gap-2">
                   <span className="" aria-hidden="true">
                     <TfiClose size={20} />
                   </span>
-                  <span className="text-lg">{item}</span>
+                  <span className="ml-1 text-lg">{item}</span>
                 </li>
               ))}
             </ul>
           </ComparisonCard>
         </div>
-        <div className="w-full md:max-w-[450px]">
+        <div className="w-full flex flex-col items-center justify-center md:max-w-[450px]">
           <h4
             className="flex items-center justify-center gap-4 mb-8"
             aria-label="Seven Design Studio"
           >
-            <Logo />
-            <span className="text-2xl">Seven Design Studio</span>
+            <img src={logo} alt="Seven Design Studio" className="w-44" />
           </h4>
           <ComparisonCard type="glow">
-            <ul className="list-none pl-0 space-y-6" role="list">
+            <ul className="space-y-6" role="list">
               {sevenDesignStudio.map((item, index) => (
                 <li key={`seven-${index}`} className="flex items-center gap-2">
                   <span aria-hidden="true">
@@ -98,7 +98,7 @@ const ComparisonSection = () => {
                       style={{ fill: 'url(#icon-gradient)' }}
                     />
                   </span>
-                  <span className="text-lg">{item}</span>
+                  <span className="ml-1 text-lg">{item}</span>
                 </li>
               ))}
             </ul>

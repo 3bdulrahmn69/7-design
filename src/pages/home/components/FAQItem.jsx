@@ -11,7 +11,7 @@ const FAQItem = ({ question, answer }) => {
   };
 
   return (
-    <div className="border-[1px] bg-secondaryLightWhite dark:bg-secondaryDarkBlack border-secondary-text rounded-md shadow-sm mb-4 px-4">
+    <div className="w-72 md:w-full border-[1px] bg-secondaryLightWhite dark:bg-secondaryDarkBlack border-secondary-text rounded-md shadow-sm mb-4 px-4">
       <button
         onClick={toggleAnswer}
         className="flex justify-between gap-4 w-full py-4 text-lg text-left font-semibold focus:outline-none"

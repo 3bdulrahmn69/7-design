@@ -23,9 +23,37 @@ const TestimonialCard = ({ name, desc, title, image, className }) => {
             {name}
           </h2>
         </div>
-        <div className="flex items-center">
+        <div className="flex items-center text-">
+          <svg width="0" height="0">
+            <defs>
+              <linearGradient
+                id="icon-gradient"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="0%"
+              >
+                <stop
+                  offset="0%"
+                  style={{ stopColor: '#FF7B00', stopOpacity: 1 }}
+                />
+                <stop
+                  offset="50%"
+                  style={{ stopColor: '#FFDA00', stopOpacity: 1 }}
+                />
+                <stop
+                  offset="100%"
+                  style={{ stopColor: '#FFE48B', stopOpacity: 1 }}
+                />
+              </linearGradient>
+            </defs>
+          </svg>
           {[...Array(5)].map((_, index) => (
-            <FaStar key={index} className="mr-1" />
+            <FaStar
+              key={index}
+              className="mr-1"
+              style={{ fill: 'url(#icon-gradient)' }}
+            />
           ))}
         </div>
       </header>

@@ -66,8 +66,8 @@ const FrequentlySection = () => {
           processes. If you have more questions, feel free to reach out to us!
         </Description>
       </Container>
-      <Container>
-        <div className="max-w-2xl mx-auto">
+      <Container className="mt-16">
+        <div className="max-w-2xl flex flex-col items-center justify-center mx-auto">
           {faqs.map((faq, index) => (
             <FAQItem key={index} question={faq.question} answer={faq.answer} />
           ))}

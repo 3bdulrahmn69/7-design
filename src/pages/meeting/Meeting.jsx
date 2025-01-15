@@ -60,25 +60,27 @@ const Meeting = () => {
         </header>
         <main className="flex flex-col ">
           <div className="flex flex-col gap-[19.5px] text-gap">
-            <Container className="flex flex-col gap-[19.5px] text-gap">
-              <div>
-                <h1 className="text-center text-site md:text-site-md tracking-site leading-site font-medium">
-                  Hop on a <LatinSpan>call</LatinSpan> with us
-                </h1>
-              </div>
-              <div className="flex justify-center items-center text-primary-text">
-                <div className="flex flex-col gap-2 p-4 justify-center items-center max-w-2xl mx-auto text-lg text-center text-[17px] md:text-[20px] text-primary-text lg:max-w-2xl px-6 text md:px-20 lg:px-0 leading-[1.5em] font-medium">
-                  <p>
-                    We&apos;re currently accepting new clients for our logo
-                    design and brand identity services this month!
-                  </p>
-                  <p>Seats are limited, so act fast!</p>
-                  <p>
-                    To apply, book a call with our team through this form, and
-                    we&apos;ll guide you through our branding solutions and how
-                    to get started.
-                  </p>
-                  <p>Book now and create your iconic brand!</p>
+            <Container>
+              <div className="backdrop-blur flex flex-col items-center justify-center gap-[19.5px] text-gap border-[1px] border-secondary-text py-8 rounded-3xl">
+                <div>
+                  <h1 className="text-center text-site md:text-site-md tracking-site leading-site font-medium">
+                    Hop on a <LatinSpan>call</LatinSpan> with us
+                  </h1>
+                </div>
+                <div className="flex justify-center items-center text-primary-text">
+                  <div className="flex flex-col gap-3 p-4 justify-center items-center text-lg text-center text-[17px] md:text-[20px] text-primary-text lg:max-w-2xl px-6 text md:px-20 leading-[1.5em] font-medium max-w-sm">
+                    <p>
+                      We&apos;re currently accepting new clients for our logo
+                      design and brand identity services this month!
+                    </p>
+                    <p>Seats are limited, so act fast!</p>
+                    <p>
+                      To apply, book a call with our team through this form, and
+                      we&apos;ll guide you through our branding solutions and
+                      how to get started.
+                    </p>
+                    <p>Book now and create your iconic brand!</p>
+                  </div>
                 </div>
               </div>
             </Container>

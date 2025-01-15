@@ -24,7 +24,7 @@ const CounterCard = ({ num, symbol, title, icon }) => {
   return (
     <div
       ref={ref}
-      className="rounded-site border-[1px] border-secondary-text bg-secondaryLightWhite dark:bg-secondaryDarkBlack p-4 flex justify-between"
+      className="w-72 md:w-auto rounded-site border-[1px] border-secondary-text bg-secondaryLightWhite dark:bg-secondaryDarkBlack p-4 flex justify-between"
       aria-label={`${title} statistics`}
     >
       <figure className="w-[70px] xl:w-[80px] flex items-center justify-center">

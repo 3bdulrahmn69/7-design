@@ -16,30 +16,40 @@ const SmallPricingCard = ({
   return (
     <div
       className={cn(
-        'border-[1px] border-secondary-text bg-secondaryLightWhite dark:bg-secondaryDarkBlack pt-2 rounded-site overflow-hidden mx-2 h-[210px]',
+        'border-[1px] border-secondary-text bg-secondaryLightWhite dark:bg-secondaryDarkBlack pt-2 rounded-site overflow-hidden mx-2 h-[240px]',
         className
       )}
     >
-      <div className="">
+      <div>
         <h3 className="text-xl text-center py-2">{packageName}</h3>
       </div>
       <div className="p-4">
-        <ul className="list-disc list-inside space-y-1">
+        <ul>
           {features.map((feature, index) => (
             <li key={index} className="text-sm text-primary-text px-2">
               {feature}
             </li>
           ))}
         </ul>
-        <div className="mt-4">
+        <div className="mt-4 flex items-center justify-between">
           {displayPrice === "Let's Talk" ? (
-            <Button type="link" to="/meeting-booking" variant="text">
-              {displayPrice}
+            <Button
+              type="link"
+              to="/meeting-booking"
+              variant="primary"
+              className="mx-auto"
+            >
+              Let&apos;s Talk
             </Button>
           ) : (
-            <h4 className="font-medium text-lg mb-2 text-secondary">
-              {displayPrice}
-            </h4>
+            <>
+              <h4 className="font-medium text-lg mb-2 text-secondary">
+                {displayPrice}
+              </h4>
+              <Button type="link" to="/meeting-booking" variant="primary">
+                Book a call
+              </Button>
+            </>
           )}
         </div>
       </div>

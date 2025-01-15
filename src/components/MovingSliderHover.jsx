@@ -6,41 +6,22 @@ import { cn } from '../lib/utils';
 const MovingSliderHover = ({
   children,
   speed = 50,
-  orientation = 'row',
-  direction = 'normal',
   arrayNumber = 5,
   enableHover = false,
-  hoverSpeed,
   className,
 }) => {
   const controls = useAnimation();
-  const isVertical = orientation === 'col';
-  const scrollAxis = isVertical ? 'y' : 'x';
+  const containerRef = useRef(null);
+  const scrollAxis = 'x';
 
-  // Dynamically compute scroll values based on orientation and direction
-  const scrollValues = useMemo(() => {
-    if (direction === 'normal') {
-      return isVertical ? ['0%', '-50%'] : ['0%', '-50%'];
-    } else {
-      return isVertical ? ['-50%', '0%'] : ['-50%', '0%'];
-    }
-  }, [direction, isVertical]);
+  const scrollValues = useMemo(() => ['0%', '-100%'], []);
 
-  const lastTimestampRef = useRef(Date.now());
-  const hoverSpeedMultiplier = 3;
+  const lastTimestampRef = useRef(performance.now());
 
-  // Memoized animation start function
   const startAnimation = useCallback(
     (duration) => {
-      const elapsedTime = (Date.now() - lastTimestampRef.current) / 1000;
-      let progress;
-
-      // For reverse direction, ensure it starts from -50% or similar for the reverse flow
-      if (direction === 'reverse') {
-        progress = (elapsedTime % duration) / duration; // Set progress correctly for reverse
-      } else {
-        progress = (elapsedTime % duration) / duration;
-      }
+      const elapsedTime = (performance.now() - lastTimestampRef.current) / 1000;
+      const progress = (elapsedTime % duration) / duration;
 
       controls.start({
         [scrollAxis]: scrollValues,
@@ -52,66 +33,71 @@ const MovingSliderHover = ({
           from: progress,
         },
       });
-      lastTimestampRef.current = Date.now(); // Update timestamp
+      lastTimestampRef.current = performance.now();
     },
-    [controls, scrollAxis, scrollValues, direction]
+    [controls, scrollAxis, scrollValues]
   );
 
-  // Start animation when speed changes or component is mounted
+  const initializeAnimation = useCallback(() => {
+    requestAnimationFrame(() => startAnimation(speed));
+  }, [startAnimation, speed]);
+
   useEffect(() => {
-    startAnimation(speed); // Start with normal speed
+    initializeAnimation();
 
-    // Make sure the animation is reset when the component mounts
     return () => {
-      controls.stop(); // Stop animation on unmount to prevent unwanted side effects
+      controls.stop();
     };
-  }, [speed, startAnimation, controls]);
+  }, [initializeAnimation, controls]);
 
-  // Handle mouse enter and leave events
+  const handleTouchStart = useCallback(() => {
+    initializeAnimation();
+  }, [initializeAnimation]);
+
+  useEffect(() => {
+    const container = containerRef.current;
+    container.addEventListener('touchstart', handleTouchStart);
+
+    return () => {
+      container.removeEventListener('touchstart', handleTouchStart);
+    };
+  }, [handleTouchStart]);
+
   const handleMouseEnter = useCallback(() => {
-    if (enableHover)
-      startAnimation(hoverSpeed ? hoverSpeed : speed * hoverSpeedMultiplier);
-  }, [enableHover, startAnimation, speed, hoverSpeed]);
+    if (enableHover) {
+      controls.stop();
+    }
+  }, [enableHover, controls]);
 
   const handleMouseLeave = useCallback(() => {
-    if (enableHover) startAnimation(speed);
-  }, [enableHover, startAnimation, speed]);
+    if (enableHover) {
+      initializeAnimation();
+    }
+  }, [enableHover, initializeAnimation]);
 
   return (
     <div
       className={cn('relative flex items-center justify-center', className)}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
+      ref={containerRef}
     >
       <div
-        className={`w-full flex items-center relative overflow-hidden ${
-          isVertical ? 'h-full' : ''
-        }`}
+        className="w-full flex items-center relative overflow-hidden scrollbar-hide"
         dir="ltr"
       >
-        <div
-          className={`absolute ${
-            isVertical
-              ? 'top-0 left-0 w-full h-12'
-              : '-left-4 bottom-0 h-full w-12'
-          } bg-gradient-to-r from-primaryLightWhite to-primaryLightWhite dark:from-primaryDarkBlack dark:to-primaryDarkBlack blur-[20px] pointer-events-none z-10 opacity-80`}
-        />
+        <div className="absolute -left-4 bottom-0 h-full w-12 bg-gradient-to-r from-primaryLightWhite to-primaryLightWhite dark:from-primaryDarkBlack dark:to-primaryDarkBlack blur-[20px] pointer-events-none z-10 opacity-80" />
         <motion.div
           className="flex items-center"
-          style={{ flexDirection: isVertical ? 'column' : 'row' }}
           animate={controls}
+          drag="x"
+          dragConstraints={containerRef}
         >
           {[...Array(arrayNumber)].map((_, i) => (
             <React.Fragment key={i}>{children}</React.Fragment>
           ))}
         </motion.div>
-        <div
-          className={`absolute ${
-            isVertical
-              ? 'bottom-0 left-0 w-full h-12'
-              : '-right-4 top-0 h-full w-12'
-          } bg-gradient-to-l from-primaryLightWhite to-primaryLightWhite dark:from-primaryDarkBlack dark:to-primaryDarkBlack blur-[20px] pointer-events-none z-10 opacity-80`}
-        />
+        <div className="absolute -right-4 top-0 h-full w-12 bg-gradient-to-l from-primaryLightWhite to-primaryLightWhite dark:from-primaryDarkBlack dark:to-primaryDarkBlack blur-[20px] pointer-events-none z-10 opacity-80" />
       </div>
     </div>
   );
@@ -120,11 +106,8 @@ const MovingSliderHover = ({
 MovingSliderHover.propTypes = {
   children: PropTypes.node,
   speed: PropTypes.number,
-  orientation: PropTypes.oneOf(['row', 'col']),
-  direction: PropTypes.oneOf(['normal', 'reverse']),
   arrayNumber: PropTypes.number,
   enableHover: PropTypes.bool,
-  hoverSpeed: PropTypes.number,
   className: PropTypes.string,
 };
 

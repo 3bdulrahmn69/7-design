@@ -4,7 +4,7 @@ import Container from '../../../components/container';
 
 const TakeAction = () => {
   return (
-    <Section className="relative z-20">
+    <Section className="relative z-20 w-72 md:w-full">
       <Container>
         <div className="backdrop-blur flex flex-col items-center justify-center gap-9 border-[1px] border-secondary-text py-8 rounded-3xl">
           <div className="max-w-lg text-center ">

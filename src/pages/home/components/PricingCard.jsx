@@ -15,6 +15,7 @@ const PricingCard = ({
   currency,
   className,
   special,
+  setCurrency,
 }) => {
   const price = prices[currency] || prices.ask;
   const displayPrice =
@@ -38,6 +39,32 @@ const PricingCard = ({
         <h5 className="text-2xl font-bold mb-2 text-center">{packageName}</h5>
         <div className="flex flex-col gap-4 justify-between items-center mb-4">
           <p className="text-2xl font-semibold">{displayPrice}</p>
+          <div className="flex gap-2">
+            <button
+              onClick={() => setCurrency('USD')}
+              className={`bg-primaryLightWhite dark:bg-primaryDarkBlack rounded-site border-[1px] border-secondary-text ${
+                currency === 'USD' && 'text-primary'
+              } p-2`}
+            >
+              USD
+            </button>
+            <button
+              onClick={() => setCurrency('SAR')}
+              className={`bg-primaryLightWhite dark:bg-primaryDarkBlack rounded-site border-[1px] border-secondary-text ${
+                currency === 'SAR' && 'text-primary'
+              } p-2`}
+            >
+              SAR
+            </button>
+            <button
+              onClick={() => setCurrency('EGP')}
+              className={`bg-primaryLightWhite dark:bg-primaryDarkBlack rounded-site border-[1px] border-secondary-text ${
+                currency === 'EGP' && 'text-primary'
+              } p-2`}
+            >
+              EGP
+            </button>
+          </div>
           <hr className="w-11/12 border-secondary-text" />
         </div>
         <ul className="py-2">
@@ -111,6 +138,7 @@ PricingCard.propTypes = {
     ask: PropTypes.string,
   }).isRequired,
   currency: PropTypes.string.isRequired,
+  setCurrency: PropTypes.func,
   type: PropTypes.string,
   className: PropTypes.string,
   special: PropTypes.bool,

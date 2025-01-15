@@ -86,7 +86,7 @@ const ServicesSection = () => {
           impact.
         </Description>
       </Container>
-      <Container className="flex flex-col gap-4 my-4 mt-10">
+      <Container className="flex flex-col gap-4 my-4 mt-16">
         <MovingSlider speed={120} arrayNumber={6} direction="reverse">
           {ServicesOne.map((service, index) => (
             <ServiceCard
