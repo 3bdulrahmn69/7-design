@@ -45,7 +45,7 @@ const counterData = [
   {
     num: 97,
     symbol: '%',
-    title: 'Client Satisfaction Rate',
+    title: 'Satisfaction Rate',
     description:
       'Our 97% client satisfaction rate reflects our commitment to excellence.',
     icon: clientSatisfactionRate,

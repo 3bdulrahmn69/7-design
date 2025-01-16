@@ -61,14 +61,14 @@ const Meeting = () => {
         <main className="flex flex-col ">
           <div className="flex flex-col gap-[19.5px] text-gap">
             <Container>
-              <div className="backdrop-blur flex flex-col items-center justify-center gap-[19.5px] text-gap border-[1px] border-secondary-text py-8 rounded-3xl">
-                <div>
+              <div className="w-72 md:w-auto backdrop-blur flex flex-col items-center justify-center gap-[19.5px] text-gap border-[1px] border-secondary-text py-8 rounded-3xl">
+                <div className="px-2 md:px-8">
                   <h1 className="text-center text-site md:text-site-md tracking-site leading-site font-medium">
                     Hop on a <LatinSpan>call</LatinSpan> with us
                   </h1>
                 </div>
                 <div className="flex justify-center items-center text-primary-text">
-                  <div className="flex flex-col gap-3 p-4 justify-center items-center text-lg text-center text-[17px] md:text-[20px] text-primary-text lg:max-w-2xl px-6 text md:px-20 leading-[1.5em] font-medium max-w-sm">
+                  <div className="flex flex-col gap-3 justify-center items-center text-lg text-center text-[17px] md:text-[20px] text-primary-text max-w-md lg:max-w-xl px-6 text md:px-20 leading-[1.5em] font-medium">
                     <p>
                       We&apos;re currently accepting new clients for our logo
                       design and brand identity services this month!

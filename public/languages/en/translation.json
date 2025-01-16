@@ -27,5 +27,94 @@
       "ten": "You can submit your complaint via email or phone. We respond to all complaints within 48 business hours",
       "eleven": "We will attempt to resolve the dispute amicably. If no agreement is reached, we will resort to arbitration under the laws of the Arab Republic of Egypt"
     }
+  },
+  "terms page": "______________ Terms Page ______________ ",
+  "terms": {
+    "title": "Terms and Conditions",
+    "subtitle": "Please read these terms and conditions carefully before using our services.",
+    "section1": {
+      "revisionPolicy": "Revision Policy",
+      "numberOfRevisions": "Number of Revisions",
+      "starterPackage": "Starter Package",
+      "starterPackageDescription": "2 minor revisions for free.",
+      "professionalPackage": "Professional Package",
+      "professionalPackageDescription": "2 minor revisions for free.",
+      "premiumPackage": "Premium Package",
+      "premiumPackageDescription": "3 minor revisions for free.",
+      "scopeOfRevisions": "Scope of Revisions",
+      "minorRevisions": "Minor Revisions",
+      "minorRevisionsDescription": "Include color changes, font adjustments, or moving simple elements.",
+      "majorRevisions": "Major Revisions",
+      "majorRevisionsDescription": "Include complete redesigns, restructuring main elements, changing the logo, or adding entirely new elements.",
+      "additionalRevisionFees": "Additional Revision Fees",
+      "minorRevisionFee": "$30 for each additional minor revision after exhausting the agreed number of revisions.",
+      "majorRevisionFee": "$50 to $150 for each major revision, depending on the scale and complexity of the changes."
+    },
+    "section2": {
+      "paymentPolicy": "Payment Policy",
+      "advancePayment": "Advance Payment",
+      "advancePaymentDescription1": "50% of the total amount is required as an advance before work begins.",
+      "advancePaymentDescription2": "The remaining 50% is due upon delivery of the final work.",
+      "paymentMethods": "Payment Methods",
+      "paymentMethodsDescription": "Cash, bank transfer, or electronic payment platforms."
+    },
+    "section3": {
+      "deliveryPolicy": "Delivery Policy",
+      "deliveryTimelines": "Delivery Timelines",
+      "starterPackage": "Starter Package",
+      "starterPackageTimeline": "5-7 working days.",
+      "professionalPackage": "Professional Package",
+      "professionalPackageTimeline": "10-14 working days.",
+      "premiumPackage": "Premium Package",
+      "premiumPackageTimeline": "15-20 working days.",
+      "note": "Note",
+      "noteDescription": "Delivery timelines may be extended in case of additional revision requests or unforeseen circumstances. The client will be informed of any potential delays as soon as possible.",
+      "fileDelivery": "File Delivery",
+      "fileDeliveryDescription": "Final files will be delivered via email or file-sharing platforms. Files include: (PDF, PNG, JPEG) for designs, and (MP4, GIF) for animations."
+    },
+    "section4": {
+      "cancellationRefundPolicy": "Cancellation and Refund Policy",
+      "beforeWorkBegins": "Before Work Begins",
+      "beforeWorkBeginsDescription": "If the client cancels the order before work begins, 100% of the advance payment will be refunded.",
+      "afterWorkBegins": "After Work Begins",
+      "afterWorkBeginsDescription": "If the client cancels the order after work begins, 50% of the total amount will be deducted. This covers part of the operational costs and time already invested.",
+      "afterDelivery": "After Delivery",
+      "afterDeliveryDescription": "No refunds will be issued after the final work has been delivered."
+    },
+    "section5": {
+      "intellectualPropertyPolicy": "Intellectual Property Policy",
+      "clientRights": "Client Rights",
+      "clientRightsDescription": "After full payment, the client has the right to use the designs as they see fit. We reserve the right to display the designs in our portfolio unless the client requests otherwise.",
+      "sevenDesignStudioRights": "Seven Design Studio Rights",
+      "sevenDesignStudioRightsDescription": "We retain intellectual property rights to the designs until full payment is received."
+    },
+    "section6": {
+      "privacyPolicy": "Privacy Policy",
+      "dataProtection": "Data Protection",
+      "dataProtectionDescription": "We are committed to protecting client data and will not share it with any third parties. Client data will only be used to execute the agreed-upon work."
+    },
+    "section7": {
+      "complaintsPolicy": "Complaints Policy",
+      "filingComplaint": "Filing a Complaint",
+      "filingComplaintDescription": "Clients can file complaints via email or phone. Complaints will be addressed within 48 working hours.",
+      "disputeResolution": "Dispute Resolution",
+      "disputeResolutionDescription": "Any disputes will be resolved amicably. If no resolution is reached, arbitration will be sought by the laws of [Country]."
+    },
+    "section8": {
+      "policyAmendments": "Policy Amendments",
+      "rightToAmend": "Right to Amend",
+      "rightToAmendDescription": "We reserve the right to amend this policy at any time. Clients will be informed of any changes via the website or email."
+    },
+    "section9": {
+      "acceptanceOfTerms": "Acceptance of Terms",
+      "agreement": "Agreement",
+      "agreementDescription": "By proceeding with the work, the client agrees to all the terms and conditions outlined above."
+    },
+    "section10": {
+      "contactInformation": "Contact Information",
+      "email": "Email",
+      "phone": "Phone",
+      "website": "Website"
+    }
   }
 }

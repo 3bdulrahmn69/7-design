@@ -27,5 +27,94 @@
       "ten": "تقدر تقدم شكواك عبر البريد الإلكتروني أو الهاتف. بنرد على الشكاوى خلال 48 ساعة عمل.",
       "eleven": "بنحاول نحل النزاع بشكل ودي. لو ما اتفقناش، بنلجأ للتحكيم وفقًا لقوانين جمهورية مصر العربية."
     }
+  },
+  "terms page": "______________ Terms Page ______________ ",
+  "terms": {
+    "title": "الشروط والأحكام",
+    "subtitle": "يرجى قراءة هذه الشروط والأحكام بعناية قبل استخدام خدماتنا",
+    "section1": {
+      "revisionPolicy": "سياسة التعديلات",
+      "numberOfRevisions": "عدد التعديلات",
+      "starterPackage": "الباقة المبدئية",
+      "starterPackageDescription": "2 تعديلات طفيفة مجاناً.",
+      "professionalPackage": "الباقة المهنية",
+      "professionalPackageDescription": "2 تعديلات طفيفة مجاناً.",
+      "premiumPackage": "الباقة المميزة",
+      "premiumPackageDescription": "3 تعديلات طفيفة مجاناً.",
+      "scopeOfRevisions": "نطاق التعديلات",
+      "minorRevisions": "تعديلات طفيفة",
+      "minorRevisionsDescription": "تشمل تغيير الألوان، تعديل الخطوط، أو تحريك العناصر البسيطة.",
+      "majorRevisions": "تعديلات كبيرة",
+      "majorRevisionsDescription": "تشمل إعادة تصميم كاملة، إعادة هيكلة العناصر الرئيسية، تغيير الشعار، أو إضافة عناصر جديدة بالكامل.",
+      "additionalRevisionFees": "رسوم التعديلات الإضافية",
+      "minorRevisionFee": "$30 لكل تعديل طفيف إضافي بعد استنفاد عدد التعديلات المتفق عليها.",
+      "majorRevisionFee": "$50 إلى $150 لكل تعديل كبير، حسب حجم وتعقيد التعديلات."
+    },
+    "section2": {
+      "paymentPolicy": "سياسة الدفع",
+      "advancePayment": "الدفع المسبق",
+      "advancePaymentDescription1": "يتطلب دفع 50% من المبلغ الإجمالي كدفعة مقدمة قبل بدء العمل.",
+      "advancePaymentDescription2": "المبلغ المتبقي 50% يتم دفعه عند تسليم العمل النهائي.",
+      "paymentMethods": "طرق الدفع",
+      "paymentMethodsDescription": "نقداً، تحويل بنكي، أو منصات الدفع الإلكتروني."
+    },
+    "section3": {
+      "deliveryPolicy": "سياسة التسليم",
+      "deliveryTimelines": "مواعيد التسليم",
+      "starterPackage": "الباقة المبدئية",
+      "starterPackageTimeline": "5-7 أيام عمل.",
+      "professionalPackage": "الباقة المهنية",
+      "professionalPackageTimeline": "10-14 أيام عمل.",
+      "premiumPackage": "الباقة المميزة",
+      "premiumPackageTimeline": "15-20 أيام عمل.",
+      "note": "ملاحظة",
+      "noteDescription": "قد يتم تمديد مواعيد التسليم في حال طلب تعديلات إضافية أو حدوث ظروف غير متوقعة. سيتم إعلام العميل بأي تأخير محتمل في أقرب وقت ممكن.",
+      "fileDelivery": "تسليم الملفات",
+      "fileDeliveryDescription": "سيتم تسليم الملفات النهائية عبر البريد الإلكتروني أو منصات المشاركة. تشمل الملفات: (PDF، PNG، JPEG) للتصاميم، و (MP4، GIF) للرسوم المتحركة."
+    },
+    "section4": {
+      "cancellationRefundPolicy": "سياسة الإلغاء والاسترداد",
+      "beforeWorkBegins": "قبل بدء العمل",
+      "beforeWorkBeginsDescription": "إذا ألغى العميل الطلب قبل بدء العمل، سيتم رد 100% من الدفعة المقدمة.",
+      "afterWorkBegins": "بعد بدء العمل",
+      "afterWorkBeginsDescription": "إذا ألغى العميل الطلب بعد بدء العمل، سيتم خصم 50% من المبلغ الإجمالي. هذا يغطي جزءاً من التكاليف التشغيلية والوقت المستثمَر.",
+      "afterDelivery": "بعد التسليم",
+      "afterDeliveryDescription": "لن يتم إصدار أي استرداد بعد تسليم العمل النهائي."
+    },
+    "section5": {
+      "intellectualPropertyPolicy": "سياسة الملكية الفكرية",
+      "clientRights": "حقوق العميل",
+      "clientRightsDescription": "بعد الدفع الكامل، يحق للعميل استخدام التصاميم كما يشاء. نحتفظ بالحق في عرض التصاميم في محفظتنا ما لم يطلب العميل خلاف ذلك.",
+      "sevenDesignStudioRights": "حقوق ستوديو سيفن ديزاين",
+      "sevenDesignStudioRightsDescription": "نحتفظ بحقوق الملكية الفكرية للتصاميم حتى يتم استلام الدفع الكامل."
+    },
+    "section6": {
+      "privacyPolicy": "سياسة الخصوصية",
+      "dataProtection": "حماية البيانات",
+      "dataProtectionDescription": "نحن ملتزمون بحماية بيانات العميل ولن نشاركها مع أي طرف ثالث. سيتم استخدام بيانات العميل فقط لتنفيذ العمل المتفق عليه."
+    },
+    "section7": {
+      "complaintsPolicy": "سياسة الشكاوى",
+      "filingComplaint": "تقديم شكوى",
+      "filingComplaintDescription": "يمكن للعملاء تقديم الشكاوى عبر البريد الإلكتروني أو الهاتف. سيتم معالجة الشكاوى في غضون 48 ساعة عمل.",
+      "disputeResolution": "حل النزاعات",
+      "disputeResolutionDescription": "سيتم حل أي نزاعات وديًا. إذا لم يتم التوصل إلى حل، سيتم اللجوء إلى التحكيم وفقًا لقوانين [البلد]."
+    },
+    "section8": {
+      "policyAmendments": "تعديلات السياسة",
+      "rightToAmend": "الحق في التعديل",
+      "rightToAmendDescription": "نحتفظ بالحق في تعديل هذه السياسة في أي وقت. سيتم إعلام العملاء بأي تغييرات عبر الموقع الإلكتروني أو البريد الإلكتروني."
+    },
+    "section9": {
+      "acceptanceOfTerms": "قبول الشروط",
+      "agreement": "الاتفاقية",
+      "agreementDescription": "من خلال المضي قدمًا في العمل، يوافق العميل على جميع الشروط والأحكام المذكورة أعلاه."
+    },
+    "section10": {
+      "contactInformation": "معلومات الاتصال",
+      "email": "البريد الإلكتروني",
+      "phone": "الهاتف",
+      "website": "الموقع الإلكتروني"
+    }
   }
 }

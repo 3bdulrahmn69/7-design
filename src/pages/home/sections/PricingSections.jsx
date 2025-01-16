@@ -150,33 +150,39 @@ const PricingSections = () => {
       </Container>
       <Container className="mt-16 flex flex-col md:flex-row gap-4 justify-center md:items-start items-center flex-nowrap md:flex-wrap">
         <div className="flex justify-center items-center gap-8 border-[1px] border-secondary-text rounded-site py-4 px-8 w-fit mx-auto">
-          <button
-            onClick={() => setCurrency('USD')}
-            className={` rounded-site border-[1px] border-secondary-text ${
-              currency === 'USD' &&
-              'bg-gradient-to-t from-[#FF7B00] via-[#FFDA00] to-[#FFE48B] bg-clip-text text-transparent'
-            } p-2`}
-          >
-            USD
-          </button>
-          <button
-            onClick={() => setCurrency('SAR')}
-            className={` rounded-site border-[1px] border-secondary-text ${
-              currency === 'SAR' &&
-              'bg-gradient-to-t from-[#FF7B00] via-[#FFDA00] to-[#FFE48B] bg-clip-text text-transparent'
-            } p-2`}
-          >
-            SAR
-          </button>
-          <button
-            onClick={() => setCurrency('EGP')}
-            className={` rounded-site border-[1px] border-secondary-text ${
-              currency === 'EGP' &&
-              'bg-gradient-to-t from-[#FF7B00] via-[#FFDA00] to-[#FFE48B] bg-clip-text text-transparent'
-            } p-2`}
-          >
-            EGP
-          </button>
+          <span className="bg-primaryLightWhite dark:bg-primaryDarkBlack rounded-site border-[1px] border-secondary-text ">
+            <button
+              onClick={() => setCurrency('USD')}
+              className={`${
+                currency === 'USD' &&
+                'bg-gradient-to-t from-[#FF7B00] via-[#FFDA00] to-[#FFE48B] bg-clip-text text-transparent'
+              } p-2`}
+            >
+              USD
+            </button>
+          </span>
+          <span className="bg-primaryLightWhite dark:bg-primaryDarkBlack rounded-site border-[1px] border-secondary-text ">
+            <button
+              onClick={() => setCurrency('SAR')}
+              className={`${
+                currency === 'SAR' &&
+                'bg-gradient-to-t from-[#FF7B00] via-[#FFDA00] to-[#FFE48B] bg-clip-text text-transparent'
+              } p-2`}
+            >
+              SAR
+            </button>
+          </span>
+          <span className="bg-primaryLightWhite dark:bg-primaryDarkBlack rounded-site border-[1px] border-secondary-text ">
+            <button
+              onClick={() => setCurrency('EGP')}
+              className={`${
+                currency === 'EGP' &&
+                'bg-gradient-to-t from-[#FF7B00] via-[#FFDA00] to-[#FFE48B] bg-clip-text text-transparent'
+              } p-2`}
+            >
+              EGP
+            </button>
+          </span>
         </div>
       </Container>
       <Container className="mt-8 flex flex-col md:flex-row gap-4 justify-center md:items-start items-center flex-nowrap md:flex-wrap">

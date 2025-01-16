@@ -40,33 +40,39 @@ const PricingCard = ({
         <div className="flex flex-col gap-4 justify-between items-center mb-4">
           <p className="text-2xl font-semibold">{displayPrice}</p>
           <div className="flex gap-2">
-            <button
-              onClick={() => setCurrency('USD')}
-              className={` rounded-site border-[1px] border-secondary-text ${
-                currency === 'USD' &&
-                'bg-gradient-to-t from-[#FF7B00] via-[#FFDA00] to-[#FFE48B] bg-clip-text text-transparent'
-              } p-2`}
-            >
-              USD
-            </button>
-            <button
-              onClick={() => setCurrency('SAR')}
-              className={` rounded-site border-[1px] border-secondary-text ${
-                currency === 'SAR' &&
-                'bg-gradient-to-t from-[#FF7B00] via-[#FFDA00] to-[#FFE48B] bg-clip-text text-transparent'
-              } p-2`}
-            >
-              SAR
-            </button>
-            <button
-              onClick={() => setCurrency('EGP')}
-              className={` rounded-site border-[1px] border-secondary-text ${
-                currency === 'EGP' &&
-                'bg-gradient-to-t from-[#FF7B00] via-[#FFDA00] to-[#FFE48B] bg-clip-text text-transparent'
-              } p-2`}
-            >
-              EGP
-            </button>
+            <span className="bg-primaryLightWhite dark:bg-primaryDarkBlack rounded-site border-[1px] border-secondary-text ">
+              <button
+                onClick={() => setCurrency('USD')}
+                className={`${
+                  currency === 'USD' &&
+                  'bg-gradient-to-t from-[#FF7B00] via-[#FFDA00] to-[#FFE48B] bg-clip-text text-transparent'
+                } p-2`}
+              >
+                USD
+              </button>
+            </span>
+            <span className="bg-primaryLightWhite dark:bg-primaryDarkBlack rounded-site border-[1px] border-secondary-text ">
+              <button
+                onClick={() => setCurrency('SAR')}
+                className={`${
+                  currency === 'SAR' &&
+                  'bg-gradient-to-t from-[#FF7B00] via-[#FFDA00] to-[#FFE48B] bg-clip-text text-transparent'
+                } p-2`}
+              >
+                SAR
+              </button>
+            </span>
+            <span className="bg-primaryLightWhite dark:bg-primaryDarkBlack rounded-site border-[1px] border-secondary-text ">
+              <button
+                onClick={() => setCurrency('EGP')}
+                className={`${
+                  currency === 'EGP' &&
+                  'bg-gradient-to-t from-[#FF7B00] via-[#FFDA00] to-[#FFE48B] bg-clip-text text-transparent'
+                } p-2`}
+              >
+                EGP
+              </button>
+            </span>
           </div>
           <hr className="w-11/12 border-secondary-text" />
         </div>
