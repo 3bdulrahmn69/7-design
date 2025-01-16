@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { cn } from '../../../lib/utils';
 
-const ServiceCard = ({ icon, title, className }) => {
+const ServiceCard = ({ img, icon, title, className }) => {
   return (
     <div
       className={cn(
@@ -9,7 +9,12 @@ const ServiceCard = ({ icon, title, className }) => {
         className
       )}
     >
-      <span>{icon}</span>
+      {img && (
+        <figure className="w-4">
+          <img src={img} alt={title} className="fill-white" />
+        </figure>
+      )}
+      {icon && <span>{icon}</span>}
       <h3>{title}</h3>
     </div>
   );
@@ -17,6 +22,7 @@ const ServiceCard = ({ icon, title, className }) => {
 
 ServiceCard.propTypes = {
   icon: PropTypes.node,
+  img: PropTypes.string,
   title: PropTypes.string.isRequired,
   className: PropTypes.string,
 };

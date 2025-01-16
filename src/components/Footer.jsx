@@ -1,7 +1,9 @@
-import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import Logo from './Logo';
 import Container from './container';
-import { Link } from 'react-router-dom';
+
+import { FaFacebook, FaInstagram } from 'react-icons/fa';
+import { RiTwitterXLine } from 'react-icons/ri';
 
 const Footer = () => {
   const date = new Date().getFullYear();
@@ -69,13 +71,13 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Connect and Newsletter */}
+          {/* Connect */}
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Connect with Us</h3>
             <ul className="flex space-x-4">
               <li>
                 <a
-                  href="#"
+                  href="https://www.facebook.com/sevendesign99"
                   aria-label="Facebook"
                   className="hover:text-gray-400"
                   rel="noopener noreferrer"
@@ -85,17 +87,17 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://x.com/sevendesign99"
                   aria-label="Twitter"
                   className="hover:text-gray-400"
                   rel="noopener noreferrer"
                 >
-                  <FaTwitter size={20} />
+                  <RiTwitterXLine size={20} />
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/7.d.stud/"
                   aria-label="Instagram"
                   className="hover:text-gray-400"
                   rel="noopener noreferrer"

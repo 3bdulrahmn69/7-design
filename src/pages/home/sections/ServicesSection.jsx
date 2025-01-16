@@ -14,7 +14,7 @@ import { SiBrandfolder } from 'react-icons/si';
 import { MdAnimation } from 'react-icons/md';
 import { TiSocialInstagram } from 'react-icons/ti';
 import { SiTaichigraphics } from 'react-icons/si';
-import { CgWebsite } from 'react-icons/cg';
+import { MdOutlineWeb } from 'react-icons/md';
 import { MdManageAccounts } from 'react-icons/md';
 import { BsThreadsFill } from 'react-icons/bs';
 
@@ -23,25 +23,25 @@ const ServicesOne = [
     title: 'Logo Design',
     description:
       'Creative logo designs that reflect your company’s vision and leave a lasting impression. Our designers work closely with you to deliver a logo that stands out.',
-    icon: <GiPencilRuler />,
+    icon: <GiPencilRuler style={{ fill: 'url(#icon-gradient)' }} />,
   },
   {
     title: 'Brand Identity Design',
     description:
       'Comprehensive designs including business cards, letterheads, envelopes, and more to elevate your brand identity. We help you create a consistent and recognizable brand image across all platforms.',
-    icon: <SiBrandfolder />,
+    icon: <SiBrandfolder style={{ fill: 'url(#icon-gradient)' }} />,
   },
   {
     title: 'Logo Animation',
     description:
       'Short videos that bring your logo to life and captivate your audience. We create dynamic and engaging logo animations that leave a lasting impression.',
-    icon: <MdAnimation />,
+    icon: <MdAnimation style={{ fill: 'url(#icon-gradient)' }} />,
   },
   {
     title: 'Social Media Designs',
     description:
       'Elevate your social media presence with custom designs tailored to your brand. We create eye-catching visuals that boost engagement and attract followers.',
-    icon: <TiSocialInstagram />,
+    icon: <TiSocialInstagram style={{ fill: 'url(#icon-gradient)' }} />,
   },
 ];
 
@@ -50,25 +50,25 @@ const ServicesTwo = [
     title: 'Graphics Design',
     description:
       "Enhance your brand's visual communication with custom graphics. From marketing materials to social media content, our designers bring your ideas to life.",
-    icon: <SiTaichigraphics />,
+    icon: <SiTaichigraphics style={{ fill: 'url(#icon-gradient)' }} />,
   },
   {
     title: 'Website Design and Development',
     description:
       "Professional and user-friendly websites that showcase your identity and meet your clients' needs. Our design team ensures your online presence is both visually appealing and highly functional.",
-    icon: <CgWebsite />,
+    icon: <MdOutlineWeb style={{ fill: 'url(#icon-gradient)' }} />,
   },
   {
     title: 'Managing Ads Campaigns',
     description:
       'Launch successful advertising campaigns that capture attention and drive results. From concept to execution, we ensure your message reaches the right audience.',
-    icon: <BsThreadsFill />,
+    icon: <BsThreadsFill style={{ fill: 'url(#icon-gradient)' }} />,
   },
   {
     title: 'Social Media Management',
     description:
       'Innovative management for your social media pages and ad campaigns to increase engagement and expand your brand’s reach. We create, schedule, and optimize content to grow your audience and enhance your brand’s online visibility.',
-    icon: <MdManageAccounts />,
+    icon: <MdManageAccounts style={{ fill: 'url(#icon-gradient)' }} />,
   },
 ];
 
@@ -92,7 +92,8 @@ const ServicesSection = () => {
             <ServiceCard
               key={index}
               title={service.title}
-              icon={service.icon}
+              icon={service?.icon}
+              img={service?.img}
             />
           ))}
         </MovingSlider>
@@ -101,7 +102,8 @@ const ServicesSection = () => {
             <ServiceCard
               key={index}
               title={service.title}
-              icon={service.icon}
+              icon={service?.icon}
+              img={service?.img}
             />
           ))}
         </MovingSlider>

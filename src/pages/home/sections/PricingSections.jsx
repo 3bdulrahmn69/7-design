@@ -65,7 +65,7 @@ const otherPackages = [
   {
     packageName: 'Basic Logo Animation',
     features: [
-      'Simple, professional logo animation with smooth transitions and minimal effects. Delivered in MP4 and GIF formats to suit your needs.',
+      'Simple yet professional logo animation with smooth transitions and minimal effects. Delivered in MP4 and GIF formats to suit your needs.',
     ],
     prices: {
       USD: '$ 150',
@@ -76,7 +76,7 @@ const otherPackages = [
   {
     packageName: 'Advanced Logo Animation',
     features: [
-      'Complex, professional logo animation with dynamic transitions and advanced effects. Delivered in MP4 and GIF formats for versatile presentation.',
+      'Complex, professional logo animation with dynamic transitions and effects. Delivered in MP4 and GIF formats for versatile presentation.',
     ],
     prices: {
       USD: '$ 300',
@@ -86,7 +86,8 @@ const otherPackages = [
   },
   {
     packageName: 'Social Media Designs',
-    features: ['20 designs for social media platforms.'],
+    features:
+      "20 high-quality social media designs tailored to your brand's needs, ensuring visually appealing and engaging content across all platforms.",
     prices: {
       USD: '$ 400',
       SAR: '1,504 SAR',
@@ -96,7 +97,7 @@ const otherPackages = [
   {
     packageName: 'Graphics Design',
     features: [
-      'Custom graphics to boost your brand’s visual communication effectively. Includes brochures, flyers, social media designs, and tailored materials.',
+      'Custom graphics to enhance your brand’s visual communication. Includes brochures, flyers, social media designs, and tailored materials.',
     ],
     prices: {
       ask: "Let's Talk",
@@ -105,7 +106,7 @@ const otherPackages = [
   {
     packageName: 'Website Design',
     features: [
-      'Professional, user-friendly websites with modern UI/UX design, tailored functionality, and optimized user experience for better engagement.',
+      'Professional, user-friendly websites with modern UI/UX design, customized functionality, and optimized user experience for enhanced engagement.',
     ],
     prices: {
       ask: "Let's Talk",
@@ -114,7 +115,7 @@ const otherPackages = [
   {
     packageName: 'Social Media Management',
     features: [
-      'Monthly management of social platforms with content creation, scheduling, and performance analysis to enhance audience engagement.',
+      'Monthly management of social platforms with creative content creation, efficient scheduling, and thorough performance analysis to enhance audience engagement.',
     ],
     prices: {
       USD: '$ 500/month',
@@ -125,7 +126,7 @@ const otherPackages = [
   {
     packageName: 'Managing Ads Campaigns',
     features: [
-      'Monthly advertising campaign management, including campaign setup, optimization, budget management, and detailed performance tracking.',
+      'Monthly advertising campaign management, featuring campaign setup, optimization, budget management, and detailed performance tracking.',
     ],
     prices: {
       USD: '$ 700/month',
@@ -201,7 +202,7 @@ const PricingSections = () => {
         ))}
       </Container>
       <Container className="py-4">
-        <MovingSliderHover speed={100} arrayNumber={6} enableHover>
+        <MovingSliderHover speed={320} arrayNumber={10} enableHover>
           {otherPackages.map((pkg, index) => (
             <SmallPricingCard
               key={index}

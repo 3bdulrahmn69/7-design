@@ -3,6 +3,7 @@ import { Section } from '../../../components/Section';
 import MovingSlider from '../../../components/MovingSlider';
 import BannerImg from '../../../components/BannerImg';
 import { myLogosWhite, myLogosBlack } from '../../../services/myLogos';
+import Button from '../../../components/Button';
 
 const LogosSection = () => {
   return (
@@ -19,7 +20,7 @@ const LogosSection = () => {
           className="hidden dark:block"
         >
           {myLogosWhite.map((logo, index) => (
-            <BannerImg key={index} img={logo.img} link={logo.link} />
+            <BannerImg key={index} img={logo.img} />
           ))}
         </MovingSlider>
         <MovingSlider
@@ -30,9 +31,20 @@ const LogosSection = () => {
           className="block dark:hidden"
         >
           {myLogosBlack.map((logo, index) => (
-            <BannerImg key={index} img={logo.img} link={logo.link} />
+            <BannerImg key={index} img={logo.img} />
           ))}
         </MovingSlider>
+        <div className='flex items-center justify-center'>
+          <a
+            href="https://www.behance.net/drme99"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Button variant="secondary" className="mt-4">
+              Discover more
+            </Button>
+          </a>
+        </div>
       </Container>
     </Section>
   );

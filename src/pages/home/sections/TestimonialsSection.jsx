@@ -26,7 +26,7 @@ const TestimonialsSection = () => {
         </Description>
       </Container>
       <Container className="mt-16 flex flex-col gap-4 py-8">
-        <MovingSlider speed={100}>
+        <MovingSlider speed={100} arrayNumber={7}>
           {myTestimonialsOne.map((testimonial, index) => (
             <TestimonialCard
               key={index}
@@ -37,7 +37,7 @@ const TestimonialsSection = () => {
             />
           ))}
         </MovingSlider>
-        <MovingSlider speed={100} direction={'reverse'}>
+        <MovingSlider speed={100} arrayNumber={7} direction={'reverse'}>
           {myTestimonialsTwo.map((testimonial, index) => (
             <TestimonialCard
               key={index}

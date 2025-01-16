@@ -27,101 +27,77 @@ import twelveBlack from '../assets/logos/Black/12.svg';
 export const myLogosWhite = [
   {
     img: oneWhite,
-    link: 'https://reactjs.org/',
   },
   {
     img: twoWhite,
-    link: 'https://reactjs.org/',
   },
   {
     img: threeWhite,
-    link: 'https://reactjs.org/',
   },
   {
     img: fourWhite,
-    link: 'https://reactjs.org/',
   },
   {
     img: fiveWhite,
-    link: 'https://reactjs.org/',
   },
   {
     img: sixWhite,
-    link: 'https://reactjs.org/',
   },
   {
     img: sevenWhite,
-    link: 'https://reactjs.org/',
   },
   {
     img: eightWhite,
-    link: 'https://reactjs.org/',
   },
   {
     img: nineWhite,
-    link: 'https://reactjs.org/',
   },
   {
     img: tenWhite,
-    link: 'https://reactjs.org/',
   },
   {
     img: elevenWhite,
-    link: 'https://reactjs.org/',
   },
   {
     img: twelveWhite,
-    link: 'https://reactjs.org/',
   },
 ];
 
 export const myLogosBlack = [
   {
     img: oneBlack,
-    link: 'https://reactjs.org/',
   },
   {
     img: twoBlack,
-    link: 'https://reactjs.org/',
   },
   {
     img: threeBlack,
-    link: 'https://reactjs.org/',
   },
   {
     img: fourBlack,
-    link: 'https://reactjs.org/',
   },
   {
     img: fiveBlack,
-    link: 'https://reactjs.org/',
   },
   {
     img: sixBlack,
-    link: 'https://reactjs.org/',
   },
   {
     img: sevenBlack,
-    link: 'https://reactjs.org/',
   },
   {
     img: eightBlack,
-    link: 'https://reactjs.org/',
   },
   {
     img: nineBlack,
-    link: 'https://reactjs.org/',
   },
   {
     img: tenBlack,
-    link: 'https://reactjs.org/',
   },
   {
     img: elevenBlack,
-    link: 'https://reactjs.org/',
   },
   {
     img: twelveBlack,
-    link: 'https://reactjs.org/',
   },
 ];

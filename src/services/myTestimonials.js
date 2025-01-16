@@ -16,42 +16,42 @@ export const myTestimonialsOne = [
     name: 'Sahar Diab',
     title: 'Owner of Dega Printing & Design Brand',
     description:
-      'I requested a logo without having a specific idea in mind, but I was truly amazed by the design presented to me. Your team came up with a beautiful concept that impressed everyone who saw it. The colors were stunning, and your work speaks for itself. May God bless you for your incredible talent!',
+      'I had a vague idea for a logo, but your team delivered a stunning design. The colors and concept perfect—Masha Allah, your talent incredible—highly recommended.',
     image: SaharDiab,
   },
   {
     name: 'Gaafar El kazzaz',
     title: 'Founder of Insan Foundation',
     description:
-      'As a children’s book author, I had the honor of working with Seven for a cover design. Your professionalism, creativity, and punctuality were exceptional. You treated me with patience and respect, and the final result was outstanding. I highly recommend your agency to anyone seeking success.',
+      'Working with Seven was a pleasure. Your professionalism and creativity exceeded expectations. The book cover design is incredible; I highly recommend your team.',
     image: GaafarAlkazzaz,
   },
   {
     name: 'Ahmed Torgman',
     title: 'Owner of Shuts Café',
     description:
-      'I’ve worked with many designers before, but Seven stands out. Your designs are professional, creative, and always delivered on time. You consistently provide out-of-the-box ideas that are far from traditional. To be honest, you’re one of the best designers I’ve ever worked with. May God bless you more and more!',
+      'Seven stands out among designers. Your work is professional. You provide unique out-of-the-box ideas—Masha Allah, you’re one of the best I’ve ever worked with.',
     image: AhmedTorgoman,
   },
   {
     name: 'Fahad Al-Mansoori',
     title: 'Owner of Parfino Oud',
     description:
-      'Ya hala! The designs your team created for Parfino Oud are nothing short of stunning. The packaging is so elegant and luxurious—it perfectly matches the quality of our fragrances. Our customers are in love with the new look. Shukran for making our brand stand out!',
+      'Ya hala, your designs for Parfino Oud are stunning, elegant, and luxurious, perfectly matching our fragrances. Customers love the look—Shukran for making our brand stand out.',
     image: FahadAl_Mansoori,
   },
   {
     name: 'Layla Al-Rashid',
     title: 'Marketing Manager at Joylife (Saudi Arabia)',
     description:
-      'Before working with your team, we had a terrible experience with another design agency that didn’t understand our vision. But your team? Mashallah, you took the time to understand our brand truly and created stunning packaging that feels uniquely us. Our customers love it, and so do we. Shukran for saving our brand!',
+      'After a tough experience elsewhere, your team nailed our vision. The packaging is beautiful, unique, and loved by customers—Shukran for saving our brand with your amazing work.',
     image: LaylaAl_Rashid,
   },
   {
     name: 'Dr. Walid Al-Harbi',
     title: "Owner of Wali Al Ahd Women's Health Center",
     description:
-      'Your team truly understood what we wanted for Wali Al Ahd. The branding and logo you designed reflect the care and professionalism we offer to our patients. The process was smooth, and the results were beyond our expectations. Mashallah, your team is talented!',
+      'Your team perfectly captured Wali Al Ahd’s essence. The branding reflects our care and professionalism. The process was smooth—Masha Allah, talented indeed.',
     image: DrWalidAl_Harbi,
   },
 ];
@@ -61,42 +61,42 @@ export const myTestimonialsTwo = [
     name: 'Tasbeeh El Masry',
     title: 'Creative Director at Simplicity Clothing Store',
     description:
-      "We tried working with another company before, but it was a disaster. They missed deadlines, and the designs were generic. Then we found your team! You captured our vision perfectly, creating a modern brand identity rooted in our Saudi heritage. Alhamdulillah, our customers' response has been amazing.",
+      'Exceeding our expectations, your team created a modern, heritage-rich brand identity. Alhamdulillah, customers loved it. Your professionalism and creativity are unmatched—highly recommended.',
     image: TasbeehElMasry,
   },
   {
     name: 'Serag El-Din Talaat',
     title: 'Lawyer',
     description:
-      'I dreamed of having a personalized logo for a long time, but I always found generic designs online. That changed when I worked with your team. You created a unique logo and slogan for me and even designed my profile picture to match. Your professionalism, creativity, and timely delivery were truly impressive. I’m so grateful for your exceptional work!',
+      'A unique logo, slogan, and profile picture were created for me by your team. The professionalism, creativity, and timely delivery were impressive—I’m truly grateful for your exceptional work.',
     image: SeragEldin,
   },
   {
     name: 'Eng. Ahmed Esmat',
     title: 'CEO of Fly 60 Airplane Company',
     description:
-      'The motion graphics and branding your team created for Fly 60 are top-notch. The designs are sleek, modern, and perfectly aligned with our vision. The team was responsive and delivered on time. Mashallah, your work has taken our brand to new heights!',
+      'The motion graphics and branding for Fly 60 are sleek, perfectly aligned. Your team delivered on time, and Masha Allah, your work elevated our brand significantly.',
     image: EngAhmedEsmat,
   },
   {
     name: 'Mr. Mark Johnson',
     title: 'CEO of Turbo Traders (Canada)',
     description:
-      'Honestly, we had a bad experience with a previous design team whose 3D designs were low quality and failed to reflect our products well. But your team transformed how we showcase our products! The realism and detail are incredible, and our sales have skyrocketed. Thank you for your professionalism and creativity!',
+      'Transforming how we showcase our products are your 3D designs. The realism incredible—sales have skyrocketed. Thank you for your professionalism.',
     image: MrMarkJohnson,
   },
   {
     name: 'Dr. Omar Al-Ghamdi',
     title: 'Owner of Mega Pharma (Saudi Arabia)',
     description:
-      'We worked with another agency before, but they didn’t deliver what we needed. The designs were outdated and didn’t communicate our commitment to health and wellness. Then we found your team, and it was a game-changer. Your designs are clean, professional, and perfectly reflect our values. Shukran for your outstanding work!',
+      'Perfectly reflecting our values are your clean, professional designs. After a disappointing experience elsewhere, your team was a game-changer. Shukran for your outstanding and timely work.',
     image: DrOmarAlGhamdi,
   },
   {
     name: 'Eng. Hatem Al-Sayed',
     title: 'Brand Manager at Amalia Olive Oil Products',
     description:
-      'Your team’s packaging designs for Amalia are simply stunning. They capture the premium quality of our olive oil products and have helped us attract a more upscale audience. The designs are elegant and timeless—just like our products. Allah ykhalikom, you’ve been amazing to work with!',
+      'Stunning, elegant, your packaging designs for Amalia are perfect olive oil. Customers love it—Allah ykhalikom, you’ve been amazing to work with. Shukran.',
     image: EngHatemAl_Sayed,
   },
 ];

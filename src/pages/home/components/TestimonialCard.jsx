@@ -6,12 +6,12 @@ const TestimonialCard = ({ name, desc, title, image, className }) => {
   return (
     <figure
       className={cn(
-        'bg-secondaryLightWhite dark:bg-secondaryDarkBlack mx-2 rounded-site p-6 min-w-fit h-[270px] border-[1px] border-secondary-text',
+        'bg-secondaryLightWhite dark:bg-secondaryDarkBlack mx-2 rounded-site p-6 min-w-fit h-[255px] border-[1px] border-secondary-text flex flex-col gap-3',
         className
       )}
       aria-labelledby={`testimonial-${name}`}
     >
-      <header className="flex items-center mb-4">
+      <header className="flex items-center">
         <div className="flex items-center">
           <img
             src={image}
@@ -25,30 +25,6 @@ const TestimonialCard = ({ name, desc, title, image, className }) => {
             {name}
           </h2>
           <div className="flex items-center text-">
-            <svg width="0" height="0">
-              <defs>
-                <linearGradient
-                  id="icon-gradient"
-                  x1="0%"
-                  y1="0%"
-                  x2="100%"
-                  y2="0%"
-                >
-                  <stop
-                    offset="0%"
-                    style={{ stopColor: '#FF7B00', stopOpacity: 1 }}
-                  />
-                  <stop
-                    offset="50%"
-                    style={{ stopColor: '#FFDA00', stopOpacity: 1 }}
-                  />
-                  <stop
-                    offset="100%"
-                    style={{ stopColor: '#FFE48B', stopOpacity: 1 }}
-                  />
-                </linearGradient>
-              </defs>
-            </svg>
             {[...Array(5)].map((_, index) => (
               <FaStar
                 key={index}

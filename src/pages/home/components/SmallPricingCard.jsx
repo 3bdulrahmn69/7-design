@@ -25,35 +25,24 @@ const SmallPricingCard = ({
       </div>
       <div className="p-4">
         <ul>
-          {features.map((feature, index) => (
-            <li key={index} className="text-sm text-primary-text px-2">
-              {feature}
-            </li>
-          ))}
+          <li className="text-sm text-primary-text px-2">{features}</li>
         </ul>
         <div className="mt-4 flex items-center justify-between">
           {displayPrice === "Let's Talk" ? (
-            <Button
-              type="link"
-              to="/meeting-booking"
-              variant="primary"
-              className="mx-auto"
-            >
-              Let&apos;s Talk
-            </Button>
+            <h4 className="font-medium text-lg mb-2 text-secondary">
+              Custom Quotes
+            </h4>
           ) : (
             <h4 className="font-medium text-lg mb-2 text-secondary">
               {displayPrice}
             </h4>
           )}
         </div>
-        {displayPrice != "Let's Talk" && (
-          <div className="flex items-center justify-center">
-            <Button type="link" to="/meeting-booking" variant="primary">
-              Book a call
-            </Button>
-          </div>
-        )}
+        <div className="flex items-center justify-center">
+          <Button type="link" to="/meeting-booking" variant="primary">
+            {displayPrice === "Let's Talk" ? "Let's Talk" : 'Book a call'}
+          </Button>
+        </div>
       </div>
     </div>
   );
@@ -61,7 +50,7 @@ const SmallPricingCard = ({
 
 SmallPricingCard.propTypes = {
   packageName: PropTypes.string.isRequired,
-  features: PropTypes.arrayOf(PropTypes.string).isRequired,
+  features: PropTypes.string,
   prices: PropTypes.object.isRequired,
   currency: PropTypes.string.isRequired,
   className: PropTypes.string,
