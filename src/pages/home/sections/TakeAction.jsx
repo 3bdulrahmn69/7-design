@@ -4,11 +4,11 @@ import Container from '../../../components/container';
 
 const TakeAction = () => {
   return (
-    <Section className="relative z-20 w-72 md:w-full">
+    <Section className="relative z-20 w-80 md:w-full">
       <Container>
         <div className="backdrop-blur flex flex-col items-center justify-center gap-9 border-[1px] border-secondary-text py-8 rounded-3xl">
-          <div className="max-w-lg text-center ">
-            <h1 className="text-site md:text-site-md font-medium text-center tracking-site leading-site">
+          <div className="text-center ">
+            <h1 className="text-site md:text-site-md font-medium text-center tracking-site leading-site px-2">
               Ready to make your <LatinSpan>iconic brand</LatinSpan>?
             </h1>
           </div>

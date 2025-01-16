@@ -31,7 +31,7 @@ const MovingSlider = ({
         className={cn('w-full flex items-center relative overflow-hidden')}
         dir="ltr"
       >
-        <div className="absolute z-10 pointer-events-none left-0 bottom-0 h-full w-24 bg-gradient-to-r from-primaryLightWhite to-primaryLightWhite dark:from-primaryDarkBlack dark:to-transparent" />
+        <div className="absolute z-10 pointer-events-none left-0 bottom-0 h-full w-24 bg-gradient-to-r from-primaryLightWhite to-transparent dark:from-primaryDarkBlack dark:to-transparent" />
 
         <div>
           <motion.div
@@ -49,7 +49,7 @@ const MovingSlider = ({
           </motion.div>
         </div>
 
-        <div className="absolute z-10 pointer-events-none right-0 bottom-0 h-full w-24 bg-gradient-to-l from-primaryLightWhite to-primaryLightWhite dark:from-primaryDarkBlack dark:to-transparent" />
+        <div className="absolute z-10 pointer-events-none right-0 bottom-0 h-full w-24 bg-gradient-to-l from-primaryLightWhite to-transparent dark:from-primaryDarkBlack dark:to-transparent" />
       </div>
     </div>
   );

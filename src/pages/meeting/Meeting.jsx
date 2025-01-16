@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { WistiaPlayer } from '@wistia/wistia-player-react';
 import Calendly from './components/Calendly';
@@ -9,19 +8,6 @@ import Container from '../../components/container';
 import { Link } from 'react-router-dom';
 
 const Meeting = () => {
-  const [isDarkMode] = useState(() => {
-    if (typeof window !== 'undefined') {
-      return localStorage.getItem('theme') !== 'light';
-    }
-    return true;
-  });
-
-  useEffect(() => {
-    const theme = isDarkMode ? 'dark' : 'light';
-    document.body.classList.toggle('dark', isDarkMode);
-    localStorage.setItem('theme', theme);
-  }, [isDarkMode]);
-
   return (
     <div>
       <Helmet>
