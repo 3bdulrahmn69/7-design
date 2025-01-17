@@ -12,18 +12,20 @@ const SecCard = ({ title, description, icon, className }) => {
       <figure className="w-[70px] xl:w-[80px]">
         <img src={icon} alt={title} className="no-drag-img" />
       </figure>
-      <h4 className="text-center text-2xl">{title}</h4>
-      <p className="text-center text-lg font-medium text-primaryLightWhiteText dark:text-primary-text">
-        {description}
-      </p>
+      {title && <h4 className="text-center text-2xl">{title}</h4>}
+      {description && (
+        <p className="text-center text-lg font-medium text-primaryLightWhiteText dark:text-primary-text">
+          {description}
+        </p>
+      )}
     </div>
   );
 };
 
 SecCard.propTypes = {
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  icon: PropTypes.string.isRequired,
+  title: PropTypes.string,
+  description: PropTypes.string,
+  icon: PropTypes.string,
   className: PropTypes.string,
 };
 

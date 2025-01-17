@@ -7,6 +7,7 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 import HttpApi from 'i18next-http-backend';
 import ScrollToTop from './components/ScrollToTop';
 import LoaderFullPage from './components/LoaderFullPage';
+import GradientSVG from './components/GradientSVG';
 
 const HomePage = lazy(() => import('./pages/home/HomePage'));
 const Meeting = lazy(() => import('./pages/meeting/Meeting'));
@@ -18,6 +19,7 @@ const App = () => {
     <ReactLenis root>
       <BrowserRouter>
         <ScrollToTop />
+        <GradientSVG />
         <InnerApp />
       </BrowserRouter>
     </ReactLenis>

@@ -5,7 +5,7 @@ const ServiceCard = ({ img, icon, title, className }) => {
   return (
     <div
       className={cn(
-        'min-w-fit mx-2 flex gap-3 text-2xl items-center justify-center rounded-site p-6 bg-secondaryLightWhite dark:bg-secondaryDarkBlack text-primaryDarkBlack dark:text-primaryLightWhite border-[1px] border-secondary-text',
+        'min-w-fit mx-2 h-16 flex gap-3 text-2xl items-center justify-center rounded-site p-6 bg-secondaryLightWhite dark:bg-secondaryDarkBlack text-primaryDarkBlack dark:text-primaryLightWhite border-[1px] border-secondary-text',
         className
       )}
     >

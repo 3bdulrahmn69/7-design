@@ -150,7 +150,7 @@ const PricingSections = () => {
         </Description>
       </Container>
       <Container className="mt-16 flex flex-col md:flex-row gap-4 justify-center md:items-start items-center flex-nowrap md:flex-wrap">
-        <div className="flex justify-center items-center gap-8 border-[1px] border-secondary-text rounded-site py-4 px-8 w-fit mx-auto">
+        <div className="flex justify-center items-center gap-8 bg-primaryLightWhite dark:bg-primaryDarkBlack  border-[1px] border-secondary-text rounded-site py-4 px-8 w-fit mx-auto">
           <span className="bg-primaryLightWhite dark:bg-primaryDarkBlack rounded-site border-[1px] border-secondary-text ">
             <button
               onClick={() => setCurrency('USD')}

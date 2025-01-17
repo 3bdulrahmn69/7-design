@@ -10,13 +10,12 @@ import MovingSlider from '../../../components/MovingSlider';
 import ServiceCard from '../components/ServiceCard';
 
 import { GiPencilRuler } from 'react-icons/gi';
-import { SiBrandfolder } from 'react-icons/si';
 import { MdAnimation } from 'react-icons/md';
 import { TiSocialInstagram } from 'react-icons/ti';
 import { SiTaichigraphics } from 'react-icons/si';
 import { MdOutlineWeb } from 'react-icons/md';
-import { MdManageAccounts } from 'react-icons/md';
-import { BsThreadsFill } from 'react-icons/bs';
+import { MdOutlineAdsClick } from 'react-icons/md';
+import { BiSolidLike } from 'react-icons/bi';
 
 const ServicesOne = [
   {
@@ -29,7 +28,17 @@ const ServicesOne = [
     title: 'Brand Identity Design',
     description:
       'Comprehensive designs including business cards, letterheads, envelopes, and more to elevate your brand identity. We help you create a consistent and recognizable brand image across all platforms.',
-    icon: <SiBrandfolder style={{ fill: 'url(#icon-gradient)' }} />,
+    icon: (
+      <div className="relative w-10 h-10 ">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/3 w-10 h-10 select-none">
+          <span className="block w-full h-1 bg-gradient-to-t from-[#FF7B00] via-[#FFDA00] to-[#FFE48B] rounded-site"></span>
+          <p className="bg-gradient-to-t from-[#FF7B00] via-[#FFDA00] to-[#FFE48B] bg-clip-text text-transparent font-black text-[10px] text-center -my-2 font-mono">
+            BRAND
+          </p>
+          <span className="block w-full h-1 bg-gradient-to-t from-[#FF7B00] via-[#FFDA00] to-[#FFE48B] rounded-site"></span>
+        </div>
+      </div>
+    ),
   },
   {
     title: 'Logo Animation',
@@ -62,13 +71,13 @@ const ServicesTwo = [
     title: 'Managing Ads Campaigns',
     description:
       'Launch successful advertising campaigns that capture attention and drive results. From concept to execution, we ensure your message reaches the right audience.',
-    icon: <BsThreadsFill style={{ fill: 'url(#icon-gradient)' }} />,
+    icon: <MdOutlineAdsClick style={{ fill: 'url(#icon-gradient)' }} />,
   },
   {
     title: 'Social Media Management',
     description:
       'Innovative management for your social media pages and ad campaigns to increase engagement and expand your brand’s reach. We create, schedule, and optimize content to grow your audience and enhance your brand’s online visibility.',
-    icon: <MdManageAccounts style={{ fill: 'url(#icon-gradient)' }} />,
+    icon: <BiSolidLike style={{ fill: 'url(#icon-gradient)' }} />,
   },
 ];
 

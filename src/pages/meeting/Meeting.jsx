@@ -7,6 +7,7 @@ import logo from '../../assets/logo-textl.png';
 import Container from '../../components/container';
 import { Link } from 'react-router-dom';
 import apologize from '../../assets/icons/apologize.gif';
+import SecCard from '../home/components/SecCard';
 
 const Meeting = () => {
   return (
@@ -88,17 +89,14 @@ const Meeting = () => {
               </div>
             </div>
           </div>
-          <Container className="px-4 md:px-0">
-            <div className="flex flex-col justify-center items-center mb-16">
-              <figure className="w-16">
-                <img src={apologize} alt="apologize" />
-              </figure>
-              <p className="py-4 px-8 text-center font-semibold border-[1px] border-secondary-text rounded-site bg-secondaryLightWhite dark:bg-secondaryDarkBlack text-primary-text max-w-xl">
-                We apologize in advance, but booking a meeting doesn’t guarantee
+          <Container className="mb-8">
+            <SecCard
+            className="md:w-auto md:max-w-lg"
+              description=" We apologize in advance, but booking a meeting doesn’t guarantee
                 acceptance. We work exclusively with clients we’re confident can
-                achieve outstanding results through our expertise
-              </p>
-            </div>
+                achieve outstanding results through our expertise."
+              icon={apologize}
+            />
           </Container>
         </main>
       </div>
