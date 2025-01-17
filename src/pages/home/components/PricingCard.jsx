@@ -6,6 +6,7 @@ import {
   IoIosCheckmarkCircleOutline,
   IoIosCloseCircleOutline,
 } from 'react-icons/io';
+import SpecialGlow from './SpecialGlow';
 
 const PricingCard = ({
   packageName,
@@ -24,16 +25,17 @@ const PricingCard = ({
   return (
     <div
       className={cn(
-        'flex flex-col relative border border-secondary-text rounded-site shadow-lg px-4 py-8 max-w-md overflow-hidden bg-primaryLightWhite dark:bg-primaryDarkBlack',
+        'flex flex-col relative border border-secondary-text rounded-site shadow-lg px-4 py-8 max-w-md bg-primaryLightWhite dark:bg-primaryDarkBlack overflow-hidden',
         className
       )}
     >
-      {type && <LittleTitle className="text-center mb-4">{type}</LittleTitle>}
+      {type && (
+        <LittleTitle className="text-center mb-4 relative z-10">
+          {type}
+        </LittleTitle>
+      )}
       {special && (
-        <>
-          <div className="absolute top-0 right-0 z-[1] h-24 w-24 specialGlow rounded-tr-site blur-[25px] opacity-50"></div>
-          <div className="absolute -top-1/2 -right-1/2 z-[1] h-full w-full specialGlow rounded-full blur-[40px] opacity-20"></div>
-        </>
+        <SpecialGlow className="absolute -top-1/2 -right-1/2 z-[1]" />
       )}
       <div className="z-[2]">
         <h5 className="text-2xl font-bold mb-2 text-center">{packageName}</h5>

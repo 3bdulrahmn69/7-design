@@ -158,17 +158,41 @@ body.dark {
   filter: blur(32px);
 }
 
-.specialGlow {
+.specialGlowP {
   background: conic-gradient(
     from 0deg at 50% 50%,
-    #feda00 0deg,
-    #ff0019 54.89161972682219deg,
-    #feda00 106.69924423399361deg,
-    #f9af13 162deg,
-    #feda00 252.00000000000003deg,
-    #ffda00 306.00000000000006deg,
-    #f9af13 360deg
+    #ff0000 0deg,
+    #ff001a 54.8916deg,
+    #ff8000 106.699deg,
+    #ff8000 162deg,
+    #f4be60 252deg,
+    #ff8000 306deg,
+    #f4be60 360deg
   );
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  filter: blur(32px);
+}
+.specialGlowC {
+  background: conic-gradient(
+    from 0deg at 50% 50%,
+    rgb(255, 217, 173) 0deg,
+    #f4be60 180deg,
+    rgb(253, 134, 77) 360deg
+  );
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 2.75rem);
+  filter: blur(32px);
 }
 
 @media (min-width: 321px) and (max-width: 375px) {

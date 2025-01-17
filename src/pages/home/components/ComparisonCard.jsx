@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { cn } from '../../../lib/utils';
+import SpecialGlow from './SpecialGlow';
 
 const ComparisonCard = ({ type = 'normal', className, children }) => {
   return (
@@ -10,10 +11,7 @@ const ComparisonCard = ({ type = 'normal', className, children }) => {
       )}
     >
       {type === 'glow' && (
-        <>
-          <div className="absolute -top-12 -right-12 w-40 h-40 bg-gradient-to-tr from-primary to-primary opacity-30 rounded-full blur-2xl pointer-events-none"></div>
-          <div className="absolute -top-2 -right-2 w-40 h-40 bg-gradient-to-tr from-red-800 to-orange-800 opacity-30 rounded-full blur-2xl pointer-events-none"></div>
-        </>
+        <SpecialGlow className="absolute -top-full md:-top-[120%] -right-1/2 z-[1]" />
       )}
       {children}
     </div>

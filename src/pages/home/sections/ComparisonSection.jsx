@@ -69,7 +69,7 @@ const ComparisonSection = () => {
             />
           </h4>
           <ComparisonCard type="glow">
-            <ul className="space-y-6" role="list">
+            <ul className="space-y-6 z-10" role="list">
               {sevenDesignStudio.map((item, index) => (
                 <li key={`seven-${index}`} className="flex items-center gap-2">
                   <span aria-hidden="true">
