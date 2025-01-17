@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import Container from '../../../components/container';
 import {
   Section,
@@ -12,28 +13,32 @@ import { TfiClose } from 'react-icons/tfi';
 import logo from '../../../assets/logo-textl.png';
 
 const ComparisonSection = () => {
+  const { t } = useTranslation();
+
   const otherAgencies = [
-    'Generic logo designs',
-    'No free revisions',
-    'No brand guidelines',
-    'Slow delivery',
-    'No industry research',
+    'comparison.otherAgencies.genericLogoDesigns',
+    'comparison.otherAgencies.noFreeRevisions',
+    'comparison.otherAgencies.noBrandGuidelines',
+    'comparison.otherAgencies.slowDelivery',
+    'comparison.otherAgencies.noIndustryResearch',
   ];
 
   const sevenDesignStudio = [
-    'Unique, custom logo designs',
-    'Up to 3 free revisions',
-    'Comprehensive brand guidelines',
-    'Fast and reliable delivery',
-    'Industry-specific research',
+    'comparison.sevenDesignStudio.uniqueLogoDesigns',
+    'comparison.sevenDesignStudio.upToFreeRevisions',
+    'comparison.sevenDesignStudio.comprehensiveBrandGuidelines',
+    'comparison.sevenDesignStudio.fastDelivery',
+    'comparison.sevenDesignStudio.industryResearch',
   ];
 
   return (
     <Section id="comparison" aria-labelledby="comparison-title">
       <Container className="flex flex-col gap-5 text-gap">
-        <LittleTitle id="comparison-title">Comparison</LittleTitle>
+        <LittleTitle id="comparison-title">
+          {t('comparison.sectionTitle')}
+        </LittleTitle>
         <Title>
-          Why <LatinSpan>Choose</LatinSpan> Seven Design Studio?
+          {t('comparison.whyChoose')} <LatinSpan>{t('comparison.companyName')}</LatinSpan>
         </Title>
       </Container>
       <Container className="flex flex-col md:flex-row items-center justify-center gap-11 md:gap-16 lg:gap-24 mt-16">
@@ -42,16 +47,16 @@ const ComparisonSection = () => {
             className="text-center text-primary-text text-2xl mb-8"
             aria-label="Other Agencies"
           >
-            Other Agencies
+            {t('comparison.otherAgencies.title')}
           </h4>
           <ComparisonCard className="text-[rgba(0,0,0,0.5)] dark:text-[rgba(255,255,255,0.56)]">
             <ul className="space-y-6" role="list">
               {otherAgencies.map((item, index) => (
                 <li key={`other-${index}`} className="flex items-center gap-2">
-                  <span className="" aria-hidden="true">
+                  <span aria-hidden="true">
                     <TfiClose size={20} />
                   </span>
-                  <span className="ml-1 text-lg">{item}</span>
+                  <span className="ml-1 text-lg">{t(item)}</span>
                 </li>
               ))}
             </ul>
@@ -78,7 +83,7 @@ const ComparisonSection = () => {
                       style={{ fill: 'url(#icon-gradient)' }}
                     />
                   </span>
-                  <span className="ml-1 text-lg">{item}</span>
+                  <span className="ml-1 text-lg">{t(item)}</span>
                 </li>
               ))}
             </ul>

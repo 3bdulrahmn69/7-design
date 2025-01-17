@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import Container from '../../../components/container';
 import { Section } from '../../../components/Section';
 import CounterCard from '../components/CounterCard';
@@ -14,53 +15,50 @@ const counterData = [
   {
     num: 7,
     symbol: '+',
-    title: 'Years of Experience',
-    description:
-      'With over 7 years of experience, we bring creativity and expertise to every project..',
+    title: 'counter.yearsExperience.title',
+    description: 'counter.yearsExperience.description',
     icon: years,
   },
   {
     num: 10,
     symbol: '+',
-    title: 'Countries',
-    description: 'Our designs have reached clients in 10+ countries worldwide.',
+    title: 'counter.countries.title',
+    description: 'counter.countries.description',
     icon: countries,
   },
   {
     num: 1700,
     symbol: '+',
-    title: 'Creative Designs',
-    description:
-      'From logos to packaging, we’ve created 1700+ unique designs that stand out.',
+    title: 'counter.creativeDesigns.title',
+    description: 'counter.creativeDesigns.description',
     icon: creativeDesigns,
   },
   {
     num: 500,
     symbol: '+',
-    title: 'Completed Projects',
-    description:
-      "We’ve successfully delivered 500+ projects, each tailored to meet our clients' unique needs.",
+    title: 'counter.completedProjects.title',
+    description: 'counter.completedProjects.description',
     icon: completedProjects,
   },
   {
     num: 97,
     symbol: '%',
-    title: 'Satisfaction Rate',
-    description:
-      'Our 97% client satisfaction rate reflects our commitment to excellence.',
+    title: 'counter.satisfactionRate.title',
+    description: 'counter.satisfactionRate.description',
     icon: clientSatisfactionRate,
   },
   {
     num: 320,
     symbol: '+',
-    title: 'Happy Clients',
-    description:
-      'Join our family of 320+ happy clients who trust us with their brand identity.',
+    title: 'counter.happyClients.title',
+    description: 'counter.happyClients.description',
     icon: happyClients,
   },
 ];
 
 const CounterSection = () => {
+  const { t } = useTranslation();
+
   return (
     <Section>
       <Container>
@@ -70,8 +68,8 @@ const CounterSection = () => {
               key={index}
               num={counter.num}
               symbol={counter.symbol}
-              title={counter.title}
-              description={counter.description}
+              title={t(counter.title)}
+              description={t(counter.description)}
               icon={counter.icon}
             />
           ))}

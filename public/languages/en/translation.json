@@ -1,6 +1,169 @@
 {
+  "companyName": "Seven Design Studio",
+  "buttons": {
+    "bookACall": "Book a call",
+    "learnMore": "Learn More",
+    "discoverMore": "Discover More"
+  },
+  "nav": {
+    "ourProjects": "Our Projects",
+    "process": "Process",
+    "benefits": "Benefits",
+    "services": "Services",
+    "pricing": "Pricing",
+    "FAQs": "FAQs"
+  },
+  "home page": "______________ Home Page ______________ ",
+  "home": {
+    "hero section": "______________ Hero Section ______________ ",
+    "heroSection": {
+      "hurry": "Hurry! Only 3 Spots Left"
+    },
+    "Logos Section": "______________ Logos Section ______________ ",
+    "logosSection": {
+      "littleTitle": "You're in good hands:"
+    },
+    "recent projects": "______________ Recent Projects ______________ ",
+    "recentProjectsSection": {
+      "title": "Our Recent",
+      "latin": "Projects",
+      "description": "Take a look at some of out latest projects."
+    }
+  },
+  "counter section": "______________ Counter Section ______________ ",
+  "counter": {
+    "yearsExperience": {
+      "title": "Years of Experience",
+      "description": "With over 7 years of experience, we bring creativity and expertise to every project."
+    },
+    "countries": {
+      "title": "Countries",
+      "description": "Our designs have reached clients in 10+ countries worldwide."
+    },
+    "creativeDesigns": {
+      "title": "Creative Designs",
+      "description": "From logos to packaging, we’ve created 1700+ unique designs that stand out."
+    },
+    "completedProjects": {
+      "title": "Completed Projects",
+      "description": "We’ve successfully delivered 500+ projects, each tailored to meet our clients' unique needs."
+    },
+    "satisfactionRate": {
+      "title": "Satisfaction Rate",
+      "description": "Our 97% client satisfaction rate reflects our commitment to excellence."
+    },
+    "happyClients": {
+      "title": "Happy Clients",
+      "description": "Join our family of 320+ happy clients who trust us with their brand identity."
+    }
+  },
+  "projects section": "______________ Projects Section ______________ ",
+  "process": {
+    "sectionTitle": "Process",
+    "howIt": "How It",
+    "works": "works",
+    "description": "Iconic Brand in 3 Easy Steps",
+    "enrollTitle": "Enroll",
+    "enrollDescription": "Select the plan that fits your needs and start your journey to an iconic brand.",
+    "shareTitle": "Share",
+    "shareDescription": "Share your vision with us, and we’ll bring it to life with stunning designs.",
+    "receiveTitle": "Receive",
+    "receiveDescription": "Your Iconic Brand is Ready! Receive your final designs with revisions until 100% satisfied."
+  },
+  "benefits section": "______________ Benefits Section ______________ ",
+  "benefits": {
+    "sectionTitle": "Benefits",
+    "why": "Why",
+    "us": "Us?",
+    "description": "Our plans come with the promise of limitless creativity and dedicated support.",
+    "expertDesignersTitle": "Expert Designers",
+    "expertDesignersDescription": "With years of experience and a portfolio of successful projects, we deliver designs you can trust.",
+    "uniqueDesignsTitle": "Unique Designs",
+    "uniqueDesignsDescription": "Stand out with custom, one-of-a-kind designs tailored specifically for your brand.",
+    "engagingVisualsTitle": "Engaging Visuals",
+    "engagingVisualsDescription": "Our visuals are designed to captivate your audience and leave a lasting impression.",
+    "fastDeliveryTitle": "Fast Delivery",
+    "fastDeliveryDescription": "Get your designs quickly, professionally, and efficiently, ensuring your projects stay on track.",
+    "transparentPricingTitle": "Transparent Pricing",
+    "transparentPricingDescription": "We offer clear and competitive pricing with no hidden fees. Choose a plan that fits your budget.",
+    "fullSatisfactionTitle": "Full Satisfaction",
+    "fullSatisfactionDescription": "Your satisfaction is our top priority. We promise to do our best to make you 100% satisfied."
+  },
+  "services section": "______________ Services Section ______________ ",
+  "services": {
+    "sectionTitle": "Services",
+    "allYour": "All your",
+    "designNeeds": "design needs",
+    "description": "From logo design to brand identity, our expert team crafts unique visual solutions that elevate your business and leave a lasting impact.",
+    "logoDesignTitle": "Logo Design",
+    "logoDesignDescription": "Creative logo designs that reflect your company’s vision and leave a lasting impression. Our designers work closely with you to deliver a logo that stands out.",
+    "brandIdentityDesignTitle": "Brand Identity Design",
+    "brandIdentityDesignDescription": "Comprehensive designs including business cards, letterheads, envelopes, and more to elevate your brand identity. We help you create a consistent and recognizable brand image across all platforms.",
+    "logoAnimationTitle": "Logo Animation",
+    "logoAnimationDescription": "Short videos that bring your logo to life and captivate your audience. We create dynamic and engaging logo animations that leave a lasting impression.",
+    "socialMediaDesignsTitle": "Social Media Designs",
+    "socialMediaDesignsDescription": "Elevate your social media presence with custom designs tailored to your brand. We create eye-catching visuals that boost engagement and attract followers.",
+    "graphicsDesignTitle": "Graphics Design",
+    "graphicsDesignDescription": "Enhance your brand's visual communication with custom graphics. From marketing materials to social media content, our designers bring your ideas to life.",
+    "websiteDesignAndDevelopmentTitle": "Website Design and Development",
+    "websiteDesignAndDevelopmentDescription": "Professional and user-friendly websites that showcase your identity and meet your clients' needs. Our design team ensures your online presence is both visually appealing and highly functional.",
+    "managingAdsCampaignsTitle": "Managing Ads Campaigns",
+    "managingAdsCampaignsDescription": "Launch successful advertising campaigns that capture attention and drive results. From concept to execution, we ensure your message reaches the right audience.",
+    "socialMediaManagementTitle": "Social Media Management",
+    "socialMediaManagementDescription": "Innovative management for your social media pages and ad campaigns to increase engagement and expand your brand’s reach. We create, schedule, and optimize content to grow your audience and enhance your brand’s online visibility."
+  },
+  "comparison section": "______________ Comparison Section ______________ ",
+  "comparison": {
+    "sectionTitle": "Comparison",
+    "whyChoose": "Why Choose",
+    "companyName": "Seven Design Studio?",
+    "otherAgencies": {
+      "title": "Other Agencies",
+      "genericLogoDesigns": "Generic logo designs",
+      "noFreeRevisions": "No free revisions",
+      "noBrandGuidelines": "No brand guidelines",
+      "slowDelivery": "Slow delivery",
+      "noIndustryResearch": "No industry research"
+    },
+    "sevenDesignStudio": {
+      "uniqueLogoDesigns": "Unique, custom logo designs",
+      "upToFreeRevisions": "Up to 3 free revisions",
+      "comprehensiveBrandGuidelines": "Comprehensive brand guidelines",
+      "fastDelivery": "Fast and reliable delivery",
+      "industryResearch": "Industry-specific research"
+    }
+  },
+  "testimonials section": "______________ Testimonials Section ______________ ",
+  "testimonials": {
+    "wordsOfLove": "Words Of Love",
+    "readWhat": "Read What",
+    "ourClients": "Our Clients",
+    "say": "Say",
+    "description": "See how our designs and fast delivery helped businesses stand out. Clients share how we turned their ideas into unforgettable brand identities."
+  },
+  "take action": "______________ Take Action ______________ ",
+  "takeAction": {
+    "readyToMakeYour": "Ready to make your",
+    "iconicBrand": "iconic brand?",
+    "description": "Looking for a custom logo and brand identity that reflects your vision? You’re in the right place—let’s create a lasting impression!",
+    "bookCall": "Book a call"
+  },
+  "footer section": "______________ Footer Section ______________ ",
+  "footer": {
+    "quickLinks": "Quick Links",
+    "connectWithUs": "Connect with Us",
+    "allRightsReserved": "All Rights Reserved.",
+    "termsConditions": "Terms & Conditions",
+    "behance": "Behance",
+    "instagram": "Instagram",
+    "twitter": "Twitter",
+    "facebook": "Facebook"
+  },
   "faq Section": "______________ FAQ Section ______________ ",
   "faq": {
+    "title": "FAQs",
+    "header": "Frequently Asked Questions",
+    "description": "Find the information you need about our services, plans, and processes. If you have more questions, feel free to reach out to us!",
     "terms": "Terms & Conditions",
     "q": {
       "one": "How does the logo design process work?",
@@ -117,5 +280,23 @@
       "phone": "Phone",
       "website": "Website"
     }
+  },
+  "meeting page": "______________ Meeting Page ______________ ",
+  "meeting": {
+    "pageTitle": "Book a Meeting - Seven Studio Design",
+    "meta": {
+      "description": "Book a call with Seven Studio Design to create your iconic brand. Limited spots available for logo design and brand identity services.",
+      "keywords": "logo design, brand identity, design services, Seven Studio Design, book a meeting",
+      "author": "Seven Studio Design"
+    },
+    "spotsAvailable": "Only 3 Spots Are Available This Month",
+    "logoAlt": "Seven Design Logo",
+    "hopOnCall": "Hop on a",
+    "call": "call",
+    "acceptingClients": "We're currently accepting new clients for our logo design and brand identity services this month!",
+    "limitedSeats": "Seats are limited, so act fast!",
+    "applyNow": "To apply, book a call with our team through this form, and we'll guide you through our branding solutions and how to get started.",
+    "bookNow": "Book now and create your iconic brand!",
+    "apologyMessage": "We apologize in advance, but booking a meeting doesn’t guarantee acceptance. We work exclusively with clients we’re confident can achieve outstanding results through our expertise."
   }
 }

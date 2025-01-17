@@ -6,13 +6,14 @@ import ToggleLang from './ToggleLang';
 import Logo from './Logo';
 import ToggleDark from './ToggleDark';
 import HumMenu from './HumMenu';
+import { useTranslation } from 'react-i18next';
 
 const navItems = [
-  { name: 'Our Projects', href: 'our-projects' },
-  { name: 'Process', href: 'process' },
-  { name: 'Benefits', href: 'benefits' },
-  { name: 'Services', href: 'services' },
-  { name: 'Pricing', href: 'pricing' },
+  { name: 'ourProjects', href: 'our-projects' },
+  { name: 'process', href: 'process' },
+  { name: 'benefits', href: 'benefits' },
+  { name: 'services', href: 'services' },
+  { name: 'pricing', href: 'pricing' },
 ];
 
 const slideVariants = {
@@ -48,6 +49,7 @@ const menuVariants = {
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { t } = useTranslation();
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
@@ -72,13 +74,13 @@ const Header = () => {
                   to={`/?scrollTo=${item.href}`}
                   className="text-primaryDarkBlack dark:text-primaryLightWhite text-sm hover:bg-gray-200 dark:hover:bg-dark-gray duration-300 py-1 px-3 rounded-lg cursor-pointer"
                 >
-                  {item.name}
+                  {t(`nav.${item.name}`)}
                 </Link>
               </motion.li>
             ))}
             <motion.li variants={itemVariants} custom={navItems.length}>
               <Button type="link" to="/meeting-booking">
-                Book a call
+                {t('buttons.bookACall')}
               </Button>
             </motion.li>
             <motion.li variants={itemVariants} custom={navItems.length + 1}>
@@ -117,13 +119,13 @@ const Header = () => {
                 className="cursor-pointer"
                 onClick={toggleMenu}
               >
-                {item.name}
+                {t(`nav.${item.name}`)}
               </Link>
             </motion.li>
           ))}
           <motion.li variants={itemVariants} custom={navItems.length}>
             <Button type="link" className="w-full" to={'/meeting-booking'}>
-              Book a call
+              {t('buttons.bookACall')}
             </Button>
           </motion.li>
           <div className="flex gap-4 items-center w-full">

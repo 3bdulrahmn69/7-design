@@ -1,6 +1,169 @@
 {
+  "companyName": "ستوديو سيفن ديزاين",
+  "buttons": {
+    "bookACall": "احجز مكالمة",
+    "learnMore": "تعرف أكثر",
+    "discoverMore": "اكتشف المزيد"
+  },
+  "nav": {
+    "ourProjects": "مشاريعنا",
+    "process": "العملية",
+    "benefits": "الفوائد",
+    "services": "الخدمات",
+    "pricing": "الأسعار",
+    "FAQs": "الأسئلة الشائعة"
+  },
+  "home page": "______________ Home Page ______________ ",
+  "home": {
+    "hero section": "______________ Hero Section ______________ ",
+    "heroSection": {
+      "hurry": "اسرع! بقي 3 أماكن فقط"
+    },
+    "Logos Section": "______________ Logos Section ______________ ",
+    "logosSection": {
+      "littleTitle": "أنت في أيدٍ أمينة:"
+    },
+    "recent projects": "______________ Recent Projects ______________ ",
+    "recentProjectsSection": {
+      "title": "آخر",
+      "latin": "مشاريعنا",
+      "description": "إطلع على بعض مشاريعنا الأحدث."
+    }
+  },
+  "counter section": "______________ Counter Section ______________ ",
+  "counter": {
+    "yearsExperience": {
+      "title": "سنوات من الخبرة",
+      "description": "بأكثر من 7 سنوات من الخبرة، نقدم الإبداع والخبرة في كل مشروع."
+    },
+    "countries": {
+      "title": "دول",
+      "description": "وصلت تصاميمنا إلى عملاء في أكثر من 10 دول حول العالم."
+    },
+    "creativeDesigns": {
+      "title": "تصاميم إبداعية",
+      "description": "من الشعارات إلى التغليف، أنشأنا أكثر من 1700 تصميم فريد يلفت الأنظار."
+    },
+    "completedProjects": {
+      "title": "مشاريع مكتملة",
+      "description": "نجحنا في تسليم أكثر من 500 مشروع، كل منها مصمم خصيصًا لتلبية احتياجات عملائنا الفريدة."
+    },
+    "satisfactionRate": {
+      "title": "معدل رضا العملاء",
+      "description": "يعكس معدل رضا العملاء البالغ 97% التزامنا بالتميز."
+    },
+    "happyClients": {
+      "title": "عملاء سعداء",
+      "description": "انضم إلى عائلة تضم أكثر من 320 عميلًا سعيدًا يثقون بنا في هوية علاماتهم التجارية."
+    }
+  },
+  "projects section": "______________ Projects Section ______________ ",
+  "process": {
+    "sectionTitle": "العملية",
+    "howIt": "كيف",
+    "works": "يعمل",
+    "description": "العلامة التجارية المميزة في 3 خطوات سهلة",
+    "enrollTitle": "التحق",
+    "enrollDescription": "اختر الخطة التي تناسب احتياجاتك وابدأ رحلتك نحو علامة تجارية مميزة.",
+    "shareTitle": "شارك",
+    "shareDescription": "شارك رؤيتك معنا، وسنحولها إلى واقع بتصاميم مذهلة.",
+    "receiveTitle": "استلام",
+    "receiveDescription": "علامتك التجارية المميزة جاهزة! استلم تصاميمك النهائية مع التعديلات حتى تكون راضيًا 100%."
+  },
+  "benefits section": "______________ Benefits Section ______________ ",
+  "benefits": {
+    "sectionTitle": "الفوائد",
+    "why": "لماذا",
+    "us": "نحن؟",
+    "description": "خططنا تأتي مع وعد بالإبداع اللامحدود والدعم المخصص.",
+    "expertDesignersTitle": "مصممون خبراء",
+    "expertDesignersDescription": "مع سنوات من الخبرة ومحفظة من المشاريع الناجحة، نقدم تصاميم يمكنك الوثوق بها.",
+    "uniqueDesignsTitle": "تصاميم فريدة",
+    "uniqueDesignsDescription": "تتميز بتصاميم مخصصة وفريدة من نوعها مصممة خصيصًا لعلامتك التجارية.",
+    "engagingVisualsTitle": "مرئيات جذابة",
+    "engagingVisualsDescription": "تصاميمنا الجذابة تهدف إلى جذب جمهورك وترك انطباع دائم.",
+    "fastDeliveryTitle": "توصيل سريع",
+    "fastDeliveryDescription": "احصل على تصاميمك بسرعة واحترافية وفعالية لضمان استمرار مشاريعك.",
+    "transparentPricingTitle": "أسعار شفافة",
+    "transparentPricingDescription": "نقدم أسعارًا واضحة ومنافسة دون أي رسوم مخفية. اختر خطة تناسب ميزانيتك.",
+    "fullSatisfactionTitle": "رضا كامل",
+    "fullSatisfactionDescription": "رضاك هو أولويتنا. نعدك ببذل قصارى جهدنا لجعلها 100% من رضاك."
+  },
+  "services section": "______________ Services Section ______________ ",
+  "services": {
+    "sectionTitle": "الخدمات",
+    "allYour": "كل احتياجاتك",
+    "designNeeds": "التصميمية",
+    "description": "من تصميم الشعار إلى هوية العلامة التجارية، يعمل فريقنا الخبير على تقديم حلول بصرية فريدة ترفع من مستوى عملك وتترك انطباعًا دائمًا.",
+    "logoDesignTitle": "تصميم الشعار",
+    "logoDesignDescription": "تصاميم شعارات إبداعية تعكس رؤية شركتك وتترك انطباعًا دائمًا. يعمل مصممونا عن كثب معك لتسليم شعار يبرز.",
+    "brandIdentityDesignTitle": "تصميم هوية العلامة التجارية",
+    "brandIdentityDesignDescription": "تصاميم شاملة تشمل بطاقات العمل، والأوراق الرسمية، والمغلفات، وأكثر من ذلك لرفع هوية علامتك التجارية. نساعدك في خلق صورة متسقة وقابلة للتعرف عليها عبر جميع المنصات.",
+    "logoAnimationTitle": "تحريك الشعار",
+    "logoAnimationDescription": "فيديوهات قصيرة تحيي الشعار وتجذب جمهورك. نصمم تحريكات شعار ديناميكية وجذابة تترك انطباعًا دائمًا.",
+    "socialMediaDesignsTitle": "تصاميم وسائل التواصل الاجتماعي",
+    "socialMediaDesignsDescription": "رفع وجودك على وسائل التواصل الاجتماعي بتصاميم مخصصة تناسب علامتك التجارية. نصمم مرئيات لافتة للنظر تزيد التفاعل وتجذب المتابعين.",
+    "graphicsDesignTitle": "تصميم الرسوم البيانية",
+    "graphicsDesignDescription": "تعزيز التواصل البصري لعلامتك التجارية من خلال الرسوم البيانية المخصصة. من المواد التسويقية إلى محتوى وسائل التواصل الاجتماعي، يحول مصممونا أفكارك إلى واقع.",
+    "websiteDesignAndDevelopmentTitle": "تصميم وتطوير المواقع الإلكترونية",
+    "websiteDesignAndDevelopmentDescription": "مواقع إلكترونية احترافية وسهلة الاستخدام تعرض هويتك وتلبي احتياجات عملائك. يضمن فريق التصميم لدينا أن تكون وجودك على الإنترنت جذابًا بصريًا وعالي الكفاءة.",
+    "managingAdsCampaignsTitle": "إدارة حملات الإعلانات",
+    "managingAdsCampaignsDescription": "إطلاق حملات إعلانات ناجحة تجذب الانتباه وتحقق النتائج. من الفكرة إلى التنفيذ، نضمن أن رسالتك تصل إلى الجمهور المناسب.",
+    "socialMediaManagementTitle": "إدارة وسائل التواصل الاجتماعي",
+    "socialMediaManagementDescription": "إدارة مبتكرة لصفحاتك وحملاتك الإعلانية على وسائل التواصل الاجتماعي لزيادة التفاعل وتوسيع نطاق علامتك التجارية. نصمم المحتوى ونجدول نشره ونحسن الأداء لزيادة جمهورك وتعزيز رؤية علامتك التجارية على الإنترنت."
+  },
+  "comparison section": "______________ Comparison Section ______________ ",
+  "comparison": {
+    "sectionTitle": "المقارنة",
+    "whyChoose": "لماذا تختار",
+    "companyName": "ستوديو سيفن ديزاين؟",
+    "otherAgencies": {
+      "title": "وكالات أخرى",
+      "genericLogoDesigns": "تصاميم شعارات عادية",
+      "noFreeRevisions": "لا توجد مراجعات مجانية",
+      "noBrandGuidelines": "لا توجد إرشادات للعلامة التجارية",
+      "slowDelivery": "تسليم بطيء",
+      "noIndustryResearch": "لا يوجد بحث صناعي"
+    },
+    "sevenDesignStudio": {
+      "uniqueLogoDesigns": "تصاميم شعارات فريدة ومخصصة",
+      "upToFreeRevisions": "حتى 3 مراجعات مجانية",
+      "comprehensiveBrandGuidelines": "إرشادات شاملة للعلامة التجارية",
+      "fastDelivery": "تسليم سريع وموثوق",
+      "industryResearch": "بحث صناعي متخصص"
+    }
+  },
+  "testimonials section": "______________ Testimonials Section ______________ ",
+  "testimonials": {
+    "wordsOfLove": "كلمات حب",
+    "readWhat": "اقرأ ما يقوله",
+    "ourClients": "عملائنا",
+    "say": "يقولون",
+    "description": "شاهد كيف ساعدت تصاميمنا وتسليمنا السريع الشركات على التميز. يشارك العملاء كيف حولنا أفكارهم إلى هويات علامات تجارية لا تُنسى."
+  },
+  "take action": "______________ Take Action ______________ ",
+  "takeAction": {
+    "readyToMakeYour": "هل أنت مستعد لإنشاء",
+    "iconicBrand": "علامتك التجارية الأيقونية؟",
+    "description": "هل تبحث عن شعار وهوية علامة تجارية مخصصة تعكس رؤيتك؟ أنت في المكان المناسب—لنترك انطباعًا يدوم!",
+    "bookCall": "احجز مكالمة"
+  },
+  "footer section": "______________ Footer Section ______________ ",
+  "footer": {
+    "quickLinks": "روابط سريعة",
+    "connectWithUs": "تواصل معنا",
+    "allRightsReserved": "جميع الحقوق محفوظة.",
+    "termsConditions": "الشروط والأحكام",
+    "behance": "بيهانس",
+    "instagram": "إنستغرام",
+    "twitter": "تويتر",
+    "facebook": "فيسبوك"
+  },
   "faq Section": "______________ FAQ Section ______________ ",
   "faq": {
+    "title": "الأسئلة الشائعة",
+    "header": "الأسئلة الأكثر شيوعًا",
+    "description": "ابحث عن المعلومات التي تحتاجها حول خدماتنا وخططنا وإجراءاتنا. إذا كانت لديك أسئلة إضافية، فلا تتردد في التواصل معنا!",
     "terms": "الشروط والأحكام",
     "q": {
       "one": "كيف بتكون عملية تصميم اللوجو؟",
@@ -117,5 +280,23 @@
       "phone": "الهاتف",
       "website": "الموقع الإلكتروني"
     }
+  },
+  "meeting page": "______________ Meeting Page ______________ ",
+  "meeting": {
+    "pageTitle": "احجز اجتماعًا - Seven Studio Design",
+    "meta": {
+      "description": "احجز مكالمة مع Seven Studio Design لإنشاء علامتك التجارية الأيقونية. أماكن محدودة متاحة لخدمات تصميم الشعارات والهوية التجارية.",
+      "keywords": "تصميم شعار, هوية العلامة التجارية, خدمات التصميم, Seven Studio Design, حجز اجتماع",
+      "author": "Seven Studio Design"
+    },
+    "spotsAvailable": "متبقي 3 أماكن فقط هذا الشهر",
+    "logoAlt": "شعار Seven Design",
+    "hopOnCall": "احجز ",
+    "call": "مكالمة",
+    "acceptingClients": "!نقبل حاليًا عملاء جدد لخدمات تصميم الشعارات والهوية التجارية هذا الشهر",
+    "limitedSeats": "!المقاعد محدودة، أسرع بالحجز",
+    "applyNow": "للتقديم، احجز مكالمة مع فريقنا من خلال هذا النموذج وسنرشدك إلى حلول العلامة التجارية وكيفية البدء.",
+    "bookNow": "!احجز الآن وأنشئ علامتك التجارية الأيقونية",
+    "apologyMessage": ".نعتذر مقدمًا، لكن حجز اجتماع لا يضمن القبول. نحن نعمل فقط مع العملاء الذين نثق في قدرتهم على تحقيق نتائج مميزة من خلال خبرتنا"
   }
 }

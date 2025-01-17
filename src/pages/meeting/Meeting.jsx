@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet';
 import { WistiaPlayer } from '@wistia/wistia-player-react';
+import { useTranslation } from 'react-i18next';
 import Calendly from './components/Calendly';
 import Footer from '../../components/Footer';
 import { LatinSpan } from '../../components/Section';
@@ -10,24 +11,20 @@ import apologize from '../../assets/icons/apologize.gif';
 import SecCard from '../home/components/SecCard';
 
 const Meeting = () => {
+  const { t } = useTranslation();
+
   return (
     <div>
       <Helmet>
-        <title>Book a Meeting - Seven Studio Design</title>
-        <meta
-          name="description"
-          content="Book a call with Seven Studio Design to create your iconic brand. Limited spots available for logo design and brand identity services."
-        />
-        <meta
-          name="keywords"
-          content="logo design, brand identity, design services, Seven Studio Design, book a meeting"
-        />
-        <meta name="author" content="Seven Studio Design" />
+        <title>{t('meeting.pageTitle')}</title>
+        <meta name="description" content={t('meeting.meta.description')} />
+        <meta name="keywords" content={t('meeting.meta.keywords')} />
+        <meta name="author" content={t('meeting.meta.author')} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://yourdomain.com/meeting" />
       </Helmet>
       <h1 className="text-secondary-text font-semibold text-center py-4 bg-gradient-to-t from-[#FF7B00] via-[#FFDA00] to-[#FFE48B]">
-        Only 3 Spots Are Available This Month
+        {t('meeting.spotsAvailable')}
       </h1>
       <div className="h-10 w-full bg-[#FF7B00]">
         <div className="h-10 w-full bg-primaryLightWhite dark:bg-primaryDarkBlack rounded-t-full"></div>
@@ -37,7 +34,7 @@ const Meeting = () => {
           <nav className="flex flex-col items-center justify-center gap-8 pt-2 pb-16">
             <div className="flex items-center justify-center w-32 xl:w-36">
               <Link to="/">
-                <img src={logo} alt="Seven Design Logo" />
+                <img src={logo} alt={t('meeting.logoAlt')} />
               </Link>
             </div>
             <hr
@@ -52,22 +49,16 @@ const Meeting = () => {
               <div className="w-72 md:w-auto backdrop-blur flex flex-col items-center justify-center gap-[19.5px] text-gap border-[1px] border-secondary-text py-8 rounded-3xl">
                 <div className="px-2 md:px-8">
                   <h1 className="text-center text-site md:text-site-md tracking-site leading-site font-medium">
-                    Hop on a <LatinSpan>call</LatinSpan> with us
+                    {t('meeting.hopOnCall')}{' '}
+                    <LatinSpan>{t('meeting.call')}</LatinSpan>
                   </h1>
                 </div>
                 <div className="flex justify-center items-center text-primary-text">
                   <div className="flex flex-col gap-3 justify-center items-center text-lg text-center text-[17px] md:text-[20px] text-primary-text max-w-md lg:max-w-xl px-6 text md:px-20 leading-[1.5em] font-medium">
-                    <p>
-                      We&apos;re currently accepting new clients for our logo
-                      design and brand identity services this month!
-                    </p>
-                    <p>Seats are limited, so act fast!</p>
-                    <p>
-                      To apply, book a call with our team through this form, and
-                      we&apos;ll guide you through our branding solutions and
-                      how to get started.
-                    </p>
-                    <p>Book now and create your iconic brand!</p>
+                    <p>{t('meeting.acceptingClients')}</p>
+                    <p>{t('meeting.limitedSeats')}</p>
+                    <p>{t('meeting.applyNow')}</p>
+                    <p>{t('meeting.bookNow')}</p>
                   </div>
                 </div>
               </div>
@@ -91,10 +82,8 @@ const Meeting = () => {
           </div>
           <Container className="mb-8">
             <SecCard
-            className="md:w-auto md:max-w-lg"
-              description=" We apologize in advance, but booking a meeting doesn’t guarantee
-                acceptance. We work exclusively with clients we’re confident can
-                achieve outstanding results through our expertise."
+              className="md:w-auto md:max-w-lg"
+              description={t('meeting.apologyMessage')}
               icon={apologize}
             />
           </Container>

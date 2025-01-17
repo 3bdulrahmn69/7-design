@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import Container from '../../../components/container';
 import {
   Description,
@@ -18,63 +19,56 @@ import fullSatisfaction from '../../../assets/icons/fullSatisfaction.gif';
 
 const Benefits = [
   {
-    title: 'Expert Designers',
-    description:
-      'With years of experience and a portfolio of successful projects, we deliver designs you can trust.',
+    title: 'benefits.expertDesignersTitle',
+    description: 'benefits.expertDesignersDescription',
     icon: expertDesigners,
   },
   {
-    title: 'Unique Designs',
-    description:
-      'Stand out with custom, one-of-a-kind designs tailored specifically for your brand.',
+    title: 'benefits.uniqueDesignsTitle',
+    description: 'benefits.uniqueDesignsDescription',
     icon: uniqueDesigns,
   },
   {
-    title: 'Engaging Visuals',
-    description:
-      'Our visuals are designed to captivate your audience and leave a lasting impression.',
+    title: 'benefits.engagingVisualsTitle',
+    description: 'benefits.engagingVisualsDescription',
     icon: engagingVisuals,
   },
   {
-    title: 'Fast Delivery',
-    description:
-      'Get your designs quickly, professionally, and efficiently, ensuring your projects stay on track.',
+    title: 'benefits.fastDeliveryTitle',
+    description: 'benefits.fastDeliveryDescription',
     icon: fastDelivery,
   },
   {
-    title: 'Transparent Pricing',
-    description:
-      'We offer clear and competitive pricing with no hidden fees. Choose a plan that fits your budget.',
+    title: 'benefits.transparentPricingTitle',
+    description: 'benefits.transparentPricingDescription',
     icon: transparentPricing,
   },
   {
-    title: 'Full Satisfaction',
-    description:
-      'Your satisfaction is our top priority. We promise to do our best to make you 100% satisfied.',
+    title: 'benefits.fullSatisfactionTitle',
+    description: 'benefits.fullSatisfactionDescription',
     icon: fullSatisfaction,
   },
 ];
 
 const BenefitsSection = () => {
+  const { t } = useTranslation();
+
   return (
     <Section id={'benefits'}>
       <Container className="flex flex-col gap-[19.5px] text-gap">
-        <LittleTitle>Benefits</LittleTitle>
+        <LittleTitle>{t('benefits.sectionTitle')}</LittleTitle>
         <Title>
-          Why <LatinSpan>Us?</LatinSpan>
+          {t('benefits.why')} <LatinSpan>{t('benefits.us')}</LatinSpan>
         </Title>
-        <Description>
-          Our plans come with the promise of limitless Creativity and Dedicated
-          Support.
-        </Description>
+        <Description>{t('benefits.description')}</Description>
       </Container>
       <Container className="mt-16">
         <div className="w-full flex justify-around items-center gap-16 flex-col md:flex-row flex-wrap">
           {Benefits.map((benefit, index) => (
             <SecCard
               key={index}
-              title={benefit.title}
-              description={benefit.description}
+              title={t(benefit.title)}
+              description={t(benefit.description)}
               icon={benefit.icon}
             />
           ))}

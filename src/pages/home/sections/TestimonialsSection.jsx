@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import Container from '../../../components/container';
 import MovingSlider from '../../../components/MovingSlider';
 import {
@@ -12,18 +13,18 @@ import { myTestimonialsTwo } from '../../../services/myTestimonials';
 import TestimonialCard from '../components/TestimonialCard';
 
 const TestimonialsSection = () => {
+  const { t } = useTranslation();
+
   return (
     <Section id="testimonials">
       <Container className="flex flex-col gap-[19.5px] text-gap mb-12">
-        <LittleTitle>Words Of Love</LittleTitle>
+        <LittleTitle>{t('testimonials.wordsOfLove')}</LittleTitle>
         <Title>
-          Read What <LatinSpan>Our Clients</LatinSpan> Say
+          {t('testimonials.readWhat')}{' '}
+          <LatinSpan>{t('testimonials.ourClients')}</LatinSpan>{' '}
+          {t('testimonials.say')}
         </Title>
-        <Description>
-          See how our designs and fast delivery helped businesses stand out.
-          Clients share how we turned their ideas into unforgettable brand
-          identities.
-        </Description>
+        <Description>{t('testimonials.description')}</Description>
       </Container>
       <Container className="mt-16 flex flex-col gap-4 py-8">
         <MovingSlider speed={100} arrayNumber={7}>

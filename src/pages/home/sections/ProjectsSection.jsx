@@ -8,15 +8,19 @@ import {
 import MovingSlider from '../../../components/MovingSlider';
 import { myProjects } from '../../../services/myProjects';
 import ProjectCard from '../components/ProjectCard';
+import { useTranslation } from 'react-i18next';
 
 const ProjectsSection = () => {
+  const { t } = useTranslation();
+
   return (
     <Section id={'our-projects'}>
       <Container className="flex flex-col gap-[19.5px] text-gap mb-8">
         <Title>
-          Our recent <LatinSpan>projects</LatinSpan>{' '}
+          {t('home.recentProjectsSection.title')}{' '}
+          <LatinSpan>{t('home.recentProjectsSection.latin')}</LatinSpan>{' '}
         </Title>
-        <Description>Take a look at some of out latest projects.</Description>
+        <Description>{t('home.recentProjectsSection.description')}</Description>
       </Container>
       <Container className="flex flex-col py-4 gap-6 mt-16">
         <MovingSlider speed={100} arrayNumber={8} innerClassName="flex gap-4">

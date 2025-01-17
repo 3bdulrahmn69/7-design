@@ -6,8 +6,11 @@ import {
   Title,
 } from '../../../components/Section';
 import FAQItem from '../components/FAQItem';
+import { useTranslation } from 'react-i18next';
 
 const FrequentlySection = () => {
+  const { t } = useTranslation();
+
   const faqs = [
     {
       question: 'one',
@@ -49,7 +52,6 @@ const FrequentlySection = () => {
       question: 'ten',
       answer: 'ten',
     },
-
     {
       question: 'eleven',
       answer: 'eleven',
@@ -59,11 +61,10 @@ const FrequentlySection = () => {
   return (
     <Section id="FAQs">
       <Container className="flex flex-col gap-[19.5px] text-gap">
-        <LittleTitle className="text-center">FAQs</LittleTitle>
-        <Title className="">Frequently Asked Questions</Title>
+        <LittleTitle className="text-center">{t('faq.title')}</LittleTitle>
+        <Title>{t('faq.header')}</Title>
         <Description className="text-center mb-6">
-          Find the information you need about our services, plans, and
-          processes. If you have more questions, feel free to reach out to us!
+          {t('faq.description')}
         </Description>
       </Container>
       <Container className="mt-16">

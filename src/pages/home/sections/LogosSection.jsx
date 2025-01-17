@@ -4,13 +4,16 @@ import MovingSlider from '../../../components/MovingSlider';
 import BannerImg from '../../../components/BannerImg';
 import { myLogosWhite, myLogosBlack } from '../../../services/myLogos';
 import Button from '../../../components/Button';
+import { useTranslation } from 'react-i18next';
 
 const LogosSection = () => {
+  const { t } = useTranslation();
+
   return (
     <Section id={'logos'}>
       <Container>
         <p className="font-Satoshi text-center pt-2 mb-4 text-primary-text text">
-          You&apos;re in good hands:
+          {t('home.logosSection.littleTitle')}
         </p>
         <MovingSlider
           speed={50}
@@ -34,14 +37,14 @@ const LogosSection = () => {
             <BannerImg key={index} img={logo.img} />
           ))}
         </MovingSlider>
-        <div className='flex items-center justify-center'>
+        <div className="flex items-center justify-center">
           <a
             href="https://www.behance.net/drme99"
             target="_blank"
             rel="noreferrer"
           >
             <Button variant="secondary" className="mt-4">
-              Discover more
+              {t('buttons.discoverMore')}
             </Button>
           </a>
         </div>
