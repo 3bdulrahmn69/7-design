@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
-const FAQItem = ({ question, answer }) => {
+const FAQItem = ({ question, answer, terms }) => {
   const [isOpen, setIsOpen] = useState(false);
   const { t } = useTranslation();
 
@@ -35,7 +36,12 @@ const FAQItem = ({ question, answer }) => {
             isOpen ? 'opacity-100' : 'opacity-0 transition-opacity duration-500'
           }`}
         >
-          <span>{t('faq.a.' + answer)}</span>
+          <span>{t('faq.a.' + answer)}</span>{' '}
+          {terms && (
+            <Link to="/terms-conditions" className="underline">
+              {t('faq.terms')}
+            </Link>
+          )}
         </div>
       </div>
     </div>
@@ -45,6 +51,7 @@ const FAQItem = ({ question, answer }) => {
 FAQItem.propTypes = {
   question: PropTypes.string.isRequired,
   answer: PropTypes.string.isRequired,
+  terms: PropTypes.bool,
 };
 
 export default FAQItem;

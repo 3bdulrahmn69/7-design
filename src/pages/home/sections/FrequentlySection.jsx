@@ -69,7 +69,12 @@ const FrequentlySection = () => {
       <Container className="mt-16">
         <div className="max-w-2xl flex flex-col items-center justify-center mx-auto">
           {faqs.map((faq, index) => (
-            <FAQItem key={index} question={faq.question} answer={faq.answer} />
+            <FAQItem
+              key={index}
+              question={faq.question}
+              answer={faq.answer}
+              terms={index === 2}
+            />
           ))}
         </div>
       </Container>

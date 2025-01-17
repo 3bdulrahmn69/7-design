@@ -56,10 +56,16 @@ const MovingSliderHover = ({
 
   useEffect(() => {
     const container = containerRef.current;
-    container.addEventListener('touchstart', handleTouchStart);
+    if (container) {
+      container.addEventListener('touchstart', handleTouchStart, {
+        passive: true,
+      });
+    }
 
     return () => {
-      container.removeEventListener('touchstart', handleTouchStart);
+      if (container) {
+        container.removeEventListener('touchstart', handleTouchStart);
+      }
     };
   }, [handleTouchStart]);
 

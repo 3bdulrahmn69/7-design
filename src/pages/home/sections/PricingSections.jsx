@@ -64,9 +64,8 @@ const packages = [
 const otherPackages = [
   {
     packageName: 'Basic Logo Animation',
-    features: [
+    features:
       'Simple yet professional logo animation with smooth transitions and minimal effects. Delivered in MP4 and GIF formats to suit your needs.',
-    ],
     prices: {
       USD: '$ 150',
       SAR: '564 SAR',
@@ -75,9 +74,8 @@ const otherPackages = [
   },
   {
     packageName: 'Advanced Logo Animation',
-    features: [
+    features:
       'Complex, professional logo animation with dynamic transitions and effects. Delivered in MP4 and GIF formats for versatile presentation.',
-    ],
     prices: {
       USD: '$ 300',
       SAR: '1,128 SAR',
@@ -96,27 +94,24 @@ const otherPackages = [
   },
   {
     packageName: 'Graphics Design',
-    features: [
+    features:
       'Custom graphics to enhance your brand’s visual communication. Includes brochures, flyers, social media designs, and tailored materials.',
-    ],
     prices: {
       ask: "Let's Talk",
     },
   },
   {
     packageName: 'Website Design',
-    features: [
+    features:
       'Professional, user-friendly websites with modern UI/UX design, customized functionality, and optimized user experience for enhanced engagement.',
-    ],
     prices: {
       ask: "Let's Talk",
     },
   },
   {
     packageName: 'Social Media Management',
-    features: [
+    features:
       'Monthly management of social platforms with creative content creation, efficient scheduling, and thorough performance analysis to enhance audience engagement.',
-    ],
     prices: {
       USD: '$ 500/month',
       SAR: '1,880 SAR/month',
@@ -125,9 +120,8 @@ const otherPackages = [
   },
   {
     packageName: 'Managing Ads Campaigns',
-    features: [
+    features:
       'Monthly advertising campaign management, featuring campaign setup, optimization, budget management, and detailed performance tracking.',
-    ],
     prices: {
       USD: '$ 700/month',
       SAR: '2,632 SAR/month',
