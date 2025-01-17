@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { cn } from '../../../lib/utils';
 import Button from '../../../components/Button';
+import { useTranslation } from 'react-i18next';
 
 const SmallPricingCard = ({
   packageName,
@@ -9,9 +10,16 @@ const SmallPricingCard = ({
   currency,
   className,
 }) => {
+  const { t } = useTranslation();
+
   const price = prices[currency] || prices.ask;
-  const displayPrice =
-    typeof price === 'string' ? price : `${price} ${currency}`;
+  let displayPrice = typeof price === 'string' ? price : `${price} ${currency}`;
+
+  // Wrap '/month' with translation
+  if (displayPrice.includes('/month')) {
+    const [basePrice] = displayPrice.split('/month'); // Extract the base price
+    displayPrice = `${basePrice}${t('pricing.perMonth')}`; // Use translation key for 'per month'
+  }
 
   return (
     <div
@@ -30,7 +38,7 @@ const SmallPricingCard = ({
         <div className="mt-4 flex items-center justify-between">
           {displayPrice === "Let's Talk" ? (
             <h4 className="font-medium text-lg mb-2 text-secondary">
-              Custom Quotes
+              {t('pricing.customQuotes')}
             </h4>
           ) : (
             <h4 className="font-medium text-lg mb-2 text-secondary">
@@ -40,7 +48,9 @@ const SmallPricingCard = ({
         </div>
         <div className="flex items-center justify-center">
           <Button type="link" to="/meeting-booking" variant="primary">
-            {displayPrice === "Let's Talk" ? "Let's Talk" : 'Book a call'}
+            {displayPrice === "Let's Talk"
+              ? t('buttons.letsTalk')
+              : t('buttons.bookACall')}
           </Button>
         </div>
       </div>

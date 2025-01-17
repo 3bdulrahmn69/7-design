@@ -1,4 +1,6 @@
 import PropTypes from 'prop-types';
+import i18next from 'i18next';
+import { useTranslation } from 'react-i18next';
 import { cn } from '../../../lib/utils';
 import Button from '../../../components/Button';
 import { LittleTitle } from '../../../components/Section';
@@ -22,6 +24,9 @@ const PricingCard = ({
   const displayPrice =
     typeof price === 'string' ? price : `${price} ${currency}`;
 
+  const lang = i18next.language;
+  const { t } = useTranslation();
+
   return (
     <div
       className={cn(
@@ -41,7 +46,7 @@ const PricingCard = ({
         <h5 className="text-2xl font-bold mb-2 text-center">{packageName}</h5>
         <div className="flex flex-col gap-4 justify-between items-center mb-4">
           <p className="text-2xl font-semibold">{displayPrice}</p>
-          <div className="flex gap-2">
+          <div dir="ltr" className="flex gap-2">
             <span className="bg-primaryLightWhite dark:bg-primaryDarkBlack rounded-site border-[1px] border-secondary-text ">
               <button
                 onClick={() => setCurrency('USD')}
@@ -82,7 +87,7 @@ const PricingCard = ({
           {Object.entries(features).map(([feature, isIncluded], index) => (
             <li key={index} className="flex items-start mb-2">
               <span
-                className={`mr-2 ${
+                className={`${lang === 'ar' ? 'ml-2' : 'mr-2'} ${
                   isIncluded
                     ? 'bg-gradient-to-t from-[#FF7B00] via-[#FFDA00] to-[#FFE48B] bg-clip-text text-transparent'
                     : 'text-gray-400'
@@ -102,14 +107,14 @@ const PricingCard = ({
                 )}
               </span>
               <span className={`${isIncluded ? '' : 'text-primary-text/50'}`}>
-                {feature}
+                {t(feature)}
               </span>
             </li>
           ))}
         </ul>
       </div>
       <Button type="link" to="meeting-booking" className="mt-4">
-        Get Started
+        {t('getStarted')}
       </Button>
     </div>
   );

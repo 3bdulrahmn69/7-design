@@ -3,7 +3,9 @@
   "buttons": {
     "bookACall": "Book a call",
     "learnMore": "Learn More",
-    "discoverMore": "Discover More"
+    "discoverMore": "Discover More",
+    "getStarted": "Get Started",
+    "letsTalk": "Let's Talk"
   },
   "nav": {
     "ourProjects": "Our Projects",
@@ -140,6 +142,50 @@
     "ourClients": "Our Clients",
     "say": "Say",
     "description": "See how our designs and fast delivery helped businesses stand out. Clients share how we turned their ideas into unforgettable brand identities."
+  },
+  "pricing section": "______________ Pricing Section ______________ ",
+  "pricing": {
+    "titleDis": "Pricing",
+    "title": "Pricing That Fits",
+    "YourNeeds": "Your Needs",
+    "description": "Explore our flexible pricing for comprehensive design services that make your brand stand out—transparent, with no hidden fees.",
+    "packages": {
+      "basic": "Basic",
+      "logoDesign": "Logo Design",
+      "intermediate": "Intermediate",
+      "brandIdentityDesign": "Brand Identity Design",
+      "advanced": "Advanced",
+      "fullBrandIdentity": "Full Brand Identity"
+    },
+    "features": {
+      "one": "Logo design (3 initial concepts)",
+      "two": "2 minor revisions included",
+      "three": "Logo usage guidelines",
+      "four": "Design of essential marketing materials",
+      "five": "Business Cards",
+      "six": "Letterheads",
+      "seven": "Envelopes",
+      "eight": "Logo Animation: A short video to bring your logo to life",
+      "nine": "Social Media Designs (20 designs)"
+    },
+    "otherPackages": {
+      "basicLogoAnimation": "Basic Logo Animation",
+      "one": "Simple yet professional logo animation with smooth transitions and minimal effects. Delivered in MP4 and GIF formats to suit your needs.",
+      "advancedLogoAnimation": "Advanced Logo Animation",
+      "two": "Complex, professional logo animation with dynamic transitions and effects. Delivered in MP4 and GIF formats for versatile presentation.",
+      "socialMediaDesigns": "Social Media Designs",
+      "three": "20 high-quality social media designs tailored to your brand's needs, ensuring visually appealing and engaging content across all platforms.",
+      "graphicsDesign": "Graphics Design",
+      "four": "Custom graphics to enhance your brand’s visual communication. Includes brochures, flyers, social media designs, and tailored materials.",
+      "websiteDesign": "Website Design",
+      "five": "Professional, user-friendly websites with modern UI/UX design, customized functionality, and optimized user experience for enhanced engagement.",
+      "socialMediaManagement": "Social Media Management",
+      "six": "Monthly management of social platforms with creative content creation, efficient scheduling, and thorough performance analysis to enhance audience engagement.",
+      "managingAdsCampaigns": "Managing Ads Campaigns",
+      "seven": "Monthly advertising campaign management, featuring campaign setup, optimization, budget management, and detailed performance tracking."
+    },
+    "customQuotes": "Custom Quotes",
+    "perMonth": "/month"
   },
   "take action": "______________ Take Action ______________ ",
   "takeAction": {
