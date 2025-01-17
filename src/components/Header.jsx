@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link as ScrollLink } from 'react-scroll';
+import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import Button from './Button';
 import ToggleLang from './ToggleLang';
@@ -68,15 +68,12 @@ const Header = () => {
           <div className="hidden justify-center items-center xl:flex space-x-6">
             {navItems.map((item, index) => (
               <motion.li key={item.name} variants={itemVariants} custom={index}>
-                <ScrollLink
-                  to={item.href}
-                  smooth={true}
-                  duration={500}
-                  offset={-80}
+                <Link
+                  to={`/?scrollTo=${item.href}`}
                   className="text-primaryDarkBlack dark:text-primaryLightWhite text-sm hover:bg-gray-200 dark:hover:bg-dark-gray duration-300 py-1 px-3 rounded-lg cursor-pointer"
                 >
                   {item.name}
-                </ScrollLink>
+                </Link>
               </motion.li>
             ))}
             <motion.li variants={itemVariants} custom={navItems.length}>
@@ -115,16 +112,13 @@ const Header = () => {
               custom={index}
               className="py-1 px-3 rounded-lg font-medium"
             >
-              <ScrollLink
-                to={item.href}
-                smooth={true}
-                duration={500}
-                offset={-80}
+              <Link
+                to={`/?scrollTo=${item.href}`}
                 className="cursor-pointer"
                 onClick={toggleMenu}
               >
                 {item.name}
-              </ScrollLink>
+              </Link>
             </motion.li>
           ))}
           <motion.li variants={itemVariants} custom={navItems.length}>

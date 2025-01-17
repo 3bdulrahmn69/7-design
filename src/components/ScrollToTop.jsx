@@ -7,7 +7,8 @@ const ScrollToTop = () => {
   const lenis = useLenis();
 
   useEffect(() => {
-    if (lenis) {
+    const queryParams = new URLSearchParams(location.search);
+    if (lenis && !queryParams.toString()) {
       lenis.scrollTo(0);
     }
   }, [location, lenis]);

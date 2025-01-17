@@ -13,7 +13,7 @@ import TestimonialCard from '../components/TestimonialCard';
 
 const TestimonialsSection = () => {
   return (
-    <Section>
+    <Section id="testimonials">
       <Container className="flex flex-col gap-[19.5px] text-gap mb-12">
         <LittleTitle>Words Of Love</LittleTitle>
         <Title>

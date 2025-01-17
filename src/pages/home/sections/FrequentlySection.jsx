@@ -57,9 +57,9 @@ const FrequentlySection = () => {
   ];
 
   return (
-    <Section id="faq">
+    <Section id="FAQs">
       <Container className="flex flex-col gap-[19.5px] text-gap">
-        <LittleTitle className="text-center">FAQ</LittleTitle>
+        <LittleTitle className="text-center">FAQs</LittleTitle>
         <Title className="">Frequently Asked Questions</Title>
         <Description className="text-center mb-6">
           Find the information you need about our services, plans, and
