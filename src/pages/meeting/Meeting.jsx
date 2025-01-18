@@ -46,7 +46,7 @@ const Meeting = () => {
         <main className="flex flex-col ">
           <div className="flex flex-col gap-[19.5px] text-gap">
             <Container>
-              <div className="w-72 md:w-auto backdrop-blur flex flex-col items-center justify-center gap-[19.5px] text-gap border-[1px] border-secondary-text py-8 rounded-3xl">
+              <div className="w-auto mx-4 md:mx-0 backdrop-blur flex flex-col items-center justify-center gap-[19.5px] text-gap border-[1px] border-secondary-text dark:bg-secondaryDarkBlack py-8 rounded-3xl">
                 <div className="px-2 md:px-8">
                   <h1 className="text-center text-site md:text-site-md tracking-site leading-site font-medium">
                     {t('meeting.hopOnCall')}{' '}

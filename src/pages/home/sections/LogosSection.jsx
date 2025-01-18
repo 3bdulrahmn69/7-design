@@ -49,7 +49,7 @@ const LogosSection = () => {
           >
             <Button
               variant="secondary"
-              className="mt-8 flex items-center gap-2 hover:gap-3"
+              className="mt-8 mb-4 flex items-center gap-2 hover:gap-3"
             >
               <FaArrowRightLong
                 className={`${lang === 'en' ? '' : 'rotate-180'}`}

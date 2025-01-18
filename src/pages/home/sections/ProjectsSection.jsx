@@ -15,7 +15,7 @@ const ProjectsSection = () => {
 
   return (
     <Section id={'our-projects'}>
-      <Container className="flex flex-col gap-[19.5px] text-gap mb-8">
+      <Container className="flex flex-col gap-[19.5px] text-gap">
         <Title>
           {t('home.recentProjectsSection.title')}{' '}
           <LatinSpan>{t('home.recentProjectsSection.latin')}</LatinSpan>{' '}
