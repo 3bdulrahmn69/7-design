@@ -8,7 +8,7 @@ const CopiedSection = () => {
       <Container className="flex items-center justify-center">
         <article
           dir="ltr"
-          className="w-full max-w-lg flex justify-between flex-row bg-primaryLightWhite dark:bg-primaryDarkBlack rounded-site border border-secondary-text shadow-lg"
+          className="w-full max-w-lg flex justify-between flex-row bg-primaryLightWhite dark:bg-secondaryDarkBlack rounded-site border border-secondary-text shadow-lg"
         >
           <figure className="w-1/4 md:w-2/4 overflow-hidden border-r border-secondary-text">
             <img

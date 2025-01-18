@@ -26,7 +26,7 @@ const TestimonialsSection = () => {
         </Title>
         <Description>{t('testimonials.description')}</Description>
       </Container>
-      <Container className="mt-16 flex flex-col gap-4 py-8">
+      <Container className="mt-16 flex flex-col gap-4">
         <MovingSlider speed={100} arrayNumber={7}>
           {myTestimonialsOne.map((testimonial, index) => (
             <TestimonialCard
