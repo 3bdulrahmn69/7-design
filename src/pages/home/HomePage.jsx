@@ -39,8 +39,8 @@ const HomePage = () => {
     <div className="relative pt-20 md:pt-36 grid-bg overflow-x-hidden">
       <Header />
       <HeroSection />
-      <LogosSection />
       <CopiedSection />
+      <LogosSection />
       <ProjectsSection />
       <CounterSection />
       <ProcessSection />
