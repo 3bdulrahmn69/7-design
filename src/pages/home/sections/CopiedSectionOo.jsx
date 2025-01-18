@@ -8,9 +8,9 @@ const CopiedSection = () => {
       <Container className="flex items-center justify-center">
         <article
           dir="ltr"
-          className="w-full max-w-lg flex justify-between flex-row bg-primaryLightWhite dark:bg-primaryDarkBlack rounded-3xl border border-secondary-text shadow-lg"
+          className="w-72 md:w-full max-w-lg flex justify-between flex-col md:flex-row bg-primaryLightWhite dark:bg-primaryDarkBlack rounded-3xl border border-secondary-text shadow-lg"
         >
-          <figure className="w-1/4 md:w-2/4 overflow-hidden border-r border-secondary-text">
+          <figure className="w-full md:w-2/4 overflow-hidden border-b md:border-b-0 md:border-r border-secondary-text">
             <img
               src={drMohamed}
               alt="Portrait of Dr. Mohamed Esam, the founder"
@@ -18,13 +18,13 @@ const CopiedSection = () => {
               className="w-full h-full object-cover rounded-3xl select-none no-drag-img"
             />
           </figure>
-          <div className="w-3/4 md:w-full flex flex-col justify-center text-primary-text">
-            <blockquote className="border-b py-2 px-3 border-secondary-text text-xs md:text-base text-center font-light italic">
+          <div className="w-full flex flex-col justify-center text-primary-text">
+            <blockquote className="border-b py-2 px-3 border-secondary-text text-center font-light italic">
               A copied or recycled logo is like a borrowed garment; it may look
               appealing, but it fails to represent its owner because it wasn’t
               tailored to their unique fit
             </blockquote>
-            <h2 className="text-center font-semibold p-1 text-xs md:text-base">
+            <h2 className="text-center font-semibold p-1">
               Dr. Mohamed Esam (The Founder)
             </h2>
           </div>
