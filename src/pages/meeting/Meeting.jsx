@@ -51,7 +51,8 @@ const Meeting = () => {
                 <div className="px-2 md:px-8">
                   <h1 className="text-center text-site md:text-site-md tracking-site leading-site font-medium">
                     {t('meeting.hopOnCall')}{' '}
-                    <LatinSpan>{t('meeting.call')}</LatinSpan>
+                    <LatinSpan>{t('meeting.call')}</LatinSpan>{' '}
+                    {t('meeting.withUs')}
                   </h1>
                 </div>
                 <div className="flex justify-center items-center text-primary-text">
@@ -68,7 +69,7 @@ const Meeting = () => {
                 <WistiaPlayer
                   mediaId="v8g9mwx7d6"
                   autoplay={false}
-                  playerColor="#feda00"
+                  playerColor="#000000"
                   volume={0.5}
                   bigPlayButton={true}
                   roundedPlayer={24}

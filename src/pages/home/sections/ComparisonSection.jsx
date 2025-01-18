@@ -38,8 +38,8 @@ const ComparisonSection = () => {
           {t('comparison.sectionTitle')}
         </LittleTitle>
         <Title>
-          {t('comparison.whyChoose')}{' '}
-          <LatinSpan>{t('comparison.companyName')}</LatinSpan>
+          {t('comparison.whyWorking')}{' '}
+          <LatinSpan>{t('comparison.different')}</LatinSpan>
         </Title>
       </Container>
       <Container className="flex flex-col md:flex-row items-center justify-center gap-11 md:gap-16 lg:gap-24 mt-16">
