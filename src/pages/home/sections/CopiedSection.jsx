@@ -4,11 +4,11 @@ import drMohamed from '../../../assets/drMohamed.jpg';
 
 const CopiedSection = () => {
   return (
-    <Section>
+    <Section className="-mt-16" id="copied">
       <Container className="flex items-center justify-center">
         <article
           dir="ltr"
-          className="w-full max-w-lg flex justify-between flex-row bg-secondaryLightWhite dark:bg-secondaryDarkBlack rounded-site border border-light-border dark:border-secondary-text shadow-lg"
+          className="w-full z-10 relative backdrop-blur-3xl max-w-lg flex justify-between flex-row rounded-site border border-light-border dark:border-secondary-text shadow-lg"
         >
           <figure className="w-1/4 md:w-2/4 overflow-hidden border-r border-secondary-text">
             <img
