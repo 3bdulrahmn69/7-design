@@ -339,10 +339,8 @@
     "logoAlt": "Seven Design Logo",
     "hopOnCall": "Hop on a",
     "call": "call",
-    "acceptingClients": "We're currently accepting new clients for our logo design and brand identity services this month!",
-    "limitedSeats": "Seats are limited, so act fast!",
-    "applyNow": "To apply, book a call with our team through this form, and we'll guide you through our branding solutions and how to get started.",
-    "bookNow": "Book now and create your iconic brand!",
+    "acceptingClients": "We're accepting new clients for logo and brand identity services this month—limited seats, so act fast!",
+    "bookNow": "Book a call through the form below to get started.",
     "apologyMessage": "We apologize in advance, but booking a meeting doesn’t guarantee acceptance. We work exclusively with clients we’re confident can achieve outstanding results through our expertise."
   }
 }

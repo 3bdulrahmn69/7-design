@@ -56,8 +56,6 @@ const Meeting = () => {
                 <div className="flex justify-center items-center text-primary-text">
                   <div className="flex flex-col gap-3 justify-center items-center text-lg text-center text-[17px] md:text-[20px] text-primary-text max-w-md lg:max-w-xl px-6 text md:px-20 leading-[1.5em] font-medium">
                     <p>{t('meeting.acceptingClients')}</p>
-                    <p>{t('meeting.limitedSeats')}</p>
-                    <p>{t('meeting.applyNow')}</p>
                     <p>{t('meeting.bookNow')}</p>
                   </div>
                 </div>
