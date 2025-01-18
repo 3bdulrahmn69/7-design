@@ -107,16 +107,16 @@ body.dark {
 
 @media screen and (max-width: 768px) {
   .gradientGlowParent {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     filter: blur(0px);
-    top: 110%;
+    top: 100%;
   }
   .gradientGlowChild {
-    width: 150px;
-    height: 150px;
+    width: 175px;
+    height: 175px;
     filter: blur(0px);
-    top: 110%;
+    top: 100%;
   }
 }
 

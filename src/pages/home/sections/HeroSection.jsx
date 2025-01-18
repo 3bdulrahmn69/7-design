@@ -15,7 +15,7 @@ const HeroSection = () => {
       <Section id={'home'}>
         <Container>
           <div className="flex flex-col items-center">
-            <div className="flex flex-col items-center justify-center gap-[41px] text-gap">
+            <div className="flex flex-col items-center justify-center gap-[41px] text-gap -mb-10 md:mb-0">
               <div
                 className={`w-fit xl:absolute top-0 ${
                   lang === 'en' ? 'left-80' : 'right-80'
@@ -37,9 +37,9 @@ const HeroSection = () => {
               </div>
             </div>
             <Glow isMoving={true} />
-            <div className="absolute bottom-2 h-8 w-full bg-primaryLightWhite dark:bg-primaryDarkBlack blur-[4px]"></div>
-            <div className="absolute bottom-0 h-8 w-full bg-primaryLightWhite dark:bg-primaryDarkBlack blur-[1px]"></div>
-            <div className="absolute bottom-0 h-5 w-full bg-primaryLightWhite dark:bg-primaryDarkBlack"></div>
+            <div className="absolute bottom-2 h-8 w-10/12 md:w-1/2 bg-primaryLightWhite dark:bg-primaryDarkBlack blur-[4px]"></div>
+            <div className="absolute bottom-0 h-8 w-10/12 md:w-1/2 bg-primaryLightWhite dark:bg-primaryDarkBlack blur-[1px]"></div>
+            <div className="absolute bottom-0 h-5 w-10/12 md:w-1/2 bg-primaryLightWhite dark:bg-primaryDarkBlack"></div>
           </div>
         </Container>
       </Section>
