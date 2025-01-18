@@ -8,17 +8,17 @@ const CopiedSection = () => {
       <Container className="flex items-center justify-center">
         <article
           dir="ltr"
-          className="w-full max-w-lg flex justify-between flex-row bg-primaryLightWhite dark:bg-secondaryDarkBlack rounded-site border border-secondary-text shadow-lg"
+          className="w-full max-w-lg flex justify-between flex-row bg-secondaryLightWhite dark:bg-secondaryDarkBlack rounded-site border border-light-border dark:border-secondary-text shadow-lg"
         >
           <figure className="w-1/4 md:w-2/4 overflow-hidden border-r border-secondary-text">
             <img
               src={drMohamed}
               alt="Portrait of Dr. Mohamed Esam, the founder"
               loading="lazy"
-              className="w-full h-full object-cover rounded-site select-none no-drag-img"
+              className="w-full h-full object-cover rounded-l-site select-none no-drag-img"
             />
           </figure>
-          <div className="w-3/4 md:w-full flex flex-col justify-center text-primary-text">
+          <div className="w-3/4 md:w-full flex flex-col justify-center text-light-text dark:text-primary-text">
             <blockquote className="border-b py-2 px-3 border-secondary-text text-xs md:text-base text-center font-light">
               A copied or recycled logo is like a borrowed garment; it may look
               appealing, but it fails to represent its owner because it wasn’t

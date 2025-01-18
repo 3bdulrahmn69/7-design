@@ -5,7 +5,7 @@ const SecCard = ({ title, description, icon, className }) => {
   return (
     <div
       className={cn(
-        'w-72 md:w-80 flex flex-col items-center gap-5 bg-secondaryLightWhite dark:bg-secondaryDarkBlack rounded-site border-[1px] border-secondary-text px-4 py-8',
+        'w-72 md:w-80 flex flex-col items-center gap-5 bg-secondaryLightWhite dark:bg-secondaryDarkBlack rounded-site border-[1px] border-light-border dark:border-secondary-text px-4 py-8',
         className
       )}
     >
@@ -14,7 +14,7 @@ const SecCard = ({ title, description, icon, className }) => {
       </figure>
       {title && <h4 className="text-center text-2xl">{title}</h4>}
       {description && (
-        <p className="text-center text-lg font-medium text-primaryLightWhiteText dark:text-primary-text">
+        <p className="text-center text-lg font-medium text-light-text dark:text-primary-text">
           {description}
         </p>
       )}

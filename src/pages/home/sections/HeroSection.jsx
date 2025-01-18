@@ -19,9 +19,9 @@ const HeroSection = () => {
               <div
                 className={`w-fit xl:absolute top-0 ${
                   lang === 'en' ? 'left-80' : 'right-80'
-                } flex items-center gap-2 z-10 py-2 px-4 mb-4 rounded-lg border-[1px] border-primaryDark`}
+                } flex items-center gap-2 z-10 py-2 px-4 mb-4 rounded-lg border-[1px] border-primary`}
               >
-                <div className="w-2 h-2 rounded-full bg-primaryDark animate-ping"></div>
+                <div className="w-2 h-2 rounded-full bg-primary animate-ping"></div>
                 <p className=" text-center text-xs font-semibold">
                   {t('home.heroSection.hurry')}
                 </p>

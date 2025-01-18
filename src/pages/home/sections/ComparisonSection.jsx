@@ -45,7 +45,7 @@ const ComparisonSection = () => {
       <Container className="flex flex-col md:flex-row items-center justify-center gap-11 md:gap-16 lg:gap-24 mt-16">
         <div className="w-full flex flex-col items-center justify-center md:max-w-[450px]">
           <h4
-            className="text-center text-primary-text text-2xl mb-12 mt-2"
+            className="text-center text-light-text dark:text-primary-text text-2xl mb-12 mt-2"
             aria-label="Other Agencies"
           >
             {t('comparison.otherAgencies.title')}

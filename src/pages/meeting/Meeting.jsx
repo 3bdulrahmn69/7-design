@@ -47,7 +47,7 @@ const Meeting = () => {
         <main className="flex flex-col ">
           <div className="flex flex-col gap-[19.5px] text-gap">
             <Container>
-              <div className="w-auto mx-4 md:mx-0 backdrop-blur flex flex-col items-center justify-center gap-[19.5px] text-gap border-[1px] border-secondary-text dark:bg-secondaryDarkBlack py-8 rounded-3xl">
+              <div className="w-auto mx-4 md:mx-0 backdrop-blur flex flex-col items-center justify-center gap-[19.5px] text-gap border-[1px] border-light-border dark:border-secondary-text dark:bg-secondaryDarkBlack py-8 rounded-3xl">
                 <div className="px-2 md:px-8">
                   <h1 className="text-center text-site md:text-site-md tracking-site leading-site font-medium">
                     {t('meeting.hopOnCall')}{' '}
@@ -55,8 +55,8 @@ const Meeting = () => {
                     {t('meeting.withUs')}
                   </h1>
                 </div>
-                <div className="flex justify-center items-center text-primary-text">
-                  <div className="flex flex-col gap-3 justify-center items-center text-lg text-center text-[17px] md:text-[20px] text-primary-text max-w-md lg:max-w-xl px-6 text md:px-20 leading-[1.5em] font-medium">
+                <div className="flex justify-center items-center text-light-text dark:text-primary-text">
+                  <div className="flex flex-col gap-3 justify-center items-center text-lg text-center text-[17px] md:text-[20px] max-w-md lg:max-w-xl px-6 text md:px-20 leading-[1.5em] font-medium">
                     <p>{t('meeting.acceptingClients')}</p>
                     <p>{t('meeting.bookNow')}</p>
                   </div>

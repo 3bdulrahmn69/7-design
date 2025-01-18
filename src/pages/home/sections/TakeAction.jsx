@@ -9,7 +9,7 @@ const TakeAction = () => {
   return (
     <Section className="relative z-20 w-80 md:w-full">
       <Container>
-        <div className="backdrop-blur flex flex-col items-center justify-center gap-9 border-[1px] border-secondary-text py-8 rounded-3xl">
+        <div className="backdrop-blur flex flex-col items-center justify-center gap-9 border-[1px] border-light-border dark:border-secondary-text py-8 rounded-3xl">
           <div className="text-center">
             <h1 className="text-site md:text-site-md font-medium text-center tracking-site leading-site px-2">
               {t('takeAction.readyToMakeYour')}{' '}
@@ -17,7 +17,7 @@ const TakeAction = () => {
             </h1>
           </div>
           <div className="max-w-lg">
-            <p className="text-center text-[17px] md:text-[20px] text-primary-text lg:max-w-2xl px-6 md:px-20 lg:px-0 leading-[1.5em] font-medium">
+            <p className="text-center text-[17px] md:text-[20px] text-light-text dark:text-primary-text lg:max-w-2xl px-6 md:px-20 lg:px-0 leading-[1.5em] font-medium">
               {t('takeAction.description')}
             </p>
           </div>

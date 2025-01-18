@@ -62,7 +62,7 @@ const CounterSection = () => {
   return (
     <Section>
       <Container>
-        <div className="grid place-items-center md:place-items-stretch  grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid place-items-center md:place-items-stretch grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {counterData.map((counter, index) => (
             <CounterCard
               key={index}

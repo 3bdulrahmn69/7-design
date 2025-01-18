@@ -16,7 +16,7 @@ const LogosSection = () => {
   return (
     <Section id={'logos'}>
       <Container>
-        <p className="font-Satoshi text-center pt-2 mb-4 text-primary-text text">
+        <p className="font-Satoshi text-center pt-2 mb-4 text-light-text dark:text-primary-text text">
           {t('home.logosSection.littleTitle')}
         </p>
         <MovingSlider

@@ -24,7 +24,7 @@ const CounterCard = ({ num, symbol, title, icon }) => {
   return (
     <div
       ref={ref}
-      className="w-72 md:w-auto rounded-site border-[1px] border-secondary-text bg-secondaryLightWhite dark:bg-secondaryDarkBlack p-4 flex justify-between"
+      className="w-72 md:w-auto rounded-site border-[1px] border-light-border dark:border-secondary-text bg-secondaryLightWhite dark:bg-secondaryDarkBlack p-4 flex justify-between"
       aria-label={`${title} statistics`}
     >
       <figure className="w-[70px] xl:w-[80px] flex items-center justify-center">
@@ -47,7 +47,7 @@ const CounterCard = ({ num, symbol, title, icon }) => {
             {Math.floor(num)}
           </motion.span>
         </p>
-        <p className="text-center text-lg font-medium text-primaryLightWhiteText dark:text-primary-text w-full text-primary-text">
+        <p className="w-full text-center text-lg font-medium text-light-text dark:text-primary-text">
           {title}
         </p>
       </div>

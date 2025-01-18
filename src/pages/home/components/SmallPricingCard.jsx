@@ -24,7 +24,7 @@ const SmallPricingCard = ({
   return (
     <div
       className={cn(
-        'border-[1px] border-secondary-text bg-secondaryLightWhite dark:bg-secondaryDarkBlack pt-2 rounded-site overflow-hidden mx-2 h-[270px]',
+        'border-[1px] border-light-border dark:border-secondary-text bg-secondaryLightWhite dark:bg-secondaryDarkBlack pt-2 rounded-site overflow-hidden mx-2 h-[270px]',
         className
       )}
     >
@@ -33,7 +33,9 @@ const SmallPricingCard = ({
       </div>
       <div className="p-4">
         <ul>
-          <li className="text-sm text-primary-text px-2">{features}</li>
+          <li className="text-sm text-light-text dark:text-primary-text px-2">
+            {features}
+          </li>
         </ul>
         <div className="mt-4 flex items-center justify-between">
           {displayPrice === "Let's Talk" ? (

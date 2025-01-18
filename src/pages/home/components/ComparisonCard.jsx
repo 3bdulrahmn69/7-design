@@ -6,7 +6,7 @@ const ComparisonCard = ({ type = 'normal', className, children }) => {
   return (
     <div
       className={cn(
-        ' w-72 md:w-full md:max-w-[450px] relative border-[1px] border-secondary-text rounded-site p-6 flex flex-col gap-6 text-lg overflow-hidden bg-secondaryLightWhite dark:bg-secondaryDarkBlack',
+        ' w-72 md:w-full md:max-w-[450px] relative border-[1px] border-light-border dark:border-secondary-text rounded-site p-6 flex flex-col gap-6 text-lg overflow-hidden bg-secondaryLightWhite dark:bg-secondaryDarkBlack',
         className
       )}
     >

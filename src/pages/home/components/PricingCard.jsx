@@ -30,7 +30,7 @@ const PricingCard = ({
   return (
     <div
       className={cn(
-        'flex flex-col relative border border-secondary-text rounded-site shadow-lg px-4 py-8 max-w-md bg-primaryLightWhite dark:bg-primaryDarkBlack overflow-hidden',
+        'flex flex-col relative border border-light-border dark:border-secondary-text rounded-site shadow-lg px-4 py-8 max-w-md bg-primaryLightWhite dark:bg-primaryDarkBlack overflow-hidden',
         className
       )}
     >
@@ -106,7 +106,7 @@ const PricingCard = ({
                   />
                 )}
               </span>
-              <span className={`${isIncluded ? '' : 'text-primary-text/50'}`}>
+              <span className={`${isIncluded ? '' : 'text-black/20 dark:text-primary-text/50'}`}>
                 {t(feature)}
               </span>
             </li>

@@ -16,7 +16,7 @@ const Terms = () => {
           <h1 className="text-4xl font-bold bg-gradient-to-t from-[#FF7B00] via-[#FFDA00] to-[#FFE48B] bg-clip-text text-transparent mb-4">
             {t('terms.title')}
           </h1>
-          <p className="text-lg text-primary-text">{t('terms.subtitle')}</p>
+          <p className="text-lg text-light-text dark:text-primary-text">{t('terms.subtitle')}</p>
         </header>
 
         <main>
@@ -149,7 +149,7 @@ const Terms = () => {
               </li>
             </ul>
 
-            <p className="text-lg text-primary-text mb-2">
+            <p className="text-lg text-light-text dark:text-primary-text mb-2">
               <span className="font-semibold">{t('terms.section3.note')}:</span>{' '}
               {t('terms.section3.noteDescription')}
             </p>

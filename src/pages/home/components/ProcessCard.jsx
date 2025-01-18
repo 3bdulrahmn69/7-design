@@ -14,7 +14,7 @@ const ProcessCard = ({ title, description, icon, className }) => {
       </figure>
       <div>
         <h4 className="text-center">{title}</h4>
-        <p className="text-center font-medium text-primaryLightWhiteText dark:text-primary-text">
+        <p className="text-center font-medium text-light-text dark:text-primary-text">
           {description}
         </p>
       </div>

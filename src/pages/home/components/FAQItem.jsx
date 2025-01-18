@@ -12,7 +12,7 @@ const FAQItem = ({ question, answer, terms }) => {
   };
 
   return (
-    <div className="w-72 md:w-full border-[1px] bg-secondaryLightWhite dark:bg-secondaryDarkBlack border-secondary-text rounded-md shadow-sm mb-4 px-4">
+    <div className="w-72 md:w-full border-[1px] bg-secondaryLightWhite dark:bg-secondaryDarkBlack border-light-border dark:border-secondary-text rounded-md shadow-sm mb-4 px-4">
       <button
         onClick={toggleAnswer}
         className="flex justify-between gap-4 w-full py-4 text-lg text-left font-semibold focus:outline-none"
@@ -32,7 +32,7 @@ const FAQItem = ({ question, answer, terms }) => {
         }`}
       >
         <div
-          className={`pb-4 text-primary-text ${
+          className={`pb-4 text-light-text dark:text-primary-text ${
             isOpen ? 'opacity-100' : 'opacity-0 transition-opacity duration-500'
           }`}
         >
