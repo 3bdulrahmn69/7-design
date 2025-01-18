@@ -24,7 +24,10 @@ const Footer = () => {
   return (
     <footer>
       <Container className="rounded-t-site p-4 z-30 backdrop-blur">
-        <div className="container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 px-4" dir='ltr'>
+        <div
+          className="container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 px-4"
+          dir="ltr"
+        >
           {/* Company Info */}
           <div className="space-y-4">
             <Logo size="footer" />
@@ -53,17 +56,14 @@ const Footer = () => {
             <h3 className="text-lg font-semibold">
               {t('footer.connectWithUs')}
             </h3>
-            <ul className="flex space-x-4 text-3xl">
+            <ul className="flex space-x-4 text-2xl">
               <li>
                 <a
                   href="https://www.behance.net/drme99"
                   aria-label={t('footer.behance')}
                   rel="noopener noreferrer"
                 >
-                  <FaBehance
-                    style={{ fill: 'url(#icon-gradient)' }}
-                    className="hover:scale-110 duration-300"
-                  />
+                  <FaBehance className="hover:scale-110 duration-300" />
                 </a>
               </li>
               <li>
@@ -72,10 +72,7 @@ const Footer = () => {
                   aria-label={t('footer.instagram')}
                   rel="noopener noreferrer"
                 >
-                  <FaInstagram
-                    style={{ fill: 'url(#icon-gradient)' }}
-                    className="hover:scale-110 duration-300"
-                  />
+                  <FaInstagram className="hover:scale-110 duration-300" />
                 </a>
               </li>
               <li>
@@ -84,10 +81,7 @@ const Footer = () => {
                   aria-label={t('footer.twitter')}
                   rel="noopener noreferrer"
                 >
-                  <RiTwitterXLine
-                    style={{ fill: 'url(#icon-gradient)' }}
-                    className="hover:scale-110 duration-300"
-                  />
+                  <RiTwitterXLine className="hover:scale-110 duration-300" />
                 </a>
               </li>
               <li>
@@ -96,10 +90,7 @@ const Footer = () => {
                   aria-label={t('footer.facebook')}
                   rel="noopener noreferrer"
                 >
-                  <MdFacebook
-                    style={{ fill: 'url(#icon-gradient)' }}
-                    className="hover:scale-110 duration-300"
-                  />
+                  <MdFacebook className="hover:scale-110 duration-300" />
                 </a>
               </li>
             </ul>
@@ -110,11 +101,8 @@ const Footer = () => {
 
         <div className="flex flex-col lg:flex-row justify-between items-center text-sm px-4">
           <p>
-            &copy; {date}{' '}
-            <span className="font-bold bg-gradient-to-t from-[#FF7B00] via-[#FFDA00] to-[#FFE48B] bg-clip-text text-transparent">
-              {t('companyName')}
-            </span>
-            . {t('footer.allRightsReserved')}
+            &copy; {date} <span className="font-bold">{t('companyName')}</span>.{' '}
+            {t('footer.allRightsReserved')}
           </p>
           <div className="flex space-x-4 mt-4 lg:mt-0">
             <Link

@@ -114,7 +114,7 @@ const PricingCard = ({
         </ul>
       </div>
       <Button type="link" to="meeting-booking" className="mt-4">
-        {t('getStarted')}
+        {t('buttons.getStarted')}
       </Button>
     </div>
   );

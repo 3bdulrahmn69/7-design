@@ -5,9 +5,13 @@ import BannerImg from '../../../components/BannerImg';
 import { myLogosWhite, myLogosBlack } from '../../../services/myLogos';
 import Button from '../../../components/Button';
 import { useTranslation } from 'react-i18next';
+import i18next from 'i18next';
+
+import { FaArrowRightLong } from 'react-icons/fa6';
 
 const LogosSection = () => {
   const { t } = useTranslation();
+  const lang = i18next.language;
 
   return (
     <Section id={'logos'}>
@@ -43,7 +47,13 @@ const LogosSection = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <Button variant="secondary" className="mt-4">
+            <Button
+              variant="secondary"
+              className="mt-4 flex items-center gap-2 hover:gap-3"
+            >
+              <FaArrowRightLong
+                className={`${lang === 'en' ? '' : 'rotate-180'}`}
+              />
               {t('buttons.discoverMore')}
             </Button>
           </a>

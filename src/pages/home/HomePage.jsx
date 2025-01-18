@@ -16,6 +16,7 @@ import TakeAction from './sections/TakeAction';
 import TestimonialsSection from './sections/TestimonialsSection';
 import { useEffect } from 'react';
 import { scroller } from 'react-scroll';
+import CopiedSection from './sections/CopiedSection';
 
 const HomePage = () => {
   const location = useLocation();
@@ -39,6 +40,7 @@ const HomePage = () => {
       <Header />
       <HeroSection />
       <LogosSection />
+      <CopiedSection />
       <ProjectsSection />
       <CounterSection />
       <ProcessSection />

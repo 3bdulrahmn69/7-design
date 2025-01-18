@@ -50,7 +50,7 @@ const SmallPricingCard = ({
           <Button type="link" to="/meeting-booking" variant="primary">
             {displayPrice === "Let's Talk"
               ? t('buttons.letsTalk')
-              : t('buttons.bookACall')}
+              : t('buttons.getStarted')}
           </Button>
         </div>
       </div>
