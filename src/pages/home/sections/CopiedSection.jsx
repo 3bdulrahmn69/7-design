@@ -24,7 +24,7 @@ const CopiedSection = () => {
               appealing, but it fails to represent its owner because it wasn’t
               tailored to their unique fit
             </blockquote>
-            <h2 className="text-center font-semibold p-1 py-2 text-xs md:text-base">
+            <h2 className="text-center p-1 py-2 text-xs md:text-base">
               Dr. Mohamed Esam (The Founder)
             </h2>
           </div>

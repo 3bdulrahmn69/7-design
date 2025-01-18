@@ -36,7 +36,7 @@ const TestimonialCard = ({ name, desc, title, image, className }) => {
         </div>
       </header>
       <blockquote
-        className="leading-relaxed font-normal text-primary-text max-w-sm"
+        className="leading-relaxed font-normal text-primary-text max-w-xs"
         aria-label={`Testimonial description from ${name}`}
       >
         {desc}
