@@ -4,7 +4,7 @@ import drMohamed from '../../../assets/drMohamed.jpg';
 
 const CopiedSection = () => {
   return (
-    <Section className="-mt-20" id="copied">
+    <Section className="-mt-11" id="copied">
       <Container className="flex items-center justify-center">
         <article
           dir="ltr"
