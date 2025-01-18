@@ -1,10 +1,10 @@
+import i18next from 'i18next';
+import { useTranslation } from 'react-i18next';
 import Button from '../../../components/Button';
 import Container from '../../../components/container';
 import { Section } from '../../../components/Section';
 import TextAnimation from '../../../components/TextAnimation';
-import Glow from '../components/Glow';
-import { useTranslation } from 'react-i18next';
-import i18next from 'i18next';
+import Glow from '../../../components/Glow';
 
 const HeroSection = () => {
   const { t } = useTranslation();

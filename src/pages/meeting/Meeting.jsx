@@ -9,12 +9,13 @@ import Container from '../../components/container';
 import { Link } from 'react-router-dom';
 import apologize from '../../assets/icons/apologize.gif';
 import SecCard from '../home/components/SecCard';
+import Glow from '../../components/Glow';
 
 const Meeting = () => {
   const { t } = useTranslation();
 
   return (
-    <div>
+    <div className="relative">
       <Helmet>
         <title>{t('meeting.pageTitle')}</title>
         <meta name="description" content={t('meeting.meta.description')} />
@@ -78,14 +79,21 @@ const Meeting = () => {
               </div>
             </div>
           </div>
-          <Container className="mb-8">
+          <Container className="mb-16">
             <SecCard
-              className="md:w-auto md:max-w-lg"
+              className="md:w-auto md:max-w-lg bg-transparent dark:bg-transparent backdrop-blur-sm relative z-10"
               description={t('meeting.apologyMessage')}
               icon={apologize}
             />
           </Container>
         </main>
+      </div>
+      <div className="h-8 md:h-16 z-0">
+        <Glow
+          className="absolute bottom-[600px] md:bottom-[450px] translate-y-full"
+          isMoving={false}
+          shrink={true}
+        />
       </div>
       <Footer />
     </div>

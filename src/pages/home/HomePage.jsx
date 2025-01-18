@@ -1,7 +1,7 @@
 import { useLocation } from 'react-router-dom';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
-import Glow from './components/Glow';
+
 import BenefitsSection from './sections/BenefitsSection';
 import ComparisonSection from './sections/ComparisonSection';
 import CounterSection from './sections/CounterSection';
@@ -17,6 +17,7 @@ import TestimonialsSection from './sections/TestimonialsSection';
 import { useEffect } from 'react';
 import { scroller } from 'react-scroll';
 import CopiedSection from './sections/CopiedSection';
+import Glow from '../../components/Glow';
 
 const HomePage = () => {
   const location = useLocation();

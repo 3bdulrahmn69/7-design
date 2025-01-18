@@ -1,6 +1,6 @@
 import { useEffect, useState, useCallback } from 'react';
 import PropTypes from 'prop-types';
-import { cn } from '../../../lib/utils';
+import { cn } from '../lib/utils';
 
 const Glow = ({ isMoving = false, className, shrink = true }) => {
   const [scrollOffset, setScrollOffset] = useState(0);

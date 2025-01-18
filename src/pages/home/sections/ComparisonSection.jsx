@@ -38,13 +38,14 @@ const ComparisonSection = () => {
           {t('comparison.sectionTitle')}
         </LittleTitle>
         <Title>
-          {t('comparison.whyChoose')} <LatinSpan>{t('comparison.companyName')}</LatinSpan>
+          {t('comparison.whyChoose')}{' '}
+          <LatinSpan>{t('comparison.companyName')}</LatinSpan>
         </Title>
       </Container>
       <Container className="flex flex-col md:flex-row items-center justify-center gap-11 md:gap-16 lg:gap-24 mt-16">
         <div className="w-full flex flex-col items-center justify-center md:max-w-[450px]">
           <h4
-            className="text-center text-primary-text text-2xl mb-8"
+            className="text-center text-primary-text text-2xl mb-12 mt-2"
             aria-label="Other Agencies"
           >
             {t('comparison.otherAgencies.title')}
@@ -54,7 +55,7 @@ const ComparisonSection = () => {
               {otherAgencies.map((item, index) => (
                 <li key={`other-${index}`} className="flex items-center gap-2">
                   <span aria-hidden="true">
-                    <TfiClose size={20} />
+                    <TfiClose size={18} />
                   </span>
                   <span className="ml-1 text-lg">{t(item)}</span>
                 </li>
@@ -79,7 +80,7 @@ const ComparisonSection = () => {
                 <li key={`seven-${index}`} className="flex items-center gap-2">
                   <span aria-hidden="true">
                     <FaCheck
-                      size={24}
+                      size={18}
                       style={{ fill: 'url(#icon-gradient)' }}
                     />
                   </span>
