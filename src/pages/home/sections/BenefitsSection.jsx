@@ -16,37 +16,49 @@ import engagingVisuals from '../../../assets/icons/engagingVisuals.gif';
 import fastDelivery from '../../../assets/icons/fastDelivery.gif';
 import transparentPricing from '../../../assets/icons/transparentPricing.gif';
 import fullSatisfaction from '../../../assets/icons/fullSatisfaction.gif';
+import expertDesignersBlack from '../../../assets/icons/expertDesigners-black.gif';
+import uniqueDesignsBlack from '../../../assets/icons/uniqueDesigns-black.gif';
+import engagingVisualsBlack from '../../../assets/icons/engagingVisuals-black.gif';
+import fastDeliveryBlack from '../../../assets/icons/fastDelivery-black.gif';
+import transparentPricingBlack from '../../../assets/icons/transparentPricing-black.gif';
+import fullSatisfactionBlack from '../../../assets/icons/fullSatisfaction-black.gif';
 
 const Benefits = [
   {
     title: 'benefits.expertDesignersTitle',
     description: 'benefits.expertDesignersDescription',
-    icon: expertDesigners,
+    iconDark: expertDesigners,
+    iconLight: expertDesignersBlack,
   },
   {
     title: 'benefits.uniqueDesignsTitle',
     description: 'benefits.uniqueDesignsDescription',
-    icon: uniqueDesigns,
+    iconDark: uniqueDesigns,
+    iconLight: uniqueDesignsBlack,
   },
   {
     title: 'benefits.engagingVisualsTitle',
     description: 'benefits.engagingVisualsDescription',
-    icon: engagingVisuals,
+    iconDark: engagingVisuals,
+    iconLight: engagingVisualsBlack,
   },
   {
     title: 'benefits.fastDeliveryTitle',
     description: 'benefits.fastDeliveryDescription',
-    icon: fastDelivery,
+    iconDark: fastDelivery,
+    iconLight: fastDeliveryBlack,
   },
   {
     title: 'benefits.transparentPricingTitle',
     description: 'benefits.transparentPricingDescription',
-    icon: transparentPricing,
+    iconDark: transparentPricing,
+    iconLight: transparentPricingBlack,
   },
   {
     title: 'benefits.fullSatisfactionTitle',
     description: 'benefits.fullSatisfactionDescription',
-    icon: fullSatisfaction,
+    iconDark: fullSatisfaction,
+    iconLight: fullSatisfactionBlack,
   },
 ];
 
@@ -69,7 +81,8 @@ const BenefitsSection = () => {
               key={index}
               title={t(benefit.title)}
               description={t(benefit.description)}
-              icon={benefit.icon}
+              iconDark={benefit.iconDark}
+              iconLight={benefit.iconLight}
             />
           ))}
         </div>

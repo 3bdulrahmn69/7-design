@@ -1,5 +1,5 @@
-import Container from '../../../components/container';
 import { Section } from '../../../components/Section';
+import Container from '../../../components/container';
 import drMohamed from '../../../assets/drMohamed.jpg';
 
 const CopiedSection = () => {

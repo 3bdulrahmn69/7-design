@@ -11,48 +11,62 @@ import completedProjects from '../../../assets/icons/completedProjects.gif';
 import clientSatisfactionRate from '../../../assets/icons/clientSatisfactionRate.gif';
 import happyClients from '../../../assets/icons/happyClients.gif';
 
+/* Import the black icons */
+import yearsBlack from '../../../assets/icons/years-black.gif';
+import countriesBlack from '../../../assets/icons/countries-black.gif';
+import creativeDesignsBlack from '../../../assets/icons/creativeDesigns-black.gif';
+import completedProjectsBlack from '../../../assets/icons/completedProjects-black.gif';
+import clientSatisfactionRateBlack from '../../../assets/icons/clientSatisfactionRate-black.gif';
+import happyClientsBlack from '../../../assets/icons/happyClients-black.gif';
+
 const counterData = [
   {
     num: 7,
     symbol: '+',
     title: 'counter.yearsExperience.title',
     description: 'counter.yearsExperience.description',
-    icon: years,
+    iconLight: yearsBlack,
+    iconDark: years,
   },
   {
     num: 10,
     symbol: '+',
     title: 'counter.countries.title',
     description: 'counter.countries.description',
-    icon: countries,
+    iconLight: countriesBlack,
+    iconDark: countries,
   },
   {
     num: 1700,
     symbol: '+',
     title: 'counter.creativeDesigns.title',
     description: 'counter.creativeDesigns.description',
-    icon: creativeDesigns,
+    iconLight: creativeDesignsBlack,
+    iconDark: creativeDesigns,
   },
   {
     num: 500,
     symbol: '+',
     title: 'counter.completedProjects.title',
     description: 'counter.completedProjects.description',
-    icon: completedProjects,
+    iconLight: completedProjectsBlack,
+    iconDark: completedProjects,
   },
   {
     num: 97,
     symbol: '%',
     title: 'counter.satisfactionRate.title',
     description: 'counter.satisfactionRate.description',
-    icon: clientSatisfactionRate,
+    iconLight: clientSatisfactionRateBlack,
+    iconDark: clientSatisfactionRate,
   },
   {
     num: 320,
     symbol: '+',
     title: 'counter.happyClients.title',
     description: 'counter.happyClients.description',
-    icon: happyClients,
+    iconLight: happyClientsBlack,
+    iconDark: happyClients,
   },
 ];
 
@@ -70,7 +84,8 @@ const CounterSection = () => {
               symbol={counter.symbol}
               title={t(counter.title)}
               description={t(counter.description)}
-              icon={counter.icon}
+              iconLight={counter.iconLight}
+              iconDark={counter.iconDark}
             />
           ))}
         </div>

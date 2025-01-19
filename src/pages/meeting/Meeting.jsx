@@ -1,15 +1,17 @@
+import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import { WistiaPlayer } from '@wistia/wistia-player-react';
 import { useTranslation } from 'react-i18next';
 import Calendly from './components/Calendly';
 import Footer from '../../components/Footer';
 import { LatinSpan } from '../../components/Section';
-import logo from '../../assets/logo-textl.png';
 import Container from '../../components/container';
-import { Link } from 'react-router-dom';
-import apologize from '../../assets/icons/apologize.gif';
 import SecCard from '../home/components/SecCard';
 import Glow from '../../components/Glow';
+
+import logo from '../../assets/logo-textl.png';
+import apologize from '../../assets/icons/apologize.gif';
+import apologizeBlack from '../../assets/icons/apologize-black.gif';
 
 const Meeting = () => {
   const { t } = useTranslation();
@@ -84,7 +86,8 @@ const Meeting = () => {
             <SecCard
               className="md:w-auto md:max-w-lg bg-transparent dark:bg-transparent backdrop-blur-sm relative z-10"
               description={t('meeting.apologyMessage')}
-              icon={apologize}
+              iconLight={apologizeBlack}
+              iconDark={apologize}
             />
           </Container>
         </main>

@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { useEffect, useState, useRef } from 'react';
 import { motion, useAnimation, useInView } from 'motion/react';
 
-const CounterCard = ({ num, symbol, title, icon }) => {
+const CounterCard = ({ num, symbol, title, iconLight, iconDark }) => {
   const [hasAnimated, setHasAnimated] = useState(false);
   const ref = useRef(null);
   const inView = useInView(ref, { threshold: 0.5 });
@@ -28,7 +28,16 @@ const CounterCard = ({ num, symbol, title, icon }) => {
       aria-label={`${title} statistics`}
     >
       <figure className="w-[70px] xl:w-[80px] flex items-center justify-center">
-        <img src={icon} alt={title} className="no-drag-img" />
+        <img
+          src={iconLight}
+          alt={title}
+          className="no-drag-img block dark:hidden"
+        />
+        <img
+          src={iconDark}
+          alt={title}
+          className="no-drag-img hidden dark:block"
+        />
       </figure>
       <div className="flex flex-col items-center justify-center w-2/3">
         <p className="flex items-center bg-gradient-to-t from-[#FF7B00] via-[#FFDA00] to-[#FFE48B] bg-clip-text text-transparent">
@@ -59,7 +68,8 @@ CounterCard.propTypes = {
   num: PropTypes.number.isRequired,
   symbol: PropTypes.string,
   title: PropTypes.string.isRequired,
-  icon: PropTypes.node,
+  iconLight: PropTypes.node,
+  iconDark: PropTypes.node,
 };
 
 export default CounterCard;

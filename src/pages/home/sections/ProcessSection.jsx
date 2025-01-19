@@ -14,21 +14,28 @@ import enroll from '../../../assets/icons/enroll.gif';
 import share from '../../../assets/icons/share.gif';
 import receive from '../../../assets/icons/receive.gif';
 
+import enrollBlack from '../../../assets/icons/enroll-black.gif';
+import shareBlack from '../../../assets/icons/share-black.gif';
+import receiveBlack from '../../../assets/icons/receive-black.gif';
+
 const process = [
   {
     title: 'process.enrollTitle',
     description: 'process.enrollDescription',
-    icon: enroll,
+    iconDark: enroll,
+    iconLight: enrollBlack,
   },
   {
     title: 'process.shareTitle',
     description: 'process.shareDescription',
-    icon: share,
+    iconDark: share,
+    iconLight: shareBlack,
   },
   {
     title: 'process.receiveTitle',
     description: 'process.receiveDescription',
-    icon: receive,
+    iconDark: receive,
+    iconLight: receiveBlack,
   },
 ];
 
@@ -49,7 +56,8 @@ const ProcessSection = () => {
           {process.map((item, index) => (
             <SecCard
               key={index}
-              icon={item.icon}
+              iconLight={item.iconLight}
+              iconDark={item.iconDark}
               title={t(item.title)}
               description={t(item.description)}
             />

@@ -71,7 +71,7 @@ const ComparisonSection = () => {
             <img
               src={logo}
               alt="Seven Design Studio"
-              className="w-32 md:w-44"
+              className="w-32 md:w-44 no-drag-img"
             />
           </h4>
           <ComparisonCard type="glow">
@@ -81,7 +81,7 @@ const ComparisonSection = () => {
                   <span aria-hidden="true">
                     <FaCheck
                       size={18}
-                      style={{ fill: 'url(#icon-gradient)' }}
+                      className="dark:fill-[url(#icon-gradient)]"
                     />
                   </span>
                   <span className="ml-1 text-lg">{t(item)}</span>

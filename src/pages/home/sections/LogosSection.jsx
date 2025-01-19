@@ -1,11 +1,11 @@
-import Container from '../../../components/container';
+import i18next from 'i18next';
+import { useTranslation } from 'react-i18next';
 import { Section } from '../../../components/Section';
+import Container from '../../../components/container';
 import MovingSlider from '../../../components/MovingSlider';
 import BannerImg from '../../../components/BannerImg';
-import { myLogosWhite, myLogosBlack } from '../../../services/myLogos';
 import Button from '../../../components/Button';
-import { useTranslation } from 'react-i18next';
-import i18next from 'i18next';
+import { myLogosWhite, myLogosBlack } from '../../../services/myLogos';
 
 import { FaArrowRightLong } from 'react-icons/fa6';
 

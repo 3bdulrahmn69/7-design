@@ -28,8 +28,7 @@ const TestimonialCard = ({ name, desc, title, image, className }) => {
             {[...Array(5)].map((_, index) => (
               <FaStar
                 key={index}
-                className="mr-1"
-                style={{ fill: 'url(#icon-gradient)' }}
+                className="mr-1 dark:fill-[url(#icon-gradient)]"
               />
             ))}
           </div>

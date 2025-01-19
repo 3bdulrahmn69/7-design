@@ -97,16 +97,19 @@ const PricingCard = ({
                 {isIncluded ? (
                   <IoIosCheckmarkCircleOutline
                     size={20}
-                    style={{ fill: 'url(#icon-gradient)' }}
+                    className="text-black dark:fill-[url(#icon-gradient)]"
                   />
                 ) : (
                   <IoIosCloseCircleOutline
                     size={20}
-                    style={{ fill: 'currentColor' }}
                   />
                 )}
               </span>
-              <span className={`${isIncluded ? '' : 'text-black/20 dark:text-primary-text/50'}`}>
+              <span
+                className={`${
+                  isIncluded ? '' : 'text-black/20 dark:text-primary-text/50'
+                }`}
+              >
                 {t(feature)}
               </span>
             </li>

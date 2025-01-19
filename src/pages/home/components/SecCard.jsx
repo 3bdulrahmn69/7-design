@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { cn } from '../../../lib/utils';
 
-const SecCard = ({ title, description, icon, className }) => {
+const SecCard = ({ title, description, iconLight, iconDark, className }) => {
   return (
     <div
       className={cn(
@@ -10,7 +10,16 @@ const SecCard = ({ title, description, icon, className }) => {
       )}
     >
       <figure className="w-[70px] xl:w-[80px]">
-        <img src={icon} alt={title} className="no-drag-img" />
+        <img
+          src={iconLight}
+          alt={title}
+          className="no-drag-img block dark:hidden"
+        />
+        <img
+          src={iconDark}
+          alt={title}
+          className="no-drag-img hidden dark:block"
+        />
       </figure>
       {title && <h4 className="text-center text-2xl">{title}</h4>}
       {description && (
@@ -25,7 +34,8 @@ const SecCard = ({ title, description, icon, className }) => {
 SecCard.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
-  icon: PropTypes.string,
+  iconLight: PropTypes.string,
+  iconDark: PropTypes.string,
   className: PropTypes.string,
 };
 
