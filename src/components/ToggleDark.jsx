@@ -4,7 +4,6 @@ import { MdDarkMode, MdLightMode } from 'react-icons/md';
 const ToggleDark = () => {
   const [isDarkMode, setIsDarkMode] = useState(() => {
     const localTheme = localStorage.getItem('theme');
-    // Default to dark mode if no theme is set
     return localTheme ? localTheme === 'dark' : true;
   });
 
