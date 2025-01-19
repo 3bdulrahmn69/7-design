@@ -256,7 +256,7 @@ const PricingSections = () => {
               onClick={() => setCurrency('USD')}
               className={`${
                 currency === 'USD' &&
-                'bg-gradient-to-t from-[#FF7B00] via-[#FFDA00] to-[#FFE48B] bg-clip-text text-transparent'
+                'bg-gradient-to-t-orange bg-clip-text text-transparent'
               } p-2`}
             >
               USD
@@ -267,7 +267,7 @@ const PricingSections = () => {
               onClick={() => setCurrency('SAR')}
               className={`${
                 currency === 'SAR' &&
-                'bg-gradient-to-t from-[#FF7B00] via-[#FFDA00] to-[#FFE48B] bg-clip-text text-transparent'
+                'bg-gradient-to-t-orange bg-clip-text text-transparent'
               } p-2`}
             >
               SAR
@@ -278,7 +278,7 @@ const PricingSections = () => {
               onClick={() => setCurrency('EGP')}
               className={`${
                 currency === 'EGP' &&
-                'bg-gradient-to-t from-[#FF7B00] via-[#FFDA00] to-[#FFE48B] bg-clip-text text-transparent'
+                'bg-gradient-to-t-orange bg-clip-text text-transparent'
               } p-2`}
             >
               EGP

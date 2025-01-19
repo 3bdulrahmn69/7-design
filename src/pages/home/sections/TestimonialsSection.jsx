@@ -1,6 +1,4 @@
 import { useTranslation } from 'react-i18next';
-import Container from '../../../components/container';
-import MovingSlider from '../../../components/MovingSlider';
 import {
   Description,
   LatinSpan,
@@ -8,9 +6,11 @@ import {
   Section,
   Title,
 } from '../../../components/Section';
+import Container from '../../../components/container';
+import MovingSlider from '../../../components/MovingSlider';
+import TestimonialCard from '../components/TestimonialCard';
 import { myTestimonialsOne } from '../../../services/myTestimonials';
 import { myTestimonialsTwo } from '../../../services/myTestimonials';
-import TestimonialCard from '../components/TestimonialCard';
 
 const TestimonialsSection = () => {
   const { t } = useTranslation();

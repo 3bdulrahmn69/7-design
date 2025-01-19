@@ -1,22 +1,25 @@
+import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import { scroller } from 'react-scroll';
+
+/* Import the sections */
+import HeroSection from './sections/HeroSection';
+import CopiedSection from './sections/CopiedSection';
+import LogosSection from './sections/LogosSection';
+import ProjectsSection from './sections/ProjectsSection';
+import CounterSection from './sections/CounterSection';
+import ProcessSection from './sections/ProcessSection';
+import BenefitsSection from './sections/BenefitsSection';
+import ServicesSection from './sections/ServicesSection';
+import ComparisonSection from './sections/ComparisonSection';
+import TestimonialsSection from './sections/TestimonialsSection';
+import PricingSections from './sections/PricingSections';
+import FrequentlySection from './sections/FrequentlySection';
+import TakeAction from './sections/TakeAction';
+
+/* Import the components */
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
-
-import BenefitsSection from './sections/BenefitsSection';
-import ComparisonSection from './sections/ComparisonSection';
-import CounterSection from './sections/CounterSection';
-import FrequentlySection from './sections/FrequentlySection';
-import HeroSection from './sections/HeroSection';
-import LogosSection from './sections/LogosSection';
-import PricingSections from './sections/PricingSections';
-import ProcessSection from './sections/ProcessSection';
-import ProjectsSection from './sections/ProjectsSection';
-import ServicesSection from './sections/ServicesSection';
-import TakeAction from './sections/TakeAction';
-import TestimonialsSection from './sections/TestimonialsSection';
-import { useEffect } from 'react';
-import { scroller } from 'react-scroll';
-import CopiedSection from './sections/CopiedSection';
 import Glow from '../../components/Glow';
 
 const HomePage = () => {

@@ -10,8 +10,6 @@ import creativeDesigns from '../../../assets/icons/creativeDesigns.gif';
 import completedProjects from '../../../assets/icons/completedProjects.gif';
 import clientSatisfactionRate from '../../../assets/icons/clientSatisfactionRate.gif';
 import happyClients from '../../../assets/icons/happyClients.gif';
-
-/* Import the black icons */
 import yearsBlack from '../../../assets/icons/years-black.gif';
 import countriesBlack from '../../../assets/icons/countries-black.gif';
 import creativeDesignsBlack from '../../../assets/icons/creativeDesigns-black.gif';

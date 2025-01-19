@@ -5,29 +5,10 @@ const Calendly = () => {
   const isWidgetInitialized = useRef(false);
 
   useEffect(() => {
-    const loadCalendlyScript = () => {
-      if (!isScriptLoaded.current) {
-        // Create the script element to load the Calendly widget
-        const script = document.createElement('script');
-        script.src = 'https://assets.calendly.com/assets/external/widget.js';
-        script.async = true;
-        script.onload = () => {
-          isScriptLoaded.current = true;
-          if (window.Calendly && !isWidgetInitialized.current) {
-            window.Calendly.initInlineWidget({
-              url: 'https://calendly.com/drmohamed990/15min?hide_event_type_details=1&hide_gdpr_banner=1',
-              parentElement: document.getElementById('calendly-widget'),
-              prefill: {},
-              utm: {},
-            });
-            isWidgetInitialized.current = true;
-          }
-        };
-        document.body.appendChild(script);
-      } else if (window.Calendly && !isWidgetInitialized.current) {
-        // Initialize the widget if the script is already loaded
+    const initializeCalendlyWidget = () => {
+      if (window.Calendly && !isWidgetInitialized.current) {
         window.Calendly.initInlineWidget({
-          url: 'https://calendly.com/drmohamed990/15min?hide_gdpr_banner=1',
+          url: 'https://calendly.com/drmohamed990/15min?hide_event_type_details=1&hide_gdpr_banner=1',
           parentElement: document.getElementById('calendly-widget'),
           prefill: {},
           utm: {},
@@ -36,10 +17,31 @@ const Calendly = () => {
       }
     };
 
+    const loadCalendlyScript = () => {
+      if (!isScriptLoaded.current) {
+        const script = document.createElement('script');
+        script.src = 'https://assets.calendly.com/assets/external/widget.js';
+        script.async = true;
+        script.onload = () => {
+          isScriptLoaded.current = true;
+          initializeCalendlyWidget();
+        };
+        document.body.appendChild(script);
+      } else {
+        initializeCalendlyWidget();
+      }
+    };
+
     loadCalendlyScript();
 
-    // Cleanup when the component unmounts
-    return () => {};
+    return () => {
+      if (isScriptLoaded.current && !isWidgetInitialized.current) {
+        const scriptElement = document.querySelector(
+          'script[src="https://assets.calendly.com/assets/external/widget.js"]'
+        );
+        if (scriptElement) scriptElement.remove();
+      }
+    };
   }, []);
 
   return (

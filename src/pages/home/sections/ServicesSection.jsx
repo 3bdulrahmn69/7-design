@@ -30,11 +30,11 @@ const ServicesOne = [
     icon: (
       <div className="relative w-10 h-10 ">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/3 w-10 h-10 select-none">
-          <span className="block w-full h-1 bg-black dark:bg-gradient-to-t from-[#FF7B00] via-[#FFDA00] to-[#FFE48B] rounded-site"></span>
-          <p className="bg-black dark:bg-gradient-to-t from-[#FF7B00] via-[#FFDA00] to-[#FFE48B] bg-clip-text text-transparent font-black text-[10px] text-center -my-2 font-mono">
+          <span className="block w-full h-1 bg-black dark:bg-gradient-to-t-orange rounded-site"></span>
+          <p className="bg-black dark:bg-gradient-to-t-orange bg-clip-text text-transparent font-black text-[10px] text-center -my-2 font-mono">
             BRAND
           </p>
-          <span className="block w-full h-1 bg-black dark:bg-gradient-to-t from-[#FF7B00] via-[#FFDA00] to-[#FFE48B] rounded-site"></span>
+          <span className="block w-full h-1 bg-black dark:bg-gradient-to-t-orange rounded-site"></span>
         </div>
       </div>
     ),

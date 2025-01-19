@@ -16,7 +16,7 @@ const Button = ({
 }) => {
   const variantStyles = {
     primary:
-      'bg-gradient-to-t from-[#FF7B00] via-[#FFDA00] to-[#FFE48B] text-secondary-text',
+      'bg-gradient-to-t-orange text-secondary-text',
     secondary:
       'bg-primaryDarkBlack outline-[1px] outline-gray-500/20 outline hover:outline-[3px] hover:outline-gray-500/40 duration-300 text-primaryLightWhite',
     outline:

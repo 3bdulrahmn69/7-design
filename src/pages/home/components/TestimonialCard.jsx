@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { cn } from '../../../lib/utils';
-import { FaStar } from 'react-icons/fa'; // Import star icon
+import { FaStar } from 'react-icons/fa';
 
 const TestimonialCard = ({ name, desc, title, image, className }) => {
   return (

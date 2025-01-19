@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
+import { useTranslation } from 'react-i18next';
 import { cn } from '../../../lib/utils';
 import Button from '../../../components/Button';
-import { useTranslation } from 'react-i18next';
 
 const SmallPricingCard = ({
   packageName,

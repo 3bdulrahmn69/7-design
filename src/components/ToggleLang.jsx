@@ -6,18 +6,18 @@ const ToggleLang = () => {
 
   const setTextDirection = (language) => {
     document.body.dir = language === 'ar' ? 'rtl' : 'ltr';
-    document.documentElement.lang = language; // Set language attribute for SEO
+    document.documentElement.lang = language;
   };
 
   const toggleLanguage = () => {
     const newLang = lang === 'en' ? 'ar' : 'en';
-    i18n.changeLanguage(newLang); // Change language dynamically
-    setLang(newLang); // Update local state
-    setTextDirection(newLang); // Update direction and lang attribute
+    i18n.changeLanguage(newLang);
+    setLang(newLang);
+    setTextDirection(newLang);
   };
 
   useEffect(() => {
-    setTextDirection(lang); // Initial direction setting
+    setTextDirection(lang);
   }, [lang]);
 
   return (

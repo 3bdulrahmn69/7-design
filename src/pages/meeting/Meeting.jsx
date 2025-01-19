@@ -26,7 +26,7 @@ const Meeting = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://yourdomain.com/meeting" />
       </Helmet>
-      <h1 className="text-secondary-text font-semibold text-center py-4 bg-gradient-to-t from-[#FF7B00] via-[#FFDA00] to-[#FFE48B]">
+      <h1 className="text-secondary-text font-semibold text-center py-4 bg-gradient-to-t-orange">
         {t('meeting.spotsAvailable')}
       </h1>
       <div className="h-10 w-full bg-[#FF7B00]">

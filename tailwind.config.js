@@ -45,6 +45,10 @@ export default {
       padding: {
         site: '1.25rem',
       },
+      backgroundImage: {
+        'gradient-to-t-orange':
+          'linear-gradient(to top, #FF7B00, #FFDA00, #FFE48B)',
+      },
     },
   },
   plugins: [],
