@@ -30,7 +30,7 @@ const PricingCard = ({
   return (
     <div
       className={cn(
-        'flex flex-col relative border border-light-border dark:border-secondary-text rounded-site shadow-lg px-4 py-8 max-w-md bg-secondaryLightWhite dark:bg-primaryDarkBlack overflow-hidden',
+        'flex flex-col relative border border-light-border dark:border-secondary-text rounded-site px-4 py-8 max-w-md bg-secondaryLightWhite dark:bg-primaryDarkBlack overflow-hidden',
         className
       )}
     >
