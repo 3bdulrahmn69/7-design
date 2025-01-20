@@ -52,7 +52,7 @@ const PricingCard = ({
                 onClick={() => setCurrency('USD')}
                 className={`bg-secondaryLightWhite dark:bg-secondaryDarkBlack ${
                   currency === 'USD' &&
-                  'dark:bg-gradient-to-t-orange dark:bg-clip-text dark:text-transparent'
+                  'text-primary dark:bg-gradient-to-t-orange dark:bg-clip-text dark:text-transparent'
                 } p-2`}
               >
                 USD
@@ -63,7 +63,7 @@ const PricingCard = ({
                 onClick={() => setCurrency('SAR')}
                 className={`bg-secondaryLightWhite dark:bg-secondaryDarkBlack ${
                   currency === 'SAR' &&
-                  'dark:bg-gradient-to-t-orange dark:bg-clip-text dark:text-transparent'
+                  'text-primary dark:bg-gradient-to-t-orange dark:bg-clip-text dark:text-transparent'
                 } p-2`}
               >
                 SAR
@@ -74,7 +74,7 @@ const PricingCard = ({
                 onClick={() => setCurrency('EGP')}
                 className={`bg-secondaryLightWhite dark:bg-secondaryDarkBlack ${
                   currency === 'EGP' &&
-                  'dark:bg-gradient-to-t-orange dark:bg-clip-text dark:text-transparent'
+                  'text-primary dark:bg-gradient-to-t-orange dark:bg-clip-text dark:text-transparent'
                 } p-2`}
               >
                 EGP
