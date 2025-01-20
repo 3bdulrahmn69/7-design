@@ -251,34 +251,46 @@ const PricingSections = () => {
           dir="ltr"
           className="flex justify-center items-center gap-8 bg-secondaryLightWhite dark:bg-primaryDarkBlack  border-[1px] border-light-border dark:border-secondary-text rounded-site py-4 px-8 w-fit mx-auto"
         >
-          <span className="bg-primaryLightWhite dark:bg-primaryDarkBlack rounded-site overflow-hidden border-[1px] border-gray-500/20 dark:border-secondary-text ">
+          <span
+            className={`bg-primaryLightWhite dark:bg-primaryDarkBlack rounded-site overflow-hidden border-[1px] ${
+              currency === 'USD' ? 'border-gray-500/40' : 'border-gray-500/20'
+            } dark:border-secondary-text `}
+          >
             <button
               onClick={() => setCurrency('USD')}
               className={`bg-secondaryLightWhite dark:bg-secondaryDarkBlack ${
                 currency === 'USD' &&
-                'text-primary dark:bg-gradient-to-t-orange dark:bg-clip-text dark:text-transparent'
+                'dark:bg-gradient-to-t-orange dark:bg-clip-text dark:text-transparent'
               } p-2`}
             >
               USD
             </button>
           </span>
-          <span className="bg-primaryLightWhite dark:bg-primaryDarkBlack rounded-site overflow-hidden border-[1px] border-gray-500/20 dark:border-secondary-text ">
+          <span
+            className={`bg-primaryLightWhite dark:bg-primaryDarkBlack rounded-site overflow-hidden border-[1px] ${
+              currency === 'SAR' ? 'border-gray-500/40' : 'border-gray-500/20'
+            } dark:border-secondary-text `}
+          >
             <button
               onClick={() => setCurrency('SAR')}
               className={`bg-secondaryLightWhite dark:bg-secondaryDarkBlack ${
                 currency === 'SAR' &&
-                'text-primary dark:bg-gradient-to-t-orange dark:bg-clip-text dark:text-transparent'
+                'dark:bg-gradient-to-t-orange dark:bg-clip-text dark:text-transparent'
               } p-2`}
             >
               SAR
             </button>
           </span>
-          <span className="bg-primaryLightWhite dark:bg-primaryDarkBlack rounded-site overflow-hidden border-[1px] border-gray-500/20 dark:border-secondary-text ">
+          <span
+            className={`bg-primaryLightWhite dark:bg-primaryDarkBlack rounded-site overflow-hidden border-[1px] ${
+              currency === 'EGP' ? 'border-gray-500/40' : 'border-gray-500/20'
+            } dark:border-secondary-text `}
+          >
             <button
               onClick={() => setCurrency('EGP')}
               className={`bg-secondaryLightWhite dark:bg-secondaryDarkBlack ${
                 currency === 'EGP' &&
-                'text-primary dark:bg-gradient-to-t-orange dark:bg-clip-text dark:text-transparent'
+                'dark:bg-gradient-to-t-orange dark:bg-clip-text dark:text-transparent'
               } p-2`}
             >
               EGP
