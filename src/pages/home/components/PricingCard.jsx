@@ -102,7 +102,7 @@ const PricingCard = ({
                 className={`${lang === 'ar' ? 'ml-2' : 'mr-2'} ${
                   isIncluded
                     ? 'bg-gradient-to-t-light dark:bg-gradient-to-t-orange bg-clip-text text-transparent'
-                    : 'text-gray-400'
+                    : 'text-light-text dark:text-primary-text'
                 }`}
                 role="img"
               >
@@ -117,7 +117,7 @@ const PricingCard = ({
               </span>
               <span
                 className={`${
-                  isIncluded ? '' : 'text-light-text dark:text-secondary-text'
+                  isIncluded ? '' : 'text-light-text dark:text-primary-text'
                 }`}
               >
                 {t(feature)}
