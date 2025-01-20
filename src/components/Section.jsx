@@ -24,7 +24,7 @@ export const LittleTitle = ({ children, className }) => {
     <div className="flex justify-center items-center">
       <p
         className={cn(
-          'bg-primaryLightWhite dark:bg-primaryDarkBlack text-primaryDarkBlack dark:text-primaryLightWhite outline  outline-[1px] outline-gray-400/20 px-4 py-[7px] rounded-[14px] font-medium w-fit text-center',
+          'bg-secondaryLightWhite dark:bg-primaryDarkBlack text-primaryDarkBlack dark:text-primaryLightWhite outline  outline-[1px] outline-gray-400/20 px-4 py-[7px] rounded-[14px] font-medium w-fit text-center',
           className
         )}
       >

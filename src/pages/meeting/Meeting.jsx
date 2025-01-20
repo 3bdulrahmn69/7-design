@@ -84,7 +84,7 @@ const Meeting = () => {
           </div>
           <Container className="mb-16">
             <SecCard
-              className="md:w-auto md:max-w-lg bg-transparent dark:bg-transparent backdrop-blur-sm relative z-10"
+              className="md:w-auto md:max-w-lg bg-secondaryLightWhite/50 dark:bg-secondaryDarkBlack/50 backdrop-blur-sm relative z-10"
               description={t('meeting.apologyMessage')}
               iconLight={apologizeBlack}
               iconDark={apologize}

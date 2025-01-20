@@ -5,7 +5,7 @@ const SecCard = ({ title, description, iconLight, iconDark, className }) => {
   return (
     <div
       className={cn(
-        'w-72 md:w-80 flex flex-col items-center gap-5 bg-secondaryLightWhite dark:bg-secondaryDarkBlack rounded-site border-[1px] border-light-border dark:border-secondary-text px-4 py-8',
+        'w-72 md:w-80 flex flex-col items-center gap-5 dark:bg-secondaryDarkBlack rounded-site border-[1px] border-light-border dark:border-secondary-text px-4 py-8',
         className
       )}
     >

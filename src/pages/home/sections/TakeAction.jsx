@@ -9,7 +9,7 @@ const TakeAction = () => {
   return (
     <Section className="relative z-20 w-80 md:w-full">
       <Container>
-        <div className="backdrop-blur flex flex-col items-center justify-center gap-9 border-[1px] border-light-border dark:border-secondary-text py-8 rounded-3xl">
+        <div className="backdrop-blur bg-secondaryLightWhite/50 dark:bg-secondaryDarkBlack/50 flex flex-col items-center justify-center gap-9 border-[1px] border-light-border dark:border-secondary-text py-8 rounded-3xl">
           <div className="text-center">
             <h1 className="text-site md:text-site-md font-medium text-center tracking-site leading-site px-2">
               {t('takeAction.readyToMakeYour')}{' '}
