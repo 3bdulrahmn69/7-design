@@ -48,6 +48,7 @@ export default {
       backgroundImage: {
         'gradient-to-t-orange':
           'linear-gradient(to top, #FF7B00, #FFDA00, #FFE48B)',
+        'gradient-to-t-light': 'linear-gradient(to top, #0A0A0A, #1C1C1C)',
       },
     },
   },

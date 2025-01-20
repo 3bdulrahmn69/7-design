@@ -40,7 +40,7 @@ const CounterCard = ({ num, symbol, title, iconLight, iconDark }) => {
         />
       </figure>
       <div className="flex flex-col items-center justify-center w-2/3">
-        <p className="flex items-center bg-gradient-to-t-orange bg-clip-text text-transparent">
+        <p className="flex items-center bg-gradient-to-t-light dark:bg-gradient-to-t-orange bg-clip-text text-transparent">
           <span className="text-lg md:text-xl font-semibold">{symbol}</span>
           <motion.span
             className="text-2xl md:text-3xl font-bold ml-1"
