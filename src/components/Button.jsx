@@ -15,10 +15,9 @@ const Button = ({
   offset = -80,
 }) => {
   const variantStyles = {
-    primary:
-      'bg-gradient-to-t-orange text-secondary-text',
+    primary: 'bg-gradient-to-t-orange text-secondary-text',
     secondary:
-      'bg-primaryDarkBlack outline-[1px] outline-gray-500/20 outline hover:outline-[3px] hover:outline-gray-500/40 duration-300 text-primaryLightWhite',
+      'bg-white dark:bg-primaryDarkBlack dark:outline dark:outline-[1px] dark:outline-gray-500/20 hover:outline-[3px] hover:outline-gray-500/40 duration-300 text-primaryDarkBlack dark:text-primaryLightWhite',
     outline:
       'border border-primary bg-transparent text-primary hover:bg-primary hover:text-white',
     text: 'text-primary bg-transparent hover:underline duration-300',

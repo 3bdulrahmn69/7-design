@@ -15,7 +15,7 @@ const FAQItem = ({ question, answer, terms }) => {
     <div className="w-72 md:w-full border-[1px] bg-secondaryLightWhite dark:bg-secondaryDarkBlack border-light-border dark:border-secondary-text rounded-md mb-4 px-4">
       <button
         onClick={toggleAnswer}
-        className="flex justify-between gap-4 w-full py-4 text-lg text-left font-semibold focus:outline-none"
+        className="flex justify-between gap-4 w-full py-4 text-lg text-left focus:outline-none"
       >
         <span>{t('faq.q.' + question)}</span>
         <span
