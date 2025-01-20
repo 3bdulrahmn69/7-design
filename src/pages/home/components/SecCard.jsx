@@ -23,7 +23,7 @@ const SecCard = ({ title, description, iconLight, iconDark, className }) => {
       </figure>
       {title && <h4 className="text-center text-2xl">{title}</h4>}
       {description && (
-        <p className="text-center text-lg font-medium text-light-text dark:text-primary-text">
+        <p className="text-center text-lg text-light-text dark:text-primary-text">
           {description}
         </p>
       )}

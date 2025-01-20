@@ -35,7 +35,7 @@ const PricingCard = ({
       )}
     >
       {type && (
-        <LittleTitle className="text-center mb-4 relative z-10">
+        <LittleTitle className="text-center mb-4 relative z-10 border-gray-500/20">
           {type}
         </LittleTitle>
       )}
@@ -43,11 +43,11 @@ const PricingCard = ({
         <SpecialGlow className="absolute -top-1/2 -right-1/2 z-[1]" />
       )}
       <div className="z-[2]">
-        <h5 className="text-2xl font-bold mb-2 text-center">{packageName}</h5>
+        <h5 className="text-2xl mb-2 text-center">{packageName}</h5>
         <div className="flex flex-col gap-4 justify-between items-center mb-4">
-          <p className="text-2xl font-semibold">{displayPrice}</p>
+          <p className="text-2xl">{displayPrice}</p>
           <div dir="ltr" className="flex gap-2">
-            <span className="bg-primaryLightWhite dark:bg-primaryDarkBlack rounded-site border-[1px] border-secondary-text ">
+            <span className="bg-primaryLightWhite dark:bg-primaryDarkBlack rounded-site border-[1px] border-gray-500/20 dark:border-secondary-text ">
               <button
                 onClick={() => setCurrency('USD')}
                 className={`${
@@ -58,7 +58,7 @@ const PricingCard = ({
                 USD
               </button>
             </span>
-            <span className="bg-primaryLightWhite dark:bg-primaryDarkBlack rounded-site border-[1px] border-secondary-text ">
+            <span className="bg-primaryLightWhite dark:bg-primaryDarkBlack rounded-site border-[1px] border-gray-500/20 dark:border-secondary-text ">
               <button
                 onClick={() => setCurrency('SAR')}
                 className={`${
@@ -69,7 +69,7 @@ const PricingCard = ({
                 SAR
               </button>
             </span>
-            <span className="bg-primaryLightWhite dark:bg-primaryDarkBlack rounded-site border-[1px] border-secondary-text ">
+            <span className="bg-primaryLightWhite dark:bg-primaryDarkBlack rounded-site border-[1px] border-gray-500/20 dark:border-secondary-text ">
               <button
                 onClick={() => setCurrency('EGP')}
                 className={`${
@@ -100,14 +100,12 @@ const PricingCard = ({
                     className="text-black dark:fill-[url(#icon-gradient)]"
                   />
                 ) : (
-                  <IoIosCloseCircleOutline
-                    size={20}
-                  />
+                  <IoIosCloseCircleOutline size={20} />
                 )}
               </span>
               <span
                 className={`${
-                  isIncluded ? '' : 'text-black/20 dark:text-primary-text/50'
+                  isIncluded ? '' : 'text-light-text dark:text-secondary-text'
                 }`}
               >
                 {t(feature)}
