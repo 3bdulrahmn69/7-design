@@ -9,6 +9,7 @@ import {
   IoIosCloseCircleOutline,
 } from 'react-icons/io';
 import SpecialGlow from './SpecialGlow';
+import CurrencySelector from './CurrencySelector';
 
 const PricingCard = ({
   packageName,
@@ -46,53 +47,11 @@ const PricingCard = ({
         <h5 className="text-2xl mb-2 text-center">{packageName}</h5>
         <div className="flex flex-col gap-4 justify-between items-center mb-4">
           <p className="text-2xl">{displayPrice}</p>
-          <div dir="ltr" className="flex gap-2">
-            <span
-              className={`bg-primaryLightWhite dark:bg-primaryDarkBlack rounded-site overflow-hidden border-[1px] ${
-                currency === 'USD' ? 'border-gray-500/40' : 'border-gray-500/20'
-              } dark:border-secondary-text `}
-            >
-              <button
-                onClick={() => setCurrency('USD')}
-                className={`bg-secondaryLightWhite dark:bg-secondaryDarkBlack ${
-                  currency === 'USD' &&
-                  'dark:bg-gradient-to-t-orange dark:bg-clip-text dark:text-transparent'
-                } p-2`}
-              >
-                USD
-              </button>
-            </span>
-            <span
-              className={`bg-primaryLightWhite dark:bg-primaryDarkBlack rounded-site overflow-hidden border-[1px] ${
-                currency === 'SAR' ? 'border-gray-500/40' : 'border-gray-500/20'
-              } dark:border-secondary-text `}
-            >
-              <button
-                onClick={() => setCurrency('SAR')}
-                className={`bg-secondaryLightWhite dark:bg-secondaryDarkBlack ${
-                  currency === 'SAR' &&
-                  'dark:bg-gradient-to-t-orange dark:bg-clip-text dark:text-transparent'
-                } p-2`}
-              >
-                SAR
-              </button>
-            </span>
-            <span
-              className={`bg-primaryLightWhite dark:bg-primaryDarkBlack rounded-site overflow-hidden border-[1px] ${
-                currency === 'EGP' ? 'border-gray-500/40' : 'border-gray-500/20'
-              } dark:border-secondary-text `}
-            >
-              <button
-                onClick={() => setCurrency('EGP')}
-                className={`bg-secondaryLightWhite dark:bg-secondaryDarkBlack ${
-                  currency === 'EGP' &&
-                  'dark:bg-gradient-to-t-orange dark:bg-clip-text dark:text-transparent'
-                } p-2`}
-              >
-                EGP
-              </button>
-            </span>
-          </div>
+          <CurrencySelector
+            currency={currency}
+            setCurrency={setCurrency}
+            className="flex gap-2"
+          />
           <hr className="w-11/12 border-secondary-text" />
         </div>
         <ul className="py-2">

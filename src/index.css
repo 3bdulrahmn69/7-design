@@ -15,6 +15,18 @@
   src: url('/src/assets/fonts/Satoshi/Satoshi-Medium.otf');
 }
 
+@font-face {
+  font-family: 'SST';
+  font-style: bold;
+  src: url('/src/assets/fonts/SST/SST-Arabic-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'SST';
+  font-style: medium;
+  src: url('/src/assets/fonts/SST/SST-Arabic-Medium.ttf');
+}
+
 .no-drag-img {
   user-select: none;
   -webkit-user-drag: none;
@@ -24,7 +36,6 @@
 }
 
 body {
-  font-family: 'Satoshi', sans-serif;
   transition: background-color 0.3s ease, color 0.3s ease;
   background-color: #fcfcfa;
   color: #0a0a0a;
@@ -51,6 +62,14 @@ body.dark {
       ),
       linear-gradient(to right, rgba(42, 42, 42, 0.5) 0.5px, #0a0a0a 1px);
   }
+}
+
+:lang(en) body {
+  font-family: 'Satoshi', sans-serif;
+}
+
+:lang(ar) body {
+  font-family: 'SST', sans-serif;
 }
 
 @media (max-width: 425px) {

@@ -11,6 +11,7 @@ import {
 import PricingCard from '../components/PricingCard';
 import SmallPricingCard from '../components/SmallPricingCard';
 import MovingSliderHover from '../../../components/MovingSliderHover';
+import CurrencySelector from '../components/CurrencySelector';
 
 const packages = [
   {
@@ -50,7 +51,7 @@ const packages = [
     packageName: 'fullBrandIdentity',
     features: {
       'pricing.features.one': true,
-      'pricing.features.two': true,
+      'pricing.features.twoS': true,
       'pricing.features.three': true,
       'pricing.features.four': true,
       'pricing.features.five': true,
@@ -247,56 +248,11 @@ const PricingSections = () => {
         <Description>{t('pricing.description')}</Description>
       </Container>
       <Container className="mt-16 flex flex-col md:flex-row gap-4 justify-center md:items-start items-center flex-nowrap md:flex-wrap">
-        <div
-          dir="ltr"
+        <CurrencySelector
+          currency={currency}
+          setCurrency={setCurrency}
           className="flex justify-center items-center gap-8 bg-secondaryLightWhite dark:bg-primaryDarkBlack  border-[1px] border-light-border dark:border-secondary-text rounded-site py-4 px-8 w-fit mx-auto"
-        >
-          <span
-            className={`bg-primaryLightWhite dark:bg-primaryDarkBlack rounded-site overflow-hidden border-[1px] ${
-              currency === 'USD' ? 'border-gray-500/40' : 'border-gray-500/20'
-            } dark:border-secondary-text `}
-          >
-            <button
-              onClick={() => setCurrency('USD')}
-              className={`bg-secondaryLightWhite dark:bg-secondaryDarkBlack ${
-                currency === 'USD' &&
-                'dark:bg-gradient-to-t-orange dark:bg-clip-text dark:text-transparent'
-              } p-2`}
-            >
-              USD
-            </button>
-          </span>
-          <span
-            className={`bg-primaryLightWhite dark:bg-primaryDarkBlack rounded-site overflow-hidden border-[1px] ${
-              currency === 'SAR' ? 'border-gray-500/40' : 'border-gray-500/20'
-            } dark:border-secondary-text `}
-          >
-            <button
-              onClick={() => setCurrency('SAR')}
-              className={`bg-secondaryLightWhite dark:bg-secondaryDarkBlack ${
-                currency === 'SAR' &&
-                'dark:bg-gradient-to-t-orange dark:bg-clip-text dark:text-transparent'
-              } p-2`}
-            >
-              SAR
-            </button>
-          </span>
-          <span
-            className={`bg-primaryLightWhite dark:bg-primaryDarkBlack rounded-site overflow-hidden border-[1px] ${
-              currency === 'EGP' ? 'border-gray-500/40' : 'border-gray-500/20'
-            } dark:border-secondary-text `}
-          >
-            <button
-              onClick={() => setCurrency('EGP')}
-              className={`bg-secondaryLightWhite dark:bg-secondaryDarkBlack ${
-                currency === 'EGP' &&
-                'dark:bg-gradient-to-t-orange dark:bg-clip-text dark:text-transparent'
-              } p-2`}
-            >
-              EGP
-            </button>
-          </span>
-        </div>
+        />
       </Container>
       <Container className="mt-8 flex flex-col md:flex-row gap-4 justify-center md:items-start items-center flex-nowrap md:flex-wrap">
         {renderPricingCards}
