@@ -32,31 +32,30 @@
       "description": "Take a look at some of out latest projects."
     }
   },
+  "CopiedSection": "______________ Copied Section ______________",
+  "copied": {
+    "quote": "Imagine a dark curtain over a brightly lit store! in short, this is what a weak logo looks like",
+    "by": "Dr. Mohamed Essam (Founder)"
+  },
   "counter section": "______________ Counter Section ______________ ",
   "counter": {
     "yearsExperience": {
-      "title": "Years of Experience",
-      "description": "With over 7 years of experience, we bring creativity and expertise to every project."
+      "title": "Years of Experience"
     },
     "countries": {
-      "title": "Countries",
-      "description": "Our designs have reached clients in 10+ countries worldwide."
+      "title": "Countries"
     },
     "creativeDesigns": {
-      "title": "Creative Designs",
-      "description": "From logos to packaging, we’ve created 1700+ unique designs that stand out."
+      "title": "Creative Designs"
     },
     "completedProjects": {
-      "title": "Completed Projects",
-      "description": "We’ve successfully delivered 500+ projects, each tailored to meet our clients' unique needs."
+      "title": "Completed Projects"
     },
     "satisfactionRate": {
-      "title": "Satisfaction Rate",
-      "description": "Our 97% client satisfaction rate reflects our commitment to excellence."
+      "title": "Satisfaction Rate"
     },
     "happyClients": {
-      "title": "Happy Clients",
-      "description": "Join our family of 320+ happy clients who trust us with their brand identity."
+      "title": "Happy Clients"
     }
   },
   "projects section": "______________ Projects Section ______________ ",
@@ -98,21 +97,13 @@
     "designNeeds": "design needs",
     "description": "From logo design to brand identity, our expert team crafts unique visual solutions that elevate your business and leave a lasting impact.",
     "logoDesignTitle": "Logo Design",
-    "logoDesignDescription": "Creative logo designs that reflect your company’s vision and leave a lasting impression. Our designers work closely with you to deliver a logo that stands out.",
     "brandIdentityDesignTitle": "Brand Identity Design",
-    "brandIdentityDesignDescription": "Comprehensive designs including business cards, letterheads, envelopes, and more to elevate your brand identity. We help you create a consistent and recognizable brand image across all platforms.",
     "logoAnimationTitle": "Logo Animation",
-    "logoAnimationDescription": "Short videos that bring your logo to life and captivate your audience. We create dynamic and engaging logo animations that leave a lasting impression.",
     "socialMediaDesignsTitle": "Social Media Designs",
-    "socialMediaDesignsDescription": "Elevate your social media presence with custom designs tailored to your brand. We create eye-catching visuals that boost engagement and attract followers.",
     "graphicsDesignTitle": "Graphics Design",
-    "graphicsDesignDescription": "Enhance your brand's visual communication with custom graphics. From marketing materials to social media content, our designers bring your ideas to life.",
     "websiteDesignAndDevelopmentTitle": "Website Design and Development",
-    "websiteDesignAndDevelopmentDescription": "Professional and user-friendly websites that showcase your identity and meet your clients' needs. Our design team ensures your online presence is both visually appealing and highly functional.",
     "managingAdsCampaignsTitle": "Managing Ads Campaigns",
-    "managingAdsCampaignsDescription": "Launch successful advertising campaigns that capture attention and drive results. From concept to execution, we ensure your message reaches the right audience.",
-    "socialMediaManagementTitle": "Social Media Management",
-    "socialMediaManagementDescription": "Innovative management for your social media pages and ad campaigns to increase engagement and expand your brand’s reach. We create, schedule, and optimize content to grow your audience and enhance your brand’s online visibility."
+    "socialMediaManagementTitle": "Social Media Management"
   },
   "comparison section": "______________ Comparison Section ______________ ",
   "comparison": {
@@ -141,7 +132,69 @@
     "readWhat": "Read What",
     "ourClients": "Our Clients",
     "say": "Say",
-    "description": "See how our designs and fast delivery helped businesses stand out. Clients share how we turned their ideas into unforgettable brand identities."
+    "description": "See how our designs and fast delivery helped businesses stand out. Clients share how we turned their ideas into unforgettable brand identities.",
+    "clients": {
+      "one": {
+        "name": "Sahar Diab",
+        "title": "Owner of Dega Printing & Design Brand",
+        "testimonial": "I had a vague idea for a logo, but your team delivered a stunning design. The colors and concept perfect—Masha Allah, your talent incredible—highly recommended."
+      },
+      "two": {
+        "name": "Gaafar El kazzaz",
+        "title": "Founder of Insan Foundation",
+        "testimonial": "Working with Seven was a pleasure. Your professionalism and creativity exceeded expectations. The book cover design is incredible; I highly recommend your team."
+      },
+      "three": {
+        "name": "Ahmed Torgman",
+        "title": "Owner of Shuts Café",
+        "testimonial": "Seven stands out among designers. Your work is professional. You provide unique out-of-the-box ideas—Masha Allah, you’re one of the best I’ve ever worked with."
+      },
+      "four": {
+        "name": "Fahad Al-Mansoori",
+        "title": "Owner of Parfino Oud",
+        "testimonial": "Ya hala, your designs for Parfino Oud are stunning, elegant, and luxurious, perfectly matching our fragrances. Customers love the look—Shukran for making our brand stand out."
+      },
+      "five": {
+        "name": "Layla Al-Rashid",
+        "title": "Marketing Manager at Joylife (Saudi Arabia)",
+        "testimonial": "After a tough experience elsewhere, your team nailed our vision. The packaging is beautiful, unique, and loved by customers—Shukran for saving our brand with your amazing work."
+      },
+      "six": {
+        "name": "Dr. Walid Al-Harbi",
+        "title": "Owner of Wali Al Ahd Women's Health Center",
+        "testimonial": "Your team perfectly captured Wali Al Ahd’s essence. The branding reflects our care and professionalism. The process was smooth—Masha Allah, talented indeed."
+      },
+      "seven": {
+        "name": "Tasbeeh El Masry",
+        "title": "Creative Director at Simplicity Clothing Store",
+        "testimonial": "Exceeding our expectations, your team created a modern, heritage-rich brand identity. Alhamdulillah, customers loved it. Your professionalism and creativity are unmatched—highly recommended."
+      },
+      "eight": {
+        "name": "Serag El-Din Talaat",
+        "title": "Lawyer",
+        "testimonial": "A unique logo, slogan, and profile picture were created for me by your team. The professionalism, creativity, and timely delivery were impressive—I’m truly grateful for your exceptional work."
+      },
+      "nine": {
+        "name": "Eng. Ahmed Esmat",
+        "title": "CEO of Fly 60 Airplane Company",
+        "testimonial": "The motion graphics and branding for Fly 60 are sleek, perfectly aligned. Your team delivered on time, and Masha Allah, your work elevated our brand significantly."
+      },
+      "ten": {
+        "name": "Mr. Mark Johnson",
+        "title": "CEO of Turbo Traders (Canada)",
+        "testimonial": "Transforming how we showcase our products are your 3D designs. The realism incredible—sales have skyrocketed. Thank you for your professionalism."
+      },
+      "eleven": {
+        "name": "Dr. Omar Al-Ghamdi",
+        "title": "Owner of Mega Pharma (Saudi Arabia)",
+        "testimonial": "Perfectly reflecting our values are your clean, professional designs. After a disappointing experience elsewhere, your team was a game-changer. Shukran for your outstanding and timely work."
+      },
+      "twelve": {
+        "name": "Eng. Hatem Al-Sayed",
+        "title": "Brand Manager at Amalia Olive Oil Products",
+        "testimonial": "Stunning, elegant, your packaging designs for Amalia are perfect olive oil. Customers love it—Allah ykhalikom, you’ve been amazing to work with. Shukran."
+      }
+    }
   },
   "pricing section": "______________ Pricing Section ______________ ",
   "pricing": {
@@ -186,7 +239,10 @@
       "seven": "Monthly advertising campaign management, featuring campaign setup, optimization, budget management, and detailed performance tracking."
     },
     "customQuotes": "Custom Quotes",
-    "perMonth": "/month"
+    "perMonth": "/month",
+    "USD": "USD",
+    "SAR": "SAR",
+    "EGP": "EGP"
   },
   "take action": "______________ Take Action ______________ ",
   "takeAction": {

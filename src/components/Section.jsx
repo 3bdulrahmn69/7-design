@@ -1,3 +1,4 @@
+import i18next from 'i18next';
 import PropTypes from 'prop-types';
 import { cn } from '../lib/utils';
 
@@ -24,7 +25,7 @@ export const LittleTitle = ({ children, className }) => {
     <div className="flex justify-center items-center">
       <p
         className={cn(
-          'bg-secondaryLightWhite dark:bg-primaryDarkBlack text-primaryDarkBlack dark:text-primaryLightWhite border border-light-border dark:border-secondary-text  px-4 py-[7px] rounded-[14px] w-fit text-center',
+          'bg-secondaryLightWhite dark:bg-primaryDarkBlack text-primaryDarkBlack dark:text-primaryLightWhite border border-light-border dark:border-secondary-text px-4 py-[7px] rounded-[14px] w-fit text-center',
           className
         )}
       >
@@ -75,8 +76,14 @@ Section.propTypes = {
 };
 
 export const LatinSpan = ({ children, className }) => {
+  const lang = i18next.language;
+
   return (
-    <span className={cn('font-Instrument italic', className)}>{children}</span>
+    <span
+      className={cn(`${lang === 'en' && 'italic font-Instrument'}`, className)}
+    >
+      {children}
+    </span>
   );
 };
 

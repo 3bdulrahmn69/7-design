@@ -22,7 +22,7 @@ const TakeAction = () => {
             </p>
           </div>
           <Button type="link" to="/meeting-booking" className="z-20">
-            {t('takeAction.bookCall')}
+            {t('buttons.bookACall')}
           </Button>
         </div>
       </Container>

@@ -22,7 +22,6 @@ const counterData = [
     num: 7,
     symbol: '+',
     title: 'counter.yearsExperience.title',
-    description: 'counter.yearsExperience.description',
     iconLight: yearsBlack,
     iconDark: years,
   },
@@ -30,7 +29,6 @@ const counterData = [
     num: 10,
     symbol: '+',
     title: 'counter.countries.title',
-    description: 'counter.countries.description',
     iconLight: countriesBlack,
     iconDark: countries,
   },
@@ -38,7 +36,6 @@ const counterData = [
     num: 1700,
     symbol: '+',
     title: 'counter.creativeDesigns.title',
-    description: 'counter.creativeDesigns.description',
     iconLight: creativeDesignsBlack,
     iconDark: creativeDesigns,
   },
@@ -46,7 +43,6 @@ const counterData = [
     num: 500,
     symbol: '+',
     title: 'counter.completedProjects.title',
-    description: 'counter.completedProjects.description',
     iconLight: completedProjectsBlack,
     iconDark: completedProjects,
   },
@@ -54,7 +50,6 @@ const counterData = [
     num: 97,
     symbol: '%',
     title: 'counter.satisfactionRate.title',
-    description: 'counter.satisfactionRate.description',
     iconLight: clientSatisfactionRateBlack,
     iconDark: clientSatisfactionRate,
   },
@@ -62,7 +57,6 @@ const counterData = [
     num: 320,
     symbol: '+',
     title: 'counter.happyClients.title',
-    description: 'counter.happyClients.description',
     iconLight: happyClientsBlack,
     iconDark: happyClients,
   },
@@ -81,7 +75,6 @@ const CounterSection = () => {
               num={counter.num}
               symbol={counter.symbol}
               title={t(counter.title)}
-              description={t(counter.description)}
               iconLight={counter.iconLight}
               iconDark={counter.iconDark}
             />

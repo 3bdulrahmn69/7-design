@@ -31,9 +31,9 @@ const TestimonialsSection = () => {
           {myTestimonialsOne.map((testimonial, index) => (
             <TestimonialCard
               key={index}
-              title={testimonial.title}
-              desc={testimonial.description}
-              name={testimonial.name}
+              title={t(testimonial.title)}
+              testimonial={t(testimonial.testimonial)}
+              name={t(testimonial.name)}
               image={testimonial.image}
             />
           ))}
@@ -42,9 +42,9 @@ const TestimonialsSection = () => {
           {myTestimonialsTwo.map((testimonial, index) => (
             <TestimonialCard
               key={index}
-              title={testimonial.title}
-              desc={testimonial.description}
-              name={testimonial.name}
+              title={t(testimonial.title)}
+              testimonial={t(testimonial.testimonial)}
+              name={t(testimonial.name)}
               image={testimonial.image}
             />
           ))}

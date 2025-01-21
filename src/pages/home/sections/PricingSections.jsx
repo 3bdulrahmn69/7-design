@@ -28,7 +28,7 @@ const packages = [
       'pricing.features.eight': false,
       'pricing.features.nine': false,
     },
-    prices: { USD: '$ 350', SAR: '350 SAR', EGP: '350 EGP' },
+    prices: { USD: '350', SAR: '350', EGP: '350' },
   },
   {
     type: 'intermediate',
@@ -44,7 +44,7 @@ const packages = [
       'pricing.features.eight': false,
       'pricing.features.nine': false,
     },
-    prices: { USD: '$ 700', SAR: '700 SAR', EGP: '700 EGP' },
+    prices: { USD: '700', SAR: '700', EGP: '700' },
   },
   {
     type: 'advanced',
@@ -60,7 +60,7 @@ const packages = [
       'pricing.features.eight': true,
       'pricing.features.nine': true,
     },
-    prices: { USD: '$ 1,200', SAR: '1,200 SAR', EGP: '1,200 EGP' },
+    prices: { USD: '1,200', SAR: '1,200', EGP: '1,200' },
   },
 ];
 
@@ -69,27 +69,27 @@ const otherPackages = [
     packageName: 'basicLogoAnimation',
     features: 'pricing.otherPackages.one',
     prices: {
-      USD: '$ 150',
-      SAR: '150 SAR',
-      EGP: '150 EGP',
+      USD: '150',
+      SAR: '150',
+      EGP: '150',
     },
   },
   {
     packageName: 'advancedLogoAnimation',
     features: 'pricing.otherPackages.two',
     prices: {
-      USD: '$ 300',
-      SAR: '300 SAR',
-      EGP: '300 EGP',
+      USD: '300',
+      SAR: '300',
+      EGP: '300',
     },
   },
   {
     packageName: 'socialMediaDesigns',
     features: 'pricing.otherPackages.three',
     prices: {
-      USD: '$ 400',
-      SAR: '400 SAR',
-      EGP: '400 EGP',
+      USD: '400',
+      SAR: '400',
+      EGP: '400',
     },
   },
   {
@@ -110,18 +110,18 @@ const otherPackages = [
     packageName: 'socialMediaManagement',
     features: 'pricing.otherPackages.six',
     prices: {
-      USD: '$ 500/month',
-      SAR: '500 SAR/month',
-      EGP: '500 EGP/month',
+      USD: '500/month',
+      SAR: '500/month',
+      EGP: '500/month',
     },
   },
   {
     packageName: 'managingAdsCampaigns',
     features: 'pricing.otherPackages.seven',
     prices: {
-      USD: '$ 700/month',
-      SAR: '700 SAR/month',
-      EGP: '700 EGP/month',
+      USD: '700/month',
+      SAR: '700/month',
+      EGP: '700/month',
     },
   },
 ];
@@ -180,24 +180,24 @@ const PricingSections = () => {
         if (currency === 'SAR')
           return `${formatPrice(
             (priceValue * exchangeRates.SAR).toFixed(0)
-          )} SAR/month`;
+          )} ${t('pricing.SAR')}/month`;
         if (currency === 'EGP')
           return `${formatPrice(
             (priceValue * exchangeRates.EGP).toFixed(0)
-          )} EGP/month`;
+          )} ${t('pricing.EGP')}/month`;
       } else {
         if (currency === 'USD') return `$ ${formattedPrice}`;
         if (currency === 'SAR')
           return `${formatPrice(
             (priceValue * exchangeRates.SAR).toFixed(0)
-          )} SAR`;
+          )} ${t('pricing.SAR')}`;
         if (currency === 'EGP')
           return `${formatPrice(
             (priceValue * exchangeRates.EGP).toFixed(0)
-          )} EGP`;
+          )} ${t('pricing.EGP')}`;
       }
     },
-    [exchangeRates]
+    [exchangeRates, t]
   ); // Depend on exchangeRates to avoid unnecessary recalculations
 
   // Memoize the pricing cards and slider for better performance

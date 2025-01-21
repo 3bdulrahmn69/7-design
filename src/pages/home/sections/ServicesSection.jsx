@@ -21,12 +21,10 @@ import { BiSolidLike } from 'react-icons/bi';
 const ServicesOne = [
   {
     title: 'services.logoDesignTitle',
-    description: 'services.logoDesignDescription',
     icon: <GiPencilRuler className="dark:fill-[url(#icon-gradient)]" />,
   },
   {
     title: 'services.brandIdentityDesignTitle',
-    description: 'services.brandIdentityDesignDescription',
     icon: (
       <div className="relative w-10 h-10 ">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/3 w-10 h-10 select-none">
@@ -41,12 +39,10 @@ const ServicesOne = [
   },
   {
     title: 'services.logoAnimationTitle',
-    description: 'services.logoAnimationDescription',
     icon: <MdAnimation className="dark:fill-[url(#icon-gradient)]" />,
   },
   {
     title: 'services.socialMediaDesignsTitle',
-    description: 'services.socialMediaDesignsDescription',
     icon: <TiSocialInstagram className="dark:fill-[url(#icon-gradient)]" />,
   },
 ];
@@ -54,22 +50,18 @@ const ServicesOne = [
 const ServicesTwo = [
   {
     title: 'services.graphicsDesignTitle',
-    description: 'services.graphicsDesignDescription',
     icon: <SiTaichigraphics className="dark:fill-[url(#icon-gradient)]" />,
   },
   {
     title: 'services.websiteDesignAndDevelopmentTitle',
-    description: 'services.websiteDesignAndDevelopmentDescription',
     icon: <MdOutlineWeb className="dark:fill-[url(#icon-gradient)]" />,
   },
   {
     title: 'services.managingAdsCampaignsTitle',
-    description: 'services.managingAdsCampaignsDescription',
     icon: <MdOutlineAdsClick className="dark:fill-[url(#icon-gradient)]" />,
   },
   {
     title: 'services.socialMediaManagementTitle',
-    description: 'services.socialMediaManagementDescription',
     icon: <BiSolidLike className="dark:fill-[url(#icon-gradient)]" />,
   },
 ];

@@ -1,7 +1,10 @@
 import PropTypes from 'prop-types';
 import { cn } from '../../../lib/utils';
+import { useTranslation } from 'react-i18next';
 
 const CurrencySelector = ({ currency, setCurrency, className }) => {
+  const { t } = useTranslation();
+
   return (
     <div dir="ltr" className={cn('flex', className)}>
       <span
@@ -17,7 +20,7 @@ const CurrencySelector = ({ currency, setCurrency, className }) => {
               : 'text-[#d2d2d2] dark:text-primaryLightWhite'
           } p-2`}
         >
-          USD
+          {t('pricing.USD')}
         </button>
       </span>
       <span
@@ -33,7 +36,7 @@ const CurrencySelector = ({ currency, setCurrency, className }) => {
               : 'text-[#d2d2d2] dark:text-primaryLightWhite'
           } p-2`}
         >
-          SAR
+          {t('pricing.SAR')}
         </button>
       </span>
       <span
@@ -49,7 +52,7 @@ const CurrencySelector = ({ currency, setCurrency, className }) => {
               : 'text-[#d2d2d2] dark:text-primaryLightWhite'
           } p-2`}
         >
-          EGP
+          {t('pricing.EGP')}
         </button>
       </span>
     </div>

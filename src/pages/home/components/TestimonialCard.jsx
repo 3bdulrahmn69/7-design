@@ -1,8 +1,11 @@
 import PropTypes from 'prop-types';
+import i18next from 'i18next';
 import { cn } from '../../../lib/utils';
 import { FaStar } from 'react-icons/fa';
 
-const TestimonialCard = ({ name, desc, title, image, className }) => {
+const TestimonialCard = ({ name, testimonial, title, image, className }) => {
+  const lang = i18next.language;
+
   return (
     <figure
       className={cn(
@@ -10,13 +13,16 @@ const TestimonialCard = ({ name, desc, title, image, className }) => {
         className
       )}
       aria-labelledby={`testimonial-${name}`}
+      dir={lang === 'ar' ? 'rtl' : 'ltr'}
     >
       <header className="flex items-center">
         <div className="flex items-center">
           <img
             src={image}
             alt={`${name}'s profile`}
-            className="w-9 h-9 rounded-full mr-4 select-none"
+            className={`w-9 h-9 rounded-full ${
+              lang === 'ar' ? 'ml-4' : 'mr-4'
+            } select-none`}
             loading="lazy"
           />
         </div>
@@ -38,7 +44,7 @@ const TestimonialCard = ({ name, desc, title, image, className }) => {
         className="leading-relaxed font-normal text-light-text dark:text-primary-text max-w-xs"
         aria-label={`Testimonial description from ${name}`}
       >
-        {desc}
+        {testimonial}
       </blockquote>
       <figcaption
         className="text-end text-light-text dark:text-primary-text"
@@ -52,7 +58,7 @@ const TestimonialCard = ({ name, desc, title, image, className }) => {
 
 TestimonialCard.propTypes = {
   name: PropTypes.string.isRequired,
-  desc: PropTypes.string.isRequired,
+  testimonial: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   className: PropTypes.string,

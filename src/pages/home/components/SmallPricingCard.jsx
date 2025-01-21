@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
 import { cn } from '../../../lib/utils';
 import Button from '../../../components/Button';
@@ -11,6 +12,7 @@ const SmallPricingCard = ({
   className,
 }) => {
   const { t } = useTranslation();
+  const lang = i18next.language;
 
   const price = prices[currency] || prices.ask;
   let displayPrice = typeof price === 'string' ? price : `${price} ${currency}`;
@@ -27,6 +29,7 @@ const SmallPricingCard = ({
         'border-[1px] border-light-border dark:border-secondary-text bg-secondaryLightWhite dark:bg-secondaryDarkBlack pt-2 rounded-site overflow-hidden mx-2 h-[270px]',
         className
       )}
+      dir={lang === 'ar' ? 'rtl' : 'ltr'}
     >
       <div>
         <h3 className="text-xl text-center py-2">{packageName}</h3>
