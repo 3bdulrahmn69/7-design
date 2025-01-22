@@ -12,7 +12,7 @@ import logo from '../../assets/logo-textl.png';
 import apologize from '../../assets/icons/apologize.gif';
 import apologizeBlack from '../../assets/icons/apologize-black.gif';
 import GoBackTop from '../../components/GoToTop';
-import Wistia from './components/Wistia';
+import WistiaPlayer from './components/WistiaPlayer';
 
 const Meeting = () => {
   const { t } = useTranslation();
@@ -70,7 +70,10 @@ const Meeting = () => {
             <div className="relative flex flex-col lg:flex-row gap-4 items-center lg:items-start justify-center">
               <div className="absolute w-4/6 h-4/6 bg-primary top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 blur-[120px] opacity-30"></div>
               <div className="w-11/12 lg:w-1/3 z-10 max-w-xl">
-                <Wistia />
+                <WistiaPlayer
+                  videoId="v8g9mwx7d6"
+                  wrapper="wistia-player-container-1"
+                />
               </div>
               <div className="w-full lg:w-1/3 z-10 max-w-xl">
                 <Calendly />
