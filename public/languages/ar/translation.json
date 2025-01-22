@@ -255,10 +255,10 @@
     "connectWithUs": "تواصل معنا",
     "allRightsReserved": "جميع الحقوق محفوظة",
     "termsConditions": "الشروط والأحكام",
-    "behance": "Behance",
-    "instagram": "Instagram",
-    "twitter": "Twitter",
-    "facebook": "Facebook"
+    "behance": "بيهاينس",
+    "instagram": "إنستجرام",
+    "twitter": "تويتر",
+    "facebook": "فيسبوك"
   },
   "faq Section": "______________ FAQ Section ______________ ",
   "faq": {
@@ -267,119 +267,119 @@
     "description": "احصل على إجابات واضحة وشفافة لكل الأسألة التي تحتاجها حول خدماتنا، وخططنا، وخطوات العمل. وإذا كان عندك أي استفسارات إضافية، لا تتردد في التواصل معنا!",
     "terms": "الشروط والأحكام",
     "q": {
-      "one": "How does the logo design process work?",
-      "two": "Are the designs 100% original?",
-      "three": "What is your revision policy?",
-      "four": "What is your payment policy?",
-      "five": "What is your delivery policy?",
-      "six": "How will communication work during the project?",
-      "seven": "What is your ownership policy?",
-      "eight": "What is your cancellation and refund policy?",
-      "nine": "Is my data safe with you?",
-      "ten": "How can I file a complaint?",
-      "eleven": "What happens if we can’t reach an agreement?"
+      "one": "كيف بتكون عملية تصميم اللوجو؟",
+      "two": "هل التصميمات بتكون أصلية 100%؟",
+      "three": "كيف بتكون سياسة التعديلات؟",
+      "four": "إيه سياسة الدفع؟",
+      "five": "كيف بتكون سياسة التسليم؟",
+      "six": "كيف بيكون التواصل أثناء المشروع؟",
+      "seven": "إيه سياسة حقوق الملكية؟",
+      "eight": "إيه سياسة الإلغاء والاسترداد؟",
+      "nine": "هل بياناتي بتكون آمنة معاكوا؟",
+      "ten": "إزاي أقدر أقدم شكوى؟",
+      "eleven": "إيه اللي بيحصل لو ما اتفقناش على حل؟"
     },
     "a": {
-      "one": "We start by understanding your vision and brand goals, then present several design concepts. After you choose your preferred concept, we refine it until we achieve the final design.",
-      "two": "Yes, all designs are 100% original and custom-made for your brand. No templates or copies are used.",
-      "three": "Each package includes a specific number of free revisions",
-      "four": "The cost depends on your chosen package. We require a 50% upfront payment to start the project, and the remaining 50% is due upon final delivery. Our pricing is transparent with no hidden fees. You can pay via cash, bank transfer, or electronic payment platforms.",
-      "five": "Delivery time depends on the package you choose, ranging from 5 to 14 business days. If you need faster delivery, we offer an Express package. In case of any delays, we will inform you as soon as possible.",
-      "six": "You can communicate via WhatsApp, email, or phone calls. You will have a dedicated project manager to update you and address your concerns.",
-      "seven": "Once the full payment is made, the design becomes your complete property, and you can use it as you wish. We retain the right to display the design in our portfolio unless you request otherwise.",
-      "eight": "You can cancel the order after work has begun, but a 50% deduction will be applied to cover operational costs. After the final delivery, no refunds can be issued.",
-      "nine": "Absolutely! We are committed to protecting your data and will not share it with any third parties. Your information is used solely to complete the agreed-upon work.",
-      "ten": "You can submit your complaint via email or phone. We respond to all complaints within 48 business hours",
-      "eleven": "We will attempt to resolve the dispute amicably. If no agreement is reached, we will resort to arbitration under the laws of the Arab Republic of Egypt"
+      "one": "نبدأ بفهم رؤيتك وأهداف براندك، ثم نقدم عدة مفاهيم تصميمية. بعد اختيارك للمفهوم المفضل، نعمل على تحسينه حتى نصل للتصميم النهائي.",
+      "two": "نعم، كل التصميمات بتكون أصلية 100% ومصممة خصيصًا لبراندك. من غير قوالب أو نسخ.",
+      "three": "كل باقة بتكون متضمنة عدد معين من التعديلات المجانية:",
+      "four": "التكلفة بتكون حسب الباقة اللي تختارها. بنطلب 50% مقدمًا علشان نبدأ العمل، والـ 50% المتبقية بتكون مستحقة بعد التسليم. الأسعار بتكون شفافة ومن غير رسوم خفية. تقدر تدفع بالكاش، تحويل بنكي، أو عبر منصات الدفع الإلكتروني.",
+      "five": "وقت التسليم بيكون حسب الباقة اللي تختارها، من 5 أيام لحد 14 يوم عمل. لو محتاج تسليم أسرع، عندنا باقة Express بتكون متاحة. لو حصل تأخير، بنعلمك في أقرب وقت ممكن.",
+      "six": "تقدر تتواصل معانا عبر الواتساب، الإيميل، أو المكالمات. بيكون عندك مدير مشروع بيكون مسؤول عن التواصل معاك وتقديم التحديثات الدورية.",
+      "seven": "بعد تسديد المبلغ بالكامل، التصميم بيكون ملكك بالكامل وبتقدر تستخدمه كما تشاء. بنحتفظ بحق عرض التصميم في معرض أعمالنا (Portfolio) ما لم تطلب خلاف ذلك.",
+      "eight": "تقدر تلغي الطلب بعد بدء العمل، لكن بيكون في خصم 50% من إجمالي المبلغ علشان نغطي التكاليف التشغيلية. بعد التسليم النهائي، ما بنقدر نسترد أي مبالغ.",
+      "nine": "بالطبع! بنلتزم بحماية بياناتك وعدم مشاركتها مع أي أطراف خارجية. البيانات بتكون مستخدمة فقط لأغراض تنفيذ العمل المتفق عليه.",
+      "ten": "تقدر تقدم شكواك عبر البريد الإلكتروني أو الهاتف. بنرد على الشكاوى خلال 48 ساعة عمل.",
+      "eleven": "بنحاول نحل النزاع بشكل ودي. لو ما اتفقناش، بنلجأ للتحكيم وفقًا لقوانين جمهورية مصر العربية."
     }
   },
   "terms page": "______________ Terms Page ______________ ",
   "terms": {
-    "title": "Terms and Conditions",
-    "subtitle": "Please read these terms and conditions carefully before using our services.",
+    "title": "الشروط والأحكام",
+    "subtitle": "الرجاء قراءة الشروط والأحكام بعناية قبل البدء في العمل",
     "section1": {
-      "revisionPolicy": "Revision Policy",
-      "numberOfRevisions": "Number of Revisions",
-      "starterPackage": "Starter Package",
-      "starterPackageDescription": "2 minor revisions for free.",
-      "professionalPackage": "Professional Package",
-      "professionalPackageDescription": "2 minor revisions for free.",
-      "premiumPackage": "Premium Package",
-      "premiumPackageDescription": "3 minor revisions for free.",
-      "scopeOfRevisions": "Scope of Revisions",
-      "minorRevisions": "Minor Revisions",
-      "minorRevisionsDescription": "Include color changes, font adjustments, or moving simple elements.",
-      "majorRevisions": "Major Revisions",
-      "majorRevisionsDescription": "Include complete redesigns, restructuring main elements, changing the logo, or adding entirely new elements.",
-      "additionalRevisionFees": "Additional Revision Fees",
-      "minorRevisionFee": "$30 for each additional minor revision after exhausting the agreed number of revisions.",
-      "majorRevisionFee": "$50 to $150 for each major revision, depending on the scale and complexity of the changes."
+      "revisionPolicy": " سياسة التعديلات",
+      "numberOfRevisions": "عدد التعديلات",
+      "starterPackage": "الباقة الأساسية",
+      "starterPackageDescription": "2 تعديل طفيفة مجانًا.",
+      "professionalPackage": "الباقة المتوسطة",
+      "professionalPackageDescription": "2 تعديل طفيفة مجانًا.",
+      "premiumPackage": "الباقة الاحترافية",
+      "premiumPackageDescription": "3 تعديل طفيفة مجانًا.",
+      "scopeOfRevisions": "نطاق التعديلات",
+      "minorRevisions": "لتعديلات الطفيفة",
+      "minorRevisionsDescription": "تشمل تغيير الألوان، الخطوط، أو تحريك عناصر بسيطة.",
+      "majorRevisions": "التعديلات الجذرية",
+      "majorRevisionsDescription": "مثل تغيير التصميم بالكامل، إعادة هيكلة العناصر الرئيسية، تغيير الشعار، أو إضافة عناصر جديدة تمامًا.",
+      "additionalRevisionFees": "رسوم التعديلات الإضافية",
+      "minorRevisionFee": "$30 لكل تعديل طفيف إضافي بعد انتهاء عدد التعديلات المتفق عليه.",
+      "majorRevisionFee": "50 إلى150$ لكل تعديل جذري، حسب حجم التغيير المطلوب ومدى تعقيده."
     },
     "section2": {
-      "paymentPolicy": "Payment Policy",
-      "advancePayment": "Advance Payment",
-      "advancePaymentDescription1": "50% of the total amount is required as an advance before work begins.",
-      "advancePaymentDescription2": "The remaining 50% is due upon delivery of the final work.",
-      "paymentMethods": "Payment Methods",
-      "paymentMethodsDescription": "Cash, bank transfer, or electronic payment platforms."
+      "paymentPolicy": "سياسة الدفع",
+      "advancePayment": "الدفع المقدم",
+      "advancePaymentDescription1": "يتم طلب 50% من إجمالي المبلغ مقدمًا قبل بدء العمل.",
+      "advancePaymentDescription2": "ويتم دفع الـ 50% المتبقية عند تسليم العمل النهائي.",
+      "paymentMethods": "طرق الدفع",
+      "paymentMethodsDescription": "نقود، تحويل بنكي، أو عبر منصات الدفع الإلكتروني."
     },
     "section3": {
-      "deliveryPolicy": "Delivery Policy",
-      "deliveryTimelines": "Delivery Timelines",
-      "starterPackage": "Starter Package",
-      "starterPackageTimeline": "5-7 working days.",
-      "professionalPackage": "Professional Package",
-      "professionalPackageTimeline": "10-14 working days.",
-      "premiumPackage": "Premium Package",
-      "premiumPackageTimeline": "15-20 working days.",
-      "note": "Note",
-      "noteDescription": "Delivery timelines may be extended in case of additional revision requests or unforeseen circumstances. The client will be informed of any potential delays as soon as possible.",
-      "fileDelivery": "File Delivery",
-      "fileDeliveryDescription": "Final files will be delivered via email or file-sharing platforms. Files include: (PDF, PNG, JPEG) for designs, and (MP4, GIF) for animations."
+      "deliveryPolicy": "سياسة التسليم",
+      "deliveryTimelines": "مدة التسليم",
+      "starterPackage": "الباقة الأساسية",
+      "starterPackageTimeline": "5-7 أيام عمل.",
+      "professionalPackage": "الباقة المتوسطة",
+      "professionalPackageTimeline": "10-14 يوم عمل.",
+      "premiumPackage": "الباقة الاحترافية",
+      "premiumPackageTimeline": "15-20 يوم عمل.",
+      "note": "ملاحظة",
+      "noteDescription": "قد تزيد مدة التسليم في حالة طلب تعديلات إضافية أو وجود ظروف خارجة عن إرادتنا.سيتم إعلام العميل بأي تأخير محتمل في أقرب وقت ممكن.",
+      "fileDelivery": "تسليم الملفات",
+      "fileDeliveryDescription": "يتم تسليم الملفات النهائية عبر البريد الإلكتروني أو منصات مشاركة الملفات.تشمل الملفات: (PDF, PNG, JPEG) للتصاميم، و(MP4, GIF) للتحريك."
     },
     "section4": {
-      "cancellationRefundPolicy": "Cancellation and Refund Policy",
-      "beforeWorkBegins": "Before Work Begins",
-      "beforeWorkBeginsDescription": "If the client cancels the order before work begins, 100% of the advance payment will be refunded.",
-      "afterWorkBegins": "After Work Begins",
-      "afterWorkBeginsDescription": "If the client cancels the order after work begins, 50% of the total amount will be deducted. This covers part of the operational costs and time already invested.",
-      "afterDelivery": "After Delivery",
-      "afterDeliveryDescription": "No refunds will be issued after the final work has been delivered."
+      "cancellationRefundPolicy": "سياسة الإلغاء والاسترداد",
+      "beforeWorkBegins": "قبل بدء العمل",
+      "beforeWorkBeginsDescription": "في حالة إلغاء العميل للطلب قبل بدء العمل، يتم استرداد 100% من الدفع المقدم.",
+      "afterWorkBegins": "بعد بدء العمل",
+      "afterWorkBeginsDescription": "في حالة إلغاء العميل للطلب بعد بدء العمل، يتم خصم 50% من إجمالي المبلغ.السبب: بمجرد بدء العمل، نقوم بتخصيص الوقت والموارد اللازمة لتنفيذ المشروع. الخصم بنسبة 50% يغطي جزءًا من التكاليف التشغيلية والوقت الذي تم استثماره بالفعل.",
+      "afterDelivery": "بعد التسليم",
+      "afterDeliveryDescription": "لا يتم استرداد أي مبالغ بعد تسليم العمل النهائي."
     },
     "section5": {
-      "intellectualPropertyPolicy": "Intellectual Property Policy",
-      "clientRights": "Client Rights",
-      "clientRightsDescription": "After full payment, the client has the right to use the designs as they see fit. We reserve the right to display the designs in our portfolio unless the client requests otherwise.",
-      "sevenDesignStudioRights": "Seven Design Studio Rights",
-      "sevenDesignStudioRightsDescription": "We retain intellectual property rights to the designs until full payment is received."
+      "intellectualPropertyPolicy": "سياسة الملكية الفكرية",
+      "clientRights": "حقوق العميل",
+      "clientRightsDescription": "بعد تسديد المبلغ بالكامل، يحق للعميل استخدام التصاميم كما يشاء.نحتفظ بحق عرض التصاميم في معرض أعمالنا (Portfolio) ما لم يطلب العميل خلاف ذلك.",
+      "sevenDesignStudioRights": "حقوق Seven Design Studio",
+      "sevenDesignStudioRightsDescription": "نحتفظ بحقوق الملكية الفكرية للتصاميم حتى يتم تسديد المبلغ بالكامل."
     },
     "section6": {
-      "privacyPolicy": "Privacy Policy",
-      "dataProtection": "Data Protection",
-      "dataProtectionDescription": "We are committed to protecting client data and will not share it with any third parties. Client data will only be used to execute the agreed-upon work."
+      "privacyPolicy": "سياسة الخصوصية",
+      "dataProtection": "حماية البيانات",
+      "dataProtectionDescription": "نحن نلتزم بحماية بيانات العملاء وعدم مشاركتها مع أي أطراف خارجية.يتم استخدام بيانات العميل فقط لأغراض تنفيذ العمل المتفق عليه."
     },
     "section7": {
-      "complaintsPolicy": "Complaints Policy",
-      "filingComplaint": "Filing a Complaint",
-      "filingComplaintDescription": "Clients can file complaints via email or phone. Complaints will be addressed within 48 working hours.",
-      "disputeResolution": "Dispute Resolution",
-      "disputeResolutionDescription": "Any disputes will be resolved amicably. If no resolution is reached, arbitration will be sought by the laws of [Country]."
+      "complaintsPolicy": " سياسة الشكاوى",
+      "filingComplaint": "تقديم الشكوى",
+      "filingComplaintDescription": "يمكن للعملاء تقديم شكواهم عبر البريد الإلكتروني أو الهاتف.سيتم الرد على الشكوى خلال 48 ساعة عمل.",
+      "disputeResolution": "حل النزاعات",
+      "disputeResolutionDescription": "في حالة وجود أي نزاعات، سيتم حلها بشكل ودي.إذا لم يتم التوصل إلى حل، يتم اللجوء إلى التحكيم وفقًا لقوانين [البلد]."
     },
     "section8": {
-      "policyAmendments": "Policy Amendments",
-      "rightToAmend": "Right to Amend",
-      "rightToAmendDescription": "We reserve the right to amend this policy at any time. Clients will be informed of any changes via the website or email."
+      "policyAmendments": "التعديلات على السياسة",
+      "rightToAmend": "حق التعديل",
+      "rightToAmendDescription": "نحتفظ بحق تعديل هذه السياسة في أي وقت.سيتم إعلام العملاء بأي تغييرات عبر الموقع أو البريد الإلكتروني"
     },
     "section9": {
-      "acceptanceOfTerms": "Acceptance of Terms",
-      "agreement": "Agreement",
-      "agreementDescription": "By proceeding with the work, the client agrees to all the terms and conditions outlined above."
+      "acceptanceOfTerms": "الموافقة على الشروط",
+      "agreement": "قبول الشروط",
+      "agreementDescription": "بمجرد بدء العمل أو طلب الميتينج، يعتبر العميل موافقًا على جميع الشروط والأحكام المذكورة أعلاه."
     },
     "section10": {
-      "contactInformation": "Contact Information",
-      "email": "Email",
-      "phone": "Phone",
-      "website": "Website"
+      "contactInformation": "معلومات الاتصال",
+      "email": "البريد الإلكتروني",
+      "phone": "الهاتف",
+      "website": "الموقع الإلكتروني"
     }
   },
   "meeting page": "______________ Meeting Page ______________ ",
