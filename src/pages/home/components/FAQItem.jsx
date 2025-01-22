@@ -1,11 +1,13 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
+import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
 const FAQItem = ({ question, answer, terms }) => {
   const [isOpen, setIsOpen] = useState(false);
   const { t } = useTranslation();
+  const lang = i18next.language;
 
   const toggleAnswer = () => {
     setIsOpen((prev) => !prev);
@@ -15,7 +17,9 @@ const FAQItem = ({ question, answer, terms }) => {
     <div className="w-72 md:w-full border-[1px] bg-secondaryLightWhite dark:bg-secondaryDarkBlack border-light-border dark:border-secondary-text rounded-md mb-4 px-4">
       <button
         onClick={toggleAnswer}
-        className="flex justify-between gap-4 w-full py-4 text-lg text-left focus:outline-none"
+        className={`flex justify-between gap-4 w-full py-4 text-lg ${
+          lang === 'ar' ? 'text-right' : 'text-left'
+        } focus:outline-none`}
       >
         <span>{t('faq.q.' + question)}</span>
         <span

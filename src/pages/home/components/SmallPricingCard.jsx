@@ -26,7 +26,7 @@ const SmallPricingCard = ({
   return (
     <div
       className={cn(
-        'flex flex-col gap-2 items-center justify-center border-[1px] border-light-border dark:border-secondary-text bg-secondaryLightWhite dark:bg-secondaryDarkBlack p-4 rounded-site overflow-hidden mx-2 h-[290px]',
+        'flex flex-col gap-4 items-center justify-center border-[1px] border-light-border dark:border-secondary-text bg-secondaryLightWhite dark:bg-secondaryDarkBlack p-4 rounded-site overflow-hidden mx-2 h-[300px]',
         className
       )}
       dir={lang === 'ar' ? 'rtl' : 'ltr'}
@@ -36,7 +36,7 @@ const SmallPricingCard = ({
       </div>
       <div>
         <p className="text-light-text dark:text-primary-text">{features}</p>
-        <div className="mt-4 flex items-center justify-between">
+        <div className="mt-4 flex items-center justify-center">
           {displayPrice === "Let's Talk" ? (
             <h4 className="text-lg mb-2 text-secondary">
               {t('pricing.customQuotes')}
