@@ -20,7 +20,7 @@ const LogosSection = () => {
           {t('home.logosSection.littleTitle')}
         </p>
         <MovingSlider
-          speed={120}
+          speed={200}
           direction="normal"
           orientation="row"
           arrayNumber={8}
@@ -31,7 +31,7 @@ const LogosSection = () => {
           ))}
         </MovingSlider>
         <MovingSlider
-          speed={120}
+          speed={200}
           direction="normal"
           orientation="row"
           arrayNumber={8}
