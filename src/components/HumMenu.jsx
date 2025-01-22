@@ -2,7 +2,11 @@ import PropTypes from 'prop-types';
 
 const HumMenu = ({ toggleMenu, isMenuOpen }) => {
   return (
-    <button onClick={toggleMenu} className="xl:hidden p-2 focus:outline-none">
+    <button
+      aria-label="Hamburger Menu"
+      onClick={toggleMenu}
+      className="xl:hidden p-2 focus:outline-none"
+    >
       <span
         className={`block w-8 h-0.5 bg-primaryDarkBlack dark:bg-primaryLightWhite mb-1.5 transition-transform duration-300 ease-in-out ${
           isMenuOpen ? 'rotate-45 translate-y-2' : 'rotate-0'

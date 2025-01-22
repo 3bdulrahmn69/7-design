@@ -13,7 +13,7 @@ const Terms = () => {
         dir={language === 'ar' ? 'rtl' : 'ltr'}
       >
         <header className="text-center mb-12">
-          <h1 className="text-4xl font-bold bg-gradient-to-t-light dark:bg-gradient-to-t-orange bg-clip-text text-transparent mb-4">
+          <h1 className="text-4xl py-1 font-bold bg-gradient-to-t-light dark:bg-gradient-to-t-orange bg-clip-text text-transparent mb-4">
             {t('terms.title')}
           </h1>
           <p className="text-lg text-light-text dark:text-primary-text">

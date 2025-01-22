@@ -23,13 +23,13 @@ const ProjectsSection = () => {
         <Description>{t('home.recentProjectsSection.description')}</Description>
       </Container>
       <Container className="flex flex-col py-4 gap-6 mt-16">
-        <MovingSlider speed={100} arrayNumber={8} innerClassName="flex gap-4">
+        <MovingSlider speed={200} arrayNumber={8} innerClassName="flex gap-4">
           {myProjects.slice(0, 4).map((project, index) => (
             <ProjectCard key={index} img={project.img} title={project.title} />
           ))}
         </MovingSlider>
         <MovingSlider
-          speed={90}
+          speed={200}
           arrayNumber={8}
           direction={'reverse'}
           innerClassName="flex gap-4"

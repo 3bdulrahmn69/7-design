@@ -9,7 +9,7 @@ const HeroSection = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="relative pb-20 overflow-hidden">
+    <div className="relative pb-20 overflow-hidden bg-primaryLightWhite dark:bg-primaryDarkBlack">
       <Section id={'home'}>
         <Container>
           <div className="flex flex-col items-center">
@@ -31,8 +31,8 @@ const HeroSection = () => {
               </div>
             </div>
             <Glow isMoving={true} />
-            <div className='absolute bottom-0 w-full h-16 bg-gradient-to-t from-primaryDarkBlack via-primaryDarkBlack to-transparent blur-[10px]' />
-            <div className='absolute -bottom-1 w-full h-6 bg-primaryDarkBlack blur-[2px]' />
+            <div className="absolute bottom-0 w-full h-16 bg-gradient-to-t from-primaryLightWhite dark:from-primaryDarkBlack via-primaryLightWhite dark:via-primaryDarkBlack to-transparent blur-[10px]" />
+            <div className="absolute -bottom-1 w-full h-6 bg-primaryLightWhite dark:bg-primaryDarkBlack blur-[2px]" />
           </div>
         </Container>
       </Section>

@@ -43,26 +43,30 @@ const HomePage = () => {
     <div className="relative pt-20 md:pt-36 overflow-x-hidden">
       <Header />
       <HeroSection />
-      <CopiedSection />
-      <LogosSection />
-      <ProjectsSection />
-      <CounterSection />
-      <ProcessSection />
-      <BenefitsSection />
-      <ServicesSection />
-      <ComparisonSection />
-      <TestimonialsSection />
-      <PricingSections />
-      <FrequentlySection />
-      <TakeAction />
-      <div className="h-8 md:h-16 z-0">
+      <div className="grid-bg">
+        <CopiedSection />
+        <LogosSection />
+        <ProjectsSection />
+        <CounterSection />
+        <ProcessSection />
+        <BenefitsSection />
+        <ServicesSection />
+        <ComparisonSection />
+        <TestimonialsSection />
+        <PricingSections />
+        <FrequentlySection />
+        <TakeAction />
+      </div>
+      <div className="h-8 md:h-16 z-0 grid-bg">
         <Glow
           className="absolute bottom-[600px] md:bottom-[450px] translate-y-full"
           isMoving={false}
           shrink={true}
         />
       </div>
-      <Footer />
+      <div className="grid-bg">
+        <Footer />
+      </div>
     </div>
   );
 };

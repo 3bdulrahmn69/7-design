@@ -39,35 +39,30 @@ const MovingSliderHover = ({
   );
 
   const initializeAnimation = useCallback(() => {
+    lastTimestampRef.current = performance.now();
     requestAnimationFrame(() => startAnimation(speed));
   }, [startAnimation, speed]);
 
-  useEffect(() => {
-    initializeAnimation();
-
-    return () => {
-      controls.stop();
-    };
-  }, [initializeAnimation, controls]);
-
-  const handleTouchStart = useCallback(() => {
-    initializeAnimation();
+  const handleVisibilityChange = useCallback(() => {
+    if (document.visibilityState === 'visible') {
+      initializeAnimation();
+    }
   }, [initializeAnimation]);
 
   useEffect(() => {
-    const container = containerRef.current;
-    if (container) {
-      container.addEventListener('touchstart', handleTouchStart, {
-        passive: true,
-      });
-    }
+    initializeAnimation();
+    const timeout = setTimeout(() => initializeAnimation(), 500);
+
+    window.addEventListener('visibilitychange', handleVisibilityChange);
+    window.addEventListener('resize', initializeAnimation);
 
     return () => {
-      if (container) {
-        container.removeEventListener('touchstart', handleTouchStart);
-      }
+      clearTimeout(timeout);
+      controls.stop();
+      window.removeEventListener('visibilitychange', handleVisibilityChange);
+      window.removeEventListener('resize', initializeAnimation);
     };
-  }, [handleTouchStart]);
+  }, [initializeAnimation, controls, handleVisibilityChange]);
 
   const handleMouseEnter = useCallback(() => {
     if (enableHover) {
@@ -81,6 +76,21 @@ const MovingSliderHover = ({
     }
   }, [enableHover, initializeAnimation]);
 
+  useEffect(() => {
+    const updateConstraints = () => {
+      if (containerRef.current) {
+        controls.set({
+          dragConstraints: { left: 0, right: containerRef.current.offsetWidth },
+        });
+      }
+    };
+    updateConstraints();
+    window.addEventListener('resize', updateConstraints);
+    return () => {
+      window.removeEventListener('resize', updateConstraints);
+    };
+  }, [controls]);
+
   return (
     <div
       className={cn('relative flex items-center justify-center', className)}
@@ -89,15 +99,17 @@ const MovingSliderHover = ({
       ref={containerRef}
     >
       <div
-        className="w-full flex items-center relative overflow-hidden scrollbar-hide"
+        className="w-full flex items-center relative overflow-hidden"
         dir="ltr"
       >
         <div className="absolute -left-4 bottom-0 h-full w-12 bg-gradient-to-r from-primaryLightWhite to-primaryLightWhite dark:from-primaryDarkBlack dark:to-primaryDarkBlack blur-[20px] pointer-events-none z-10" />
         <motion.div
           className="flex items-center"
           animate={controls}
-          drag="x"
+          drag={enableHover ? 'x' : false}
           dragConstraints={containerRef}
+          dragElastic={0.1}
+          dragMomentum={false}
         >
           {[...Array(arrayNumber)].map((_, i) => (
             <React.Fragment key={i}>{children}</React.Fragment>

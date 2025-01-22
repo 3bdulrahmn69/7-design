@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React, { useMemo } from 'react';
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 import { cn } from '../lib/utils';
 
 const MovingSlider = ({
@@ -11,9 +11,10 @@ const MovingSlider = ({
   className,
   innerClassName,
 }) => {
+  const scrollDistance = '90%';
   const scrollDirection = useMemo(() => {
-    const normal = ['-50%', '0%'];
-    const reverse = ['0%', '-50%'];
+    const normal = { initial: `-${scrollDistance}`, end: '0%' };
+    const reverse = { initial: '0%', end: `-${scrollDistance}` };
     return direction === 'normal' ? normal : reverse;
   }, [direction]);
 
@@ -33,21 +34,18 @@ const MovingSlider = ({
       >
         <div className="absolute z-10 pointer-events-none left-0 bottom-0 h-full w-24 bg-gradient-to-r from-primaryLightWhite to-transparent dark:from-primaryDarkBlack dark:to-transparent" />
 
-        <div>
-          <motion.div
-            className={cn('flex items-center', innerClassName)}
-            style={{ flexDirection: 'row' }}
-            animate={{ x: scrollDirection }}
-            transition={{
-              duration: speed,
-              ease: 'linear',
-              repeat: Infinity,
-              repeatType: 'loop',
-            }}
-          >
-            {repeatedChildren}
-          </motion.div>
-        </div>
+        <motion.div
+          className={cn('flex items-center', innerClassName)}
+          initial={{ x: scrollDirection.initial }}
+          animate={{ x: scrollDirection.end }}
+          transition={{
+            duration: speed,
+            ease: 'linear',
+            repeat: Infinity,
+          }}
+        >
+          {repeatedChildren}
+        </motion.div>
 
         <div className="absolute z-10 pointer-events-none right-0 bottom-0 h-full w-24 bg-gradient-to-l from-primaryLightWhite to-transparent dark:from-primaryDarkBlack dark:to-transparent" />
       </div>

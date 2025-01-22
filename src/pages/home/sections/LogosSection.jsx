@@ -14,16 +14,16 @@ const LogosSection = () => {
   const lang = i18next.language;
 
   return (
-    <Section id={'logos'} className="grid-bg">
+    <Section id={'logos'}>
       <Container>
         <p className="text-center pt-2 mb-4 text-light-text dark:text-primary-text text">
           {t('home.logosSection.littleTitle')}
         </p>
         <MovingSlider
-          speed={50}
+          speed={120}
           direction="normal"
           orientation="row"
-          arrayNumber={5}
+          arrayNumber={8}
           className="hidden dark:block"
         >
           {myLogosWhite.map((logo, index) => (
@@ -31,10 +31,10 @@ const LogosSection = () => {
           ))}
         </MovingSlider>
         <MovingSlider
-          speed={50}
+          speed={120}
           direction="normal"
           orientation="row"
-          arrayNumber={5}
+          arrayNumber={8}
           className="block dark:hidden"
         >
           {myLogosBlack.map((logo, index) => (
