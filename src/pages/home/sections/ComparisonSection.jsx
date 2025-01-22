@@ -50,7 +50,7 @@ const ComparisonSection = () => {
           >
             {t('comparison.otherAgencies.title')}
           </h4>
-          <ComparisonCard className="text-[rgba(0,0,0,0.5)] dark:text-[rgba(255,255,255,0.56)]">
+          <ComparisonCard className="text-[rgba(0,0,0,0.5)] dark:text-primary-text">
             <ul className="space-y-6" role="list">
               {otherAgencies.map((item, index) => (
                 <li key={`other-${index}`} className="flex items-center gap-2">
