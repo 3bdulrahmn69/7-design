@@ -26,7 +26,7 @@ const SmallPricingCard = ({
   return (
     <div
       className={cn(
-        'border-[1px] border-light-border dark:border-secondary-text bg-secondaryLightWhite dark:bg-secondaryDarkBlack pt-2 rounded-site overflow-hidden mx-2 h-[270px]',
+        'flex flex-col items-center justify-center border-[1px] border-light-border dark:border-secondary-text bg-secondaryLightWhite dark:bg-secondaryDarkBlack pt-2 rounded-site overflow-hidden mx-2 h-[270px]',
         className
       )}
       dir={lang === 'ar' ? 'rtl' : 'ltr'}
@@ -35,23 +35,19 @@ const SmallPricingCard = ({
         <h3 className="text-xl text-center py-2">{packageName}</h3>
       </div>
       <div className="p-4">
-        <ul>
-          <li className="text-sm text-light-text dark:text-primary-text px-2">
-            {features}
-          </li>
-        </ul>
+        <p className="text-light-text dark:text-primary-text">
+          {features}
+        </p>
         <div className="mt-4 flex items-center justify-between">
           {displayPrice === "Let's Talk" ? (
             <h4 className="text-lg mb-2 text-secondary">
               {t('pricing.customQuotes')}
             </h4>
           ) : (
-            <h4 className="text-lg mb-2 text-secondary">
-              {displayPrice}
-            </h4>
+            <h4 className="text-lg mb-2 text-secondary">{displayPrice}</h4>
           )}
         </div>
-        <div className="flex items-center justify-center">
+        <div className="mt-2 flex items-center justify-center">
           <Button type="link" to="/meeting-booking" variant="primary">
             {displayPrice === "Let's Talk"
               ? t('buttons.letsTalk')
