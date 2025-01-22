@@ -21,6 +21,7 @@ import TakeAction from './sections/TakeAction';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import Glow from '../../components/Glow';
+import GoBackTop from '../../components/GoToTop';
 
 const HomePage = () => {
   const location = useLocation();
@@ -43,6 +44,7 @@ const HomePage = () => {
     <div className="relative pt-20 md:pt-36 overflow-x-hidden">
       <Header />
       <HeroSection />
+      <GoBackTop />
       <div className="grid-bg">
         <CopiedSection />
         <LogosSection />

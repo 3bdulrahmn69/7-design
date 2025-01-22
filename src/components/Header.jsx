@@ -126,16 +126,28 @@ const Header = () => {
               </Link>
             </motion.li>
           ))}
-          <motion.li variants={itemVariants} custom={navItems.length}>
+          <motion.li
+            variants={itemVariants}
+            custom={navItems.length}
+            onClick={toggleMenu}
+          >
             <Button type="link" className="w-full" to={'/meeting-booking'}>
               {t('buttons.bookACall')}
             </Button>
           </motion.li>
           <div className="flex gap-4 items-center w-full">
-            <motion.li variants={itemVariants} custom={navItems.length + 1}>
+            <motion.li
+              variants={itemVariants}
+              custom={navItems.length + 1}
+              onClick={toggleMenu}
+            >
               <ToggleDark />
             </motion.li>
-            <motion.li variants={itemVariants} custom={navItems.length + 2}>
+            <motion.li
+              variants={itemVariants}
+              custom={navItems.length + 2}
+              onClick={toggleMenu}
+            >
               <ToggleLang />
             </motion.li>
           </div>

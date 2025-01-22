@@ -65,6 +65,7 @@ const Button = ({
         className
       )}
       onClick={onClick}
+      aria-label="get started"
     >
       {children}
     </button>

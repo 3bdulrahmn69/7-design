@@ -12,6 +12,7 @@ import Glow from '../../components/Glow';
 import logo from '../../assets/logo-textl.png';
 import apologize from '../../assets/icons/apologize.gif';
 import apologizeBlack from '../../assets/icons/apologize-black.gif';
+import GoBackTop from '../../components/GoToTop';
 
 const Meeting = () => {
   const { t } = useTranslation();
@@ -26,6 +27,7 @@ const Meeting = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://yourdomain.com/meeting" />
       </Helmet>
+      <GoBackTop />
       <h1 className="text-secondary-text font-semibold text-center py-4 bg-gradient-to-t-orange">
         {t('meeting.spotsAvailable')}
       </h1>
