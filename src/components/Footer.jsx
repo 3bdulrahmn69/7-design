@@ -29,7 +29,7 @@ const Footer = () => {
           dir="ltr"
         >
           {/* Company Info */}
-          <div className="space-y-4">
+          <div className="space-y-4 w-fit">
             <Logo size="footer" />
           </div>
 

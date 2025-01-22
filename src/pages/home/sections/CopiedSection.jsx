@@ -17,25 +17,25 @@ const CopiedSection = () => {
           <figure className="w-1/4 md:w-2/4 overflow-hidden border-r border-secondary-text">
             <img
               src={drMohamed}
-              alt="Portrait of Dr. Mohamed Esam, the founder of the organization"
+              alt="Portrait of Dr. Mohamed Esam, the founder of Seven Design Studio"
               loading="lazy"
               width="150"
               height="150"
               className="w-full h-full object-cover rounded-l-site select-none no-drag-img"
             />
             <figcaption className="sr-only">
-              Dr. Mohamed Esam, the founder of the organization
+              Dr. Mohamed Esam, the founder of Seven Design Studio
             </figcaption>
           </figure>
           <div className="w-3/4 md:w-full flex flex-col justify-center text-light-text dark:text-primary-text">
             <blockquote
               id="copied-title"
-              className="border-b py-2 px-3 border-secondary-text text-xs md:text-base text-center font-light"
+              className="border-b py-2 px-3 border-secondary-text text-base md:text-lg text-center font-light"
               aria-label={t('copied.quote')}
             >
               {t('copied.quote')}
             </blockquote>
-            <h2 className="text-center p-1 py-2 text-xs md:text-base">
+            <h2 className="text-center p-1 py-2 text-base md:text-lg">
               {t('copied.by')}
             </h2>
           </div>
