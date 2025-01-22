@@ -58,11 +58,11 @@
       "title": "Happy Clients"
     }
   },
-  "projects section": "______________ Projects Section ______________ ",
+  "Process section": "______________ Process Section ______________ ",
   "process": {
     "sectionTitle": "Process",
     "howIt": "How It",
-    "works": "works",
+    "works": "works?",
     "description": "Iconic Brand in 3 Easy Steps",
     "enrollTitle": "Enroll",
     "enrollDescription": "Select the plan that fits your needs and start your journey to an iconic brand.",
@@ -224,23 +224,24 @@
     },
     "otherPackages": {
       "basicLogoAnimation": "Basic Logo Animation",
-      "one": "Simple yet professional logo animation with smooth transitions and minimal effects. Delivered in MP4 and GIF formats to suit your needs.",
+      "one": "Simple yet professional logo animation with smooth transitions and effects. Delivered in MP4 and GIF formats",
       "advancedLogoAnimation": "Advanced Logo Animation",
       "two": "Complex, professional logo animation with dynamic transitions and effects. Delivered in MP4 and GIF formats for versatile presentation.",
       "socialMediaDesigns": "Social Media Designs",
       "three": "20 high-quality social media designs tailored to your brand's needs, ensuring visually appealing and engaging content across all platforms.",
       "graphicsDesign": "Graphics Design",
-      "four": "Custom graphics to enhance your brand’s visual communication. Includes brochures, flyers, social media designs, and tailored materials.",
+      "four": "Custom graphics to enhance your brand’s communication. Includes brochures, flyers, and tailored materials.",
       "websiteDesign": "Website Design",
-      "five": "Professional, user-friendly websites with modern UI/UX design, customized functionality, and optimized user experience for enhanced engagement.",
+      "five": "Professional, user-friendly websites with modern UI/UX design, customized functionality, and optimized experience.",
       "socialMediaManagement": "Social Media Management",
-      "six": "Monthly management of social platforms with creative content creation, efficient scheduling, and thorough performance analysis to enhance audience engagement.",
+      "six": "Monthly management of social platforms with creative content, efficient scheduling, and performance analysis.",
       "managingAdsCampaigns": "Managing Ads Campaigns",
       "seven": "Monthly advertising campaign management, featuring campaign setup, optimization, budget management, and detailed performance tracking."
     },
     "customQuotes": "Custom Quotes",
     "perMonth": "/month",
     "USD": "USD",
+    "USDs": "$",
     "SAR": "SAR",
     "EGP": "EGP"
   },

@@ -8,7 +8,7 @@
     "letsTalk": "لنتحدث معًا"
   },
   "nav": {
-    "ourProjects": "مشاريعنا المميزة",
+    "ourProjects": "بصماتنا الإبداعية",
     "process": "خطوات العمل",
     "benefits": "ليش تختارنا؟",
     "services": "خدماتنا",
@@ -61,14 +61,14 @@
   "Process section": "______________ Process Section ______________ ",
   "process": {
     "sectionTitle": "خطوات العمل",
-    "howIt": "How It",
-    "works": "works",
+    "howIt": "كيف تبني البراند",
+    "works": "الخاص بك؟",
     "description": "صمم البراند الخاص بك في 3 خطوات بسيطة",
     "enrollTitle": "ابدأ الرحلة",
     "enrollDescription": "اختر الباقة الأنسب لمشروعك ودعنا ننطلق في بناء هويتك المميزة.",
     "shareTitle": "شارك رؤيتك",
     "shareDescription": "شاركنا طموحك وأحلامك لنحولها إلى براند فاخر لا يمكن نسيانه.",
-    "receiveTitle": "استلم تصاميمك",
+    "receiveTitle": "استلم مشروعك",
     "receiveDescription": "البراند الآن جاهز للاستلام مع ضمان رضاك الكامل بنسبة 100%."
   },
   "benefits section": "______________ Benefits Section ______________ ",
@@ -81,13 +81,13 @@
     "expertDesignersDescription": "فريقنا يمتلك سنوات من الخبرة ومشاريع ناجحة تُثبت كفاءته.",
     "uniqueDesignsTitle": "تصميمات فريدة",
     "uniqueDesignsDescription": "تصميماتنا الفريدة تعكس هوية شركتك وتُميزك عن المنافسين.",
-    "engagingVisualsTitle": "Engaging Visuals",
-    "engagingVisualsDescription": "Our visuals are designed to captivate your audience and leave a lasting impression.",
+    "engagingVisualsTitle": "تصميمات خاطفة",
+    "engagingVisualsDescription": "تصميماتنا تهدف لجذب انتباه جمهورك وترك انطباعات لا تُنسى.",
     "fastDeliveryTitle": "سرعة التنفيذ",
     "fastDeliveryDescription": "نلتزم بتسليم ملفات العمل كاملة بجودة عالية وفي الوقت المحدد.",
     "transparentPricingTitle": "تسعير شفاف",
     "transparentPricingDescription": "خطط أسعار واضحة وشفافة دون أي تكاليف خبيثة أو مخفية.",
-    "fullSatisfactionTitle": "الرضا الكامل:",
+    "fullSatisfactionTitle": "الرضا الكامل",
     "fullSatisfactionDescription": "نعمل على التعديلات المتاحة بخطتك لتكون راض بنسبة 100%."
   },
   "services section": "______________ Services Section ______________ ",
@@ -95,6 +95,7 @@
     "sectionTitle": "خدماتنا",
     "allYour": "كل ما تحتاجه",
     "designNeeds": "موجود هنا",
+    "description": "من تصميم الشعارات إلى بناء الهوية المتكاملة، نوظف خبراتنا لنبرز البراند الخاص بك ونمنحك المكان اللائق بك في سوق العمل",
     "logoDesignTitle": "تصميم اللوجو",
     "brandIdentityDesignTitle": "تصميم الهوية البصرية",
     "logoAnimationTitle": "تحريك الشعارات",
@@ -203,11 +204,11 @@
     "description": "باقاتنا تجمع بين الجودة والشفافية. صممناها بمرونة كبيرة لتلبية كل احتياجاتك — أسعارنا واضحة وشفافة بدون أي تكاليف مخفية.",
     "packages": {
       "basic": "أساسية",
-      "logoDesign": "Logo Design",
+      "logoDesign": "تصميم الشعار",
       "intermediate": "متوسطة",
-      "brandIdentityDesign": "Brand Identity Design",
+      "brandIdentityDesign": "تصميم الهوية الأساسية",
       "advanced": "احترافية",
-      "fullBrandIdentity": "Full Brand Identity"
+      "fullBrandIdentity": "تصميم الهوية الكاملة"
     },
     "features": {
       "one": "3 مقترحات للشعار",
@@ -222,14 +223,14 @@
       "nine": "20 تصميم لمواقع السوشيال ميديا"
     },
     "otherPackages": {
-      "basicLogoAnimation": "تحريك الشعار الأساسي:",
-      "one": "رسوم متحركة بسيطة وسهلة للشعار، بانتقالات ناعمة وتأثيرات خفيفة. يتم التسليم بصيغ متعددة لمرونة العرض.",
+      "basicLogoAnimation": "تحريك الشعار الأساسي",
+      "one": "رسوم متحركة بسيطة وسهلة للشعار، بانتقالات ناعمة وتأثيرات خفيفة. يتم التسليم بصيغ متعددة .",
       "advancedLogoAnimation": "تحريك الشعار الاحترافي",
       "two": "تحريك احترافي مع انتقالات ديناميكية وتأثيرات مميزة. يتم التسليم بصيغ متعددة لمرونة العرض.",
       "socialMediaDesigns": "تصميمات السوشيال ميديا",
       "three": "20 تصميم احترافي تلبي احتياجات علامتك التجارية وتضمن محتوى جاذب ومميز على مختلف المنصات.",
-      "graphicsDesign": "Graphics Design",
-      "four": "Custom graphics to enhance your brand’s visual communication. Includes brochures, flyers, social media designs, and tailored materials.",
+      "graphicsDesign": "تصميم الجرافيك",
+      "four": "تصميمات لتحسين التواصل البصري للبراند. تشمل البروشو والفلاير وتصميمات السوشيال ميديا وغيرها.",
       "websiteDesign": "تصميم المواقع الإلكترونية",
       "five": "مواقع احترافية وسهلة الاستخدام بواجهات حديثة وتجربة مستخدم مخصصة تعزز تفاعل العملاء.",
       "socialMediaManagement": "إدارة مواقع السوشيال ميديا",
@@ -237,11 +238,12 @@
       "managingAdsCampaigns": "إدارة الحملات الإعلانية",
       "seven": "إدارة شاملة للحملات الإعلانية الشهرية تتضمن إعداد الحملات وتحسينها وإدارة الميزانية وتقديم التقارير."
     },
-    "customQuotes": "Custom Quotes",
+    "customQuotes": "حسب الطلب",
     "perMonth": "/شهرياً",
-    "USD": "دولار",
-    "SAR": "ر.س",
-    "EGP": "ج.م"
+    "USD": "دولار أمريكي",
+    "USDs": "دولار أمريكي",
+    "SAR": "ريال سعودي",
+    "EGP": "جنيه مصري"
   },
   "take action": "______________ Take Action ______________ ",
   "takeAction": {
@@ -390,7 +392,7 @@
       "keywords": "logo design, brand identity, design services, Seven Studio Design, book a meeting",
       "author": "Seven Studio Design"
     },
-    "spotsAvailable": "Only 3 Spots Are Available This Month",
+    "spotsAvailable": "الفرص محدودة! متبقى للحجز 3 أماكن فقط",
     "logoAlt": "Seven Design Logo",
     "hopOnCall": "انضم لمكالمة",
     "call": "مجانية",

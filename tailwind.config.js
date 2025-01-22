@@ -15,7 +15,7 @@ export default {
       colors: {
         primary: '#FEDA00',
         'dark-gray': '#232323',
-        'primary-text': '#FFFFFF8f',
+        'primary-text': '#939393',
         'secondary-text': '#2A2A2A',
         'light-text': '#0000008f',
         'light-border': '#ffffff1a',

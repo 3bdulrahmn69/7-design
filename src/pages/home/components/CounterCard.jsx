@@ -56,7 +56,7 @@ const CounterCard = ({ num, symbol, title, iconLight, iconDark }) => {
             {Math.floor(num)}
           </motion.span>
         </p>
-        <p className="w-full text-center text-lg font-medium text-light-text dark:text-primary-text">
+        <p className="w-full text-center text-lg text-light-text dark:text-primary-text">
           {title}
         </p>
       </div>

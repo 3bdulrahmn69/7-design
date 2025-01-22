@@ -27,7 +27,7 @@ const TestimonialCard = ({ name, testimonial, title, image, className }) => {
           />
         </div>
         <div>
-          <h2 id={`testimonial-${name}`} className="font-medium text-base">
+          <h2 id={`testimonial-${name}`} className="text-base">
             {name}
           </h2>
           <div className="flex items-center text-">

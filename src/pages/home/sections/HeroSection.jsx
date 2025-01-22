@@ -1,4 +1,3 @@
-import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
 import Button from '../../../components/Button';
 import Container from '../../../components/container';
@@ -8,7 +7,6 @@ import Glow from '../../../components/Glow';
 
 const HeroSection = () => {
   const { t } = useTranslation();
-  const lang = i18next.language;
 
   return (
     <div className="relative pb-20 overflow-hidden">
@@ -16,11 +14,7 @@ const HeroSection = () => {
         <Container>
           <div className="flex flex-col items-center">
             <div className="flex flex-col items-center justify-center gap-[41px] text-gap -mb-10 md:mb-0">
-              <div
-                className={`w-fit xl:absolute top-0 ${
-                  lang === 'en' ? 'left-80' : 'right-80'
-                } flex items-center gap-2 z-10 py-2 px-4 mb-4 rounded-lg border-[1px] border-primaryDarkBlack dark:border-primary`}
-              >
+              <div className="w-fit flex items-center gap-2 py-2 px-4 rounded-lg border-[1px] border-primaryDarkBlack dark:border-primary">
                 <div className="w-2 h-2 rounded-full bg-primary animate-ping"></div>
                 <p className=" text-center text-xs font-semibold">
                   {t('home.heroSection.hurry')}

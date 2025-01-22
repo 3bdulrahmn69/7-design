@@ -6,7 +6,7 @@ export const Title = ({ children, className }) => {
   return (
     <h2
       className={cn(
-        'text-site md:text-site-md font-medium text-center tracking-site leading-site',
+        'text-site md:text-site-md text-center tracking-site leading-site',
         className
       )}
     >

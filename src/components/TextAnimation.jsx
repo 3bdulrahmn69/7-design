@@ -117,9 +117,9 @@ const TextAnimation = () => {
   const text = isArabic ? arText : enText;
 
   return (
-    <div className="flex flex-col items-center gap-[19.5px] text-gap xl:mt-4">
+    <div className="flex flex-col items-center gap-[19.5px] text-gap">
       <motion.h1
-        className="text-site md:text-site-md font-medium text-center tracking-site leading-site"
+        className="text-site md:text-site-md text-center tracking-site leading-site"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
@@ -139,7 +139,7 @@ const TextAnimation = () => {
         ))}
       </motion.h1>
       <motion.p
-        className="text-center text-[17px] md:text-[20px] text-light-text dark:text-primary-text lg:max-w-2xl px-6 text md:px-20 lg:px-0 leading-[1.5em] font-medium"
+        className="text-center text-[17px] md:text-[20px] text-light-text dark:text-primary-text lg:max-w-2xl px-6 text md:px-20 lg:px-0 leading-[1.5em]"
         variants={containerVariantTest}
         initial="hidden"
         animate="visible"

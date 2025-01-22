@@ -1,4 +1,5 @@
 import { useState, useEffect, useMemo, useCallback } from 'react';
+import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
 import Container from '../../../components/container';
 import {
@@ -134,6 +135,7 @@ const PricingSections = () => {
     EGP: 1,
   });
   const { t } = useTranslation();
+  const lang = i18next.language;
 
   // Fetch exchange rates only once when the component mounts
   useEffect(() => {
@@ -176,7 +178,10 @@ const PricingSections = () => {
       const formattedPrice = formatPrice(priceValue);
 
       if (price.includes('/month')) {
-        if (currency === 'USD') return `$ ${formattedPrice} /month`;
+        if (currency === 'USD')
+          return lang === 'en'
+            ? `${t('pricing.USDs')} ${formattedPrice} /month`
+            : `${formattedPrice} ${t('pricing.USDs')} /month`;
         if (currency === 'SAR')
           return `${formatPrice(
             (priceValue * exchangeRates.SAR).toFixed(0)
@@ -186,7 +191,10 @@ const PricingSections = () => {
             (priceValue * exchangeRates.EGP).toFixed(0)
           )} ${t('pricing.EGP')}/month`;
       } else {
-        if (currency === 'USD') return `$ ${formattedPrice}`;
+        if (currency === 'USD')
+          return lang === 'en'
+            ? `${t('pricing.USDs')} ${formattedPrice}`
+            : `${formattedPrice} ${t('pricing.USDs')}`;
         if (currency === 'SAR')
           return `${formatPrice(
             (priceValue * exchangeRates.SAR).toFixed(0)
@@ -197,7 +205,7 @@ const PricingSections = () => {
           )} ${t('pricing.EGP')}`;
       }
     },
-    [exchangeRates, t]
+    [exchangeRates, t, lang]
   ); // Depend on exchangeRates to avoid unnecessary recalculations
 
   // Memoize the pricing cards and slider for better performance

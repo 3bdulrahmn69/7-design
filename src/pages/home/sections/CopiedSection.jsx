@@ -14,23 +14,21 @@ const CopiedSection = () => {
           className="w-full z-10 relative bg-secondaryLightWhite dark:bg-secondaryDarkBlack max-w-lg flex justify-between flex-row rounded-site border border-light-border dark:border-secondary-text"
           aria-labelledby="copied-title"
         >
-          <figure className="w-1/4 md:w-2/4 overflow-hidden border-r border-secondary-text">
+          <figure className="relative w-1/3 md:w-1/4 aspect-square border-r border-secondary-text">
             <img
               src={drMohamed}
               alt="Portrait of Dr. Mohamed Esam, the founder of Seven Design Studio"
               loading="lazy"
-              width="150"
-              height="150"
-              className="w-full h-full object-cover rounded-l-site select-none no-drag-img"
+              className="absolute inset-0 w-full h-full object-cover rounded-l-site select-none no-drag-img"
             />
             <figcaption className="sr-only">
               Dr. Mohamed Esam, the founder of Seven Design Studio
             </figcaption>
           </figure>
-          <div className="w-3/4 md:w-full flex flex-col justify-center text-light-text dark:text-primary-text">
+          <div className="flex-1 flex flex-col justify-center text-light-text dark:text-primary-text">
             <blockquote
               id="copied-title"
-              className="border-b py-2 px-3 border-secondary-text text-base md:text-lg text-center font-light"
+              className="border-b py-2 px-3 border-secondary-text text-base md:text-lg text-center"
               aria-label={t('copied.quote')}
             >
               {t('copied.quote')}

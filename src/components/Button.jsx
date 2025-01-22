@@ -28,7 +28,7 @@ const Button = ({
     return (
       <Link
         className={cn(
-          'px-4 py-[13px] rounded-site font-medium text-[18.7] inline-block text-center',
+          'px-4 py-[13px] rounded-site text-[18.7] inline-block text-center',
           variantStyles[variant],
           className
         )}
@@ -43,7 +43,7 @@ const Button = ({
     return (
       <ScrollLink
         className={cn(
-          'px-4 py-[13px] rounded-site font-medium text-[18.7] inline-block text-center cursor-pointer',
+          'px-4 py-[13px] rounded-site text-[18.7] inline-block text-center cursor-pointer',
           variantStyles[variant],
           className
         )}
@@ -60,7 +60,7 @@ const Button = ({
   return (
     <button
       className={cn(
-        'px-4 py-[13px] rounded-site font-medium text-[18.7]',
+        'px-4 py-[13px] rounded-site text-[18.7]',
         variantStyles[variant],
         className
       )}

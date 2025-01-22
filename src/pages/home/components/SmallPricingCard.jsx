@@ -42,11 +42,11 @@ const SmallPricingCard = ({
         </ul>
         <div className="mt-4 flex items-center justify-between">
           {displayPrice === "Let's Talk" ? (
-            <h4 className="font-medium text-lg mb-2 text-secondary">
+            <h4 className="text-lg mb-2 text-secondary">
               {t('pricing.customQuotes')}
             </h4>
           ) : (
-            <h4 className="font-medium text-lg mb-2 text-secondary">
+            <h4 className="text-lg mb-2 text-secondary">
               {displayPrice}
             </h4>
           )}

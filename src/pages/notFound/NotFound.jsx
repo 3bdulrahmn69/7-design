@@ -19,7 +19,7 @@ const NotFound = () => {
         </p>
         <Link
           to="/"
-          className="relative inline-block px-10 py-4 mt-4 bg-black text-white font-medium text-lg rounded-lg border border-gray-500 shadow-lg transition-transform transform focus:outline-none focus:ring-4 focus:ring-yellow-300 overflow-hidden group"
+          className="relative inline-block px-10 py-4 mt-4 bg-black text-white text-lg rounded-lg border border-gray-500 shadow-lg transition-transform transform focus:outline-none focus:ring-4 focus:ring-yellow-300 overflow-hidden group"
           aria-label="Go back to homepage"
         >
           <span

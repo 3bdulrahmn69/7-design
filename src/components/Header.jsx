@@ -60,14 +60,17 @@ const Header = () => {
       initial="hidden"
       animate="visible"
       variants={slideVariants}
-      dir="ltr"
+      aria-label="Header"
     >
-      <nav className="flex justify-between items-center w-full h-full">
-        <ul className="flex justify-between xl:justify-center w-full items-center xl:space-x-6">
+      <nav
+        className="flex justify-between items-center w-full h-full"
+        aria-label="Main navigation"
+      >
+        <ul className="flex justify-between xl:justify-center w-full items-center gap-2">
           <li>
             <Logo />
           </li>
-          <div className="hidden justify-center items-center xl:flex space-x-6">
+          <div className="hidden justify-center items-center xl:flex gap-2">
             {navItems.map((item, index) => (
               <motion.li key={item.name} variants={itemVariants} custom={index}>
                 <Link
@@ -112,7 +115,7 @@ const Header = () => {
               key={item.name}
               variants={itemVariants}
               custom={index}
-              className="py-1 px-3 rounded-lg font-medium"
+              className="py-1 px-3 rounded-lg"
             >
               <Link
                 to={`/?scrollTo=${item.href}`}

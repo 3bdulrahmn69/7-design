@@ -11,13 +11,13 @@ const TakeAction = () => {
       <Container>
         <div className="backdrop-blur bg-secondaryLightWhite/50 dark:bg-secondaryDarkBlack/50 flex flex-col items-center justify-center gap-9 border-[1px] border-light-border dark:border-secondary-text py-8 rounded-3xl">
           <div className="text-center">
-            <h1 className="text-site md:text-site-md font-medium text-center tracking-site leading-site px-2">
+            <h1 className="text-site md:text-site-md text-center tracking-site leading-site px-2">
               {t('takeAction.readyToMakeYour')}{' '}
               <LatinSpan>{t('takeAction.iconicBrand')}</LatinSpan>
             </h1>
           </div>
           <div className="max-w-lg">
-            <p className="text-center text-[17px] md:text-[20px] text-light-text dark:text-primary-text lg:max-w-2xl px-6 md:px-20 lg:px-0 leading-[1.5em] font-medium">
+            <p className="text-center text-[17px] md:text-[20px] text-light-text dark:text-primary-text lg:max-w-2xl px-6 md:px-20 lg:px-0 leading-[1.5em]">
               {t('takeAction.description')}
             </p>
           </div>
