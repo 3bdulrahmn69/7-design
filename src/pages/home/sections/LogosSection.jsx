@@ -14,9 +14,9 @@ const LogosSection = () => {
   const lang = i18next.language;
 
   return (
-    <Section id={'logos'}>
+    <Section id={'logos'} className="grid-bg">
       <Container>
-        <p className="font-Satoshi text-center pt-2 mb-4 text-light-text dark:text-primary-text text">
+        <p className="text-center pt-2 mb-4 text-light-text dark:text-primary-text text">
           {t('home.logosSection.littleTitle')}
         </p>
         <MovingSlider

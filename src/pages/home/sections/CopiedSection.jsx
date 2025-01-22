@@ -7,7 +7,7 @@ const CopiedSection = () => {
   const { t } = useTranslation();
 
   return (
-    <Section className="-mt-11" id="copied">
+    <Section className="grid-bg" id="copied">
       <Container className="flex items-center justify-center">
         <article
           dir="ltr"

@@ -31,6 +31,8 @@ const HeroSection = () => {
               </div>
             </div>
             <Glow isMoving={true} />
+            <div className='absolute bottom-0 w-full h-16 bg-gradient-to-t from-primaryDarkBlack via-primaryDarkBlack to-transparent blur-[10px]' />
+            <div className='absolute -bottom-1 w-full h-6 bg-primaryDarkBlack blur-[2px]' />
           </div>
         </Container>
       </Section>

@@ -40,7 +40,7 @@ const HomePage = () => {
   }, [location]);
 
   return (
-    <div className="relative pt-20 md:pt-36 grid-bg overflow-x-hidden">
+    <div className="relative pt-20 md:pt-36 overflow-x-hidden">
       <Header />
       <HeroSection />
       <CopiedSection />
