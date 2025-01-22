@@ -6,7 +6,7 @@ const CurrencySelector = ({ currency, setCurrency, className }) => {
   const { t } = useTranslation();
 
   return (
-    <div dir="ltr" className={cn('flex', className)}>
+    <div className={cn('flex text-sm', className)}>
       <span
         className={`bg-primaryLightWhite dark:bg-primaryDarkBlack rounded-site overflow-hidden border-[1px] ${
           currency === 'USD' ? 'border-[#676767]' : 'border-[#d2d2d2]'

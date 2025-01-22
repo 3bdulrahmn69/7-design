@@ -180,8 +180,8 @@ const PricingSections = () => {
       if (price.includes('/month')) {
         if (currency === 'USD')
           return lang === 'en'
-            ? `${t('pricing.USDs')} ${formattedPrice} /month`
-            : `${formattedPrice} ${t('pricing.USDs')} /month`;
+            ? `${t('pricing.USDs')}${formattedPrice} /month`
+            : `${formattedPrice}${t('pricing.USDs')} /month`;
         if (currency === 'SAR')
           return `${formatPrice(
             (priceValue * exchangeRates.SAR).toFixed(0)
@@ -193,8 +193,8 @@ const PricingSections = () => {
       } else {
         if (currency === 'USD')
           return lang === 'en'
-            ? `${t('pricing.USDs')} ${formattedPrice}`
-            : `${formattedPrice} ${t('pricing.USDs')}`;
+            ? `${t('pricing.USDs')}${formattedPrice}`
+            : `${formattedPrice}${t('pricing.USDs')}`;
         if (currency === 'SAR')
           return `${formatPrice(
             (priceValue * exchangeRates.SAR).toFixed(0)
