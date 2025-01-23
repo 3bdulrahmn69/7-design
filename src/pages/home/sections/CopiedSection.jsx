@@ -23,7 +23,6 @@ const CopiedSection = () => {
             <img
               src={drMohamed}
               alt="Portrait of Dr. Mohamed Esam, the founder of Seven Design Studio"
-              loading="lazy"
               className={`absolute inset-0 w-full h-full object-cover ${
                 lang === 'ar' ? 'rounded-r-site' : 'rounded-l-site'
               } select-none no-drag-img`}
