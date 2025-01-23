@@ -1,15 +1,15 @@
-import SaharDiab from '../assets/testimonials/SaharDiab.png';
-import GaafarAlkazzaz from '../assets/testimonials/GaafarAlkazzaz.png';
-import AhmedTorgoman from '../assets/testimonials/AhmedTorgoman.png';
-import FahadAl_Mansoori from '../assets/testimonials/FahadAl-Mansoori.png';
-import LaylaAl_Rashid from '../assets/testimonials/LaylaAl-Rashid.png';
-import DrWalidAl_Harbi from '../assets/testimonials/DrWalidAl-Harbi.png';
-import TasbeehElMasry from '../assets/testimonials/TasbeehElMasry.png';
-import SeragEldin from '../assets/testimonials/SeragEldin.png';
-import EngAhmedEsmat from '../assets/testimonials/EngAhmedEsmat.png';
-import MrMarkJohnson from '../assets/testimonials/MrMarkJohnson.png';
-import DrOmarAlGhamdi from '../assets/testimonials/DrOmarAlGhamdi.png';
-import EngHatemAl_Sayed from '../assets/testimonials/EngHatemAl-Sayed.png';
+import SaharDiab from '../assets/testimonials/SaharDiab.webp';
+import GaafarAlkazzaz from '../assets/testimonials/GaafarAlkazzaz.webp';
+import AhmedTorgoman from '../assets/testimonials/AhmedTorgoman.webp';
+import FahadAl_Mansoori from '../assets/testimonials/FahadAl-Mansoori.webp';
+import LaylaAl_Rashid from '../assets/testimonials/LaylaAl-Rashid.webp';
+import DrWalidAl_Harbi from '../assets/testimonials/DrWalidAl-Harbi.webp';
+import TasbeehElMasry from '../assets/testimonials/TasbeehElMasry.webp';
+import SeragEldin from '../assets/testimonials/SeragEldin.webp';
+import EngAhmedEsmat from '../assets/testimonials/EngAhmedEsmat.webp';
+import MrMarkJohnson from '../assets/testimonials/MrMarkJohnson.webp';
+import DrOmarAlGhamdi from '../assets/testimonials/DrOmarAlGhamdi.webp';
+import EngHatemAl_Sayed from '../assets/testimonials/EngHatemAl-Sayed.webp';
 
 export const myTestimonialsOne = [
   {
