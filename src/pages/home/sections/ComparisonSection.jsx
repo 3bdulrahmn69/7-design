@@ -1,3 +1,4 @@
+import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
 import Container from '../../../components/container';
 import {
@@ -14,6 +15,7 @@ import logo from '../../../assets/logo-textl.png';
 
 const ComparisonSection = () => {
   const { t } = useTranslation();
+  const lang = i18next.language;
 
   const otherAgencies = [
     'comparison.otherAgencies.genericLogoDesigns',
@@ -38,7 +40,7 @@ const ComparisonSection = () => {
           {t('comparison.sectionTitle')}
         </LittleTitle>
         <Title>
-          {t('comparison.whyWorking')}{' '}
+          {t('comparison.whyWorking')} {lang === 'ar' && <br />}
           <LatinSpan>{t('comparison.different')}</LatinSpan>
         </Title>
       </Container>

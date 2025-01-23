@@ -1,6 +1,6 @@
 import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
-import GoBackTop from '../../components/GoToTop';
+import GoBackTop from '../../components/GoBackTop';
 
 const Terms = () => {
   const language = i18next.language;

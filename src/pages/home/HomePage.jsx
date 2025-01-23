@@ -21,7 +21,7 @@ import TakeAction from './sections/TakeAction';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import Glow from '../../components/Glow';
-import GoBackTop from '../../components/GoToTop';
+import GoBackTop from '../../components/GoBackTop';
 
 const HomePage = () => {
   const location = useLocation();

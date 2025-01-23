@@ -11,7 +11,7 @@ import Glow from '../../components/Glow';
 import logo from '../../assets/logo-textl.png';
 import apologize from '../../assets/icons/apologize.gif';
 import apologizeBlack from '../../assets/icons/apologize-black.gif';
-import GoBackTop from '../../components/GoToTop';
+import GoBackTop from '../../components/GoBackTop';
 import WistiaPlayer from './components/WistiaPlayer';
 
 const Meeting = () => {
