@@ -40,7 +40,13 @@ const FAQItem = ({ question, answer, terms }) => {
             isOpen ? 'opacity-100' : 'opacity-0 transition-opacity duration-500'
           }`}
         >
-          <span>{t('faq.a.' + answer)}</span>{' '}
+          <span
+            className={
+              lang === 'ar' ? 'leading-siteMd-arabic' : 'leading-siteMd'
+            }
+          >
+            {t('faq.a.' + answer)}
+          </span>{' '}
           {terms && (
             <Link to="/terms-conditions" className="underline">
               {t('faq.terms')}

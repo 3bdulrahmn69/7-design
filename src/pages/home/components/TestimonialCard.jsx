@@ -41,7 +41,9 @@ const TestimonialCard = ({ name, testimonial, title, image, className }) => {
         </div>
       </header>
       <blockquote
-        className="leading-relaxed font-normal text-light-text dark:text-primary-text max-w-xs"
+        className={`${
+          lang === 'ar' ? 'leading-siteMd-arabic' : 'leading-siteMd'
+        } text-light-text dark:text-primary-text max-w-xs`}
         aria-label={`Testimonial description from ${name}`}
       >
         {testimonial}

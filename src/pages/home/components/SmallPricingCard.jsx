@@ -35,7 +35,13 @@ const SmallPricingCard = ({
         <h3 className="text-xl text-center">{packageName}</h3>
       </div>
       <div>
-        <p className="text-light-text dark:text-primary-text text-center">{features}</p>
+        <p
+          className={`text-light-text dark:text-primary-text text-center ${
+            lang === 'ar' ? 'leading-siteMd-arabic' : 'leading-siteMd'
+          }`}
+        >
+          {features}
+        </p>
         <div className="mt-4 flex items-center justify-center">
           {displayPrice === "Let's Talk" ? (
             <h4 className="text-lg mb-2 text-secondary">

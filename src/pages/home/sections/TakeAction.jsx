@@ -1,10 +1,12 @@
+import i18next from 'i18next';
+import { useTranslation } from 'react-i18next';
+import Container from '../../../components/container';
 import { LatinSpan, Section } from '../../../components/Section';
 import Button from '../../../components/Button';
-import Container from '../../../components/container';
-import { useTranslation } from 'react-i18next';
 
 const TakeAction = () => {
   const { t } = useTranslation();
+  const lang = i18next.language;
 
   return (
     <Section className="relative z-20 w-80 md:w-full">
@@ -17,7 +19,11 @@ const TakeAction = () => {
             </h1>
           </div>
           <div className="max-w-lg">
-            <p className="text-center text-[17px] md:text-[20px] text-light-text dark:text-primary-text lg:max-w-2xl px-6 md:px-20 lg:px-0 leading-[1.5em]">
+            <p
+              className={`text-center text-[17px] md:text-[20px] text-light-text dark:text-primary-text lg:max-w-2xl px-6 md:px-20 lg:px-0 ${
+                lang === 'ar' ? 'leading-siteMd-arabic' : 'leading-siteMd'
+              }`}
+            >
               {t('takeAction.description')}
             </p>
           </div>

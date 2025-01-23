@@ -3,10 +3,14 @@ import PropTypes from 'prop-types';
 import { cn } from '../lib/utils';
 
 export const Title = ({ children, className }) => {
+  const lang = i18next.language;
+
   return (
     <h2
       className={cn(
-        'text-site md:text-site-md text-center tracking-site leading-site',
+        `text-site md:text-site-md text-center ${
+          lang === 'ar' ? 'leading-site-arabic' : 'tracking-site leading-site'
+        }`,
         className
       )}
       aria-label={children}
@@ -43,10 +47,13 @@ LittleTitle.propTypes = {
 };
 
 export const Description = ({ children, className }) => {
+  const lang = i18next.language;
   return (
     <p
       className={cn(
-        'text-center text-[17px] md:text-[20px] text-light-text dark:text-primary-text lg:max-w-2xl px-6 text md:px-20 lg:px-0 leading-[1.5em] max-w-2xl mx-auto',
+        `text-center text-[17px] md:text-[20px] text-light-text dark:text-primary-text lg:max-w-2xl px-6 text md:px-20 lg:px-0 ${
+          lang === 'ar' ? 'leading-siteMd-arabic' : 'leading-siteMd'
+        } max-w-2xl mx-auto`,
         className
       )}
       aria-label={children}
