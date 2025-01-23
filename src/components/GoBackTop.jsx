@@ -23,7 +23,7 @@ const GoBackTop = () => {
 
   return (
     <div
-      className={`fixed bottom-10 right-10 h-10 w-10 z-50 flex items-center justify-center bg-gray-200 dark:bg-primaryDarkBlack text-gray-800 dark:text-primaryLightWhite rounded-md shadow-md border border-gray-300 dark:border-secondary-text focus:outline-none transition-opacity duration-300 ${
+      className={`fixed bottom-20 right-10 h-10 w-10 z-50 flex items-center justify-center bg-primaryLightWhite dark:bg-primaryDarkBlack border border-secondary-text rounded-site ${
         isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'
       }`}
       tabIndex={isVisible ? 0 : -1}
@@ -35,17 +35,17 @@ const GoBackTop = () => {
           className="focus:outline-none w-full h-full flex items-center justify-center"
           title="Scroll to top"
         >
-          <IoIosArrowUp size={24} />
+          <IoIosArrowUp size={26} className="fill-[url(#icon-gradient)]" />
         </button>
       ) : (
         <Link
           to="/"
           aria-label="Go to homepage"
           prefetch="intent"
-          title="Go to homepage"
           className="focus:outline-none w-full h-full flex items-center justify-center"
+          title="Go to homepage"
         >
-          <TbHomeMove size={24} />
+          <TbHomeMove size={26} className="fill-[url(#icon-gradient)]" />
         </Link>
       )}
     </div>
