@@ -23,7 +23,7 @@ const GoBackTop = () => {
 
   return (
     <div
-      className={`fixed bottom-16 right-10 h-10 w-10 z-50 flex items-center justify-center bg-primaryLightWhite dark:bg-primaryDarkBlack border border-secondary-text rounded-site ${
+      className={`fixed bottom-16 right-10 h-10 w-10 z-50 flex items-center justify-center bg-secondaryLightWhite dark:bg-primaryDarkBlack border border-light-border dark:border-secondary-text rounded-site ${
         isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'
       }`}
       tabIndex={isVisible ? 0 : -1}
@@ -45,7 +45,10 @@ const GoBackTop = () => {
           className="focus:outline-none w-full h-full flex items-center justify-center"
           title="Go to homepage"
         >
-          <TbHomeMove size={26} className="fill-[url(#icon-gradient)]" />
+          <TbHomeMove
+            size={26}
+            className="fill-[url(#icon-gradient)] text-primary"
+          />
         </Link>
       )}
     </div>
