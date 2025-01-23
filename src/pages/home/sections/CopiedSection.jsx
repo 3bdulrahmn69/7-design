@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';
 import { Section } from '../../../components/Section';
 import Container from '../../../components/container';
-import drMohamed from '../../../assets/drMohamed.jpg';
+import drMohamed from '../../../assets/drMohamed.webp';
 
 const CopiedSection = () => {
   const { t } = useTranslation();

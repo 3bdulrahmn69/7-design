@@ -50,7 +50,7 @@ i18n
     detection: {
       order: ['cookie', 'localStorage', 'htmlTag', 'subdomain'],
       lookupCookie: 'i18next',
-      caches: ['cookie'],
+      caches: ['localStorage'],
     },
     backend: {
       loadPath: '/languages/{{lng}}/translation.json',
