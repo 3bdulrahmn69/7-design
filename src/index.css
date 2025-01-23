@@ -17,13 +17,13 @@
 
 @font-face {
   font-family: 'SST';
-  font-style: bold;
+  font-weight: bold;
   src: url('/src/assets/fonts/SST/SST-Arabic-Bold.ttf');
 }
 
 @font-face {
   font-family: 'SST';
-  font-style: medium;
+  font-weight: 500;
   src: url('/src/assets/fonts/SST/SST-Arabic-Medium.ttf');
 }
 
@@ -69,7 +69,7 @@ body.dark {
 }
 
 :lang(ar) body {
-  font-family: 'SST', sans-serif;
+  font-family: 'SST', 'Arial', sans-serif;
 }
 
 @media (max-width: 425px) {
