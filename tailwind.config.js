@@ -38,6 +38,9 @@ export default {
       },
       lineHeight: {
         site: '1.1em',
+        'site-arabic': '1.3em',
+        siteMd: '1.5em',
+        'siteMd-arabic': '1.7em',
       },
       fontSize: {
         site: '2.125rem',

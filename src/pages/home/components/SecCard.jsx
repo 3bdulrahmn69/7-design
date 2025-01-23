@@ -1,7 +1,10 @@
 import PropTypes from 'prop-types';
 import { cn } from '../../../lib/utils';
+import i18next from 'i18next';
 
 const SecCard = ({ title, description, iconLight, iconDark, className }) => {
+  const lang = i18next.language;
+
   return (
     <div
       className={cn(
@@ -23,7 +26,11 @@ const SecCard = ({ title, description, iconLight, iconDark, className }) => {
       </figure>
       {title && <h3 className="text-center text-2xl">{title}</h3>}
       {description && (
-        <p className="text-center text-lg text-light-text dark:text-primary-text">
+        <p
+          className={`text-center text-lg text-light-text dark:text-primary-text ${
+            lang === 'ar' ? 'leading-siteMd-arabic' : ''
+          }`}
+        >
           {description}
         </p>
       )}
