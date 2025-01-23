@@ -17,7 +17,7 @@ const LoaderFullPage = () => {
 
   return (
     <div
-      className={`fixed inset-0 z-50 flex items-center justify-center transition-colors duration-300 ${
+      className={`fixed inset-0 z-50 flex items-center justify-center transition-colors duration-300 rotate-180 ${
         isDarkMode ? 'bg-primaryDarkBlack' : 'bg-primaryLightWhite'
       }`}
       role="status"
