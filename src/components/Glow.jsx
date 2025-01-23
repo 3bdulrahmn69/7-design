@@ -32,6 +32,7 @@ const Glow = ({ isMoving = false, className, shrink = true }) => {
         className
       )}
       style={transformStyle}
+      aria-hidden="true"
     >
       <div
         className={shrink ? 'gradientGlowParent' : 'gradientGlowParent-no'}

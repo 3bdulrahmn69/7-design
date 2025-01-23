@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 const ProjectCard = ({ img, title }) => {
   return (
-    <div className="w-64 md:w-96">
+    <div className="w-64 md:w-96" aria-label="Project card">
       <img
         src={img}
         alt={`${title} project`}

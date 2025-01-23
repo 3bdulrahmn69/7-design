@@ -9,6 +9,7 @@ export const Title = ({ children, className }) => {
         'text-site md:text-site-md text-center tracking-site leading-site',
         className
       )}
+      aria-label={children}
     >
       {children}
     </h2>
@@ -28,6 +29,7 @@ export const LittleTitle = ({ children, className }) => {
           'bg-secondaryLightWhite dark:bg-primaryDarkBlack text-primaryDarkBlack dark:text-primaryLightWhite border border-light-border dark:border-secondary-text px-4 py-[7px] rounded-[14px] w-fit text-center',
           className
         )}
+        aria-label={children}
       >
         {children}
       </p>
@@ -47,6 +49,7 @@ export const Description = ({ children, className }) => {
         'text-center text-[17px] md:text-[20px] text-light-text dark:text-primary-text lg:max-w-2xl px-6 text md:px-20 lg:px-0 leading-[1.5em] max-w-2xl mx-auto',
         className
       )}
+      aria-label={children}
     >
       {children}
     </p>
@@ -58,11 +61,13 @@ Description.propTypes = {
   className: PropTypes.string,
 };
 
-export const Section = ({ id, className, children }) => {
+export const Section = ({ id, className, children, ariaHidden }) => {
   return (
     <section
       id={id}
       className={cn('container mx-auto py-8 px-4 md:px-8', className)}
+      aria-label={id + ' section'}
+      aria-hidden={ariaHidden}
     >
       {children}
     </section>
@@ -73,6 +78,7 @@ Section.propTypes = {
   id: PropTypes.string,
   className: PropTypes.string,
   children: PropTypes.node,
+  ariaHidden: PropTypes.bool,
 };
 
 export const LatinSpan = ({ children, className }) => {
@@ -81,6 +87,7 @@ export const LatinSpan = ({ children, className }) => {
   return (
     <span
       className={cn(`${lang === 'en' && 'italic font-Instrument'}`, className)}
+      aria-label={children}
     >
       {children}
     </span>

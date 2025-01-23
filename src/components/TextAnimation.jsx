@@ -125,6 +125,7 @@ const TextAnimation = () => {
         variants={containerVariants}
         initial="hidden"
         animate="visible"
+        aria-label="From Simple Concept to Iconic Brand"
       >
         {header.map((word, index) => (
           <motion.span
@@ -135,6 +136,7 @@ const TextAnimation = () => {
                 : ''
             }
             variants={textVariants}
+            aria-label={word}
           >
             {word}{' '}
           </motion.span>
@@ -147,9 +149,10 @@ const TextAnimation = () => {
         variants={containerVariantTest}
         initial="hidden"
         animate="visible"
+        aria-label="At Seven Design Studio we transform ideas into powerful visual identities that elevate your brand. A logo and brand identity aren’t just shapes—they’re lasting imprints with no limits."
       >
         {text.map((word, index) => (
-          <motion.span key={index} variants={textVariants}>
+          <motion.span key={index} variants={textVariants} aria-label={word}>
             {word}{' '}
           </motion.span>
         ))}

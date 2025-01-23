@@ -10,11 +10,17 @@ const Logo = ({ size = 'header' }) => {
       : 'object-contain w-full h-auto max-w-[60px] max-h-[30px]';
 
   return (
-    <Link to="/" className="text-white text-2xl font-bold">
+    <Link
+      to="/"
+      className="text-white text-2xl font-bold"
+      title="Home"
+      aria-label="Home"
+    >
       <img
         src={size === 'footer' ? logoTextl : logo}
         alt="Logo"
         className={logoClasses}
+        aria-hidden="true"
       />
     </Link>
   );

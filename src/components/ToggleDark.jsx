@@ -25,6 +25,7 @@ const ToggleDark = () => {
     <button
       onClick={toggleTheme}
       className="h-10 w-10 flex items-center justify-center bg-gray-200 dark:bg-primaryDarkBlack text-gray-800 dark:text-primaryLightWhite rounded-md shadow-md border border-gray-300 dark:border-secondary-text focus:outline-none"
+      aria-label="Toggle Dark Mode"
     >
       {isDarkMode ? <MdLightMode size={24} /> : <MdDarkMode size={24} />}
     </button>

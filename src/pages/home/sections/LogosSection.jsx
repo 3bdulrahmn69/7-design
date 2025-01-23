@@ -14,7 +14,7 @@ const LogosSection = () => {
   const lang = i18next.language;
 
   return (
-    <Section id={'logos'}>
+    <Section id={'logos'} ariaHidden={true}>
       <Container>
         <p className="text-center pt-2 mb-4 text-light-text dark:text-primary-text text">
           {t('home.logosSection.littleTitle')}
