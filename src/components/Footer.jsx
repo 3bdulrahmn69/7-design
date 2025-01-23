@@ -35,9 +35,9 @@ const Footer = () => {
 
           {/* Features & Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-2">
+            <h5 className="text-lg font-semibold mb-2">
               {t('footer.quickLinks')}
-            </h3>
+            </h5>
             <div className="grid grid-cols-2 gap-x-4 gap-y-2">
               {quickLinks.map((link) => (
                 <Link

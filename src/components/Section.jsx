@@ -61,13 +61,12 @@ Description.propTypes = {
   className: PropTypes.string,
 };
 
-export const Section = ({ id, className, children, ariaHidden }) => {
+export const Section = ({ id, className, children }) => {
   return (
     <section
       id={id}
       className={cn('container mx-auto py-8 px-4 md:px-8', className)}
       aria-label={id + ' section'}
-      aria-hidden={ariaHidden}
     >
       {children}
     </section>
@@ -78,7 +77,6 @@ Section.propTypes = {
   id: PropTypes.string,
   className: PropTypes.string,
   children: PropTypes.node,
-  ariaHidden: PropTypes.bool,
 };
 
 export const LatinSpan = ({ children, className }) => {

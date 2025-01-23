@@ -21,7 +21,7 @@ const SecCard = ({ title, description, iconLight, iconDark, className }) => {
           className="no-drag-img hidden dark:block"
         />
       </figure>
-      {title && <h4 className="text-center text-2xl">{title}</h4>}
+      {title && <h3 className="text-center text-2xl">{title}</h3>}
       {description && (
         <p className="text-center text-lg text-light-text dark:text-primary-text">
           {description}

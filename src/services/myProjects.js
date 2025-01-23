@@ -1,11 +1,11 @@
-import up1 from '../assets/projects/up1.png';
-import up2 from '../assets/projects/up2.png';
-import up3 from '../assets/projects/up3.png';
-import up4 from '../assets/projects/up4.png';
-import dw1 from '../assets/projects/dw1.png';
-import dw2 from '../assets/projects/dw2.png';
-import dw3 from '../assets/projects/dw3.png';
-import dw4 from '../assets/projects/dw4.png';
+import up1 from '../assets/projects/up1.webp';
+import up2 from '../assets/projects/up2.webp';
+import up3 from '../assets/projects/up3.webp';
+import up4 from '../assets/projects/up4.webp';
+import dw1 from '../assets/projects/dw1.webp';
+import dw2 from '../assets/projects/dw2.webp';
+import dw3 from '../assets/projects/dw3.webp';
+import dw4 from '../assets/projects/dw4.webp';
 
 export const myProjects = [
   {

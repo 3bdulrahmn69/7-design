@@ -5,24 +5,28 @@
 @font-face {
   font-family: 'Satoshi';
   font-style: normal;
+  font-display: swap;
   src: url('/src/assets/fonts/Satoshi/Satoshi-Regular.otf');
 }
 
 @font-face {
   font-family: 'Satoshi';
-  font-style: medium;
+  font-style: normal;
+  font-display: swap;
   src: url('/src/assets/fonts/Satoshi/Satoshi-Medium.otf');
 }
 
 @font-face {
   font-family: 'SST';
   font-weight: bold;
+  font-display: swap;
   src: url('/src/assets/fonts/SST/SST-Arabic-Bold.ttf');
 }
 
 @font-face {
   font-family: 'SST';
   font-weight: 500;
+  font-display: swap;
   src: url('/src/assets/fonts/SST/SST-Arabic-Medium.ttf');
 }
 
