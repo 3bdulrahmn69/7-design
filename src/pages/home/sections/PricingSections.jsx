@@ -259,7 +259,9 @@ const PricingSections = () => {
         <CurrencySelector
           currency={currency}
           setCurrency={setCurrency}
-          className="flex justify-center items-center gap-2 md:gap-8 bg-secondaryLightWhite dark:bg-primaryDarkBlack  border-[1px] border-light-border dark:border-secondary-text rounded-site py-4 px-4 md:px-8 w-fit mx-auto"
+          className={`flex justify-center items-center ${
+            lang === 'ar' ? 'gap-2 md:gap-8 px-4 md:px-8' : 'gap-8 px-8'
+          } bg-secondaryLightWhite dark:bg-primaryDarkBlack border-[1px] border-light-border dark:border-secondary-text rounded-site py-4 w-fit mx-auto`}
         />
       </Container>
       <Container className="mt-8 flex flex-col md:flex-row gap-4 justify-center md:items-start items-center flex-nowrap md:flex-wrap">

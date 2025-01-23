@@ -23,7 +23,7 @@ const Footer = () => {
 
   return (
     <footer>
-      <Container className="rounded-t-site p-4 z-30 backdrop-blur">
+      <Container className="rounded-t-site p-4 z-30 bg-secondaryLightWhite/50 dark:bg-secondaryDarkBlack/50 backdrop-blur-sm">
         <div
           className="container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 px-4"
           dir="ltr"
